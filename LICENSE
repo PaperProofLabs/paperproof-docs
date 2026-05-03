@@ -1,0 +1,128 @@
+PaperProof Documentation and Brand Source-Available License
+Version 1.0
+Copyright (c) 2026 PaperProof Labs. All rights reserved.
+
+1. Overview
+
+This repository is made publicly available for transparency, project record
+preservation, research, evaluation, review, factual reference, and ecosystem
+understanding. Except for the limited permissions expressly granted in this
+License, no rights are granted to copy, modify, distribute, sublicense,
+commercialize, publish as one's own, or create derivative public materials from
+the contents of this repository.
+
+2. Definitions
+
+"Repository Materials" means the documentation, whitepapers, text, diagrams,
+design notes, brand assets, screenshots, icons, logos, layouts, governance
+notes, token materials, DID materials, legal notes, archive materials, and
+other contents contained in this repository, excluding third-party materials
+that are separately licensed.
+
+"Brand Assets" means names, marks, logos, icons, visual identities, token
+artwork, design motifs, and other branding-related materials associated with
+PaperProof, PaperProof Labs, PPRF, or related project identities.
+
+"Derivative Material" means any adapted, translated, transformed, remixed,
+annotated, modified, reformatted, or extended version of any protected material
+from this repository.
+
+3. Limited Permission Grant
+
+Subject to the terms of this License, you are granted a limited, revocable,
+non-exclusive, non-transferable, non-sublicensable license to:
+
+a. view, download, and locally store the Repository Materials for personal,
+internal, research, evaluation, archival-reference, auditing, and review
+purposes; and
+
+b. refer to, cite, quote limited excerpts from, or link to the Repository
+Materials in a factual, descriptive, scholarly, or referential manner, provided
+that such use is reasonably limited, accurately attributed, does not imply
+official endorsement, and does not reproduce a substantial portion of the
+Repository Materials as a substitute for the original.
+
+4. Restrictions
+
+Except as expressly permitted in Section 3, you may not, without prior written
+permission from the copyright holder:
+
+a. copy, republish, mirror, or redistribute the Repository Materials, in whole
+or in substantial part;
+
+b. modify, adapt, translate, annotate, rebrand, or create Derivative Material
+for public release, redistribution, or commercialization;
+
+c. use the Repository Materials, or any substantial portion of them, to create
+or support a competing documentation set, branded product identity, public
+campaign, or project-facing narrative that is presented as official, affiliated,
+or successor PaperProof material;
+
+d. use the Brand Assets outside nominative or descriptive reference;
+
+e. remove, alter, or obscure any copyright, attribution, trademark, license,
+or proprietary notices; or
+
+f. present copied or adapted Repository Materials as being endorsed by,
+affiliated with, authored by, or officially connected to PaperProof Labs
+without express written authorization.
+
+5. No Trademark License
+
+No trademark, service mark, trade name, logo, trade dress, branding, visual
+identity, token-identity, or endorsement rights are granted under this License.
+"PaperProof," "PaperProof Labs," "PPRF," and all associated names, marks, and
+branding are reserved.
+
+6. Third-Party Materials
+
+Certain materials, references, excerpts, or dependencies may be subject to
+separate third-party licenses or rights. This License does not override or
+restrict rights that you may have with respect to those third-party materials
+under their own terms.
+
+7. Patent Reservation
+
+No patent license, whether express or implied, is granted under this License.
+All patent rights, if any, are reserved by the copyright holder.
+
+8. Feedback
+
+Unless separately agreed in writing, any suggestions, comments, feedback, or
+ideas you provide regarding the Repository Materials may be used by the
+copyright holder without restriction or compensation.
+
+9. Disclaimer of Warranty
+
+THE REPOSITORY MATERIALS ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT
+WARRANTY OF ANY KIND, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT
+LIMITATION ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+TITLE, NON-INFRINGEMENT, ACCURACY, OR COMPLETENESS.
+
+10. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE
+COPYRIGHT HOLDER OR ANY CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+CONNECTION WITH THE REPOSITORY MATERIALS OR THE USE OF OR OTHER DEALINGS IN
+THEM.
+
+11. Termination
+
+Any breach of this License automatically terminates the rights granted under it.
+Upon termination, you must cease all use of the Repository Materials except to
+the extent independent rights exist under applicable law or under separate
+third-party licenses.
+
+12. Reservation of Rights
+
+All rights not expressly granted under this License are reserved by the
+copyright holder.
+
+13. Governing Interpretation
+
+This License shall be interpreted to preserve the copyright holder's retained
+rights to the maximum extent permitted by applicable law.
+
+For the purposes of this repository and its accompanying materials,
+"PaperProof Labs" is a pseudonym for Jinliang Xu.
