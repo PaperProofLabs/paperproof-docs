@@ -4,6 +4,11 @@ This repository is made publicly available by PaperProof Labs for transparency,
 project record preservation, research, evaluation, reference, review, and
 ecosystem understanding.
 
+PaperProof Protocol refers to the open protocol layer and official deployed
+protocol instances. PaperProof Labs refers to the originating team and
+maintainer of the official interface, SDKs, reference indexer, documentation,
+and brand identity.
+
 Public availability of this repository does not mean that its contents are
 licensed under a permissive open-source or open-content license. Use of the
 repository materials is governed exclusively by the `LICENSE` file in the
@@ -17,5 +22,38 @@ This repository may contain project records, whitepaper materials, brand assets,
 design notes, screenshots, diagrams, token materials, governance notes, DID
 drafts, and other supporting materials related to the broader PaperProof
 ecosystem.
+
+For clarity, this documentation and brand notice is not intended to prevent
+third parties from building independent applications, indexers, wallets,
+dashboards, agents, explorers, developer tools, or other integrations that
+interoperate with the official PaperProof protocol using public contract
+interfaces, SDKs, official deployment identifiers, object IDs, event schemas,
+and other factual protocol metadata, provided
+they do not copy protected PaperProof documentation or brand materials, misuse
+PaperProof marks, or falsely claim official status.
+
+This repository protects PaperProof documentation expression, brand assets,
+design materials, project records, and narrative materials while keeping the
+PaperProof protocol open for compatible Web3 applications and independent
+ecosystem entrypoints.
+
+For protocol-use, user-content, official-interface, takedown, and risk
+boundaries, see legal/protocol-user-content-and-risk.md.
+
+For incentive-program terms, takedown review, and official discretion/change
+policy templates, see legal/incentive-program-template.md,
+legal/takedown-review-process.md, and
+legal/official-discretion-and-change-policy.md.
+
+For boundaries among individual contributors, PaperProof Labs, official
+channels, personal accounts, personal wallets, and protocol identity, see
+legal/identity-and-role-separation.md.
+
+For the distinction between pre-launch mainnet setup activity and formal public
+official operations, see legal/official-operations-effective-time.md.
+
+For related-party work, contributor support, personal research, official
+support, and conflict-of-interest boundaries, see
+legal/related-party-and-conflict-policy.md.
 
 PaperProof Labs is a pseudonym for Jinliang Xu.
