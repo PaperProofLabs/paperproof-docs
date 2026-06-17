@@ -1,0 +1,1301 @@
+{
+  "runId": "paperproof-docs-2026-05-31T12-43-08-640Z",
+  "run": false,
+  "accountIndex": 4,
+  "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+  "sdkVersion": "0.2.6",
+  "deployment": {
+    "name": "paperproof-mainnet-2026-05-13",
+    "network": "mainnet",
+    "rpcUrl": "https://fullnode.mainnet.sui.io:443",
+    "protocolVersion": "publishing-v3-governance-v2-comments-v2",
+    "packages": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da",
+      "governanceOriginal": "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+      "governance": "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e",
+      "comments": "0xaef346fc40bf20af62f4bbbc1608ba2272e80e4ba3d716634026baa589e9aeba",
+      "publishing": "0xc9a75e4514db2a37df6f95b4e2b329c065ac6089953bd2c1c0a0c389835bd3d8",
+      "promptRegistry": "0x10b9c6e90a896dc3244d047e32724d80de0dc697b5ea12c5fdd8925131ed4c59",
+      "memoryRegistry": "0x816684a152fdee1e7f15f65d18873ed7ee48540e8bd4205b3197a5ec0feda2c6"
+    },
+    "objects": {
+      "root": "0x7dc6c78b276825499a2204b060394e80b81196eb1f77d2036b503a2cca15dd78",
+      "typeRegistry": "0x966ffa24d0a96b34267b62c628f39c830afc9de25438b6502835fa8a3815d6b5",
+      "feeManager": "0x7bb8360ea1fa50f923628c929b8726b00eb8968c6a678acde71f97ae146e9249",
+      "governanceVault": "0x0df35aa53ef37f8ca8f6a6280d743effa6e0bfc613c5c6c0a78318ad4a38f875",
+      "governanceConfig": "0x7ed018db6b2cd7c32692a1c33543fb90d9c36add1226f93cbeb2a8fb10955dfa",
+      "promptRegistry": "0x14ec45eb83bb1b0eb22c7e885c7c71ea05b1e22dd05e3e1107dcef528600b0da",
+      "memoryRegistry": "0x9a5beeb6610b33c06771c4152c039314784437e802e200afd2ce80fb88bdf9e2",
+      "clock": "0x6"
+    },
+    "coinTypes": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da::pprf::PPRF",
+      "wal": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+      "sui": "0x2::sui::SUI"
+    }
+  },
+  "docs": [
+    {
+      "source": "getting-started/index.md",
+      "title": "Getting Started",
+      "kind": "section",
+      "upload": {
+        "blobId": "local-docs-v1-getting-started-index-c43998094d09564ced3676b0",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1957
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-1",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-getting-started-index-fcbe299e2cc8fba7adbe30f4",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2044
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:fcbe299e2cc8fba7adbe30f4a7b4ff523ade22603a9886b96fb9884789c0b6cd"
+      }
+    },
+    {
+      "source": "getting-started/introduction.md",
+      "title": "Introduction",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-getting-started-introduction-82e57bc0028bc3658ec31fc7",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 4026
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-2",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-getting-started-introduction-1a340ef0cc782696ef19c3d2",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 4113
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:1a340ef0cc782696ef19c3d2b70209027f5f75b6bc6be62635b432887310218d"
+      }
+    },
+    {
+      "source": "getting-started/quick-start.md",
+      "title": "Quick Start",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-getting-started-quick-start-6d33fbbc1e7fe0f5bfd821f1",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 3237
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-3",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-getting-started-quick-start-3b584475d90a900d62b47c2a",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 3324
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:3b584475d90a900d62b47c2ac12fda76be3cfa70707c20e96cf5f4e1e8b5aca9"
+      }
+    },
+    {
+      "source": "getting-started/why-sui-and-walrus.md",
+      "title": "Why Sui and Walrus",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-getting-started-why-sui-and-walrus-a0186c13154b32b124223938",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 3385
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-4",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-getting-started-why-sui-and-walrus-302e2fd16416afb472e8cd03",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 3472
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:302e2fd16416afb472e8cd03b15749b3b2e2cc043172ad7161ef7fe60f064fb8"
+      }
+    },
+    {
+      "source": "getting-started/research-and-presentation-materials.md",
+      "title": "Research and Presentation Materials",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-getting-started-research-and-presentation-materials-a0932a5aff9e7a17c19b8d2c",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 9623
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-5",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-getting-started-research-and-presentation-materials-29df1e25d255b0d7db5041e0",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 10058
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:29df1e25d255b0d7db5041e0988b2aebfcfe52b15f8238c1d8ffb35075b1998b"
+      }
+    },
+    {
+      "source": "protocol/index.md",
+      "title": "Protocol",
+      "kind": "section",
+      "upload": {
+        "blobId": "local-docs-v1-protocol-index-e092146bc5feaff0a28fdae9",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1620
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-6",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-protocol-index-516e1602b415473b073e7ee6",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 1707
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:516e1602b415473b073e7ee6043376ff58948ab7762444c688059cd799c02db8"
+      }
+    },
+    {
+      "source": "protocol/artifact-model.md",
+      "title": "Artifact Model",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-protocol-artifact-model-d120ee60357ba887cf48ca00",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 4375
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-7",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-protocol-artifact-model-6c06edac5705c5ca9076ccda",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 4462
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:6c06edac5705c5ca9076ccda3edc4e8a693494c84b0ebdbf76e3e03d37cea8d5"
+      }
+    },
+    {
+      "source": "protocol/content-and-versioning.md",
+      "title": "Content and Versioning",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-protocol-content-and-versioning-a753408ba5c615b23ca04712",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2459
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-8",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-protocol-content-and-versioning-de85897e5b25f030ece01f6e",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2546
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:de85897e5b25f030ece01f6e60a895e04b4b093803997fd35c494db269d7001e"
+      }
+    },
+    {
+      "source": "protocol/comments-and-likes.md",
+      "title": "Comments and Likes",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-protocol-comments-and-likes-c5db452bb590713f9f7ea752",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1899
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-9",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-protocol-comments-and-likes-3b9242c33e6b0d4b62297fdc",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 1986
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:3b9242c33e6b0d4b62297fdc0a4b12561cf18d31c8ceea68a423dd5f2b358e06"
+      }
+    },
+    {
+      "source": "protocol/manifests-and-canonical-state.md",
+      "title": "Manifests and Canonical State",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-protocol-manifests-and-canonical-state-c6ab79c70b40870b9bd71b8e",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2954
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-10",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-protocol-manifests-and-canonical-state-1d038c12d4a3815ed7759391",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 3042
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:1d038c12d4a3815ed77593915fcf1af020c617343a4823bff392022d4a058d22"
+      }
+    },
+    {
+      "source": "developers/index.md",
+      "title": "Developers",
+      "kind": "section",
+      "upload": {
+        "blobId": "local-docs-v1-developers-index-c6250e41fc993b6a294bd11d",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1849
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-11",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-developers-index-f508aaed1b1fb3b32fd62d3c",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 1937
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:f508aaed1b1fb3b32fd62d3c7570cd92de9b240fcf9da77c0977cb31af088a50"
+      }
+    },
+    {
+      "source": "developers/typescript-sdk.md",
+      "title": "TypeScript SDK",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-developers-typescript-sdk-1319e394793884e280e89997",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 6602
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-12",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-developers-typescript-sdk-4b6cd09647889b648745f28d",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 6690
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:4b6cd09647889b648745f28dbefb8943e9074ed0e0b6aa63465f422c5fa3e847"
+      }
+    },
+    {
+      "source": "developers/python-sdk.md",
+      "title": "Python SDK",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-developers-python-sdk-c460479ced1f0e5be65ae90c",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 3222
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-13",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-developers-python-sdk-cb8b24ff800627b3ab06e7e1",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 3310
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:cb8b24ff800627b3ab06e7e1eecff5608d3aabdc197a394a47a7da0b3db7a900"
+      }
+    },
+    {
+      "source": "developers/rust-sdk.md",
+      "title": "Rust SDK",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-developers-rust-sdk-d9dfe5314d5e7bd5bef3be12",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2953
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-14",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-developers-rust-sdk-5ce154e86b33265b20b9f8a2",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 3041
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:5ce154e86b33265b20b9f8a2ec9e7b20f2bd06dfd7a66acd02a328e9f0110250"
+      }
+    },
+    {
+      "source": "developers/static-frontend-integration.md",
+      "title": "Static Frontend Integration",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-developers-static-frontend-integration-3e497927d12687fdd25ddc0a",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 3406
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-15",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-developers-static-frontend-integration-a7ded018353c0cdf10f91b86",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 3494
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:a7ded018353c0cdf10f91b86c98835b46e58b0980dc87877e3adfbf0f90e41de"
+      }
+    },
+    {
+      "source": "developers/indexer-integration.md",
+      "title": "Indexer Integration",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-developers-indexer-integration-33d6b68640d5b0793faccfb1",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2469
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-16",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-developers-indexer-integration-1c83eb7f3b3495ea2d83f759",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2557
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:1c83eb7f3b3495ea2d83f75940c7d7bb2de44e36169470a1577bbb92e5b49e4a"
+      }
+    },
+    {
+      "source": "copilot/index.md",
+      "title": "Copilot",
+      "kind": "section",
+      "upload": {
+        "blobId": "local-docs-v1-copilot-index-4099593271b99b9772929a8c",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1596
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-17",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-copilot-index-df5486c3d9c143a595b7760b",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 1684
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:df5486c3d9c143a595b7760b433a770618cf1f4876a9bb3bd9ade39f3f9dbd6d"
+      }
+    },
+    {
+      "source": "copilot/native-prompts.md",
+      "title": "Native Prompts",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-copilot-native-prompts-07514e43c041ea12ab5b7064",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 3501
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-18",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-copilot-native-prompts-ee5e3f46d6c5d4165956f01d",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 3589
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:ee5e3f46d6c5d4165956f01d1429a0d9cf77301858310fad21ed64bf47d49667"
+      }
+    },
+    {
+      "source": "copilot/agent-memory.md",
+      "title": "Agent Memory",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-copilot-agent-memory-fa4fd64be16ecc309c5b2aa6",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 6304
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-19",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-copilot-agent-memory-2d102e137eadfcca434b17f8",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 6392
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:2d102e137eadfcca434b17f8629a77aff83764d786fe4c2896698a1e6476d49b"
+      }
+    },
+    {
+      "source": "copilot/memory-privacy-and-access.md",
+      "title": "Memory Privacy and Access",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-copilot-memory-privacy-and-access-58a8808d8d3e0b1a8b63bf5d",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2702
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-20",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-copilot-memory-privacy-and-access-672dd86763dae03bbde0a72a",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2790
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:672dd86763dae03bbde0a72a0071e4c4bcedbf2e6bee7a17523e71fc70bdbf91"
+      }
+    },
+    {
+      "source": "governance-and-economics/index.md",
+      "title": "Governance and Economics",
+      "kind": "section",
+      "upload": {
+        "blobId": "local-docs-v1-governance-and-economics-index-ddefcc8e4139616d20632d22",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 894
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-21",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-governance-and-economics-index-62c66ed4c01529d81e4a7b48",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 982
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:62c66ed4c01529d81e4a7b48b23d3e54851c9fe3776d608d18347025d7d9b91e"
+      }
+    },
+    {
+      "source": "governance-and-economics/governance.md",
+      "title": "Governance",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-governance-and-economics-governance-3911feb73f8f89f7c8273ef4",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2950
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-22",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-governance-and-economics-governance-029d40e6c9742b3b809051de",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 3038
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:029d40e6c9742b3b809051de87ce1366cce1e9d7fe6ef97abbe820380abdecb8"
+      }
+    },
+    {
+      "source": "governance-and-economics/pprf-utility.md",
+      "title": "PPRF Utility",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-governance-and-economics-pprf-utility-a7d50520e71a7f610163d046",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 3939
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-23",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-governance-and-economics-pprf-utility-4c0747c8c3bddc5488e7decd",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 4027
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:4c0747c8c3bddc5488e7decdee40b09f90a6a7c9aea4cd0da73fea35af3087dd"
+      }
+    },
+    {
+      "source": "governance-and-economics/fees-and-sustainability.md",
+      "title": "Fees and Sustainability",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-governance-and-economics-fees-and-sustainability-b4be6701fc470bfd029ae2f3",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2287
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-24",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-governance-and-economics-fees-and-sustainability-d896d7ee210ee56fa24e97df",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2375
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:d896d7ee210ee56fa24e97dfa0b7bb83d819cbb06feba8e9f376e80c6fd57b9f"
+      }
+    },
+    {
+      "source": "safety-and-operations/index.md",
+      "title": "Safety and Operations",
+      "kind": "section",
+      "upload": {
+        "blobId": "local-docs-v1-safety-and-operations-index-2ad33b5d76e064ba1b227528",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 946
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-25",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-safety-and-operations-index-bcf929df4a2289049d2fa7c8",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 1034
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:bcf929df4a2289049d2fa7c8f2b2118b7652751ea73fa5fa6ff5782702086796"
+      }
+    },
+    {
+      "source": "safety-and-operations/user-safety.md",
+      "title": "User Safety",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-safety-and-operations-user-safety-934285e3bbaee05a4b628347",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2162
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-26",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-safety-and-operations-user-safety-7067aac548ca4c2b2b25ae9c",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2250
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:7067aac548ca4c2b2b25ae9c1829bb1b7a46506ca137517738e7b3b747e41a62"
+      }
+    },
+    {
+      "source": "safety-and-operations/interface-policy.md",
+      "title": "Interface Policy",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-safety-and-operations-interface-policy-64642d1c5838ab5f99eab5f3",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2183
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-27",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-safety-and-operations-interface-policy-5b7c51a2c46722f36ee41b0b",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2271
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:5b7c51a2c46722f36ee41b0b22b8f64f767dccec288207f452de8ca66e2b0fc4"
+      }
+    },
+    {
+      "source": "safety-and-operations/mainnet-and-upgrades.md",
+      "title": "Mainnet and Upgrades",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-safety-and-operations-mainnet-and-upgrades-26232563e1bec8aa4e1098c9",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 10012
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-28",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-safety-and-operations-mainnet-and-upgrades-0e8340ef765b827b8c44fdf8",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 10100
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:0e8340ef765b827b8c44fdf8a071cf7ababa1b543e557c4445adda882f7fd600"
+      }
+    },
+    {
+      "source": "safety-and-operations/formal-verification.md",
+      "title": "Formal Verification",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-safety-and-operations-formal-verification-c230ddbe04f8fa7b48b2aa2c",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 8487
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-29",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-safety-and-operations-formal-verification-6b76dcbc0a928d24112fc693",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 8575
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:6b76dcbc0a928d24112fc693b335d23c3d8a77430a6d57cc069d5ff30d915eca"
+      }
+    },
+    {
+      "source": "safety-and-operations/faq.md",
+      "title": "FAQ",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-safety-and-operations-faq-e4893ebed0d6450e86e88cb3",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 5630
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-30",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-safety-and-operations-faq-c938861c09965017cb9a59ee",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 5718
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:c938861c09965017cb9a59ee32e6936bfd1ebb766258ce5d8b2e0940a68b4895"
+      }
+    }
+  ],
+  "transactions": [
+    {
+      "label": "publish getting-started/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish getting-started/introduction.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish getting-started/quick-start.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish getting-started/why-sui-and-walrus.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish getting-started/research-and-presentation-materials.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish protocol/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish protocol/artifact-model.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish protocol/content-and-versioning.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish protocol/comments-and-likes.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish protocol/manifests-and-canonical-state.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish developers/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish developers/typescript-sdk.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish developers/python-sdk.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish developers/rust-sdk.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish developers/static-frontend-integration.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish developers/indexer-integration.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish copilot/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish copilot/native-prompts.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish copilot/agent-memory.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish copilot/memory-privacy-and-access.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish governance-and-economics/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish governance-and-economics/governance.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish governance-and-economics/pprf-utility.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish governance-and-economics/fees-and-sustainability.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish safety-and-operations/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish safety-and-operations/user-safety.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish safety-and-operations/interface-policy.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish safety-and-operations/mainnet-and-upgrades.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish safety-and-operations/formal-verification.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish safety-and-operations/faq.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version getting-started/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version getting-started/introduction.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version getting-started/quick-start.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version getting-started/why-sui-and-walrus.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version getting-started/research-and-presentation-materials.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version protocol/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version protocol/artifact-model.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version protocol/content-and-versioning.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version protocol/comments-and-likes.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version protocol/manifests-and-canonical-state.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version developers/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version developers/typescript-sdk.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version developers/python-sdk.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version developers/rust-sdk.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version developers/static-frontend-integration.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version developers/indexer-integration.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version copilot/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version copilot/native-prompts.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version copilot/agent-memory.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version copilot/memory-privacy-and-access.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version governance-and-economics/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version governance-and-economics/governance.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version governance-and-economics/pprf-utility.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version governance-and-economics/fees-and-sustainability.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version safety-and-operations/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version safety-and-operations/user-safety.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version safety-and-operations/interface-policy.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version safety-and-operations/mainnet-and-upgrades.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version safety-and-operations/formal-verification.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version safety-and-operations/faq.md",
+      "digest": null,
+      "dryRunBytes": 0
+    }
+  ]
+}

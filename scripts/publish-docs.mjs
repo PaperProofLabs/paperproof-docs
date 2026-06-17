@@ -77,6 +77,7 @@ function parseArgs(argv) {
     run: set.has('--run'),
     help: set.has('--help') || set.has('-h'),
     skipWalrus: set.has('--skip-walrus'),
+    repairVersions: set.has('--repair-versions'),
     account: Number(argValue('--account', '4')),
     batchSize: Math.max(1, Number(argValue('--batch-size', '1'))),
   };
@@ -347,11 +348,18 @@ async function publishMappedVersions({ docs, args, account, sui, walrusClient, t
   const { ARTIFACT_TYPES, extractAddVersionResult } = await loadDeps();
   for (const doc of docs) {
     console.log(`[version] ${doc.source}`);
-    if (doc.target.currentVersionId) {
+    if (doc.target.currentVersionId && !args.repairVersions) {
       console.log(`[version] reuse existing mapped version ${doc.source}: ${doc.target.currentVersionId}`);
       continue;
     }
-    const published = report.docs.find((item) => item.source === doc.source)?.published;
+    const published = report.docs.find((item) => item.source === doc.source)?.published ?? {
+      seriesId: doc.target.seriesId,
+      versionId: doc.target.initialVersionId ?? doc.target.currentVersionId,
+      commentsTreeId: doc.target.commentsTreeId,
+      likesBookId: doc.target.likesBookId,
+      artifactCode: doc.target.artifactCode,
+      artifactType: ARTIFACT_TYPES.genericFile,
+    };
     assert(published, `Missing initial publication for ${doc.source}.`);
     const before = await readDoc(doc);
     const mappedText = applyMappingToMarkdown(before.text, doc, published);

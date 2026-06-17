@@ -1,0 +1,446 @@
+{
+  "runId": "paperproof-forums-2026-06-17T14-40-05-904Z",
+  "run": false,
+  "accountIndex": 4,
+  "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+  "sdkVersion": "0.2.6",
+  "deployment": {
+    "name": "paperproof-mainnet-2026-05-13",
+    "network": "mainnet",
+    "rpcUrl": "https://fullnode.mainnet.sui.io:443",
+    "protocolVersion": "publishing-v3-governance-v2-comments-v2",
+    "packages": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da",
+      "governanceOriginal": "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+      "governance": "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e",
+      "comments": "0xaef346fc40bf20af62f4bbbc1608ba2272e80e4ba3d716634026baa589e9aeba",
+      "publishing": "0xc9a75e4514db2a37df6f95b4e2b329c065ac6089953bd2c1c0a0c389835bd3d8",
+      "promptRegistry": "0x10b9c6e90a896dc3244d047e32724d80de0dc697b5ea12c5fdd8925131ed4c59",
+      "memoryRegistry": "0x816684a152fdee1e7f15f65d18873ed7ee48540e8bd4205b3197a5ec0feda2c6"
+    },
+    "objects": {
+      "root": "0x7dc6c78b276825499a2204b060394e80b81196eb1f77d2036b503a2cca15dd78",
+      "typeRegistry": "0x966ffa24d0a96b34267b62c628f39c830afc9de25438b6502835fa8a3815d6b5",
+      "feeManager": "0x7bb8360ea1fa50f923628c929b8726b00eb8968c6a678acde71f97ae146e9249",
+      "governanceVault": "0x0df35aa53ef37f8ca8f6a6280d743effa6e0bfc613c5c6c0a78318ad4a38f875",
+      "governanceConfig": "0x7ed018db6b2cd7c32692a1c33543fb90d9c36add1226f93cbeb2a8fb10955dfa",
+      "promptRegistry": "0x14ec45eb83bb1b0eb22c7e885c7c71ea05b1e22dd05e3e1107dcef528600b0da",
+      "memoryRegistry": "0x9a5beeb6610b33c06771c4152c039314784437e802e200afd2ce80fb88bdf9e2",
+      "clock": "0x6"
+    },
+    "coinTypes": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da::pprf::PPRF",
+      "wal": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+      "sui": "0x2::sui::SUI"
+    }
+  },
+  "topics": [
+    {
+      "id": "artifact-identity-and-official-bindings",
+      "sectionId": "protocol-discussion",
+      "source": "protocol-discussion/artifact-identity-and-official-bindings.md",
+      "title": "Artifact Identity and Official Bindings in PaperProof",
+      "upload": {
+        "blobId": "local-forum-protocol-discussion-artifact-identity-and-official-bindings-b117914e78c3ac9c51c99657",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1532
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-FORUM-1",
+        "artifactType": 2
+      },
+      "contentHash": "sha256:b117914e78c3ac9c51c99657624b099eb339fe0fdbd8b7695e4c0bd8b49b8fc9"
+    },
+    {
+      "id": "sdk-indexer-and-static-app-integration",
+      "sectionId": "developer-support",
+      "source": "developer-support/sdk-indexer-and-static-app-integration.md",
+      "title": "SDK, Indexer, and Static App Integration",
+      "upload": {
+        "blobId": "local-forum-developer-support-sdk-indexer-and-static-app-integration-034990a2e9b61b923c49affc",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1420
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-FORUM-2",
+        "artifactType": 2
+      },
+      "contentHash": "sha256:034990a2e9b61b923c49affc37c0f7329ad76ef59fa61ef9ec4a2066ed920a9e"
+    },
+    {
+      "id": "lightweight-governance-and-official-operations",
+      "sectionId": "governance",
+      "source": "governance/lightweight-governance-and-official-operations.md",
+      "title": "Lightweight Governance and Official Operations",
+      "upload": {
+        "blobId": "local-forum-governance-lightweight-governance-and-official-operations-f6b96de18223742c69b4ebc1",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1522
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-FORUM-3",
+        "artifactType": 2
+      },
+      "contentHash": "sha256:f6b96de18223742c69b4ebc15e84b8e4be02b606c16b1ad7050b3ac789d2f7ef"
+    },
+    {
+      "id": "what-should-paperproof-build-next",
+      "sectionId": "ideas-proposals",
+      "source": "ideas-proposals/what-should-paperproof-build-next.md",
+      "title": "What Should PaperProof Build Next?",
+      "upload": {
+        "blobId": "local-forum-ideas-proposals-what-should-paperproof-build-next-dcfe3c449f3c11afa791b865",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1572
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-FORUM-4",
+        "artifactType": 2
+      },
+      "contentHash": "sha256:dcfe3c449f3c11afa791b86591f0092c74933adbe6274f23ccf5183399db0348"
+    },
+    {
+      "id": "share-paperproof-artifacts-and-demos",
+      "sectionId": "showcase",
+      "source": "showcase/share-paperproof-artifacts-and-demos.md",
+      "title": "Share PaperProof Artifacts and Demos",
+      "upload": {
+        "blobId": "local-forum-showcase-share-paperproof-artifacts-and-demos-838db4f78f005833f4403109",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1350
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-FORUM-5",
+        "artifactType": 2
+      },
+      "contentHash": "sha256:838db4f78f005833f440310960a18b00831f7488d994fafd5ba604e940a958ca"
+    },
+    {
+      "id": "welcome-to-the-paperproof-community-forum",
+      "sectionId": "general",
+      "source": "general/welcome-to-the-paperproof-community-forum.md",
+      "title": "Welcome to the PaperProof Community Forum",
+      "upload": {
+        "blobId": "local-forum-general-welcome-to-the-paperproof-community-forum-e3bb7bb9dcc212b136ba19d6",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1302
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-FORUM-6",
+        "artifactType": 2
+      },
+      "contentHash": "sha256:e3bb7bb9dcc212b136ba19d66eac8cd7804ef65ff326552fa057ad1836cb95da"
+    }
+  ],
+  "transactions": [
+    {
+      "label": "publish protocol-discussion/artifact-identity-and-official-bindings.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish developer-support/sdk-indexer-and-static-app-integration.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish governance/lightweight-governance-and-official-operations.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish ideas-proposals/what-should-paperproof-build-next.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish showcase/share-paperproof-artifacts-and-demos.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish general/welcome-to-the-paperproof-community-forum.md",
+      "digest": null,
+      "dryRunBytes": 0
+    }
+  ],
+  "manifest": {
+    "schemaVersion": 1,
+    "title": "PaperProof Forum",
+    "description": "Official starter forum topics published as PaperProof blog_post artifacts with open comment trees.",
+    "sections": [
+      {
+        "id": "protocol-discussion",
+        "title": "Protocol Discussion",
+        "description": "Artifact identity, versions, comments, likes, and protocol boundaries.",
+        "accent": "green",
+        "topics": [
+          {
+            "id": "artifact-identity-and-official-bindings",
+            "title": "Artifact Identity and Official Bindings in PaperProof",
+            "summary": "Discuss durable artifact identity, versioning, official interaction bindings, and canonical state validation.",
+            "author": "PaperProof Labs",
+            "category": "Protocol Discussion",
+            "date": "2026-06-17",
+            "tags": [
+              "protocol",
+              "artifacts",
+              "versions",
+              "comments",
+              "indexer"
+            ],
+            "language": "en",
+            "source": "protocol-discussion/artifact-identity-and-official-bindings.md",
+            "sectionId": "protocol-discussion",
+            "sectionTitle": "Protocol Discussion",
+            "sectionOrder": 1,
+            "order": 1,
+            "artifactCode": "DRY-RUN-FORUM-1",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:b117914e78c3ac9c51c99657624b099eb339fe0fdbd8b7695e4c0bd8b49b8fc9",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "developer-support",
+        "title": "Developer Support",
+        "description": "SDK integration, indexer work, static sites, and wallet signing questions.",
+        "accent": "blue",
+        "topics": [
+          {
+            "id": "sdk-indexer-and-static-app-integration",
+            "title": "SDK, Indexer, and Static App Integration",
+            "summary": "Ask integration questions about SDKs, indexers, static frontends, wallet signing, Sui reads, and Walrus content.",
+            "author": "PaperProof Labs",
+            "category": "Developer Support",
+            "date": "2026-06-17",
+            "tags": [
+              "sdk",
+              "indexer",
+              "frontend",
+              "wallet",
+              "walrus"
+            ],
+            "language": "en",
+            "source": "developer-support/sdk-indexer-and-static-app-integration.md",
+            "sectionId": "developer-support",
+            "sectionTitle": "Developer Support",
+            "sectionOrder": 1,
+            "order": 2,
+            "artifactCode": "DRY-RUN-FORUM-2",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:034990a2e9b61b923c49affc37c0f7329ad76ef59fa61ef9ec4a2066ed920a9e",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "Governance",
+        "description": "Proposal discussion before formal votes are created.",
+        "accent": "gold",
+        "topics": [
+          {
+            "id": "lightweight-governance-and-official-operations",
+            "title": "Lightweight Governance and Official Operations",
+            "summary": "Discuss which protocol and official-interface changes need formal votes, operator actions, or documented policy updates.",
+            "author": "PaperProof Labs",
+            "category": "Governance",
+            "date": "2026-06-17",
+            "tags": [
+              "governance",
+              "operations",
+              "prompts",
+              "memory",
+              "fees"
+            ],
+            "language": "en",
+            "source": "governance/lightweight-governance-and-official-operations.md",
+            "sectionId": "governance",
+            "sectionTitle": "Governance",
+            "sectionOrder": 1,
+            "order": 3,
+            "artifactCode": "DRY-RUN-FORUM-3",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:f6b96de18223742c69b4ebc15e84b8e4be02b606c16b1ad7050b3ac789d2f7ef",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "ideas-proposals",
+        "title": "Ideas & Proposals",
+        "description": "Feature ideas, product directions, incentives, and ecosystem experiments.",
+        "accent": "red",
+        "topics": [
+          {
+            "id": "what-should-paperproof-build-next",
+            "title": "What Should PaperProof Build Next?",
+            "summary": "Collect product ideas, protocol extensions, demo apps, ecosystem experiments, and next-step proposals.",
+            "author": "PaperProof Labs",
+            "category": "Ideas & Proposals",
+            "date": "2026-06-17",
+            "tags": [
+              "roadmap",
+              "ideas",
+              "ecosystem",
+              "agents",
+              "applications"
+            ],
+            "language": "en",
+            "source": "ideas-proposals/what-should-paperproof-build-next.md",
+            "sectionId": "ideas-proposals",
+            "sectionTitle": "Ideas & Proposals",
+            "sectionOrder": 1,
+            "order": 4,
+            "artifactCode": "DRY-RUN-FORUM-4",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:dcfe3c449f3c11afa791b86591f0092c74933adbe6274f23ccf5183399db0348",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "showcase",
+        "title": "Showcase",
+        "description": "Artifacts, demos, papers, datasets, software releases, and public builds.",
+        "accent": "blue",
+        "topics": [
+          {
+            "id": "share-paperproof-artifacts-and-demos",
+            "title": "Share PaperProof Artifacts and Demos",
+            "summary": "A place to share artifacts, demos, papers, datasets, software releases, public builds, and experimental integrations.",
+            "author": "PaperProof Labs",
+            "category": "Showcase",
+            "date": "2026-06-17",
+            "tags": [
+              "showcase",
+              "demos",
+              "artifacts",
+              "software",
+              "research"
+            ],
+            "language": "en",
+            "source": "showcase/share-paperproof-artifacts-and-demos.md",
+            "sectionId": "showcase",
+            "sectionTitle": "Showcase",
+            "sectionOrder": 1,
+            "order": 5,
+            "artifactCode": "DRY-RUN-FORUM-5",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:838db4f78f005833f440310960a18b00831f7488d994fafd5ba604e940a958ca",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "general",
+        "title": "General",
+        "description": "Open community conversation around PaperProof and durable public records.",
+        "accent": "green",
+        "topics": [
+          {
+            "id": "welcome-to-the-paperproof-community-forum",
+            "title": "Welcome to the PaperProof Community Forum",
+            "summary": "General discussion guidelines for the PaperProof community forum and early protocol-backed topics.",
+            "author": "PaperProof Labs",
+            "category": "General",
+            "date": "2026-06-17",
+            "tags": [
+              "community",
+              "forum",
+              "welcome",
+              "paperproof"
+            ],
+            "language": "en",
+            "source": "general/welcome-to-the-paperproof-community-forum.md",
+            "sectionId": "general",
+            "sectionTitle": "General",
+            "sectionOrder": 1,
+            "order": 6,
+            "artifactCode": "DRY-RUN-FORUM-6",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:e3bb7bb9dcc212b136ba19d66eac8cd7804ef65ff326552fa057ad1836cb95da",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      }
+    ],
+    "publishedAt": "2026-06-17T14:40:06.005Z",
+    "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+    "sdkVersion": "0.2.6"
+  }
+}
