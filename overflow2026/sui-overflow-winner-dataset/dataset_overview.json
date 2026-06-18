@@ -1,0 +1,17 @@
+{
+  "dataset_title": "Sui Overflow Historical Winner Dataset, 2024-2025",
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-06-18T14:31:36.506129+00:00",
+  "record_count": 68,
+  "years": [
+    2024,
+    2025
+  ],
+  "track_count": 17,
+  "source": "Local PaperProof benchmark document derived from official Sui Foundation winner announcements and local Sui Overflow 2026 positioning notes.",
+  "known_limitations": [
+    "The dataset is derived from a curated benchmark document, not a direct scrape of official websites.",
+    "2024 Multichain, Randomness, and zkLogin placements are represented from the detailed profile order in the source document.",
+    "Project links are intentionally not included when link availability was not consistently verified."
+  ]
+}

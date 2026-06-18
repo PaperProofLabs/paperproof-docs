@@ -1,0 +1,21 @@
+{
+  "primary_public_sources": [
+    {
+      "name": "Sui Foundation: Announcing the Sui Overflow Hackathon Winners, 2024",
+      "url": "https://blog.sui.io/2024-sui-overflow-hackathon-winners/"
+    },
+    {
+      "name": "Sui Foundation: Announcing the Sui Overflow 2025 Hackathon Winners",
+      "url": "https://blog.sui.io/2025-sui-overflow-hackathon-winners/"
+    },
+    {
+      "name": "Sui Overflow 2026 official site",
+      "url": "https://overflow.sui.io/"
+    }
+  ],
+  "local_sources": [
+    "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "paperproof-docs/overflow2026/Walrus Track Problem Statement.md",
+    "paperproof-docs/overflow2026/Agentic Web Problem Statement.md"
+  ]
+}

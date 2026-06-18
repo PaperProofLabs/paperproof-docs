@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sui Overflow Historical Winner Dataset Record",
+  "type": "object",
+  "required": [
+    "year",
+    "track",
+    "placement",
+    "placement_rank",
+    "project",
+    "category",
+    "winning_signal",
+    "record_source"
+  ],
+  "properties": {
+    "year": {
+      "type": "integer"
+    },
+    "track": {
+      "type": "string"
+    },
+    "placement": {
+      "type": "string"
+    },
+    "placement_rank": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "project": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "winning_signal": {
+      "type": "string"
+    },
+    "profile_note": {
+      "type": "string"
+    },
+    "paperproof_relevance": {
+      "type": "string"
+    },
+    "sui_ecosystem_primitives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "record_source": {
+      "type": "string",
+      "enum": [
+        "summary_table",
+        "detailed_profile_order"
+      ]
+    },
+    "source_document": {
+      "type": "string"
+    },
+    "source_document_path": {
+      "type": "string"
+    }
+  }
+}

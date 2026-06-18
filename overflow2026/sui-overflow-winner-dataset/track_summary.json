@@ -1,0 +1,291 @@
+[
+  {
+    "year": 2024,
+    "track": "Advanced Move Features",
+    "winner_count": 4,
+    "projects": [
+      "Promise",
+      "Su Protocol",
+      "Sui Metadata",
+      "Sui Simulator"
+    ],
+    "top_detected_primitives": [
+      "ZK",
+      "Move",
+      "Sui"
+    ]
+  },
+  {
+    "year": 2024,
+    "track": "Consumer and Mobile",
+    "winner_count": 4,
+    "projects": [
+      "Pandora Finance",
+      "stream.gift",
+      "AdToken",
+      "Wave Wallet"
+    ],
+    "top_detected_primitives": [
+      "Sui",
+      "AI",
+      "Sui objects",
+      "Wallet",
+      "Telegram"
+    ]
+  },
+  {
+    "year": 2024,
+    "track": "DeFi",
+    "winner_count": 4,
+    "projects": [
+      "Hop Aggregator",
+      "Aeon",
+      "Hakifi",
+      "Shio"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "PTB",
+      "Sui"
+    ]
+  },
+  {
+    "year": 2024,
+    "track": "Gaming",
+    "winner_count": 4,
+    "projects": [
+      "AresRPG",
+      "Wagmi Kitchen",
+      "Infinite Seas",
+      "Shall We Move"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "Sui",
+      "Sui randomness"
+    ]
+  },
+  {
+    "year": 2024,
+    "track": "Infrastructure and Tools",
+    "winner_count": 4,
+    "projects": [
+      "Kraken",
+      "SuiGPT",
+      "BitsLab IDE",
+      "SuiPass"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "LLM",
+      "Sui",
+      "Move"
+    ]
+  },
+  {
+    "year": 2024,
+    "track": "Multichain",
+    "winner_count": 4,
+    "projects": [
+      "Sui NTT",
+      "Wormhole Kit",
+      "SuiWalletBot",
+      "Multichain Meme Creator"
+    ],
+    "top_detected_primitives": [
+      "Wormhole",
+      "AI",
+      "Sui",
+      "Wallet",
+      "Telegram",
+      "Walrus"
+    ]
+  },
+  {
+    "year": 2024,
+    "track": "Randomness",
+    "winner_count": 4,
+    "projects": [
+      "Sui dApp Starter",
+      "BioWallet",
+      "SuiAutochess",
+      "HexCapsule"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "Sui randomness",
+      "Sui",
+      "Wallet",
+      "Move"
+    ]
+  },
+  {
+    "year": 2024,
+    "track": "zkLogin",
+    "winner_count": 4,
+    "projects": [
+      "PinataBot",
+      "LiquidLink",
+      "Webauth on Sui",
+      "Aalps Protocol"
+    ],
+    "top_detected_primitives": [
+      "zkLogin",
+      "ZK",
+      "Sui",
+      "Wallet",
+      "Telegram",
+      "Walrus"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "AI",
+    "winner_count": 4,
+    "projects": [
+      "Suithetic",
+      "OpenGraph",
+      "RaidenX",
+      "Hyvve"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "Sui",
+      "LLM",
+      "Walrus",
+      "PTB"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "Cryptography",
+    "winner_count": 4,
+    "projects": [
+      "ZeroLeaks",
+      "Shroud",
+      "Sui Sentinel",
+      "Sui Shadow"
+    ],
+    "top_detected_primitives": [
+      "ZK",
+      "Seal",
+      "Walrus",
+      "AI",
+      "zkLogin"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "DeFi",
+    "winner_count": 4,
+    "projects": [
+      "Magma Finance",
+      "Pismo Protocol",
+      "MizuPay",
+      "Kamo Finance"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "Move",
+      "Sui objects"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "Degen",
+    "winner_count": 4,
+    "projects": [
+      "MoonBags",
+      "Kensei",
+      "MFC.CLUB",
+      "Objection! AI"
+    ],
+    "top_detected_primitives": [
+      "Sui",
+      "AI",
+      "Wormhole"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "Entertainment and Culture",
+    "winner_count": 4,
+    "projects": [
+      "GiveRep",
+      "SWION",
+      "Exclusuive",
+      "Numeron"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "Sui"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "Explorations",
+    "winner_count": 4,
+    "projects": [
+      "Suibotics",
+      "Skepsis",
+      "PactDa",
+      "PredictPlay"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "Sui",
+      "zkLogin",
+      "ZK",
+      "Sui objects"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "Infra and Tooling",
+    "winner_count": 4,
+    "projects": [
+      "SuiSQL",
+      "Sui Provenance Suite",
+      "Suipulse",
+      "Noodles.FI"
+    ],
+    "top_detected_primitives": [
+      "Sui",
+      "AI",
+      "Walrus"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "Payments and Wallets",
+    "winner_count": 4,
+    "projects": [
+      "PIVY",
+      "Sui Multisig",
+      "SeaWallet",
+      "Coindrip"
+    ],
+    "top_detected_primitives": [
+      "AI",
+      "Sui objects",
+      "Wallet"
+    ]
+  },
+  {
+    "year": 2025,
+    "track": "Programmable Storage",
+    "winner_count": 4,
+    "projects": [
+      "SuiSign",
+      "WalGraph",
+      "SuiMail",
+      "Walpress"
+    ],
+    "top_detected_primitives": [
+      "Walrus",
+      "AI",
+      "Sui",
+      "Wallet"
+    ]
+  }
+]

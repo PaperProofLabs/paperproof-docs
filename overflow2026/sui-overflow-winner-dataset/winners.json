@@ -1,0 +1,1197 @@
+[
+  {
+    "year": 2024,
+    "track": "Advanced Move Features",
+    "placement": "1st",
+    "project": "Promise",
+    "category": "ZK quiz/ad engagement",
+    "winning_signal": "Uses ZK to make interaction verifiable.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A ZK quiz and ad-engagement platform. Its strength was making engagement verifiable rather than merely interactive. PaperProof can borrow the idea that user interactions around knowledge should produce verifiable records.",
+    "paperproof_relevance": "can borrow the idea that user interactions around knowledge should produce verifiable records.",
+    "sui_ecosystem_primitives": [
+      "ZK"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Advanced Move Features",
+    "placement": "2nd",
+    "project": "Su Protocol",
+    "category": "DeFi primitive",
+    "winning_signal": "Capital-efficient protocol design.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A capital-efficient DeFi design that shifts volatility from risk-averse users to risk-seeking users rather than relying only on over-collateralization. Its strength was a novel protocol mechanism. PaperProof's protocol mechanism is artifact identity plus version lineage plus governed agent context.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Advanced Move Features",
+    "placement": "3rd",
+    "project": "Sui Metadata",
+    "category": "Move library",
+    "winning_signal": "Generic metadata storage/retrieval primitive.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A Move library for storing, retrieving, and managing primitive data chunks without depending on predefined structs. Its strength was being a reusable primitive. PaperProof should make its artifact and prompt/memory registry model feel reusable by other apps.",
+    "paperproof_relevance": "should make its artifact and prompt/memory registry model feel reusable by other apps.",
+    "sui_ecosystem_primitives": [
+      "Move"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Advanced Move Features",
+    "placement": "3rd",
+    "project": "Sui Simulator",
+    "category": "Dev tool",
+    "winning_signal": "Read/call Sui contracts without CLI.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A developer tool for reading and calling Sui contracts without the CLI. Its strength was lowering developer friction. PaperProof can borrow this by making artifact and registry inspection possible from the app, not only from a CLI.",
+    "paperproof_relevance": "can borrow this by making artifact and registry inspection possible from the app, not only from a CLI.",
+    "sui_ecosystem_primitives": [
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Consumer and Mobile",
+    "placement": "1st",
+    "project": "Pandora Finance",
+    "category": "Prediction market",
+    "winning_signal": "Simple consumer-facing market with voting incentives.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A decentralized prediction-market product where users vote on future outcomes. Its strength was a clear consumer loop: choose an event, express a view, and get incentivized for participation. PaperProof can borrow the clarity of this loop: users should immediately understand what they can publish, verify, or discuss.",
+    "paperproof_relevance": "can borrow the clarity of this loop: users should immediately understand what they can publish, verify, or discuss.",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Consumer and Mobile",
+    "placement": "2nd",
+    "project": "stream.gift",
+    "category": "Creator payments",
+    "winning_signal": "Clear Web2 pain point: Twitch donations with fewer middlemen.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A Twitch-focused donation product using Sui as a payment layer to reduce middleman costs. Its strength was distribution through an existing creator platform. PaperProof can learn from this by connecting artifacts to external sharing channels such as X, without making the social layer the protocol core.",
+    "paperproof_relevance": "can learn from this by connecting artifacts to external sharing channels such as X, without making the social layer the protocol core.",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Consumer and Mobile",
+    "placement": "3rd",
+    "project": "AdToken",
+    "category": "Advertising",
+    "winning_signal": "Uses Sui object model for campaign state and fast settlement.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A decentralized advertising solution for advertisers and affiliates, using Sui's object model for campaign management and fast confirmations. Its strength was mapping a real business workflow onto Sui objects. PaperProof has a similar opportunity with artifact objects, version objects, comments, prompts, and memory entries.",
+    "paperproof_relevance": "has a similar opportunity with artifact objects, version objects, comments, prompts, and memory entries.",
+    "sui_ecosystem_primitives": [
+      "Sui objects",
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Consumer and Mobile",
+    "placement": "3rd",
+    "project": "Wave Wallet",
+    "category": "Telegram wallet",
+    "winning_signal": "Distribution-first wallet UX inside an existing social channel.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A Telegram-based Sui wallet with investment tools. Its strength was putting wallet functionality inside a familiar user environment. PaperProof should borrow the lesson of hiding complexity: users should not need to understand registry internals before using Copilot memory or artifact verification.",
+    "paperproof_relevance": "should borrow the lesson of hiding complexity: users should not need to understand registry internals before using Copilot memory or artifact verification.",
+    "sui_ecosystem_primitives": [
+      "Wallet",
+      "Telegram",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "DeFi",
+    "placement": "1st",
+    "project": "Hop Aggregator",
+    "category": "Swap aggregation",
+    "winning_signal": "Performance and better routing are direct user value.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A swap aggregator focused on better routes and faster trade execution. Its strength was immediate measurable value. PaperProof's equivalent measurable value should be \"can I verify this artifact and its latest version quickly?\"",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "DeFi",
+    "placement": "2nd",
+    "project": "Aeon",
+    "category": "Asset management",
+    "winning_signal": "Custody and execution as a platform.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A custody-led digital asset service platform that integrates execution and asset management. Its strength was packaging multiple financial operations into one coherent interface. PaperProof can borrow this packaging discipline for artifact lifecycle operations.",
+    "paperproof_relevance": "can borrow this packaging discipline for artifact lifecycle operations.",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "DeFi",
+    "placement": "3rd",
+    "project": "Hakifi",
+    "category": "Hedging/insurance",
+    "winning_signal": "Risk mitigation with guided recommendations.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A decentralized hedging and insurance companion that helps users select assets and receive coverage recommendations. Its strength was risk explanation for users. PaperProof can apply this to Copilot: explain artifact state, PTB risk, and memory/privacy boundaries in plain language.",
+    "paperproof_relevance": "can apply this to Copilot: explain artifact state, PTB risk, and memory/privacy boundaries in plain language.",
+    "sui_ecosystem_primitives": [
+      "PTB",
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "DeFi",
+    "placement": "3rd",
+    "project": "Shio",
+    "category": "MEV auctions",
+    "winning_signal": "Sui-native market-structure primitive.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "An MEV auction platform for transaction ordering on Sui. Its strength was building market-structure infrastructure that is meaningful specifically on a high-performance chain. PaperProof's analogous infrastructure claim is verifiable artifact and agent-context infrastructure.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Gaming",
+    "placement": "1st",
+    "project": "AresRPG",
+    "category": "3D MMORPG",
+    "winning_signal": "Ambitious Web2-quality game using Sui as the sole database.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A 3D open-world MMORPG using Sui as its sole database while onboarding Web2 players through a familiar game experience. Its strength was ambition plus a visible product. PaperProof should not hide behind protocol depth; it needs a visible artifact experience.",
+    "paperproof_relevance": "should not hide behind protocol depth; it needs a visible artifact experience.",
+    "sui_ecosystem_primitives": [
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Gaming",
+    "placement": "2nd",
+    "project": "Wagmi Kitchen",
+    "category": "Onchain board game",
+    "winning_signal": "Fully onchain game mechanics with wagering.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A fully onchain cooking-themed board game where players wager while collecting ingredients and serving meals. Its strength was a complete gameplay loop. PaperProof can borrow the lesson that every demo should have a beginning, middle, and end.",
+    "paperproof_relevance": "can borrow the lesson that every demo should have a beginning, middle, and end.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Gaming",
+    "placement": "3rd",
+    "project": "Infinite Seas",
+    "category": "MMO",
+    "winning_signal": "Player trade, battle, diplomacy, and microtransactions.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "An MMO with trading, battle, diplomacy, microtransactions, and player-to-player transactions. Its strength was a world with multiple interactions. PaperProof's world is smaller, but it can still show multiple artifact interactions: publish, version, comment, verify, and ask Copilot.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Gaming",
+    "placement": "3rd",
+    "project": "Shall We Move",
+    "category": "Card games",
+    "winning_signal": "Onchain fairness through randomness/encryption.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A poker-style card-game implementation with onchain dealing, shuffling, hiding, encryption, and randomness for fairness. Its strength was a clear fairness reason for going onchain. PaperProof's equivalent is provenance and version fairness: users should know exactly which artifact version they are seeing.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "Sui randomness",
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Infrastructure and Tools",
+    "placement": "1st",
+    "project": "Kraken",
+    "category": "Multisig ecosystem",
+    "winning_signal": "Native and smart-contract multisig for teams and individuals.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A multisig ecosystem with native and smart-contract multisig mechanisms for teams and individuals. Its strength was identity, control, and workflow coordination. PaperProof can borrow this for governance-aware registries and operator-controlled official prompt/memory availability.",
+    "paperproof_relevance": "can borrow this for governance-aware registries and operator-controlled official prompt/memory availability.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Infrastructure and Tools",
+    "placement": "2nd",
+    "project": "SuiGPT",
+    "category": "Contract AI tooling",
+    "winning_signal": "LLM-assisted decompilation, explanation, and contract support.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "An LLM tool for decompiling, beautifying, and explaining Sui contracts, plus chatbot/community support. Its strength was AI as a developer assistant. PaperProof's Copilot should be positioned as an artifact and protocol-state assistant, not just a generic chat window.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "LLM",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Infrastructure and Tools",
+    "placement": "3rd",
+    "project": "BitsLab IDE",
+    "category": "Move IDE",
+    "winning_signal": "Out-of-box online Move development environment.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A browser-based Move development environment with tutorials and plugins. Its strength was reducing setup friction. PaperProof's SDK and static app should make artifact integration similarly low-friction for developers.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "Move"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Infrastructure and Tools",
+    "placement": "3rd",
+    "project": "SuiPass",
+    "category": "Credentials",
+    "winning_signal": "Onchain passport and interoperable credential layer.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "An onchain passport combining credentials and security services for interoperable access. Its strength was standardized identity and credential data. PaperProof can borrow the registry pattern: official artifact, prompt, and memory capabilities should be discoverable by other tools.",
+    "paperproof_relevance": "can borrow the registry pattern: official artifact, prompt, and memory capabilities should be discoverable by other tools.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Multichain",
+    "placement": "1st",
+    "project": "Sui NTT",
+    "category": "Wormhole NTT implementation",
+    "winning_signal": "Ecosystem integration for fungible and non-fungible cross-chain assets.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 1,
+    "profile_note": "The Sui implementation of Wormhole Native Token Transfer for fungible and non-fungible cross-chain assets. Its strength was ecosystem integration. PaperProof can borrow the importance of compatibility: artifacts and memory descriptors should be easy for other agents or apps to resolve.",
+    "paperproof_relevance": "can borrow the importance of compatibility: artifacts and memory descriptors should be easy for other agents or apps to resolve.",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "Wormhole",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Multichain",
+    "placement": "2nd",
+    "project": "Wormhole Kit",
+    "category": "React bridge integration",
+    "winning_signal": "Developer convenience for integrating Wormhole bridging into apps.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 2,
+    "profile_note": "A React library for integrating Wormhole bridging into apps. Its strength was developer convenience. PaperProof's TS SDK can play a similar role for verifiable artifact publishing and reading.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "Wormhole"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Multichain",
+    "placement": "3rd",
+    "project": "SuiWalletBot",
+    "category": "Telegram wallet bot",
+    "winning_signal": "Meets users in Telegram for wallet management, transfers, and DeFi positions.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 3,
+    "profile_note": "A Telegram bot for Sui wallet management, Wormhole transfers, and DeFi positions. Its strength was meeting users where they already are. PaperProof's X account and shareable artifact links can play a similar distribution role.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "Wallet",
+      "Telegram",
+      "Wormhole",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Multichain",
+    "placement": "4th",
+    "project": "Multichain Meme Creator",
+    "category": "No-code meme creation",
+    "winning_signal": "Removes developer requirements for meme creation and cross-chain swap flows.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 4,
+    "profile_note": "A no-code meme creation and cross-chain swap platform. Its strength was removing developer requirements. PaperProof should remove user requirements to know Walrus blob IDs, descriptor IDs, or package IDs.",
+    "paperproof_relevance": "should remove user requirements to know Walrus blob IDs, descriptor IDs, or package IDs.",
+    "sui_ecosystem_primitives": [
+      "Walrus",
+      "Move",
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Randomness",
+    "placement": "1st",
+    "project": "Sui dApp Starter",
+    "category": "Randomness scaffold",
+    "winning_signal": "Full-stack scaffold for projects using Sui randomness.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 1,
+    "profile_note": "A full-stack scaffold for projects using Sui randomness, with network and transaction tooling. Its strength was accelerating builders. PaperProof can borrow this by adding integration examples and an SDK quickstart.",
+    "paperproof_relevance": "can borrow this by adding integration examples and an SDK quickstart.",
+    "sui_ecosystem_primitives": [
+      "Sui randomness",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Randomness",
+    "placement": "2nd",
+    "project": "BioWallet",
+    "category": "Biometric wallet flow",
+    "winning_signal": "Onboarding and safety with biometrics, multisig, and WebAuthn.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 2,
+    "profile_note": "A hardware-wallet-like experience using biometrics, multisig, and WebAuthn to avoid seed-phrase friction. Its strength was onboarding and safety. PaperProof should aim for similarly low-friction memory and wallet flows.",
+    "paperproof_relevance": "should aim for similarly low-friction memory and wallet flows.",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "Wallet"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Randomness",
+    "placement": "3rd",
+    "project": "SuiAutochess",
+    "category": "Onchain auto-battle game",
+    "winning_signal": "Uses Sui native randomness for transparent and secure gameplay.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 3,
+    "profile_note": "An onchain auto-battle game using Sui native randomness for transparent, secure gameplay. Its strength was making randomness visible as a fairness feature. PaperProof should make content hashes, versions, and comments visible as trust features.",
+    "paperproof_relevance": "should make content hashes, versions, and comments visible as trust features.",
+    "sui_ecosystem_primitives": [
+      "Sui randomness",
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "Randomness",
+    "placement": "4th",
+    "project": "HexCapsule",
+    "category": "Timelock encryption",
+    "winning_signal": "Precise cryptographic delayed-decryption use case with Drand and Move-generated keys.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 4,
+    "profile_note": "A timelock-encryption project using Drand and Move-generated keys for delayed decryption. Its strength was a precise cryptographic use case. PaperProof's privacy claims should be similarly precise: public artifact facts, private memory body, public discovery metadata.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "Move",
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "zkLogin",
+    "placement": "1st",
+    "project": "PinataBot",
+    "category": "Telegram trading bot",
+    "winning_signal": "Web2-style onboarding for Sui asset trading through zkLogin.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 1,
+    "profile_note": "A Telegram trading bot using zkLogin for user-friendly Sui asset trading. Its strength was Web2-style onboarding. PaperProof can borrow this principle by keeping wallet and memory operations simple and staged.",
+    "paperproof_relevance": "can borrow this principle by keeping wallet and memory operations simple and staged.",
+    "sui_ecosystem_primitives": [
+      "zkLogin",
+      "ZK",
+      "Wallet",
+      "Telegram",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "zkLogin",
+    "placement": "2nd",
+    "project": "LiquidLink",
+    "category": "Social profile and growth layer",
+    "winning_signal": "Social growth mechanics with leaderboards and referral programs.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 2,
+    "profile_note": "A universal social profile for Sui, with leaderboards and referral programs. Its strength was social growth mechanics. PaperProof should use social sharing for artifact visibility, while keeping verifiable artifact identity as the core.",
+    "paperproof_relevance": "should use social sharing for artifact visibility, while keeping verifiable artifact identity as the core.",
+    "sui_ecosystem_primitives": [
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "zkLogin",
+    "placement": "3rd",
+    "project": "Webauth on Sui",
+    "category": "zkLogin and WebAuthn security demo",
+    "winning_signal": "Combines primitives for safer ephemeral-key login flow.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 3,
+    "profile_note": "A zkLogin and WebAuthn demonstration that improves ephemeral key security. Its strength was combining primitives for a safer login flow. PaperProof can borrow the \"composition of primitives\" story: Sui objects, Walrus, MemWal, prompts, and governance each do one part.",
+    "paperproof_relevance": "can borrow the \"composition of primitives\" story: Sui objects, Walrus, MemWal, prompts, and governance each do one part.",
+    "sui_ecosystem_primitives": [
+      "Walrus",
+      "zkLogin",
+      "ZK",
+      "Sui objects",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2024,
+    "track": "zkLogin",
+    "placement": "4th",
+    "project": "Aalps Protocol",
+    "category": "Commodity community data layer",
+    "winning_signal": "Combines domain data, zkLogin, supplier verification, and data-access mechanisms.",
+    "record_source": "detailed_profile_order",
+    "placement_rank": 4,
+    "profile_note": "A \"real-time Reddit for commodities\" that uses zkLogin and supplier verification/data-access mechanisms. Its strength was combining domain data with access control. PaperProof can borrow the idea of domain-specific artifact communities, especially for research, software releases, datasets, or reports.",
+    "paperproof_relevance": "can borrow the idea of domain-specific artifact communities, especially for research, software releases, datasets, or reports.",
+    "sui_ecosystem_primitives": [
+      "zkLogin",
+      "ZK",
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "AI",
+    "placement": "1st",
+    "project": "Suithetic",
+    "category": "Verifiable synthetic data",
+    "winning_signal": "LLM-generated structured datasets stored onchain with marketplace utility.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A platform for generating structured, verifiable synthetic data with LLMs, storing it onchain, and creating a dataset marketplace. Its strength was turning AI output into a structured, verifiable asset. PaperProof should frame Copilot prompts and artifact context the same way: as versioned knowledge assets, not ephemeral chat messages.",
+    "paperproof_relevance": "should frame Copilot prompts and artifact context the same way: as versioned knowledge assets, not ephemeral chat messages.",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "LLM"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "AI",
+    "placement": "2nd",
+    "project": "OpenGraph",
+    "category": "Decentralized ML data",
+    "winning_signal": "Users can build, verify, and deploy ML models on Sui and Walrus.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A decentralized data-management system for building, verifying, and deploying machine-learning models on Sui and Walrus. Its strength was combining model workflows with verifiable data infrastructure. PaperProof can borrow this agent/data infrastructure framing for artifacts and memory.",
+    "paperproof_relevance": "can borrow this agent/data infrastructure framing for artifacts and memory.",
+    "sui_ecosystem_primitives": [
+      "Walrus",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "AI",
+    "placement": "3rd",
+    "project": "RaidenX",
+    "category": "DeFAI data layer",
+    "winning_signal": "AI-enabled trading data layer and safer UX for Sui trading.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A DeFAI data layer for AI-enabled trading apps and agents, designed to lower UX barriers and improve safety. Its strength was AI plus safer action. PaperProof can use Copilot to make PTBs, artifact provenance, and governance state safer to understand.",
+    "paperproof_relevance": "can use Copilot to make PTBs, artifact provenance, and governance state safer to understand.",
+    "sui_ecosystem_primitives": [
+      "PTB",
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "AI",
+    "placement": "4th",
+    "project": "Hyvve",
+    "category": "AI data marketplace",
+    "winning_signal": "Incentivized dataset sourcing, verification, and monetization.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "A token-incentivized data marketplace for sourcing, verifying, and monetizing AI-ready datasets. Its strength was incentives around data quality. PaperProof can borrow the quality narrative: versioned artifacts and comments create verifiable knowledge quality signals.",
+    "paperproof_relevance": "can borrow the quality narrative: versioned artifacts and comments create verifiable knowledge quality signals.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Cryptography",
+    "placement": "1st",
+    "project": "ZeroLeaks",
+    "category": "Whistleblowing",
+    "winning_signal": "Anonymous, verifiable document sharing with ZK, Seal, and Walrus.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A ZK-powered whistleblowing platform for anonymous, verifiable document sharing with Seal, Walrus, and end-to-end encryption. Its strength was a high-stakes privacy use case. PaperProof should be careful and explicit about public versus private information, especially for Copilot memory.",
+    "paperproof_relevance": "should be careful and explicit about public versus private information, especially for Copilot memory.",
+    "sui_ecosystem_primitives": [
+      "Walrus",
+      "Seal",
+      "ZK"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Cryptography",
+    "placement": "2nd",
+    "project": "Shroud",
+    "category": "Confidential trading",
+    "winning_signal": "ZK confidential swaps with auditability.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A privacy-first trading protocol using ZK proofs for confidential swaps while preserving auditability and compliance tooling. Its strength was balancing privacy and accountability. PaperProof can borrow this balance for memory: private memory body, public capability metadata.",
+    "paperproof_relevance": "can borrow this balance for memory: private memory body, public capability metadata.",
+    "sui_ecosystem_primitives": [
+      "ZK"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Cryptography",
+    "placement": "3rd",
+    "project": "Sui Sentinel",
+    "category": "AI security game",
+    "winning_signal": "AI-vs-AI token defense with secure compute.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "An AI-versus-AI token-defense platform where defender agents protect tokens from prompt attacks and attackers attempt to break them. Its strength was turning AI security into a visible game. PaperProof can borrow the visibility lesson: prompt governance and memory safety should be demonstrable.",
+    "paperproof_relevance": "can borrow the visibility lesson: prompt governance and memory safety should be demonstrable.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Cryptography",
+    "placement": "4th",
+    "project": "Sui Shadow",
+    "category": "Confidential art",
+    "winning_signal": "Encrypted NFT reveal using Seal and zkLogin.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "A confidential art marketplace where artists encrypt and mint hidden NFT tiles using Seal and zkLogin for suspenseful reveals. Its strength was a tangible privacy experience. PaperProof could later use Seal to create tangible private review, embargo, or memory-access experiences.",
+    "paperproof_relevance": "could later use Seal to create tangible private review, embargo, or memory-access experiences.",
+    "sui_ecosystem_primitives": [
+      "Seal",
+      "zkLogin",
+      "ZK"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "DeFi",
+    "placement": "1st",
+    "project": "Magma Finance",
+    "category": "Yield abstraction",
+    "winning_signal": "Modular vaults with AI rebalancing and capital routing.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A programmable yield abstraction layer unifying staking, lending, and LP strategies with AI-powered rebalancing. Its strength was bundling many DeFi actions into a user-facing optimization layer. PaperProof can borrow the orchestration idea for artifact workflows.",
+    "paperproof_relevance": "can borrow the orchestration idea for artifact workflows.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "DeFi",
+    "placement": "2nd",
+    "project": "Pismo Protocol",
+    "category": "Perpetuals",
+    "winning_signal": "Unified account model and Move-native account objects.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A composable perpetuals exchange using a unified account model, shared LP base, and Move-native account objects. Its strength was composability through native objects. PaperProof's artifact series and memory entries should be presented as similarly composable objects.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "Move",
+      "Sui objects"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "DeFi",
+    "placement": "3rd",
+    "project": "MizuPay",
+    "category": "BTC-backed payments",
+    "winning_signal": "BTC collateral to stablecoin and payment flows.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A BTC-backed stablecoin and payment flow using LBTC collateral, staking, and USDC payouts. Its strength was connecting crypto collateral to real-world payment utility. PaperProof can borrow the \"bridge to real utility\" lesson: verifiable artifacts should map to real research, code, reports, and datasets.",
+    "paperproof_relevance": "can borrow the \"bridge to real utility\" lesson: verifiable artifacts should map to real research, code, reports, and datasets.",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "DeFi",
+    "placement": "4th",
+    "project": "Kamo Finance",
+    "category": "Yield trading",
+    "winning_signal": "Tokenized yield and time-decay AMM.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "A permissionless yield-trading protocol with tokenized yield, time-decay AMM, and ve(3,3)-style incentives. Its strength was a complete mechanism. PaperProof should make its mechanism complete too: content, version, comments, governance, Copilot context.",
+    "paperproof_relevance": "should make its mechanism complete too: content, version, comments, governance, Copilot context.",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Degen",
+    "placement": "1st",
+    "project": "MoonBags",
+    "category": "Token launchpad",
+    "winning_signal": "Fee-sharing launch mechanics that turn launch activity into user incentives.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A Sui token launchpad that shares fees during bonding curve and post-listing phases. Its strength was direct creator/trader incentives. PaperProof can borrow the immediacy of incentives, but apply it to credibility and discovery rather than speculation.",
+    "paperproof_relevance": "can borrow the immediacy of incentives, but apply it to credibility and discovery rather than speculation.",
+    "sui_ecosystem_primitives": [
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Degen",
+    "placement": "2nd",
+    "project": "Kensei",
+    "category": "Social/governance layer",
+    "winning_signal": "Community forums, bonding curves, staking, and AI agents for token communities.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A community layer with token-based forums, bonding curves, Wormhole-enabled staking, and AI agents for token communities. Its strength was combining community tools and AI agents. PaperProof can borrow the idea of an artifact community around each paper, report, dataset, or software release.",
+    "paperproof_relevance": "can borrow the idea of an artifact community around each paper, report, dataset, or software release.",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "Wormhole"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Degen",
+    "placement": "3rd",
+    "project": "MFC.CLUB",
+    "category": "Memecoin launchpad",
+    "winning_signal": "Gamified token creation and competition.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A gamified memecoin launchpad for token creation and competition. Its strength was reducing the token-creation flow into a game-like product. PaperProof can borrow the flow simplicity without adopting the degen tone.",
+    "paperproof_relevance": "can borrow the flow simplicity without adopting the degen tone.",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Degen",
+    "placement": "4th",
+    "project": "Objection! AI",
+    "category": "AI identity game",
+    "winning_signal": "Courtroom-style game where players stake on human-vs-AI identity.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "An Ace Attorney-inspired courtroom game where players cross-examine opponents to determine whether they are human or AI, with SUI staking and rewards. Its strength was a memorable demo. PaperProof needs an equally memorable artifact and Copilot demo moment.",
+    "paperproof_relevance": "needs an equally memorable artifact and Copilot demo moment.",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Entertainment and Culture",
+    "placement": "1st",
+    "project": "GiveRep",
+    "category": "Social reputation",
+    "winning_signal": "AI and blockchain to reward valuable X contributions.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A social reputation and rewards platform for meaningful X engagement, using AI and blockchain to surface quality contributions. Its strength was social visibility. PaperProof can use its X account to showcase artifact publishing and Copilot memory as short, shareable clips.",
+    "paperproof_relevance": "can use its X account to showcase artifact publishing and Copilot memory as short, shareable clips.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Entertainment and Culture",
+    "placement": "2nd",
+    "project": "SWION",
+    "category": "Onchain visualization",
+    "winning_signal": "Turns onchain activity into an immersive visual experience.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A visual, immersive representation of onchain activity through an underwater garden metaphor. Its strength was making abstract blockchain state feel tangible. PaperProof should make artifact state visually legible.",
+    "paperproof_relevance": "should make artifact state visually legible.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Entertainment and Culture",
+    "placement": "3rd",
+    "project": "Exclusuive",
+    "category": "NFT customization",
+    "winning_signal": "Modular NFTs, Kiosk, no-code creator tools, real-world deployment.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A modular NFT customization and distribution platform using Sui Kiosk, no-code creator tools, and real-world campus deployment. Its strength was real user context. PaperProof should prepare real sample artifacts rather than purely synthetic placeholders.",
+    "paperproof_relevance": "should prepare real sample artifacts rather than purely synthetic placeholders.",
+    "sui_ecosystem_primitives": [
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Entertainment and Culture",
+    "placement": "4th",
+    "project": "Numeron",
+    "category": "AI RPG",
+    "winning_signal": "Fully onchain AI-powered RPG.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "A fully onchain AI-powered RPG using smart contract logic and Dubhe Engine. Its strength was combining AI with an interactive onchain world. PaperProof can borrow the \"AI inside a verifiable stateful world\" framing.",
+    "paperproof_relevance": "can borrow the \"AI inside a verifiable stateful world\" framing.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Explorations",
+    "placement": "1st",
+    "project": "Suibotics",
+    "category": "Robotics coordination",
+    "winning_signal": "Hardware, AI, and Sui smart contracts.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "An exploration of physical machine-to-machine coordination with hardware, AI, and Sui smart contracts. Its strength was frontier ambition plus concrete hardware. PaperProof is less hardware-oriented, but similarly ambitious in connecting AI and verifiable state.",
+    "paperproof_relevance": "is less hardware-oriented, but similarly ambitious in connecting AI and verifiable state.",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Explorations",
+    "placement": "2nd",
+    "project": "Skepsis",
+    "category": "Prediction market",
+    "winning_signal": "Staked forecasting and measurable collective belief.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A decentralized prediction market where users stake on probabilistic outcomes. Its strength was converting belief into measurable onchain signals. PaperProof can convert knowledge trust into measurable signals through versions, comments, and citations.",
+    "paperproof_relevance": "can convert knowledge trust into measurable signals through versions, comments, and citations.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Explorations",
+    "placement": "3rd",
+    "project": "PactDa",
+    "category": "Agreements",
+    "winning_signal": "Smart-contract agreements with zkLogin and escrow.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A smart-contract agreement platform with zkLogin onboarding, SUI escrow, and multichain support. Its strength was turning agreements into enforceable objects. PaperProof turns artifacts and comments into durable protocol objects.",
+    "paperproof_relevance": "turns artifacts and comments into durable protocol objects.",
+    "sui_ecosystem_primitives": [
+      "zkLogin",
+      "ZK",
+      "Sui objects",
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Explorations",
+    "placement": "4th",
+    "project": "PredictPlay",
+    "category": "Entertainment markets",
+    "winning_signal": "AMM-driven cultural prediction markets.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "A gamified entertainment prediction market using AMM pricing and fast onchain settlement. Its strength was combining cultural topics with finance-like mechanisms. PaperProof can borrow cultural accessibility for blog/forum surfaces while staying protocol-centered.",
+    "paperproof_relevance": "can borrow cultural accessibility for blog/forum surfaces while staying protocol-centered.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Infra and Tooling",
+    "placement": "1st",
+    "project": "SuiSQL",
+    "category": "Decentralized SQL",
+    "winning_signal": "Indexes, joins, filters, and SQL-like access for Sui/Walrus data.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A SQL-like library and toolset for decentralized databases on Sui and Walrus, including indexes, joins, and filters. Its strength was making decentralized data queryable. PaperProof's indexer should aim for the same: make artifact and comment data easy to query.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "Walrus",
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Infra and Tooling",
+    "placement": "2nd",
+    "project": "Sui Provenance Suite",
+    "category": "Deployment provenance",
+    "winning_signal": "Verifiable code deployment and origin tracing.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A full-stack toolkit for verifiable code deployment and origin tracing. Its strength was supply-chain provenance. PaperProof overlaps strongly here: software release artifacts and version lineage can become a general provenance layer.",
+    "paperproof_relevance": "overlaps strongly here: software release artifacts and version lineage can become a general provenance layer.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Infra and Tooling",
+    "placement": "3rd",
+    "project": "Suipulse",
+    "category": "Data streaming",
+    "winning_signal": "Low-latency data stream protocol.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A high-performance data-streaming protocol on Sui with sub-second latency and enterprise security. Its strength was speed and reliability for data feeds. PaperProof's equivalent need is fast, reliable artifact discovery through an indexer.",
+    "paperproof_relevance": "",
+    "sui_ecosystem_primitives": [
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Infra and Tooling",
+    "placement": "4th",
+    "project": "Noodles.FI",
+    "category": "Analytics/action",
+    "winning_signal": "Discovery plus one-click strategy execution.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "A platform combining deep analytics and one-click strategies for discovering and acting on Sui opportunities. Its strength was analysis plus execution. PaperProof Copilot should similarly combine explanation plus safe next actions.",
+    "paperproof_relevance": "Copilot should similarly combine explanation plus safe next actions.",
+    "sui_ecosystem_primitives": [
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Payments and Wallets",
+    "placement": "1st",
+    "project": "PIVY",
+    "category": "Stealth payments",
+    "winning_signal": "Self-custodial payment links with stealth addresses.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A self-custodial payment toolkit using stealth addresses and payment links to protect user identity. Its strength was privacy through a simple payment UX. PaperProof should keep privacy claims simple and specific for memory.",
+    "paperproof_relevance": "should keep privacy claims simple and specific for memory.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Payments and Wallets",
+    "placement": "2nd",
+    "project": "Sui Multisig",
+    "category": "Wallet tooling",
+    "winning_signal": "CLI-first multisig management.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A CLI-first multisig management tool with an optional lightweight UI. Its strength was serving serious operators. PaperProof governance and operator actions should be similarly operator-friendly, even if hidden from normal users.",
+    "paperproof_relevance": "governance and operator actions should be similarly operator-friendly, even if hidden from normal users.",
+    "sui_ecosystem_primitives": [],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Payments and Wallets",
+    "placement": "3rd",
+    "project": "SeaWallet",
+    "category": "Programmable wallet",
+    "winning_signal": "Smart-contract wallet with protection and inheritance.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A programmable smart-contract wallet on top of Slush, using layered access control and inheritance for assets. Its strength was programmable asset safety. PaperProof could later use policy objects for agent-limited actions or official operator permissions.",
+    "paperproof_relevance": "could later use policy objects for agent-limited actions or official operator permissions.",
+    "sui_ecosystem_primitives": [
+      "Sui objects",
+      "Wallet"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Payments and Wallets",
+    "placement": "4th",
+    "project": "Coindrip",
+    "category": "Token streams",
+    "winning_signal": "Programmable token distribution.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "A programmable token-streaming protocol for linear, cliff-based, or custom payouts. Its strength was turning distribution into a reusable primitive. PaperProof can aim for artifact publishing/versioning as a reusable primitive.",
+    "paperproof_relevance": "can aim for artifact publishing/versioning as a reusable primitive.",
+    "sui_ecosystem_primitives": [
+      "AI"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Programmable Storage",
+    "placement": "1st",
+    "project": "SuiSign",
+    "category": "Document signing",
+    "winning_signal": "Sui + Walrus for file upload, signer definition, and verifiable signatures.",
+    "record_source": "summary_table",
+    "placement_rank": 1,
+    "profile_note": "A decentralized document-signing platform using Sui and Walrus for file upload, signer definition, and verifiable onchain signatures. It is the closest benchmark to PaperProof's document/artifact direction. PaperProof should learn from its simple document workflow and make artifact verification equally clear.",
+    "paperproof_relevance": "should learn from its simple document workflow and make artifact verification equally clear.",
+    "sui_ecosystem_primitives": [
+      "Walrus",
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Programmable Storage",
+    "placement": "2nd",
+    "project": "WalGraph",
+    "category": "Graph database",
+    "winning_signal": "Sui/Walrus graph database with JSON-LD and CRUD operations.",
+    "record_source": "summary_table",
+    "placement_rank": 2,
+    "profile_note": "A decentralized graph database combining onchain storage, JSON-LD serialization, and CRUD operations. Its strength was structured data over raw storage. PaperProof should emphasize structure: artifact series, versions, comments, prompt artifacts, and memory descriptors.",
+    "paperproof_relevance": "should emphasize structure: artifact series, versions, comments, prompt artifacts, and memory descriptors.",
+    "sui_ecosystem_primitives": [
+      "Walrus",
+      "AI",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Programmable Storage",
+    "placement": "3rd",
+    "project": "SuiMail",
+    "category": "Wallet-native email",
+    "winning_signal": "Decentralized email with pay-to-send spam control.",
+    "record_source": "summary_table",
+    "placement_rank": 3,
+    "profile_note": "A wallet-native decentralized email protocol with pay-to-send spam control. Its strength was communication plus storage plus economic filtering. PaperProof can borrow the idea of comments as structured communication around durable artifacts.",
+    "paperproof_relevance": "can borrow the idea of comments as structured communication around durable artifacts.",
+    "sui_ecosystem_primitives": [
+      "AI",
+      "Wallet"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  },
+  {
+    "year": 2025,
+    "track": "Programmable Storage",
+    "placement": "4th",
+    "project": "Walpress",
+    "category": "Site builder",
+    "winning_signal": "Decentralized website builder on Walrus with SuiNS and templates.",
+    "record_source": "summary_table",
+    "placement_rank": 4,
+    "profile_note": "A decentralized site builder for censorship-resistant websites on Walrus, with SuiNS integration and a creator/template marketplace. Its strength was turning Walrus into a usable publishing surface. PaperProof can borrow this by making artifact publishing feel like a polished content workflow, not a storage demo.",
+    "paperproof_relevance": "can borrow this by making artifact publishing feel like a polished content workflow, not a storage demo.",
+    "sui_ecosystem_primitives": [
+      "Walrus",
+      "Sui"
+    ],
+    "source_document": "Sui Overflow Winner Benchmarks and PaperProof Positioning.md",
+    "source_document_path": "paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md"
+  }
+]

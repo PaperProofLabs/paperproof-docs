@@ -1,0 +1,18 @@
+year,track,winner_count,projects,top_detected_primitives
+2024,Advanced Move Features,4,Promise;Su Protocol;Sui Metadata;Sui Simulator,ZK;Move;Sui
+2024,Consumer and Mobile,4,Pandora Finance;stream.gift;AdToken;Wave Wallet,Sui;AI;Sui objects;Wallet;Telegram
+2024,DeFi,4,Hop Aggregator;Aeon;Hakifi;Shio,AI;PTB;Sui
+2024,Gaming,4,AresRPG;Wagmi Kitchen;Infinite Seas;Shall We Move,AI;Sui;Sui randomness
+2024,Infrastructure and Tools,4,Kraken;SuiGPT;BitsLab IDE;SuiPass,AI;LLM;Sui;Move
+2024,Multichain,4,Sui NTT;Wormhole Kit;SuiWalletBot;Multichain Meme Creator,Wormhole;AI;Sui;Wallet;Telegram;Walrus
+2024,Randomness,4,Sui dApp Starter;BioWallet;SuiAutochess;HexCapsule,AI;Sui randomness;Sui;Wallet;Move
+2024,zkLogin,4,PinataBot;LiquidLink;Webauth on Sui;Aalps Protocol,zkLogin;ZK;Sui;Wallet;Telegram;Walrus
+2025,AI,4,Suithetic;OpenGraph;RaidenX;Hyvve,AI;Sui;LLM;Walrus;PTB
+2025,Cryptography,4,ZeroLeaks;Shroud;Sui Sentinel;Sui Shadow,ZK;Seal;Walrus;AI;zkLogin
+2025,DeFi,4,Magma Finance;Pismo Protocol;MizuPay;Kamo Finance,AI;Move;Sui objects
+2025,Degen,4,MoonBags;Kensei;MFC.CLUB;Objection! AI,Sui;AI;Wormhole
+2025,Entertainment and Culture,4,GiveRep;SWION;Exclusuive;Numeron,AI;Sui
+2025,Explorations,4,Suibotics;Skepsis;PactDa;PredictPlay,AI;Sui;zkLogin;ZK;Sui objects
+2025,Infra and Tooling,4,SuiSQL;Sui Provenance Suite;Suipulse;Noodles.FI,Sui;AI;Walrus
+2025,Payments and Wallets,4,PIVY;Sui Multisig;SeaWallet;Coindrip,AI;Sui objects;Wallet
+2025,Programmable Storage,4,SuiSign;WalGraph;SuiMail;Walpress,Walrus;AI;Sui;Wallet
