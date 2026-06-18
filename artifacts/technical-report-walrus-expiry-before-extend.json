@@ -1,0 +1,13 @@
+{
+  "kind": "technical-report",
+  "title": "PaperProof Protocol:  Verifiable, versioned knowledge artifacts for humans and AI agents",
+  "artifactCode": "PaperProof-technical_report-001162-4f414f76bdc5",
+  "versionId": "0x54b0afb264b15b805532bd6cdeedb3a3317d4123bdfdba8f978a6abb21e5aa0f",
+  "seriesId": "0x4f414f76bdc501616f690cf418ea50b5803d07a14cca13289a8fe6fc18b2eb78",
+  "blobId": "OY_q8qJoW-QIxxdTrvcyhCSeWq2AQWgCfD6HP9KdSec",
+  "blobObjectId": "0x873ca44e275760e51a3da9d6114e00823f40ea01c9b41447379308afc6d0149d",
+  "startEpoch": 33,
+  "endEpoch": 34,
+  "size": "232940",
+  "contentType": "application/pdf"
+}

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-06-17T23:02:47.707Z",
+  "expectedEndEpoch": 43,
+  "count": 6,
+  "ok": true,
+  "rows": [
+    {
+      "kind": "forum",
+      "sectionId": "protocol-discussion",
+      "id": "artifact-identity-and-official-bindings",
+      "title": "Artifact Identity and Official Bindings in PaperProof",
+      "blobObjectId": "0x4592c2ce7ed302331ddf48dc1f307dab7055cf92fc6072c24129d547da519e6c",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "1532"
+    },
+    {
+      "kind": "forum",
+      "sectionId": "developer-support",
+      "id": "sdk-indexer-and-static-app-integration",
+      "title": "SDK, Indexer, and Static App Integration",
+      "blobObjectId": "0x32b2b8889ea50b59ca747f28e62c25caf71895a4465abf15623002d50af7034e",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "1420"
+    },
+    {
+      "kind": "forum",
+      "sectionId": "governance",
+      "id": "lightweight-governance-and-official-operations",
+      "title": "Lightweight Governance and Official Operations",
+      "blobObjectId": "0x9de093764629902d2af12153c111c5f3130267a9d17804592d89a46c9586fe52",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "1522"
+    },
+    {
+      "kind": "forum",
+      "sectionId": "ideas-proposals",
+      "id": "what-should-paperproof-build-next",
+      "title": "What Should PaperProof Build Next?",
+      "blobObjectId": "0xf87e25c7518eb2c31dd005e2d71e6d5fd8148c6b22c8157c7d65ea7ce509de4a",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "1572"
+    },
+    {
+      "kind": "forum",
+      "sectionId": "showcase",
+      "id": "share-paperproof-artifacts-and-demos",
+      "title": "Share PaperProof Artifacts and Demos",
+      "blobObjectId": "0xca4b7ecdbe59707e542ccead649713f2f59f808e9d14651d7d86691918e4588b",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "1350"
+    },
+    {
+      "kind": "forum",
+      "sectionId": "general",
+      "id": "welcome-to-the-paperproof-community-forum",
+      "title": "Welcome to the PaperProof Community Forum",
+      "blobObjectId": "0xbca51ae596a0e20e0a96666d965d80ca43e8640a82c6e6e58043640124d03ac4",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "1302"
+    }
+  ]
+}

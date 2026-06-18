@@ -12,19 +12,28 @@ const __dirname = path.dirname(__filename);
 const DOCS_ROOT = path.resolve(__dirname, '..');
 const LABS_ROOT = path.resolve(DOCS_ROOT, '..');
 const SDK_ROOT = path.join(LABS_ROOT, 'paperproof-sdk-ts');
+const APP_ROOT = path.join(LABS_ROOT, 'paperproof-app');
 const CONTRACTS_ENV = path.join(LABS_ROOT, 'paperproof-contracts', 'jstest', '.env');
 const BLOGS_HOME = path.join(DOCS_ROOT, 'homepages', 'blogs');
 const MANIFEST_PATH = path.join(BLOGS_HOME, 'manifest.json');
 const APP_MANIFEST_PATH = path.join(LABS_ROOT, 'paperproof-app', 'public', 'blog', 'manifest.json');
 const ARTIFACTS_DIR = path.join(DOCS_ROOT, 'artifacts');
 const CHECKPOINT_PATH = path.join(ARTIFACTS_DIR, 'paperproof-blogs-publish-checkpoint.json');
-const CONTENT_TYPE = 'text/markdown; charset=utf-8';
+const CONTENT_TYPE = 'application/vnd.paperproof.markdown-package+zip';
 const ZERO = `0x${'0'.repeat(64)}`;
 let deps;
+let JSZipCtor;
 
 async function importFromSdk(specifier) {
   const requireFromSdk = createRequire(path.join(SDK_ROOT, 'package.json'));
   return import(pathToFileURL(requireFromSdk.resolve(specifier)).href);
+}
+
+function loadJSZip() {
+  if (JSZipCtor) return JSZipCtor;
+  const requireFromApp = createRequire(path.join(APP_ROOT, 'package.json'));
+  JSZipCtor = requireFromApp('jszip');
+  return JSZipCtor;
 }
 
 async function loadDeps() {
@@ -144,7 +153,23 @@ async function readPost(post) {
   const fullPath = path.join(BLOGS_HOME, post.source);
   const text = await fs.readFile(fullPath, 'utf8');
   assert(text.startsWith(`# ${post.title}`), `${post.source} title does not match manifest title.`);
-  const bytes = new TextEncoder().encode(text);
+  const JSZip = loadJSZip();
+  const zip = new JSZip();
+  zip.file('index.md', text);
+  zip.file('manifest.json', `${JSON.stringify({
+    schemaVersion: 1,
+    appKind: 'blog_post',
+    entry: 'index.md',
+    title: post.title,
+    source: post.source,
+    postId: post.id,
+    contentType: 'text/markdown; charset=utf-8',
+  }, null, 2)}\n`);
+  const bytes = await zip.generateAsync({
+    type: 'uint8array',
+    compression: 'DEFLATE',
+    compressionOptions: { level: 9 },
+  });
   return {
     fullPath,
     text,
@@ -218,27 +243,30 @@ async function writeJsonFile(filePath, value) {
 }
 
 async function publishBlogs({ posts, args, account, sui, walrusClient, txb, read, report }) {
-  const { ARTIFACT_TYPES, extractPublishResult } = await loadDeps();
+  const { ARTIFACT_TYPES, extractAddVersionResult, extractPublishResult } = await loadDeps();
   for (const [index, post] of posts.entries()) {
     console.log(`[publish] ${index + 1}/${posts.length} ${post.source}`);
-    if (post.seriesId && post.commentsTreeId && post.artifactCode) {
-      console.log(`[publish] reuse existing ${post.source}: ${post.artifactCode}`);
-      report.posts.push({ id: post.id, source: post.source, title: post.title, upload: null, reused: true, published: {
-        seriesId: post.seriesId,
-        versionId: post.initialVersionId ?? post.currentVersionId ?? ZERO,
-        commentsTreeId: post.commentsTreeId,
-        likesBookId: post.likesBookId ?? ZERO,
-        artifactCode: post.artifactCode,
-        artifactType: ARTIFACT_TYPES.blogPost,
-      } });
-      continue;
-    }
     const content = await readPost(post);
     const upload = await uploadPost(walrusClient, account.signer, post, content, args.run, args.skipWalrus);
-    const tx = txb.publishBlogPost(publishInput(post, content, upload));
-    const result = await execute(sui, account.signer, tx, `publish blog ${post.source}`, args.run, account.address);
+    const input = publishInput(post, content, upload);
+    const existing = post.seriesId && post.commentsTreeId && post.artifactCode;
+    const tx = existing
+      ? txb.addBlogPostVersion({
+          ...input,
+          seriesId: post.seriesId,
+          versionMetadata: metadataAttributes({
+            schema: 'paperproof-blog-markdown-package-v1',
+            source: post.source,
+            route: `/blog/${post.id}`,
+            date: post.date,
+          }),
+        })
+      : txb.publishBlogPost(input);
+    const result = await execute(sui, account.signer, tx, `${existing ? 'add blog version' : 'publish blog'} ${post.source}`, args.run, account.address);
     const published = args.run
-      ? extractPublishResult(toSdkResponse(result), read.deployment)
+      ? existing
+        ? extractAddVersionResult(toSdkResponse(result), read.deployment)
+        : extractPublishResult(toSdkResponse(result), read.deployment)
       : {
           seriesId: ZERO,
           versionId: ZERO,
@@ -252,15 +280,15 @@ async function publishBlogs({ posts, args, account, sui, walrusClient, txb, read
       artifactCode: published.artifactCode,
       seriesId: published.seriesId,
       commentsTreeId: published.commentsTreeId,
-      initialVersionId: published.versionId,
+      initialVersionId: post.initialVersionId ?? published.versionId,
       currentVersionId: published.versionId,
       likesBookId: published.likesBookId,
       latestContentHash: content.contentHash,
       contentType: CONTENT_TYPE,
-      commentsTreeStatus: 'open',
+      commentsTreeStatus: post.commentsTreeStatus ?? 'open',
     });
-    report.transactions.push({ label: `publish ${post.source}`, digest: result.digest, dryRunBytes: result.dryRunBytes });
-    report.posts.push({ id: post.id, source: post.source, title: post.title, upload, published, contentHash: content.contentHash });
+    report.transactions.push({ label: `${existing ? 'add version' : 'publish'} ${post.source}`, digest: result.digest, dryRunBytes: result.dryRunBytes });
+    report.posts.push({ id: post.id, source: post.source, title: post.title, upload, published, contentHash: content.contentHash, operation: existing ? 'add-version' : 'publish' });
     if (args.run) {
       await writeJsonFile(CHECKPOINT_PATH, report);
       await writeJsonFile(MANIFEST_PATH, report.manifest);

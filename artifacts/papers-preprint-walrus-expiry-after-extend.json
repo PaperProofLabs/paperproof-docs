@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-06-18T00:20:56.541Z",
+  "count": 3,
+  "ok": true,
+  "rows": [
+    {
+      "title": "PaperProof Protocol Yellow Paper: A Source-Derived Specification of the Sui-Native Artifact Protocol",
+      "versionId": "0xe2474d7904100b3e2c623c23b5edeb54874ef7a634e796e300b0832136781129",
+      "blobObjectId": "0x59025d18102e2329d8346a6618d5f61d9777f9dde95a68149c5bb195dc98f109",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "251934"
+    },
+    {
+      "title": "PaperProof Whitepaper: A Protocol for Durable Digital Artifacts on Sui and Walrus",
+      "versionId": "0xe7a8d22e2b3b2d0a81903cbcd3e228f6b78f9dea01dadab5781264c18b48625f",
+      "blobObjectId": "0x01bf981ca19d64c2bb31c06a67b47911c04231606d2ea284cd662bd3c958d76a",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "246583"
+    },
+    {
+      "title": "PaperProof: Sui-Native Artifact Infrastructure for Durable, Verifiable, and Agent-Readable Knowledge Objects",
+      "versionId": "0x38ae92dd1b163015475fe4cdbd6fff2c67390dfb1f91768a7a7b3af66d61f541",
+      "blobObjectId": "0x4f95010d14e332ff56123b31c942108df469737ff51e4febae96c9f6c09bd612",
+      "beforeEndEpoch": 34,
+      "afterStartEpoch": 33,
+      "afterEndEpoch": 43,
+      "size": "244357"
+    }
+  ]
+}
