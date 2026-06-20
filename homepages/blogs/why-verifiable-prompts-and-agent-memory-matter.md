@@ -81,6 +81,8 @@ series, version, content references, and route binding in the prompt registry.
 The app can resolve `latest` by protocol state instead of hardcoding one
 opaque prompt forever.
 
+![Agent context boundaries](assets/agent-context-boundaries.svg)
+
 That is important for the Sui and Walrus ecosystems because it turns AI
 application behavior into a real use case for decentralized storage and
 object-centric state. Walrus stores the prompt content. Sui records which
@@ -111,6 +113,14 @@ This also creates a new category of artifact: operational AI content. A prompt
 is not only documentation and not only code. It is a behavioral instruction
 package. PaperProof gives that package an identity, a latest version, and a
 history that can be inspected by users, developers, or governance processes.
+
+| AI context element | PaperProof representation | Why it should be explicit |
+|---|---|---|
+| Public knowledge | Versioned artifact content | Agents can cite a stable series and version |
+| Official prompt | Prompt package artifact plus route registry entry | Agent behavior can be audited and updated |
+| Private memory | Wallet-linked MemWal content | User continuity stays scoped and off chain |
+| Memory capability | Sui memory registry entry | Apps can check lifecycle and availability |
+| Local access | Browser-controlled delegate or wallet approval | Users keep control of when memory is used |
 
 ## Memory is continuity, but continuity needs boundaries
 
@@ -214,6 +224,14 @@ This design is not a promise that every possible integration is private by
 default. It is the intended architecture for the official PaperProof app:
 minimal chain metadata, private memory content off chain, local browser control
 for access and enablement, and clear user actions.
+
+| Layer | Public or private | Role |
+|---|---|---|
+| Prompt route registry | Public Sui state | Binds an app route to an official generic-file prompt series |
+| Prompt artifact content | Public Walrus content | Stores versioned instructions for official agent behavior |
+| Memory entry registry | Public Sui state | Records owner, app scope, descriptor reference, availability, and lifecycle |
+| Private memory | Private MemWal content | Stores user-specific preferences and task context |
+| Wallet and browser access | User-controlled signing and local access boundary | Approves registry actions and controls the local delegate key |
 
 ## Governance and availability
 

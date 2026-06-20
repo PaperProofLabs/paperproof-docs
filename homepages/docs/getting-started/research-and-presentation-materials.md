@@ -10,9 +10,10 @@ PaperProof is documented through several complementary materials. They describe
 the same protocol from different angles: ecosystem vision, implementation-level
 specification, system-design analysis, and presentation narrative.
 
-This page is a reading guide. It starts as a text index inside the official
-Docs set. Each PDF can later be published as its own PaperProof artifact series
-and linked here through a new version of this article.
+This page is a reading guide and evidence map. The papers, slides, demo video,
+official website, SDKs, and submission hub are meant to be read together: the
+papers explain the protocol, the slides and video tell the story quickly, and
+the live website shows the deployed system.
 
 ## Materials at a glance
 
@@ -22,6 +23,8 @@ and linked here through a new version of this article.
 | Yellow paper | Define the protocol model and integration rules with implementation-level precision | Auditors, SDK maintainers, indexer builders, advanced frontend developers, and protocol contributors | Use as the technical specification |
 | Academic paper | Present PaperProof as a system-design contribution with architecture, trust boundaries, and evaluation evidence | Researchers, hackathon judges, protocol designers, and technically deep reviewers | Read for structured analysis and evidence |
 | Slides | Tell the shortest coherent story for a live pitch or recorded demonstration | Hackathon judges, ecosystem reviewers, and presentation audiences | Use as the guided overview |
+| Demo video | Show the completed website, slides, SDK evidence, and protocol workflow in one short recording | Hackathon judges and ecosystem reviewers | Watch before or after opening the live app |
+| Submission hub | Link the public repositories, deployment evidence, screenshots, and contract package IDs | Hackathon judges and technical reviewers | Use as the table of contents for review |
 
 The materials are not duplicates. They intentionally vary in tone, depth, and
 reader assumptions.
@@ -67,15 +70,14 @@ project before inspecting Move packages or object IDs.
 | `whitepaper/paperproof-whitepaper.tex` | LaTeX source |
 | `whitepaper/paperproof-whitepaper.pdf` | Generated PDF |
 
-### Future PaperProof mapping
+### PaperProof artifact mapping
 
-The PDF can be published as a dedicated PaperProof artifact series. Updates
-should append versions to that series rather than replace the original record.
+The whitepaper has a dedicated PaperProof artifact series. Updates should
+append versions to that series rather than replace the original record.
 
 ```text
-Artifact Code: PaperProof-generic_file-001144-6b259991d78f
-Series ID: 0x6b259991d78f2265d77f302168d9f801b093707234bdfaee06d9f7763ccf4c85
-Comments Tree: locked
+Artifact Code: PaperProof-preprint-001162-0c3f8fd7d4eb
+Series ID: 0x0c3f8fd7d4ebf2ce5c89519a75893adde281a2fa1053c9625e886d25170d8c8d
 ```
 
 ## Yellow paper
@@ -111,18 +113,17 @@ official object graph rather than look-alike state.
 | File | Role |
 |---|---|
 | `yellow-paper/paperproof-yellow-paper.tex` | LaTeX source |
-| `yellow-paper/paperproof-yellow-paper.pdf` | Generated PDF |
+| `yellow-paper/paperproof-yellow-paper-updated.pdf` | Current generated PDF |
 
-### Future PaperProof mapping
+### PaperProof artifact mapping
 
-The yellow paper should receive its own artifact series and version history.
-Its series should remain distinct from the whitepaper because the documents
-serve different audiences and may evolve at different rates.
+The yellow paper has its own artifact series and version history. Its series is
+distinct from the whitepaper because the documents serve different audiences
+and may evolve at different rates.
 
 ```text
-Artifact Code: PaperProof-generic_file-001144-6b259991d78f
-Series ID: 0x6b259991d78f2265d77f302168d9f801b093707234bdfaee06d9f7763ccf4c85
-Comments Tree: locked
+Artifact Code: PaperProof-preprint-001162-064b3cf9a09c
+Series ID: 0x064b3cf9a09c61e5a1fdef46ac6fa59f631d871b9769e5f0a0d4736387b29eec
 ```
 
 ## Academic paper
@@ -169,16 +170,15 @@ governance, deployment reality, and the optional agentic memory layer.
 | `academic-paper/Ref.bib` | Bibliography |
 | `academic-paper/figs/` | Architecture and sequence diagrams |
 
-### Future PaperProof mapping
+### PaperProof artifact mapping
 
-The academic PDF should be published as its own versioned artifact series. A
-new revision, conference-style edit, or evidence refresh should become a new
-version under the same stable series identity.
+The academic PDF has its own versioned artifact series. A new revision,
+conference-style edit, or evidence refresh should become a new version under
+the same stable series identity.
 
 ```text
-Artifact Code: PaperProof-generic_file-001144-6b259991d78f
-Series ID: 0x6b259991d78f2265d77f302168d9f801b093707234bdfaee06d9f7763ccf4c85
-Comments Tree: locked
+Artifact Code: PaperProof-preprint-001162-c2fff6d39f06
+Series ID: 0xc2fff6d39f0603eb08b0775aab0f7f996fc01faff797f10871cfff45729743c8
 ```
 
 ## Presentation slides
@@ -208,17 +208,34 @@ The slides explain:
 | `paperproof-slides.tex` | LaTeX Beamer source |
 | `paperproof-slides.pdf` | Generated pitch deck |
 
-### Future PaperProof mapping
+### PaperProof artifact mapping
 
-The deck can be published as a versioned PaperProof artifact. Presentation
-updates should append versions so reviewers can inspect how the project story
-evolved alongside protocol releases.
+The deck has a versioned PaperProof artifact series. Presentation updates
+should append versions so reviewers can inspect how the project story evolved
+alongside protocol releases.
 
 ```text
-Artifact Code: PaperProof-generic_file-001144-6b259991d78f
-Series ID: 0x6b259991d78f2265d77f302168d9f801b093707234bdfaee06d9f7763ccf4c85
-Comments Tree: locked
+Artifact Code: PaperProof-technical_report-001162-4f414f76bdc5
+Series ID: 0x4f414f76bdc501616f690cf418ea50b5803d07a14cca13289a8fe6fc18b2eb78
 ```
+
+## Demo video and public submission hub
+
+The public demo video is available on YouTube:
+
+```text
+https://www.youtube.com/watch?v=OjRZrhqZ4ZY
+```
+
+The Sui Overflow submission hub is:
+
+```text
+https://github.com/PaperProofLabs/paperproof-sui-overflow-2026
+```
+
+Use the hub when you need one public entry point for the website, repositories,
+SDK package links, screenshots, formal-verification branch, deployment notes,
+and primary Sui package ID.
 
 ## Recommended reading paths
 
@@ -227,34 +244,24 @@ Different readers can start with different materials:
 | Reader | Suggested path |
 |---|---|
 | New user or community member | Whitepaper -> official Docs -> app |
-| Hackathon judge | Slides -> app demo -> academic paper -> mainnet deployment Docs |
+| Hackathon judge | Demo video -> slides -> app -> submission hub -> academic paper |
 | SDK or frontend developer | Getting Started -> yellow paper -> SDK Docs -> mainnet manifest |
 | Indexer builder | Yellow paper -> Indexer Integration -> Manifests and Canonical State |
 | Auditor or security reviewer | Yellow paper -> Formal Verification -> contract repository -> deployment records |
 | Researcher | Academic paper -> yellow paper -> formal-verification evidence branch |
 
-## Publication plan
+## Versioning rule
 
-This Docs article is itself intended to become a PaperProof artifact. The four
-materials should then be published as separate artifact series because each has
-its own identity, revision rhythm, citation use, and audience.
-
-A future version of this page can replace the pending mappings with:
+These materials should remain separate artifact series because each has its
+own identity, revision rhythm, citation use, and audience. When a material is
+updated, publish a new version under the existing series and cite the exact
+version ID when precision matters.
 
 ```text
-Artifact Code: PaperProof-...
-Series ID: 0x...
-Current Version ID: 0x...
-Walrus Blob ID: ...
+Stable series ID -> latest version for normal readers
+Exact version ID -> citation, review, audit, or reproducibility
 ```
 
 The official app should store stable series IDs in its lightweight manifest and
 resolve current versions at runtime. That preserves automatic updates without
 hard-coding a particular PDF version or Walrus blob.
-
-## Current availability
-
-The whitepaper, yellow paper, academic paper, and slides already exist as
-generated local PDFs in their source repositories. Their PaperProof artifact
-series mappings remain pending until the official publication workflow is run.
-

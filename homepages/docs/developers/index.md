@@ -18,6 +18,14 @@ The three SDK tracks serve different audiences:
 | Python | Scripts, notebooks, analytics, exports, and operational tasks |
 | Rust | High-throughput indexers, checkpoint ingestion, sinks, and backend services |
 
+All three SDKs are published in their native package ecosystems:
+
+| SDK | Package |
+|---|---|
+| TypeScript | [@paperproof/sdk-ts on npm](https://www.npmjs.com/package/@paperproof/sdk-ts) |
+| Python | [paperproof-sdk-py on PyPI](https://pypi.org/project/paperproof-sdk-py/) |
+| Rust | [paperproof-sdk-rs on crates.io](https://crates.io/crates/paperproof-sdk-rs) |
+
 The TypeScript SDK is the most complete browser and application integration
 surface. Python is the natural track for research, automation, and exports.
 Rust is the natural track for long-running infrastructure. All three should
@@ -36,6 +44,7 @@ without copying the official website. The stable public interfaces are:
 - Walrus content references;
 - deployment manifests and package history;
 - published SDKs;
+- the community-facing PaperProof Skill for AI/agent workflows;
 - protocol documentation.
 
 Use the SDK matching your environment, but keep the chain and verified content

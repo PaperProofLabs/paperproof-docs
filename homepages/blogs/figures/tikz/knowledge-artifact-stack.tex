@@ -1,0 +1,36 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric,backgrounds}
+\definecolor{paperblue}{RGB}{30,94,190}
+\definecolor{walrus}{RGB}{43,150,136}
+\definecolor{sui}{RGB}{95,108,185}
+\definecolor{agent}{RGB}{190,112,38}
+\definecolor{softgray}{RGB}{246,248,251}
+\definecolor{textgray}{RGB}{38,45,56}
+\tikzset{
+  box/.style={draw=#1, fill=#1!8, rounded corners=3pt, very thick, align=center,
+    minimum width=34mm, minimum height=11mm, text=textgray, font=\sffamily\small},
+  smallbox/.style={draw=#1, fill=#1!8, rounded corners=3pt, thick, align=center,
+    minimum width=28mm, minimum height=9mm, text=textgray, font=\sffamily\scriptsize},
+  arrow/.style={-{Latex[length=2.2mm]}, thick, draw=textgray!70}
+}
+\begin{document}
+\begin{tikzpicture}[node distance=9mm and 11mm]
+  \node[box=paperblue] (artifact) {PaperProof\\protocol record};
+  \node[smallbox=sui, below left=of artifact] (suiobj) {Sui object graph\\root, registry, series, versions};
+  \node[smallbox=walrus, below right=of artifact] (blob) {Walrus payloads\\PDFs, Markdown, datasets};
+  \node[smallbox=paperblue, below=15mm of artifact] (sdk) {SDKs and indexers\\canonical reads, hash checks};
+  \node[smallbox=agent, below left=of sdk] (human) {Human apps\\Docs, Blog, Forum};
+  \node[smallbox=agent, below right=of sdk] (ai) {AI and Skill flows\\prompts, memory, updates};
+  \draw[arrow] (artifact) -- (suiobj);
+  \draw[arrow] (artifact) -- (blob);
+  \draw[arrow] (suiobj) -- (sdk);
+  \draw[arrow] (blob) -- (sdk);
+  \draw[arrow] (sdk) -- (human);
+  \draw[arrow] (sdk) -- (ai);
+  \begin{pgfonlayer}{background}
+    \node[draw=textgray!15, fill=softgray, rounded corners=4pt, fit=(artifact)(suiobj)(blob)(sdk)(human)(ai), inner sep=5mm] {};
+  \end{pgfonlayer}
+\end{tikzpicture}
+\end{document}

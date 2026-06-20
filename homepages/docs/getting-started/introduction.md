@@ -6,6 +6,8 @@ Artifact Code: PaperProof-generic_file-001144-c86c5f43d31b
 Series ID: 0xc86c5f43d31ba62f97dac4e056c1e25d7d42fc675262357c06a9cae9c633f55a
 Comments Tree: locked
 
+![PaperProof application architecture and flow](assets/application-architecture-flow.svg)
+
 Important digital works increasingly live across unstable boundaries: storage
 links, repository releases, social posts, preprint pages, datasets, software
 packages, and application databases. These surfaces are useful, but none of

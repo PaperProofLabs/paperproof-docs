@@ -23,6 +23,8 @@ website pages forever. They are being shaped as protocol-backed surfaces. The
 website can still be fast, readable, and familiar, but the source of truth for
 important content can be PaperProof artifacts.
 
+![Official website surfaces backed by PaperProof artifacts](assets/self-hosted-official-surfaces.svg)
+
 This matters for more than internal consistency. It shows a path for any Sui
 and Walrus application that wants to keep a friendly web experience while
 placing durable content identity, version state, and official interaction
@@ -116,6 +118,14 @@ Together, they create an application pattern with three layers:
 - user-facing website for speed and usability;
 - Sui objects and events for identity, state, and verification;
 - Walrus blobs for durable content payloads.
+
+| Runtime layer | PaperProof use today | What can change by version update | What stays stable |
+|---|---|---|---|
+| Website shell | Navigation, rendering, wallet UX, Copilot UI | Manifest entries and resolved artifact content | User-facing routes and interaction model |
+| Artifact series | Docs pages, Blog posts, prompt packages, Forum topics | Latest version pointer and metadata | Series ID, artifact code, official bindings |
+| Walrus payloads | Markdown bodies, packages, diagrams, assets | Content bytes for each new version | Hash-checked content references |
+| Sui objects | Versions, comments, likes, prompt and memory registries | Official state transitions and events | Protocol identity and audit trail |
+| Indexer/API | Lists, query views, rendered content cache | Cached projections after new events | Rebuildability from canonical sources |
 
 That pattern is relevant to many ecosystem applications, not only PaperProof.
 
@@ -317,6 +327,14 @@ The official website is becoming a layered application:
 - comments and likes for interaction;
 - SDKs and indexers for developer access;
 - manifests for official navigation and curation.
+
+| Official surface | Protocol-backed source | User-facing benefit |
+|---|---|---|
+| Docs | Generic-file artifact series with Markdown bodies | Documentation can update through versions without losing history |
+| Blog | `blog_post` artifacts with Markdown packages and assets | Essays become citeable, inspectable, and discussable |
+| Forum | Topic artifacts plus official comments trees | Discussion is bound to a verifiable topic record |
+| Copilot | Generic-file prompt artifacts plus the route registry | Agent behavior can be updated and inspected |
+| Memory | Sui memory entries plus private MemWal content | Continuity stays scoped, optional, and wallet-linked |
 
 The app can be deployed through ordinary web infrastructure for reliability,
 while the important content and protocol state remain verifiable through Sui

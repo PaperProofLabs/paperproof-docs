@@ -12,20 +12,29 @@ const __dirname = path.dirname(__filename);
 const DOCS_ROOT = path.resolve(__dirname, '..');
 const LABS_ROOT = path.resolve(DOCS_ROOT, '..');
 const SDK_ROOT = path.join(LABS_ROOT, 'paperproof-sdk-ts');
+const APP_ROOT = path.join(LABS_ROOT, 'paperproof-app');
 const CONTRACTS_ENV = path.join(LABS_ROOT, 'paperproof-contracts', 'jstest', '.env');
 const DOCS_HOME = path.join(DOCS_ROOT, 'homepages', 'docs');
 const MANIFEST_PATH = path.join(DOCS_HOME, 'manifest.json');
 const APP_MANIFEST_PATH = path.join(LABS_ROOT, 'paperproof-app', 'public', 'docs', 'manifest.json');
 const ARTIFACTS_DIR = path.join(DOCS_ROOT, 'artifacts');
 const CHECKPOINT_PATH = path.join(ARTIFACTS_DIR, 'paperproof-docs-publish-checkpoint.json');
-const CONTENT_TYPE = 'text/markdown; charset=utf-8';
+const CONTENT_TYPE = 'application/vnd.paperproof.markdown-package+zip';
 const LICENSE = 'LicenseRef-PaperProof-Docs-Source-Available';
 const ZERO = `0x${'0'.repeat(64)}`;
 let deps;
+let JSZipCtor;
 
 async function importFromSdk(specifier) {
   const requireFromSdk = createRequire(path.join(SDK_ROOT, 'package.json'));
   return import(pathToFileURL(requireFromSdk.resolve(specifier)).href);
+}
+
+function loadJSZip() {
+  if (JSZipCtor) return JSZipCtor;
+  const requireFromApp = createRequire(path.join(APP_ROOT, 'package.json'));
+  JSZipCtor = requireFromApp('jszip');
+  return JSZipCtor;
 }
 
 async function loadDeps() {
@@ -78,6 +87,10 @@ function parseArgs(argv) {
     help: set.has('--help') || set.has('-h'),
     skipWalrus: set.has('--skip-walrus'),
     repairVersions: set.has('--repair-versions'),
+    only: (argValue('--only', '') || '')
+      .split(',')
+      .map((item) => item.trim().replace(/\\/g, '/'))
+      .filter(Boolean),
     account: Number(argValue('--account', '4')),
     batchSize: Math.max(1, Number(argValue('--batch-size', '1'))),
   };
@@ -171,6 +184,41 @@ function collectDocs(manifest) {
   return docs;
 }
 
+function isRemoteOrFragmentUrl(value) {
+  return /^(?:[a-z][a-z0-9+.-]*:|#|\/\/)/i.test(value);
+}
+
+function normalizePackagePath(value) {
+  return String(value ?? '')
+    .trim()
+    .replace(/^<|>$/g, '')
+    .replace(/\\/g, '/')
+    .replace(/^\.\//, '');
+}
+
+function extractMarkdownAssetPaths(markdown) {
+  const paths = new Set();
+  for (const match of markdown.matchAll(/!\[[^\]]*\]\(([^)\s]+)(?:\s+["'][^"']*["'])?\)/g)) {
+    const assetPath = normalizePackagePath(decodeURIComponent(match[1]));
+    if (!assetPath || isRemoteOrFragmentUrl(assetPath)) continue;
+    assert(!assetPath.includes('..'), `Unsafe asset path in Markdown: ${assetPath}`);
+    assert(assetPath.startsWith('assets/'), `Local docs assets must live under assets/: ${assetPath}`);
+    paths.add(assetPath);
+  }
+  return [...paths].sort();
+}
+
+function contentTypeForAsset(assetPath) {
+  const ext = path.extname(assetPath).toLowerCase();
+  if (ext === '.svg') return 'image/svg+xml';
+  if (ext === '.png') return 'image/png';
+  if (ext === '.jpg' || ext === '.jpeg') return 'image/jpeg';
+  if (ext === '.webp') return 'image/webp';
+  if (ext === '.gif') return 'image/gif';
+  if (ext === '.avif') return 'image/avif';
+  return 'application/octet-stream';
+}
+
 function mappingBlock(doc, published) {
   return [
     `Artifact Code: ${published.artifactCode}`,
@@ -184,14 +232,46 @@ function applyMappingToMarkdown(text, doc, published) {
   return text.replace(/Artifact Mapping: pending publication/g, block);
 }
 
-async function readDoc(doc) {
+async function readDoc(doc, textOverride) {
   const fullPath = path.join(DOCS_HOME, doc.source);
-  const text = await fs.readFile(fullPath, 'utf8');
-  const bytes = new TextEncoder().encode(text);
+  const text = textOverride ?? await fs.readFile(fullPath, 'utf8');
+  const assets = [];
+  for (const assetPath of extractMarkdownAssetPaths(text)) {
+    const fullAssetPath = path.resolve(DOCS_HOME, assetPath);
+    assert(fullAssetPath.startsWith(`${DOCS_HOME}${path.sep}`), `Asset escapes docs root: ${assetPath}`);
+    const bytes = await fs.readFile(fullAssetPath);
+    assets.push({
+      path: assetPath,
+      type: contentTypeForAsset(assetPath),
+      byteLength: bytes.byteLength,
+      sha256: `sha256:${sha256Hex(bytes)}`,
+      bytes,
+    });
+  }
+  const JSZip = loadJSZip();
+  const zip = new JSZip();
+  zip.file('index.md', text);
+  zip.file('manifest.json', `${JSON.stringify({
+    schemaVersion: 1,
+    appKind: 'docs_page',
+    entry: 'index.md',
+    title: doc.title,
+    source: doc.source,
+    docId: doc.id,
+    contentType: 'text/markdown; charset=utf-8',
+    assets: assets.map(({ path, type, byteLength, sha256 }) => ({ path, type, byteLength, sha256 })),
+  }, null, 2)}\n`);
+  for (const asset of assets) zip.file(asset.path, asset.bytes);
+  const bytes = await zip.generateAsync({
+    type: 'uint8array',
+    compression: 'DEFLATE',
+    compressionOptions: { level: 9 },
+  });
   return {
     fullPath,
     text,
     bytes,
+    assets: assets.map(({ path, type, byteLength, sha256 }) => ({ path, type, byteLength, sha256 })),
     contentHash: `sha256:${sha256Hex(bytes)}`,
   };
 }
@@ -255,7 +335,7 @@ function publishInput(doc, content, upload, phase) {
       comments: 'locked',
     }),
     versionMetadata: metadataAttributes({
-      schema: 'paperproof-docs-markdown-v1',
+      schema: 'paperproof-docs-markdown-package-v1',
       phase,
       source: doc.source,
       route: doc.topicId ? `/docs/${doc.sectionId}/${doc.topicId}` : `/docs/${doc.sectionId}`,
@@ -364,13 +444,7 @@ async function publishMappedVersions({ docs, args, account, sui, walrusClient, t
     const before = await readDoc(doc);
     const mappedText = applyMappingToMarkdown(before.text, doc, published);
     if (args.run) await writeDocText(doc, mappedText);
-    const mappedBytes = new TextEncoder().encode(mappedText);
-    const content = await readDoc(doc);
-    if (!args.run) {
-      content.text = mappedText;
-      content.bytes = mappedBytes;
-      content.contentHash = `sha256:${sha256Hex(mappedBytes)}`;
-    }
+    const content = await readDoc(doc, args.run ? undefined : mappedText);
     const upload = await uploadDoc(walrusClient, account.signer, doc, content, args.run, args.skipWalrus, 'v2');
     const tx = txb.addGenericFileVersion(addVersionInput(doc, content, upload, published, 'mapped'));
     const result = await execute(sui, account.signer, tx, `add mapped doc version ${doc.source}`, args.run, account.address);
@@ -414,8 +488,14 @@ async function main() {
 
   const sdkPackage = JSON.parse(await fs.readFile(path.join(SDK_ROOT, 'package.json'), 'utf8'));
   const manifest = JSON.parse(await fs.readFile(MANIFEST_PATH, 'utf8'));
-  const docs = collectDocs(manifest);
-  assert(docs.length === 30, `Expected 30 docs, found ${docs.length}.`);
+  let docs = collectDocs(manifest);
+  if (args.only.length) {
+    const wanted = new Set(args.only);
+    docs = docs.filter((doc) => wanted.has(doc.source.replace(/\\/g, '/')) || wanted.has(doc.id));
+    assert(docs.length === wanted.size, `--only matched ${docs.length} docs, expected ${wanted.size}.`);
+  } else {
+    assert(docs.length === 30, `Expected 30 docs, found ${docs.length}.`);
+  }
 
   const account = await loadAccount(args.account);
   const deployment = createDeployment(MAINNET_DEPLOYMENT);

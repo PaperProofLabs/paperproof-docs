@@ -1,6 +1,6 @@
 {
-  "runId": "paperproof-docs-2026-06-20T07-45-08-012Z",
-  "run": true,
+  "runId": "paperproof-docs-2026-06-20T07-44-54-860Z",
+  "run": false,
   "accountIndex": 4,
   "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.6",
@@ -51,17 +51,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "Kpv7BiYzMSPOPG_9yTXRqPIkfp92SO7JqvJOY8RQrg0",
-          "blobObjectId": "0x151d81a7ab5cbd3f35ddc4b0e72c1db98d4e9bdc906b02b1316ecda57ecd9d66",
+          "blobId": "local-docs-v2-getting-started-index-2637cb80815ffc17dbe857d7",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 190578
         },
         "added": {
           "seriesId": "0xd8fa60402ace853407db6703b6c5ecc43520ad6577bf8d804ca4e94c3d0686b8",
-          "versionId": "0x759cfbd1803953d21fa5e61730ff61fdc5bf588440e3b1f7ba62e8a0a29451d1",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:578dc277a0d51a2882a55b9b7db4df502e3bd4b6edc4cedc156323b877b7e387"
+        "contentHash": "sha256:2637cb80815ffc17dbe857d738fc788cc225dd59f9d9ca0736fe13b2216e23bc"
       }
     },
     {
@@ -80,17 +80,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "XPw86nFPFVDcxQKr8bX29LeaIE50QRKP9fE-LOUUxR0",
-          "blobObjectId": "0x8528dfe667754c01cbe3d6e99e83d11c81e19978d4b90ee33be6e92ecbac5cd1",
+          "blobId": "local-docs-v2-getting-started-introduction-8d339c87f709d32840173dee",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 191426
         },
         "added": {
           "seriesId": "0xc86c5f43d31ba62f97dac4e056c1e25d7d42fc675262357c06a9cae9c633f55a",
-          "versionId": "0x78f07ce7bf693dab5d47e695b4f27572125ab6e5e6f958018f12ae8975904c1c",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:0945219332d0dc3a6777f724f78918fa7419fed1e193f17f41f761873316f71a"
+        "contentHash": "sha256:8d339c87f709d32840173dee6ae31d871261a377e2da6bdaef73237995ed6d8c"
       }
     },
     {
@@ -109,17 +109,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "9vdonwNhz9qIvFW6m5vE1h8y-_zn7GzbT0bXb67BpnI",
-          "blobObjectId": "0x4406ba27944b22d0005b693b7cccd569e55a75fcca29aa6e54bf1e8168d871c0",
+          "blobId": "local-docs-v2-getting-started-quick-start-e44b43b00a44dbadd101e1ba",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 2308
         },
         "added": {
           "seriesId": "0x886373561299545caf6b3726f65ce690506b7bff8370b43530cd3934e7515b66",
-          "versionId": "0xbffbc2b13df7af17e63a5a725e8753a5c477eb68046e2c9bb757d080a4ffe29d",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "5"
+          "version": "2"
         },
-        "contentHash": "sha256:e52c7d3afd892f44c8e39e3e9065e304915f1e0b92dc441e1787fd0fa51e5786"
+        "contentHash": "sha256:e44b43b00a44dbadd101e1ba1825c69b8c8105ec8a830e20b7db420d19126fff"
       }
     },
     {
@@ -138,17 +138,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "temCCNRpy_rDZRQYXEVHMIgcB90LnlvPhTnEtTWEQYc",
-          "blobObjectId": "0xa33dcb345dbcab5c2ffe526f8302db1c48c528db5736421cd47869d6d4ae06c1",
+          "blobId": "local-docs-v2-getting-started-why-sui-and-walrus-1a580fdb31233fa664c8581d",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 2039
         },
         "added": {
           "seriesId": "0x25087190c45af2f04df9a0a67e7f8b435293d322b6e2dfafaa28d70814a76042",
-          "versionId": "0x00dfa6642b020b32cbc0f55c784c6629b59963fb0f1fba2e520744cdbf8116e3",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:302f054ea7107754a9ffc6f677780c9bb28d1cd6a50cdcc6141867e171d1f2f0"
+        "contentHash": "sha256:1a580fdb31233fa664c8581d27a9414f216d3386b1a29e5e2182e8fd60fa6f88"
       }
     },
     {
@@ -167,17 +167,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "O5L37F72uktO4PH7c-LfCzLvJXetTmQX3Yg7JMJvMNs",
-          "blobObjectId": "0xc7131456654cd3b151d31bfb98578c8f4263f46794d1b1d9ebd12319f174b735",
+          "blobId": "local-docs-v2-getting-started-research-and-presentation-materials-ef01f333267ac9d0db840046",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 4568
         },
         "added": {
           "seriesId": "0x6b259991d78f2265d77f302168d9f801b093707234bdfaee06d9f7763ccf4c85",
-          "versionId": "0xd50d3d38ecc6938f3840bb43baf53f4e8b9a582916873d004bf6fd9fc949759a",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "5"
+          "version": "2"
         },
-        "contentHash": "sha256:dc9af4673236f60f3e6fffafec04de8b09089c9fdbed0a3b0082083b30ac1de3"
+        "contentHash": "sha256:ef01f333267ac9d0db8400469d84fdf93c82772649b4cb407f74e5facd4d4f2e"
       }
     },
     {
@@ -196,17 +196,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "FZvP_1Qtf7XSLdDefK2M7dv0CDHWmt6rqlHl-DlKcuE",
-          "blobObjectId": "0x85daa9e40342afedf3fe2bd24ecbfc55bc05eeb74b0c8933779d7656b238b3c8",
+          "blobId": "local-docs-v2-protocol-index-075c319a60ad09cfe638572e",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1300
         },
         "added": {
           "seriesId": "0x22d38471b17fad0cdc55b563de71baffb480b7641a7a7098dab88c9dcb775b2f",
-          "versionId": "0x0f701d3c7ead7f59b50d8ca88692fdad6cbddd7ea12369b4e1529ee847d92dd4",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:e0e79f43d217669738c54033bbe92ee8492fc9b881a33838cfc4fa56b1d7223d"
+        "contentHash": "sha256:075c319a60ad09cfe638572ee02cbc99b119e77e353649cd0b83ff22057595d3"
       }
     },
     {
@@ -225,17 +225,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "Q7ALbPjHSkzDpGZ5H1AXuXpY9dab21q1dRoqOlpjFl8",
-          "blobObjectId": "0xfc0a80fe60d75f46d6e57097862499cadd3ff5c5932e109da6b6c926d3165a1e",
+          "blobId": "local-docs-v2-protocol-artifact-model-1dca0ee9fcfe7045c996609a",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 2403
         },
         "added": {
           "seriesId": "0xff3a36416d5e7a1c612ea5500ca498ba9e9cbe11f29116ae533727101cb237e1",
-          "versionId": "0x0cec94f19cc683dc58b42f65acb41fde36d46c9919ff54f9c184e8a48fa2995a",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:0e1bd630bb818c2dfccab1bd4ba150ab0caaede9ad22605c60aa9e2f57e2dd06"
+        "contentHash": "sha256:1dca0ee9fcfe7045c996609ad6494332dd20019b373d3f62bbc78bd8d7b4657d"
       }
     },
     {
@@ -254,17 +254,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "aIM0k-S137ti9HV69CMnW3PJGSqAkGPBEBgAdwipFAI",
-          "blobObjectId": "0x78a8b69e48359ff433a1237e4ce8c81506476a8b1997237246264bdbbbb37113",
+          "blobId": "local-docs-v2-protocol-content-and-versioning-79a998a797bc01ec84b64e43",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1665
         },
         "added": {
           "seriesId": "0x6743a9eb357e4957c125d298e37458efc17294eb5bf4ab762ae341d008caf766",
-          "versionId": "0xb0647612799d8b567b03257dfe276ec86c29cc06a38d28b67aa9f3597eba4cf9",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:6f4088055d59c2285da32836cb876c7bdb1f21dca912b93e23bc6d7a54489e68"
+        "contentHash": "sha256:79a998a797bc01ec84b64e43ceef5d2d2d1732ead57fe10bc6acff8a2b64b141"
       }
     },
     {
@@ -283,17 +283,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "0HUSlAJyOdvtJazVgX9yy-RKayebbL8n_Pq5qlG5gN0",
-          "blobObjectId": "0xd4df08dd05197d5efa840025be7ff93e941f2d3bc234c55a97b7a673390c687c",
+          "blobId": "local-docs-v2-protocol-comments-and-likes-9af6b417cd314b6f6489adcb",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1383
         },
         "added": {
           "seriesId": "0x3bfda36c9df3be93b8ea8e1779504d390bb5a7105532a8208fff8dc6ef4ed935",
-          "versionId": "0xc090e6379afd39590f0af7114556eea629b84e1bed153544b6eb415bb55e9c48",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:f75af285034a0fba90416488b3db7511c65f0b11ca484adf8c3d525772df6a3a"
+        "contentHash": "sha256:9af6b417cd314b6f6489adcb9520f09ce0de6311886684b7d5a85d3899d4d3ca"
       }
     },
     {
@@ -312,17 +312,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "O3yCUHVVrFkWOE0LrU8hId3wfuBTDwLWEKlaXNb8f4U",
-          "blobObjectId": "0xb28504484ba5461771793f0239c927d89392a1e5874366680bb52af2ca2ad090",
+          "blobId": "local-docs-v2-protocol-manifests-and-canonical-state-41fb2d73807905d52c096faa",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1989
         },
         "added": {
           "seriesId": "0x76f14765e0cb77149f9ba1c60bf51236811be7f0007d6fef7bcccb7cca735302",
-          "versionId": "0xf093d355908b581e484a3ac994669fc25d718e095590aa12ba151ba2ac2257d8",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:a4e89ae2c8f127ae15e93257d0dde2d734a7e4b2d348c6423934fe469442c948"
+        "contentHash": "sha256:41fb2d73807905d52c096faa1cd0537b570493321209286611b9243d1b2f01c1"
       }
     },
     {
@@ -341,17 +341,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "1lQwxxIId3cE6NvZuig4besAqXxW0yGlkWoPSeIigUI",
-          "blobObjectId": "0x0fcd121279de2bc81d11ea7c4eaf90f26a8d16a396b3f0ed3145f84a9c0254ac",
+          "blobId": "local-docs-v2-developers-index-07699bb20788275a35776c62",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1534
         },
         "added": {
           "seriesId": "0xe42b8ce6677ca8a96d8834d016e6f4cd0a2cc48047ac2522cb506c3c0fd789f0",
-          "versionId": "0xf2fa4958f4ecf8d475b731680c717f36d6654eefb65e12a9afebd94576d48f81",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "5"
+          "version": "2"
         },
-        "contentHash": "sha256:c83bc9f96ffdffe404d796401d49ad186366ad4757cdbd0401f15dd656b40897"
+        "contentHash": "sha256:07699bb20788275a35776c62d2ab51be07b82040ef56473ca140c41f56a02744"
       }
     },
     {
@@ -370,17 +370,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "4HwOtERMIACwCLMf60pFzMzNwGPOCkCOZCaxMD7r7Dw",
-          "blobObjectId": "0xb89d08bc8cd8887d3ac2364428393107adcf3622694df4f6aed714c4e947727f",
+          "blobId": "local-docs-v2-developers-typescript-sdk-0c55b0fe1f819f69fd5de240",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 3391
         },
         "added": {
           "seriesId": "0xd882c0e7e316727eb62b1f642b19ac1aabbc17cfe31765f24c0e02da20038cd1",
-          "versionId": "0x00769a2554d645f3b2653e99c1ec7d6df33df2ffefaa8a9c8f48386cc13dc7a5",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:fd4e7168e5aae5c5c60df8159cbd3627d3ca51c6b1513b0f66f2d9e03c54b7aa"
+        "contentHash": "sha256:0c55b0fe1f819f69fd5de240fb6c5f5066ad1e2c2c1d7595e1fe7a090ff26dc2"
       }
     },
     {
@@ -399,17 +399,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "VIwo6lfIjHFiG99IJve8jGnOozOdQ3hnDKxtXpoCHAw",
-          "blobObjectId": "0xf13671fd57e546e6dffc61303b2f1b1971c8725fb666ef631ad1a1ffb184c9cd",
+          "blobId": "local-docs-v2-developers-python-sdk-3a19074e9b24a967e7c2e588",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 2021
         },
         "added": {
           "seriesId": "0x6f950074c78b7019dad1d36d9a30a5a14a10841a60322a0a6dcc549952e21153",
-          "versionId": "0xb0d09a96b700db66797edc2c422b3321e85f7874eb0f0feef6a0491c52fa6094",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:1f9ef9a0316de7e5501fe0cb0334af405cf9083412550c35b83321e0f796c26b"
+        "contentHash": "sha256:3a19074e9b24a967e7c2e58839f5852382b263ba489ecee7dc48c6380c5ecfd6"
       }
     },
     {
@@ -428,17 +428,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "vUnwXo8P-WK6WFBnjusKumF6jjnmgzSwqdp0uYoluWA",
-          "blobObjectId": "0xb60591876513eeea947ebd5b9aa704c97ebf58e763f40c6ef6682b391a776a99",
+          "blobId": "local-docs-v2-developers-rust-sdk-803c100884c2ea4d13d73cb0",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1856
         },
         "added": {
           "seriesId": "0xe74daa686e6209f2715f0a88492f6aa1f206d8406fcafca7594858e581c23b39",
-          "versionId": "0xb7adc35aaa0bb7a83e2f0d63615065fc662ccc1703a082ce045c22897b41fb1c",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:21f7cddb9e73fac90e4692eeffa077a918a8bc2e123c57c373009479e2c8b875"
+        "contentHash": "sha256:803c100884c2ea4d13d73cb02f8dcbffa905fe30c1244862d17f9a294bf013b8"
       }
     },
     {
@@ -457,17 +457,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "QpasatmYADHPrL9Ot7xgPV7P6fJ9uougsNgW9m3yi_M",
-          "blobObjectId": "0xda5168853f4e51223b434cf1ed00c9f5695854946cb481b9fdfbee326032ec1f",
+          "blobId": "local-docs-v2-developers-static-frontend-integration-b9329dad631434d24c85d5c8",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 2047
         },
         "added": {
           "seriesId": "0xc3190886ae5103e7a8b0faf8290b329ac726ec23e0c6a5822cbe7cd5109810fa",
-          "versionId": "0x009a8422991db782fc393eccbb60115c7ed5326028378a68e800a181f3cdcf62",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:34ecaccbb9c3f4fee2fc48300820e6517893a0193d2a9f7234bb2696272cf4ca"
+        "contentHash": "sha256:b9329dad631434d24c85d5c8fc0b927be0dab02ab6cc3b03a6e633e94d1ced77"
       }
     },
     {
@@ -486,17 +486,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "NhqgDPymyo2tIvgA-YzNWN3jfqiPjSTcNDCvlZIqpdk",
-          "blobObjectId": "0xdbc55fb9396fe2bc6d906787845aaaac0a7b45c52f31365d7ff299d8d1a35b05",
+          "blobId": "local-docs-v2-developers-indexer-integration-1610895169b3a82b0c84dcec",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1636
         },
         "added": {
           "seriesId": "0x5d42a2d17e428fa6a910e976a8da4435299d1fb4a520a9a9c36d5ba17cfc5e78",
-          "versionId": "0x2a29b7291fe19670f86d9405e61018df3d97116efebf20f6b3a772591b42e2b6",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:8da7d657afb6a394ab06b5fab19526c4db10676c284d11e2877d06e77be0c591"
+        "contentHash": "sha256:1610895169b3a82b0c84dcece99ec836dbc34ed6c7190f28d3eef7dc7265162a"
       }
     },
     {
@@ -515,17 +515,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "ZtRsFWeomoohYU-Alkv6IgFxuLnCTco7ey2wo403FGo",
-          "blobObjectId": "0x20c923e1fd5b082a48ea395d0d4b8bf2653d6378903830e555c6f55162cf3b2c",
+          "blobId": "local-docs-v2-copilot-index-e4907e2d084f440c2539b802",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1263
         },
         "added": {
           "seriesId": "0x529cf9197eb99b25e7d238d9ba555bc80c9f22b26e7f05f123b153613cda45cf",
-          "versionId": "0x24904aed0e9a5edcee7406db7e23783d2fc9d149e8745a24145f07fd1db498c6",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:fc1cdf1e525a4fb1fa078fb02e3bf2835f7c07686f5174ab966258b1634814e0"
+        "contentHash": "sha256:e4907e2d084f440c2539b80266595f824b573e0e9ec4ce7d5c535a4f5c259e7b"
       }
     },
     {
@@ -544,17 +544,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "WJVstPmaxSGOjzFMLUhy1AjWbIu3sD-Yvvya_oQnwSQ",
-          "blobObjectId": "0x07dd0c776ed4cf879e3b3d897356c6f5624fd7d664b6e45ee920adc7353304f3",
+          "blobId": "local-docs-v2-copilot-native-prompts-badf2b705ab96370793fae6d",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 2223
         },
         "added": {
           "seriesId": "0x663a7675df4fd8f282c55db142fd9b9c41a7744f0ba38e73a8828009679fc5ea",
-          "versionId": "0xb9edaac79978d6a4087bc6d0532fdc608dd8e526e33bd523eb05dcaef056ff44",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:466fa3acec2165ef6744b4636bcaaf5d25b1aa1068440f176c9ba58ba9176e55"
+        "contentHash": "sha256:badf2b705ab96370793fae6db13a8a21b3d49e93174a5da708d1123c7ccb6e45"
       }
     },
     {
@@ -573,17 +573,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "RGDHPEHZsFWy7jQlklZn8zKH-MNzoMeD-kYfLVMW0mg",
-          "blobObjectId": "0x013000d6c04a5b048c870ec34b01f580ca5040ea266bfed5d50bd077757faf22",
+          "blobId": "local-docs-v2-copilot-agent-memory-1338ecd7141de6e175e341b7",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 3215
         },
         "added": {
           "seriesId": "0x4d82d243557a13b20cb6b2fbac0aa59000694cf4b5d67e9104081ce20aabdda0",
-          "versionId": "0x06deccc1bb5b3a7cd6ae4a782ca53661ebb3145a88a352e2d7508df8e1d61903",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:5d343aa1dadf1c3babd17c4ad25e599f10f45dda755660f998480a57fb449890"
+        "contentHash": "sha256:1338ecd7141de6e175e341b74083a42f49c03f69bd8cbe806f28a0644e33ade4"
       }
     },
     {
@@ -602,17 +602,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "k3o2B4vE69VxW23GmEs_RJEaoiZ1Vk_b7KjCi4Lik_A",
-          "blobObjectId": "0x5962fd484d521a67b7801a040d8f2f35cc4ffa2fc44d14d2c449d114a7852a89",
+          "blobId": "local-docs-v2-copilot-memory-privacy-and-access-0242f62e1bd383443bdb086e",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1695
         },
         "added": {
           "seriesId": "0x37741376f5364c9c0b9f863cdee6bad96fbafbf4994401bdaabfdd247050e4c9",
-          "versionId": "0x1d3a699b28c35f1a6266a6c84a362b40524380a1ce95ef5f673eeede5a4ddf33",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:bb8e4f9c7f07979b2ecfc9319ca1667f026015f8835d52833ff726c303fa29a1"
+        "contentHash": "sha256:0242f62e1bd383443bdb086ef5844a37340e16ec55e0d482e919651a94f5d926"
       }
     },
     {
@@ -631,17 +631,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "GVH1d6C4r2NKz54HsSY9EUYKfmr1-5xiQ_oiLTXlPWE",
-          "blobObjectId": "0x4bfb866f460db4c8635d828db4f65b547076f40619e0d1925d0d21dfbf63e67b",
+          "blobId": "local-docs-v2-governance-and-economics-index-29bcef6861dc8cd382ab3f00",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 956
         },
         "added": {
           "seriesId": "0x54e0ad89966490517330805ee309b88fd9e3e73b0518e420f4eeab01b9218614",
-          "versionId": "0x95395e8194a0946b77c04cbf7df2e01c9c9b025134e0d58ddbcabc56a4418909",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:10e673c087baf0a0dcd595a718eada31709ae149654d976b97e2c1f7066db2d7"
+        "contentHash": "sha256:29bcef6861dc8cd382ab3f00cc46f3a0bce5026a5fa87219765ee053982be025"
       }
     },
     {
@@ -660,17 +660,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "AVzB4kCMQmNU0jO9C3kT6C4-lIr7hLyNtdy5ZF2RbMo",
-          "blobObjectId": "0x84c5f2a3d3d24fdfa4976763ddf584f781c915224c72bf2d1585f9a21b715990",
+          "blobId": "local-docs-v2-governance-and-economics-governance-928b527906df691da258bf37",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1805
         },
         "added": {
           "seriesId": "0xe7b6301a68d4357651d4d65e257a4e18d92b03bfddc9ee3cc38f60066a9d24ba",
-          "versionId": "0xa304470266110370462387e2f60c4db4ccaed6c6b1a689c8859221a317a4e5c5",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:e024e69963478b05b37a92f948adaa91c09f9eb8cd639deb8571567fb3178eaf"
+        "contentHash": "sha256:928b527906df691da258bf373c3e22eca5b52d2b25922f566e0e4a14bd9dfbb2"
       }
     },
     {
@@ -689,17 +689,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "ugTX__XcLG0L1UsuqArCXWJV_i3ycMy3LnqJBqr5KWo",
-          "blobObjectId": "0xb41ae448d81a1d0326e4c16757d4880ebff746ecf9ae63a39cf5f287c7046679",
+          "blobId": "local-docs-v2-governance-and-economics-pprf-utility-f94123a3a0ba6c4dcc2d5425",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 2321
         },
         "added": {
           "seriesId": "0xf59f80fd0346e155c3e2bcf7150bcf83221ffc949d2fa1d643e96705ce6746b2",
-          "versionId": "0xaaece3e33f13ce83eace4eff81e600d3c387ef8d21c2a3d4c4fd373081036006",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:13b5900ccd2c40adedd9b1dfa8ad194fb4c9f64003553c7b237fdbf6461ea7ff"
+        "contentHash": "sha256:f94123a3a0ba6c4dcc2d54253ac0497735562b5164cfaddba6c38d80655d350f"
       }
     },
     {
@@ -718,17 +718,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "alXywWa4sOry_LqyMTi779G4eYSu94k4XP2RQUUfbWU",
-          "blobObjectId": "0x0156dfb4703b83cff798af619989657f01cdf2f2d4872ec18b4e83472652c394",
+          "blobId": "local-docs-v2-governance-and-economics-fees-and-sustainability-7432d79063608b9d49ad9da4",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1658
         },
         "added": {
           "seriesId": "0xc03facf2908192e7c8d1f9dfb65f34cca15ac423d0e05fb609f2cd045bdb617e",
-          "versionId": "0xf4f8ba7a92321d36c5d67c6aa184b17b6d4240cf2bd204be7431445ecda387f1",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:d3a61d2aac9caa24946c25f8c8d32561957e0ea6ac0a14f132c61b447cc7daa8"
+        "contentHash": "sha256:7432d79063608b9d49ad9da420fd0b8b3ed674b36385101b9e44e9eff0cfbc52"
       }
     },
     {
@@ -747,17 +747,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "ObURG4yxqLWb5UFC8evYVpO6gD-S9yFdZw9NgLehL_w",
-          "blobObjectId": "0xa908878bfe93e28c9706847ebd03bcf61c4b443bf4893e8a5a16ecf67321e235",
+          "blobId": "local-docs-v2-safety-and-operations-index-cb8a6a3ed45f8430d3f9985a",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 997
         },
         "added": {
           "seriesId": "0xc4ba991e6982d64075056ad4ebe6df02d3121c240116a51ba038a2747fcbf061",
-          "versionId": "0x7e0e42eacbf9ec87f5811d7add5c42d5dc65cbed85dcbb6704033ce12227efc3",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:306fb53f588b0eb1a2b957659095c3488b03902d58eab31bf4cca1b9971114f8"
+        "contentHash": "sha256:cb8a6a3ed45f8430d3f9985ae3a463bd9cc32eb82c114e6f989da8ffd52c094f"
       }
     },
     {
@@ -776,17 +776,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "gCzRioqYYqqLNY_9RcsGzz5-4_dbx2YMaqAm_JiZsFo",
-          "blobObjectId": "0x550414cf6371adc03dee1134349d91c28733ed93d66d10e517ac733dd7d6822f",
+          "blobId": "local-docs-v2-safety-and-operations-user-safety-9d36df5b6f884297de277bac",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1541
         },
         "added": {
           "seriesId": "0x667055adbb592059a84b1f2e99671c199b291ef729dbd5500fc9aad7dc290553",
-          "versionId": "0x26dd0d57270213a848caf9d3edc55711796013ffc5c2e75f6b57129c19a2ed2c",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:9b1550a9cf394851c97a992029ba87fedcc7ed0fc10467840aece098a40fd568"
+        "contentHash": "sha256:9d36df5b6f884297de277bacbb5461ab878ca18abde8b0362f4adebdca0bc580"
       }
     },
     {
@@ -805,17 +805,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "lV3AKjuZVFMEzLPqRBmF3rm7Sx32FaUj6jmqz_Z1aSI",
-          "blobObjectId": "0x3999a932d38e196bdf47dfd38092b347cf270cfa3a0d137865fc44a5e937e037",
+          "blobId": "local-docs-v2-safety-and-operations-interface-policy-f5873bb66f702256268e4d3f",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1532
         },
         "added": {
           "seriesId": "0x925025e2f21a32d2b7374eb2a7f7aa6b02d6709afac3dc350c9c2f2ac923fb76",
-          "versionId": "0x8b1a9c162fc21b267a0921098a89bc2f49e4e3f6b9acf3166541e7e0aeadd91f",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:b547fa50f2c9118a2c752574522737ec86cbbbff5a4ed5e0482694b9636db4f5"
+        "contentHash": "sha256:f5873bb66f702256268e4d3fb877f0cbd1b68bacd081cc314964f69002b67fde"
       }
     },
     {
@@ -834,17 +834,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "xW505dgiMBrAgDZJ9DF-NUOvmTJ6pSLYDC4XDBVOcGw",
-          "blobObjectId": "0x86854884a1eb2c3a454dbd505b6120d4db9d25261ddabcc933a616a0600afe27",
+          "blobId": "local-docs-v2-safety-and-operations-mainnet-and-upgrades-853a47fb8f77318fe18b6fa6",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 5024
         },
         "added": {
           "seriesId": "0xdec207341218c3d9ae0565d0bdf24b59e5b9d490311780100ee4789274334d11",
-          "versionId": "0x3187fd721712986e754a5664900c8bb9ef90ae666c74e5995dcd8ceffc4a907e",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:a98d66314f4f0c069b79c81b5e989a15425efa54c4aac00c13e40087836f3118"
+        "contentHash": "sha256:853a47fb8f77318fe18b6fa6101f5aab3642772ca846f82f929ab7055e03a379"
       }
     },
     {
@@ -863,17 +863,17 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "WFsPcw09m2FNFdGZklt-EquoeAvWRoOvLx6RDjWrtxE",
-          "blobObjectId": "0xfad7b012aacb7516615221d23f61010f9a07e50afdaa55d0867f68e17ea7d311",
+          "blobId": "local-docs-v2-safety-and-operations-formal-verification-beabafeb2666644c94ae0077",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 3982
         },
         "added": {
           "seriesId": "0x5a086befae7df77e18d222ce127f03ddf3d3813da6ecc4ab018a3158eab396a9",
-          "versionId": "0xdc68b1a4b28b1bd5a1ad745174131be17477f59800a2bad6aa0bcf597734129a",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:bf73e01c7d4ad888554d6c39089c2eafabd021985e1f26074b2e29abd4862447"
+        "contentHash": "sha256:beabafeb2666644c94ae0077956bf0f11717c2d24c5c6eb58a221528a74aeb6e"
       }
     },
     {
@@ -892,140 +892,170 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "QBNuLyQksHZHYi0pJtFC2adjRFI5zWy1hiZhYaEDXEo",
-          "blobObjectId": "0x74d79e5885fbafae5c2281eccdf2e6f82d1402e6387f06fb21989716a177d576",
+          "blobId": "local-docs-v2-safety-and-operations-faq-3299619233b66aff9d060c65",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 2981
         },
         "added": {
           "seriesId": "0x1402056d261548faaff887a1bba4cc51fe45c30a5b2bc64e47c2c904a82a08fe",
-          "versionId": "0x3dca1e5c718e98a814616bbbf73932b11e3bd0341a46484d9833730ba7adf02f",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "4"
+          "version": "2"
         },
-        "contentHash": "sha256:6fdbc330337c803f357112b2330c23812e936a583d5ec874504bc95596c2d3c9"
+        "contentHash": "sha256:3299619233b66aff9d060c65c1d8038938de2b720ff8d345d22840fc4b8b46bd"
       }
     }
   ],
   "transactions": [
     {
       "label": "add mapped version getting-started/index.md",
-      "digest": "EGk2KJ9DTNcHdNqp7tP8ya6vQaVcqzq7a9Ce6LGxjKbD"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version getting-started/introduction.md",
-      "digest": "C8Rti8zKyJaTqcdNncVBWS9zACLXSVSPyeTxUu6sktjR"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version getting-started/quick-start.md",
-      "digest": "6HJGBTyRpieeYZJ41PsVeGFGeZFg1sEket4KikUYXUtD"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version getting-started/why-sui-and-walrus.md",
-      "digest": "9cJoHTKXZ4DbL8MGVDeSiGiG59UnMAnSqpUfPPyZiGD"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version getting-started/research-and-presentation-materials.md",
-      "digest": "9fNWLdcLoHnqFUgQTP1a1SemrHvMya66qRdpzjKgat36"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version protocol/index.md",
-      "digest": "8mLsZHXx7feMR6HAZV5TNiAgTw892Rfsq2DvJYQxcumU"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version protocol/artifact-model.md",
-      "digest": "AFYxonWViNjrXcZupMBY4AFdYUb4rQ8mdgXBXA6LXxVQ"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version protocol/content-and-versioning.md",
-      "digest": "J7VUo8qReJ1Rj7rRM1HdmddGKCoZZx5myoRJKfyACUci"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version protocol/comments-and-likes.md",
-      "digest": "7yvUEnHmSuhQhDpWcwsNAZPyVFG8JV1HAj5Dm28uaDdM"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version protocol/manifests-and-canonical-state.md",
-      "digest": "NJZwHcgM2FvJqo8ndPfPSWed4MjziMJpxrPN5AJSD7T"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version developers/index.md",
-      "digest": "F6yaLQwmCuhDhzMT2k3hk6rLrkuwZzhsqEXgMa11vpHV"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version developers/typescript-sdk.md",
-      "digest": "CT1nLaSn8ZSEnvH4VBjVutG1ZL5wG2xcDSdRtwi5idse"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version developers/python-sdk.md",
-      "digest": "2PqRz6xsxLSvASUZHT1U3GCtJiBMGpEUXhRP2Kgx27CL"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version developers/rust-sdk.md",
-      "digest": "RsG7SE7NuBn75RPvnY8befjnN2fg7T6ZZDnvFRX2bgk"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version developers/static-frontend-integration.md",
-      "digest": "6R8np1bGWqyak5xVV6pz7tuAY1TBa4hbJUnpFH5N3BWy"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version developers/indexer-integration.md",
-      "digest": "G4KzkoJoFLan5RS9h6bm9p9YQPYWPu75DLHny9jahggu"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version copilot/index.md",
-      "digest": "3Yck1hwWHb1C3iygVzFWDrmRAKS5Mjj8QGTW8vAN1s2y"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version copilot/native-prompts.md",
-      "digest": "Hh1cAZhv4JbAsJm9GA538hWF3Y5VzK7xBoDXy8VEJwR6"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version copilot/agent-memory.md",
-      "digest": "4Q5ujC9EEnvSV4sEkjhzYY75ATew1NS1PbKW41EssqrS"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version copilot/memory-privacy-and-access.md",
-      "digest": "45GzXC1e7QPUCiP58odBnjFnaVYVzdeFBHrttbZmggB6"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version governance-and-economics/index.md",
-      "digest": "52Tqej3M4khP7o7kiSMqiJneF3T1nTzU8jnVqBxEnu32"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version governance-and-economics/governance.md",
-      "digest": "9HsyY3GP7DTnoYHEJ1V3a8NUqDwVK6oYxRfoYYy1kcAb"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version governance-and-economics/pprf-utility.md",
-      "digest": "FXS3Dv2PrKWB3E3vvcMjvJbsZAMTKCjjWGuweiKuPfz9"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version governance-and-economics/fees-and-sustainability.md",
-      "digest": "GabKpZtKBmaq19KrVPrBrpVqMvaZVs48vwSe69srYP3S"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version safety-and-operations/index.md",
-      "digest": "9RoV265QNgXqt4XStFyymjXw7tcanmyic6AfPggLxjK1"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version safety-and-operations/user-safety.md",
-      "digest": "FLam8NEfqbrg4Rd796vKmmajzTtZwFGYUTtNe4HVjxVg"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version safety-and-operations/interface-policy.md",
-      "digest": "EJEE5mdNeagBQYDGKjMi7V8Doc6sR9wd7RnTnjaU8JkM"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version safety-and-operations/mainnet-and-upgrades.md",
-      "digest": "H33cGzZD6j7dkptw2SXDe9Bu12u8xVVya8dW99DVKLqV"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version safety-and-operations/formal-verification.md",
-      "digest": "5AFCL7X83UHJKset3ZxxQ7dfxBQymYxF8LRihpyrxux5"
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
       "label": "add mapped version safety-and-operations/faq.md",
-      "digest": "5mQ8UWAoaPbNZrRa4W6kegUkunMGgGwfps1jfA66Vogq"
+      "digest": null,
+      "dryRunBytes": 0
     }
   ],
   "manifest": {
@@ -1053,8 +1083,8 @@
             "initialVersionId": "0xb2581dd2afd0a6232f22bb0fc6f426a049153519a16cd77c205b5573ddd0862b",
             "likesBookId": "0x3852d507b41d2a922d24e874f6368e9e5b5bf39b8304a2ede15b92cb177d1685",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x78f07ce7bf693dab5d47e695b4f27572125ab6e5e6f958018f12ae8975904c1c",
-            "latestContentHash": "sha256:0945219332d0dc3a6777f724f78918fa7419fed1e193f17f41f761873316f71a",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:8d339c87f709d32840173dee6ae31d871261a377e2da6bdaef73237995ed6d8c",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1068,8 +1098,8 @@
             "initialVersionId": "0xc5bfdc108e28e51f5b02d3ce74b23db4fd526296ef4ce78c9e8a6e37349d9869",
             "likesBookId": "0x776b9cf703a37314e296964578f65aa359c4645c3749e981d6e85c731d7ea95f",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xbffbc2b13df7af17e63a5a725e8753a5c477eb68046e2c9bb757d080a4ffe29d",
-            "latestContentHash": "sha256:e52c7d3afd892f44c8e39e3e9065e304915f1e0b92dc441e1787fd0fa51e5786",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:e44b43b00a44dbadd101e1ba1825c69b8c8105ec8a830e20b7db420d19126fff",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1083,8 +1113,8 @@
             "initialVersionId": "0x27f8b8bdfbe74337d8c8c7e1de681a71311b8daca2fd111a961ed17bae300eb3",
             "likesBookId": "0x677b44ae9d130e50087fb41d02805bd6bf0d56207acb58e1b8a22242d42d646a",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x00dfa6642b020b32cbc0f55c784c6629b59963fb0f1fba2e520744cdbf8116e3",
-            "latestContentHash": "sha256:302f054ea7107754a9ffc6f677780c9bb28d1cd6a50cdcc6141867e171d1f2f0",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:1a580fdb31233fa664c8581d27a9414f216d3386b1a29e5e2182e8fd60fa6f88",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1098,16 +1128,16 @@
             "initialVersionId": "0xee31889d3eb47981ccfd5546cf15bc7ee0fbaebc91dadae0f9606501b07e7f23",
             "likesBookId": "0xa26f8514874b09010191bafb4da6e22d1bd9845687aaed5edb33ee30a8895f98",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xd50d3d38ecc6938f3840bb43baf53f4e8b9a582916873d004bf6fd9fc949759a",
-            "latestContentHash": "sha256:dc9af4673236f60f3e6fffafec04de8b09089c9fdbed0a3b0082083b30ac1de3",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:ef01f333267ac9d0db8400469d84fdf93c82772649b4cb407f74e5facd4d4f2e",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],
         "commentsTreeId": "0x2c58268a4509ac0b3ff76906ff9ae0e05faa8e98de34e9409d1c7cd3d0377fdc",
         "initialVersionId": "0xdb2386102fa8bc19ee6fee456023e0e5bdc71b7481aa5b9eab37e0b7ac2d5ce4",
         "likesBookId": "0xa20c63c75041d47620784c0632389eb66b4d5ba40c93caea531d46893ad308e5",
-        "currentVersionId": "0x759cfbd1803953d21fa5e61730ff61fdc5bf588440e3b1f7ba62e8a0a29451d1",
-        "latestContentHash": "sha256:578dc277a0d51a2882a55b9b7db4df502e3bd4b6edc4cedc156323b877b7e387",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:2637cb80815ffc17dbe857d738fc788cc225dd59f9d9ca0736fe13b2216e23bc",
         "contentType": "application/vnd.paperproof.markdown-package+zip",
         "commentsTreeStatus": "locked"
       },
@@ -1130,8 +1160,8 @@
             "initialVersionId": "0x63fa5a67a1c9950a8712cabb31e495eab6de2a26f7abb87bee052ad2407c28a9",
             "likesBookId": "0x5414a0e73c8b0a5eb28627c8a13ab101616112418c6588c3d43f707d6c06d732",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x0cec94f19cc683dc58b42f65acb41fde36d46c9919ff54f9c184e8a48fa2995a",
-            "latestContentHash": "sha256:0e1bd630bb818c2dfccab1bd4ba150ab0caaede9ad22605c60aa9e2f57e2dd06",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:1dca0ee9fcfe7045c996609ad6494332dd20019b373d3f62bbc78bd8d7b4657d",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1145,8 +1175,8 @@
             "initialVersionId": "0x3e33a4e034d3eddd0528fb4aee9c603d2b38610f9feec73b0c03ebe3be015cf8",
             "likesBookId": "0x6a1c77de0bcb4a0f1badf0fc58c51836ec846ee0fdfcd4e46f6669b10bcae894",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xb0647612799d8b567b03257dfe276ec86c29cc06a38d28b67aa9f3597eba4cf9",
-            "latestContentHash": "sha256:6f4088055d59c2285da32836cb876c7bdb1f21dca912b93e23bc6d7a54489e68",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:79a998a797bc01ec84b64e43ceef5d2d2d1732ead57fe10bc6acff8a2b64b141",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1160,8 +1190,8 @@
             "initialVersionId": "0x12531aad75c13d9bc96ec2b28258b3fc03aff59280e850ef63ece2e8361dee3c",
             "likesBookId": "0x637716c624ea9f923001a9984d621507f7238535ad8c52ffd8cb52e086d12b64",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xc090e6379afd39590f0af7114556eea629b84e1bed153544b6eb415bb55e9c48",
-            "latestContentHash": "sha256:f75af285034a0fba90416488b3db7511c65f0b11ca484adf8c3d525772df6a3a",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:9af6b417cd314b6f6489adcb9520f09ce0de6311886684b7d5a85d3899d4d3ca",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1175,8 +1205,8 @@
             "initialVersionId": "0x0795167aa039996c5279101b70ca655b56b02d1f3c473ae08c383a8e7379198b",
             "likesBookId": "0xcc827946af8d27744300ae8b97b09c70887a5c72e1a38828d561bb796f2566fc",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xf093d355908b581e484a3ac994669fc25d718e095590aa12ba151ba2ac2257d8",
-            "latestContentHash": "sha256:a4e89ae2c8f127ae15e93257d0dde2d734a7e4b2d348c6423934fe469442c948",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:41fb2d73807905d52c096faa1cd0537b570493321209286611b9243d1b2f01c1",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],
@@ -1184,8 +1214,8 @@
         "initialVersionId": "0xaf1cb9aa856f8c7bd5e8c7edcf6d4b68c388a7db6952ef95c8c9b2adb88b9924",
         "likesBookId": "0x10f858847df51637d5b18af9a8009a9ad0548a81a8e8e99eb16d086e6fccea78",
         "commentsTreeStatus": "locked",
-        "currentVersionId": "0x0f701d3c7ead7f59b50d8ca88692fdad6cbddd7ea12369b4e1529ee847d92dd4",
-        "latestContentHash": "sha256:e0e79f43d217669738c54033bbe92ee8492fc9b881a33838cfc4fa56b1d7223d",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:075c319a60ad09cfe638572ee02cbc99b119e77e353649cd0b83ff22057595d3",
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       },
       {
@@ -1207,8 +1237,8 @@
             "initialVersionId": "0xb6f270f853471a9d881a2f06f9b3179008657688c2ea340b9bbc02565c667317",
             "likesBookId": "0x4aa1490037663a2353d3bfe6ef356bd137414d31baa59271e32a2a1b70b3d86f",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x00769a2554d645f3b2653e99c1ec7d6df33df2ffefaa8a9c8f48386cc13dc7a5",
-            "latestContentHash": "sha256:fd4e7168e5aae5c5c60df8159cbd3627d3ca51c6b1513b0f66f2d9e03c54b7aa",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:0c55b0fe1f819f69fd5de240fb6c5f5066ad1e2c2c1d7595e1fe7a090ff26dc2",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1222,8 +1252,8 @@
             "initialVersionId": "0xf2561b4f8f45aaaac592f9fb36d5f2be5bf314f3be3b5c2c813af67bbf742f5f",
             "likesBookId": "0xcc5596b042e41195318ebecb179edf633f88f3a2e95417e8f0633f6947ad4449",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xb0d09a96b700db66797edc2c422b3321e85f7874eb0f0feef6a0491c52fa6094",
-            "latestContentHash": "sha256:1f9ef9a0316de7e5501fe0cb0334af405cf9083412550c35b83321e0f796c26b",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:3a19074e9b24a967e7c2e58839f5852382b263ba489ecee7dc48c6380c5ecfd6",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1237,8 +1267,8 @@
             "initialVersionId": "0x388e6de8b93a52520c66e00720cd40d5e978fffd8589ae26f9a09445372969a1",
             "likesBookId": "0x7dbe8fd2cdc3042e8443482a2e566373120212260770b61fb85f7fc6447430d8",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xb7adc35aaa0bb7a83e2f0d63615065fc662ccc1703a082ce045c22897b41fb1c",
-            "latestContentHash": "sha256:21f7cddb9e73fac90e4692eeffa077a918a8bc2e123c57c373009479e2c8b875",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:803c100884c2ea4d13d73cb02f8dcbffa905fe30c1244862d17f9a294bf013b8",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1252,8 +1282,8 @@
             "initialVersionId": "0xeb5cd4b9b0140fed7d276ad49f919d5df1441427a0ae0d05bae94b27cfb6c8f2",
             "likesBookId": "0x529df9fc896166bef1869ab991eb1e7844ca3b716053788448dd430b91372dad",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x009a8422991db782fc393eccbb60115c7ed5326028378a68e800a181f3cdcf62",
-            "latestContentHash": "sha256:34ecaccbb9c3f4fee2fc48300820e6517893a0193d2a9f7234bb2696272cf4ca",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:b9329dad631434d24c85d5c8fc0b927be0dab02ab6cc3b03a6e633e94d1ced77",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1267,8 +1297,8 @@
             "initialVersionId": "0xbc4d90d3060deab235af6b57a309149f1e72ceaf21cc74b1a7f601d3ccab45bb",
             "likesBookId": "0xcdd2485b3d65c1982e50ae19b1d6cc2178750758f7a702eb85c40dbf0794de1d",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x2a29b7291fe19670f86d9405e61018df3d97116efebf20f6b3a772591b42e2b6",
-            "latestContentHash": "sha256:8da7d657afb6a394ab06b5fab19526c4db10676c284d11e2877d06e77be0c591",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:1610895169b3a82b0c84dcece99ec836dbc34ed6c7190f28d3eef7dc7265162a",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],
@@ -1276,8 +1306,8 @@
         "initialVersionId": "0xa29d2cbb21a4f16c90bde0b71389ad55bf06bfad9cb87303f8456a320f69edc7",
         "likesBookId": "0x62c29befa42dacb50b9b18a9e7640ed83f6069805752b6fe06881807d81a9007",
         "commentsTreeStatus": "locked",
-        "currentVersionId": "0xf2fa4958f4ecf8d475b731680c717f36d6654eefb65e12a9afebd94576d48f81",
-        "latestContentHash": "sha256:c83bc9f96ffdffe404d796401d49ad186366ad4757cdbd0401f15dd656b40897",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:07699bb20788275a35776c62d2ab51be07b82040ef56473ca140c41f56a02744",
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       },
       {
@@ -1299,8 +1329,8 @@
             "initialVersionId": "0xa5a01e58edd9f344f048c5bb7391325ba96e40b1c42cebaf66e106ffcfa90d20",
             "likesBookId": "0x499db7b9b65b82a49f171b9e69e29ae155f21d980279578a1ac3363a042594eb",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xb9edaac79978d6a4087bc6d0532fdc608dd8e526e33bd523eb05dcaef056ff44",
-            "latestContentHash": "sha256:466fa3acec2165ef6744b4636bcaaf5d25b1aa1068440f176c9ba58ba9176e55",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:badf2b705ab96370793fae6db13a8a21b3d49e93174a5da708d1123c7ccb6e45",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1314,8 +1344,8 @@
             "initialVersionId": "0xa9d53648c4b8c59cfdb0fa8d226ac97c200e066e29d9d9b680b2f088903e9f5e",
             "likesBookId": "0xdf92a5fbbffa858d4dca3c3482a38cdd2b4bef4dff986253d754ff1f8d5d17ab",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x06deccc1bb5b3a7cd6ae4a782ca53661ebb3145a88a352e2d7508df8e1d61903",
-            "latestContentHash": "sha256:5d343aa1dadf1c3babd17c4ad25e599f10f45dda755660f998480a57fb449890",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:1338ecd7141de6e175e341b74083a42f49c03f69bd8cbe806f28a0644e33ade4",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1329,8 +1359,8 @@
             "initialVersionId": "0x148b8bf30cb30525c1f6a2afdcbacd0e1971ed0b1cdc3b2876853f7d4f737dfd",
             "likesBookId": "0x2dcfeaeec954588d295b412a979a576918723a78218b9c98fb8c9e90af8aec43",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x1d3a699b28c35f1a6266a6c84a362b40524380a1ce95ef5f673eeede5a4ddf33",
-            "latestContentHash": "sha256:bb8e4f9c7f07979b2ecfc9319ca1667f026015f8835d52833ff726c303fa29a1",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:0242f62e1bd383443bdb086ef5844a37340e16ec55e0d482e919651a94f5d926",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],
@@ -1338,8 +1368,8 @@
         "initialVersionId": "0xd8321f4504fb729b1101eac99bb66776d79c11f79c433c7480d9a1e2e63ba008",
         "likesBookId": "0x04626e008c2eab9639d0dc9215d95284f0388fbb3fee458e8451aab975cde757",
         "commentsTreeStatus": "locked",
-        "currentVersionId": "0x24904aed0e9a5edcee7406db7e23783d2fc9d149e8745a24145f07fd1db498c6",
-        "latestContentHash": "sha256:fc1cdf1e525a4fb1fa078fb02e3bf2835f7c07686f5174ab966258b1634814e0",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:e4907e2d084f440c2539b80266595f824b573e0e9ec4ce7d5c535a4f5c259e7b",
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       },
       {
@@ -1361,8 +1391,8 @@
             "initialVersionId": "0x0c1af9c74d07e096820b38d833980464fbf2bfdac194700fca3ab8f2090e76a9",
             "likesBookId": "0xba3c965f6ff8cd1307ef5844861c9332efa994fcacc5a46b036343297569f0b5",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xa304470266110370462387e2f60c4db4ccaed6c6b1a689c8859221a317a4e5c5",
-            "latestContentHash": "sha256:e024e69963478b05b37a92f948adaa91c09f9eb8cd639deb8571567fb3178eaf",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:928b527906df691da258bf373c3e22eca5b52d2b25922f566e0e4a14bd9dfbb2",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1376,8 +1406,8 @@
             "initialVersionId": "0xc6e82a3fc6136ec5bd90bd2bf7af6a7e9474d56f90eff807a5b3603b42d26e1c",
             "likesBookId": "0xa1c34ef8dc05cbb01406e16fc8d799941c1beb67cfff9f59989b7a76bca4b591",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xaaece3e33f13ce83eace4eff81e600d3c387ef8d21c2a3d4c4fd373081036006",
-            "latestContentHash": "sha256:13b5900ccd2c40adedd9b1dfa8ad194fb4c9f64003553c7b237fdbf6461ea7ff",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:f94123a3a0ba6c4dcc2d54253ac0497735562b5164cfaddba6c38d80655d350f",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1391,8 +1421,8 @@
             "initialVersionId": "0xd7b80423b8d38cd4c52a072cfd326283be232c8d9b38a2dbe2ab84541836531f",
             "likesBookId": "0xc77acfd2873bd12406adc7aae4699e216027bb080c6b16df29a240ab1a28bae4",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xf4f8ba7a92321d36c5d67c6aa184b17b6d4240cf2bd204be7431445ecda387f1",
-            "latestContentHash": "sha256:d3a61d2aac9caa24946c25f8c8d32561957e0ea6ac0a14f132c61b447cc7daa8",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:7432d79063608b9d49ad9da420fd0b8b3ed674b36385101b9e44e9eff0cfbc52",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],
@@ -1400,8 +1430,8 @@
         "initialVersionId": "0xbeeb6a0e591c575d9b7fec62d0852ddac3c6fd1df4582c1c9924845d9b34df96",
         "likesBookId": "0xe4ef467bebca00d58fcfd884416caa6522c6fd36b5b747731eecedddcb5c3397",
         "commentsTreeStatus": "locked",
-        "currentVersionId": "0x95395e8194a0946b77c04cbf7df2e01c9c9b025134e0d58ddbcabc56a4418909",
-        "latestContentHash": "sha256:10e673c087baf0a0dcd595a718eada31709ae149654d976b97e2c1f7066db2d7",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:29bcef6861dc8cd382ab3f00cc46f3a0bce5026a5fa87219765ee053982be025",
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       },
       {
@@ -1423,8 +1453,8 @@
             "initialVersionId": "0x6b9ec41c229f9badb9ef2b4974eabff519ed0d2017a7ca389b751ceb3c8ea984",
             "likesBookId": "0x37a9ae6e61894e3c1683cc6383ee337d9198abf1b3659e20c3da647ddc8f7705",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x26dd0d57270213a848caf9d3edc55711796013ffc5c2e75f6b57129c19a2ed2c",
-            "latestContentHash": "sha256:9b1550a9cf394851c97a992029ba87fedcc7ed0fc10467840aece098a40fd568",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:9d36df5b6f884297de277bacbb5461ab878ca18abde8b0362f4adebdca0bc580",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1438,8 +1468,8 @@
             "initialVersionId": "0xa80d7382cf661275f7d34d4ab5a859f2deaf284aa974c4727ce9964679029ee2",
             "likesBookId": "0xdb51b28ad8501299116e7f6f320634b5c4fe68d1b091dac40d3b6512c9647086",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x8b1a9c162fc21b267a0921098a89bc2f49e4e3f6b9acf3166541e7e0aeadd91f",
-            "latestContentHash": "sha256:b547fa50f2c9118a2c752574522737ec86cbbbff5a4ed5e0482694b9636db4f5",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:f5873bb66f702256268e4d3fb877f0cbd1b68bacd081cc314964f69002b67fde",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1453,8 +1483,8 @@
             "initialVersionId": "0x53cb518cbe94200236ff537d135f76e24875301d7d269790b3388d6c32b4e1ef",
             "likesBookId": "0x676e29663a657a0467b94c84fb4df832dfc0b6ccca49253536e549123b14b765",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x3187fd721712986e754a5664900c8bb9ef90ae666c74e5995dcd8ceffc4a907e",
-            "latestContentHash": "sha256:a98d66314f4f0c069b79c81b5e989a15425efa54c4aac00c13e40087836f3118",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:853a47fb8f77318fe18b6fa6101f5aab3642772ca846f82f929ab7055e03a379",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1468,8 +1498,8 @@
             "initialVersionId": "0x89607ae04743eacedfbbbc8cfd973c096530bb3c3d899b7601d4e8b063b2f2f3",
             "likesBookId": "0xa40d2c2783bbde031a3c0946debc38d8836d565b65217b92f80dd2bc759b780f",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xdc68b1a4b28b1bd5a1ad745174131be17477f59800a2bad6aa0bcf597734129a",
-            "latestContentHash": "sha256:bf73e01c7d4ad888554d6c39089c2eafabd021985e1f26074b2e29abd4862447",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:beabafeb2666644c94ae0077956bf0f11717c2d24c5c6eb58a221528a74aeb6e",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -1483,8 +1513,8 @@
             "initialVersionId": "0xa80372fe1bee82fb51feed7b1b1b108e829c14ffc49f84606a418577001548e6",
             "likesBookId": "0xd092b2fe045bf8b9f252ee173b06f96946e2ff5eaa0b493e3c20131eea5a9e8f",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0x3dca1e5c718e98a814616bbbf73932b11e3bd0341a46484d9833730ba7adf02f",
-            "latestContentHash": "sha256:6fdbc330337c803f357112b2330c23812e936a583d5ec874504bc95596c2d3c9",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:3299619233b66aff9d060c65c1d8038938de2b720ff8d345d22840fc4b8b46bd",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],
@@ -1492,12 +1522,12 @@
         "initialVersionId": "0xdf0be4314fd7e5ed887de6bfdff61aaffc06ff4397a63d6b4af5d41325163b42",
         "likesBookId": "0xc0cdce515077e3ce2525c248f8ea424e57299e1624b5e7b399d6418acaa183e5",
         "commentsTreeStatus": "locked",
-        "currentVersionId": "0x7e0e42eacbf9ec87f5811d7add5c42d5dc65cbed85dcbb6704033ce12227efc3",
-        "latestContentHash": "sha256:306fb53f588b0eb1a2b957659095c3488b03902d58eab31bf4cca1b9971114f8",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:cb8a6a3ed45f8430d3f9985ae3a463bd9cc32eb82c114e6f989da8ffd52c094f",
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       }
     ],
-    "publishedAt": "2026-06-20T02:14:12.767Z",
+    "publishedAt": "2026-06-20T07:44:56.779Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
     "sdkVersion": "0.2.6"
   }

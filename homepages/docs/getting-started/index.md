@@ -6,6 +6,8 @@ Artifact Code: PaperProof-generic_file-001144-d8fa60402ace
 Series ID: 0xd8fa60402ace853407db6703b6c5ecc43520ad6577bf8d804ca4e94c3d0686b8
 Comments Tree: locked
 
+![PaperProof application architecture and flow](assets/application-architecture-flow.svg)
+
 PaperProof is a Sui-native protocol for durable digital artifacts backed by
 Walrus storage. It turns stored content into verifiable, versioned,
 discussable, and agent-readable knowledge objects.

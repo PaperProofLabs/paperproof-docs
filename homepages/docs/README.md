@@ -27,20 +27,18 @@ comment composer for Docs content.
 
 ## Artifact mapping convention
 
-Every Markdown file contains:
-
-```text
-Artifact Mapping: pending publication
-```
-
-After publication, replace that line with:
+Every published Markdown file is mapped through `manifest.json` with:
 
 ```text
 Artifact Code: PaperProof-...
 Series ID: 0x...
-Comments Tree: archived
+Current Version ID: 0x...
+Latest Content Hash: sha256:...
+Comments Tree: archived-or-locked
 ```
 
 The website manifest may then map its stable Docs route to the published series.
 The manifest controls official navigation and curation. The PaperProof artifact
 series and its Walrus-backed versions remain the content source of truth.
+Content updates should append a new version to the existing series, then refresh
+the manifest metadata used by the static site fallback.

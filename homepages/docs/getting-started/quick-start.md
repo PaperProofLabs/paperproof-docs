@@ -18,6 +18,14 @@ possible without requiring users to read Move source code or object IDs first.
    content references, comments, and likes.
 5. Use the Walrus content action to retrieve the linked content when available.
 
+Good starter examples include official PaperProof papers, the PaperProof Skill
+software release, datasets, Blog posts, and Docs artifacts. For hackathon
+review, the public submission hub is:
+
+```text
+https://github.com/PaperProofLabs/paperproof-sui-overflow-2026
+```
+
 ## Publish an artifact
 
 1. Connect a compatible Sui wallet.
@@ -38,6 +46,11 @@ artifact state on Sui. Storage and chain operations may occur in stages.
 
 Agent Memory is optional. It can be enabled later if you want wallet-linked
 preferences or task context to persist across sessions.
+
+For AI/agent integrations outside the website, the community-facing PaperProof
+Skill is the protocol-native path. It helps agents prepare metadata, package
+files, add versions, query series, and verify published state while still
+leaving final signing authority with the configured wallet or signer.
 
 ## Add a new version
 

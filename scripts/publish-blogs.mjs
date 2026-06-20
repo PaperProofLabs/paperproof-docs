@@ -149,10 +149,58 @@ function collectPosts(manifest) {
   }));
 }
 
+function isRemoteOrFragmentUrl(value) {
+  return /^(?:[a-z][a-z0-9+.-]*:|#|\/\/)/i.test(value);
+}
+
+function normalizePackagePath(value) {
+  return String(value ?? '')
+    .trim()
+    .replace(/^<|>$/g, '')
+    .replace(/\\/g, '/')
+    .replace(/^\.\//, '');
+}
+
+function extractMarkdownAssetPaths(markdown) {
+  const paths = new Set();
+  for (const match of markdown.matchAll(/!\[[^\]]*\]\(([^)\s]+)(?:\s+["'][^"']*["'])?\)/g)) {
+    const assetPath = normalizePackagePath(decodeURIComponent(match[1]));
+    if (!assetPath || isRemoteOrFragmentUrl(assetPath)) continue;
+    assert(!assetPath.includes('..'), `Unsafe asset path in Markdown: ${assetPath}`);
+    assert(assetPath.startsWith('assets/'), `Local blog assets must live under assets/: ${assetPath}`);
+    paths.add(assetPath);
+  }
+  return [...paths].sort();
+}
+
+function contentTypeForAsset(assetPath) {
+  const ext = path.extname(assetPath).toLowerCase();
+  if (ext === '.svg') return 'image/svg+xml';
+  if (ext === '.png') return 'image/png';
+  if (ext === '.jpg' || ext === '.jpeg') return 'image/jpeg';
+  if (ext === '.webp') return 'image/webp';
+  if (ext === '.gif') return 'image/gif';
+  if (ext === '.avif') return 'image/avif';
+  return 'application/octet-stream';
+}
+
 async function readPost(post) {
   const fullPath = path.join(BLOGS_HOME, post.source);
   const text = await fs.readFile(fullPath, 'utf8');
   assert(text.startsWith(`# ${post.title}`), `${post.source} title does not match manifest title.`);
+  const assets = [];
+  for (const assetPath of extractMarkdownAssetPaths(text)) {
+    const fullAssetPath = path.resolve(BLOGS_HOME, assetPath);
+    assert(fullAssetPath.startsWith(`${BLOGS_HOME}${path.sep}`), `Asset escapes blog root: ${assetPath}`);
+    const bytes = await fs.readFile(fullAssetPath);
+    assets.push({
+      path: assetPath,
+      type: contentTypeForAsset(assetPath),
+      byteLength: bytes.byteLength,
+      sha256: `sha256:${sha256Hex(bytes)}`,
+      bytes,
+    });
+  }
   const JSZip = loadJSZip();
   const zip = new JSZip();
   zip.file('index.md', text);
@@ -164,7 +212,11 @@ async function readPost(post) {
     source: post.source,
     postId: post.id,
     contentType: 'text/markdown; charset=utf-8',
+    assets: assets.map(({ path, type, byteLength, sha256 }) => ({ path, type, byteLength, sha256 })),
   }, null, 2)}\n`);
+  for (const asset of assets) {
+    zip.file(asset.path, asset.bytes);
+  }
   const bytes = await zip.generateAsync({
     type: 'uint8array',
     compression: 'DEFLATE',
@@ -174,6 +226,7 @@ async function readPost(post) {
     fullPath,
     text,
     bytes,
+    assets: assets.map(({ path, type, byteLength, sha256 }) => ({ path, type, byteLength, sha256 })),
     contentHash: `sha256:${sha256Hex(bytes)}`,
   };
 }

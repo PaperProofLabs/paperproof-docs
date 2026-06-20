@@ -1,6 +1,6 @@
 {
-  "runId": "paperproof-blogs-2026-06-20T06-13-09-493Z",
-  "run": true,
+  "runId": "paperproof-blogs-2026-06-20T06-09-47-229Z",
+  "run": false,
   "accountIndex": 4,
   "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.6",
@@ -40,90 +40,102 @@
       "source": "paperproof-verifiable-knowledge-infrastructure-for-the-agentic-web.md",
       "title": "PaperProof: Verifiable Knowledge Infrastructure for the Agentic Web",
       "upload": {
-        "blobId": "1n64gPwyzOP5YRWsSTgE2PZsEjnoA-HrZHHmhVudqzw",
-        "blobObjectId": "0x0b53db81c0aafbd935380535ccecfa8dba042d7c983b05c485aceb57d5918b21",
+        "blobId": "local-blog-paperproof-verifiable-knowledge-infrastructure-for-the-agentic-web-e28fba3a1683706450db8da5",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
         "byteLength": 238193
       },
       "published": {
-        "seriesId": "0xb956e2c2e7a110e1303c04b8590f8465d2073866c9ef20e53b35a3dc67400cb8",
-        "versionId": "0xc8bb38411d7996b3109ab660601fc4094e051fb3ffd918b8f06983081102e00e",
-        "artifactType": 2,
-        "version": "3"
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-BLOG-1",
+        "artifactType": 2
       },
-      "contentHash": "sha256:9272b5f3c7249899f6a33a095a58c8e33c1342bf7801c84b383228c980158b65",
-      "operation": "add-version"
+      "contentHash": "sha256:e28fba3a1683706450db8da50bbc443c0cd3d73bd05fcaa5fe36cc3103b2bc1a",
+      "operation": "publish"
     },
     {
       "id": "building-paperproof-with-paperproof",
       "source": "building-paperproof-with-paperproof.md",
       "title": "Building PaperProof with PaperProof: How Our Docs, Prompts, Blog, and Forum Become Protocol Artifacts",
       "upload": {
-        "blobId": "4izx8NilvAvjSXSfuM99-gL2Kh2XDWKHVAxZR-ap_vc",
-        "blobObjectId": "0xcb25849fbda077ac9e3012071b407b3a02283674f704476e6253232f9704c9b1",
+        "blobId": "local-blog-building-paperproof-with-paperproof-1b0adff481aefada181e633b",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
         "byteLength": 27212
       },
       "published": {
-        "seriesId": "0xc8ae467de1c4136ecdc49521975c97efb1d81b589141fffe53aa5083366c53cb",
-        "versionId": "0xada1e44be88ef4c0f44547e5178943812dc594ad7a98e92704d7b28ddff93c56",
-        "artifactType": 2,
-        "version": "3"
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-BLOG-2",
+        "artifactType": 2
       },
-      "contentHash": "sha256:6a5cb9dadd9d92fda37bcfca53156e6c0d53181ea78e43cab1f32fd1f2d40e37",
-      "operation": "add-version"
+      "contentHash": "sha256:1b0adff481aefada181e633b5748f54ea229d37fad247bd72a47fad058dec3aa",
+      "operation": "publish"
     },
     {
       "id": "why-verifiable-prompts-and-agent-memory-matter",
       "source": "why-verifiable-prompts-and-agent-memory-matter.md",
       "title": "Why Verifiable Prompts and Agent Memory Matter",
       "upload": {
-        "blobId": "4iBl9yYqg1tVNAMLWgs2jV1GyW8hEgNXgQAvDmnAvQE",
-        "blobObjectId": "0x507edf7fcc4560a053d23aedaf310aa9f4dd0bec04e276a457bafad576f2f348",
+        "blobId": "local-blog-why-verifiable-prompts-and-agent-memory-matter-95e0ec5e804ba908f82b8f69",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
         "byteLength": 37744
       },
       "published": {
-        "seriesId": "0x4ebe697d2da2969775cc0b561a0c931195276de56fe35139b514c328fc1d797f",
-        "versionId": "0xd599ff13643e4036baeb950c7ef5120afa779b315a7f1aa6a16d038d441d1425",
-        "artifactType": 2,
-        "version": "3"
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-BLOG-3",
+        "artifactType": 2
       },
-      "contentHash": "sha256:d2858008abdf18ed03a038ca736e6d187c2c13a1e6837abfbda2ebde6a955109",
-      "operation": "add-version"
+      "contentHash": "sha256:95e0ec5e804ba908f82b8f69ad86f29b8a4316219c67c6b2300245fd526ef1c7",
+      "operation": "publish"
     },
     {
       "id": "from-walrus-blob-to-on-chain-artifact",
       "source": "from-walrus-blob-to-on-chain-artifact.md",
       "title": "From Walrus Blob to On-chain Artifact: The PaperProof Publishing Model",
       "upload": {
-        "blobId": "YpDmkMC0OT6y0Q2taThONhOjdGGCAzE8vyFve1iPyeI",
-        "blobObjectId": "0xcce593839e72eba2f47214c9bce75e39d9dca8b59ae1246ec9f2aeed5da4551f",
+        "blobId": "local-blog-from-walrus-blob-to-on-chain-artifact-66dbae1c089264689094771a",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
         "byteLength": 33423
       },
       "published": {
-        "seriesId": "0x3c390dcacc7692371360b775a295c1692c721ded5d7560b90105894af7ff5f65",
-        "versionId": "0xaf08ee960acce433bbfb3569d530bc725694c558e76e9b4e91248012abaa0e23",
-        "artifactType": 2,
-        "version": "3"
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-BLOG-4",
+        "artifactType": 2
       },
-      "contentHash": "sha256:87d41e7d23924d576ab193b8abbd7f312ce10246ddb1dd7ad1c618ec0ae38f11",
-      "operation": "add-version"
+      "contentHash": "sha256:66dbae1c089264689094771a64794925b4702410de1b886f3c4d092830152a37",
+      "operation": "publish"
     }
   ],
   "transactions": [
     {
-      "label": "add version paperproof-verifiable-knowledge-infrastructure-for-the-agentic-web.md",
-      "digest": "8grDD8BUPmBBYatXLBWLBwXDQ9ZbRQ4XzyCVTbUn4xiS"
+      "label": "publish paperproof-verifiable-knowledge-infrastructure-for-the-agentic-web.md",
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
-      "label": "add version building-paperproof-with-paperproof.md",
-      "digest": "2UUkYSS5eML89G9LkBuBGq1EmhomwSAANZxHNphPfsmK"
+      "label": "publish building-paperproof-with-paperproof.md",
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
-      "label": "add version why-verifiable-prompts-and-agent-memory-matter.md",
-      "digest": "DCBY8nqoAH7bcyMdU3LGhiYspH2xVYSoEEQhkQ8krNru"
+      "label": "publish why-verifiable-prompts-and-agent-memory-matter.md",
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
-      "label": "add version from-walrus-blob-to-on-chain-artifact.md",
-      "digest": "CWyLzS63Xyx294VPkb8PW6eLpiKgHGZYeGvtNKRzwaap"
+      "label": "publish from-walrus-blob-to-on-chain-artifact.md",
+      "digest": null,
+      "dryRunBytes": 0
     }
   ],
   "manifest": {
@@ -148,15 +160,15 @@
         "language": "en",
         "source": "paperproof-verifiable-knowledge-infrastructure-for-the-agentic-web.md",
         "order": 1,
-        "seriesId": "0xb956e2c2e7a110e1303c04b8590f8465d2073866c9ef20e53b35a3dc67400cb8",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "initialVersionId": "0x6853edc4e60f086a7c12061d9378edecaf1d6e5c6fba1276d82696ec77d9fdfd",
-        "currentVersionId": "0x66883a96a4d29b736646558380ec34fea489f13a7ee07f3c967674088897d8b6",
-        "latestContentHash": "sha256:2369ed2dc8c0832427635916b98adb9613f409b23375fa984604fd6ee182f507",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:e28fba3a1683706450db8da50bbc443c0cd3d73bd05fcaa5fe36cc3103b2bc1a",
         "contentType": "application/vnd.paperproof.markdown-package+zip",
         "commentsTreeStatus": "locked",
-        "artifactCode": "PaperProof-blog_post-001161-b956e2c2e7a1",
-        "commentsTreeId": "0x47b61d9c17b77b7f595410b1df4cd021beda00603d9235dd4621a5f695537ede",
-        "likesBookId": "0x4a065967e967a7aca56f8afd789ae290945768f0120f3a9382a46ede5af3246c"
+        "artifactCode": "DRY-RUN-BLOG-1",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000"
       },
       {
         "id": "building-paperproof-with-paperproof",
@@ -175,15 +187,15 @@
         "language": "en",
         "source": "building-paperproof-with-paperproof.md",
         "order": 2,
-        "seriesId": "0xc8ae467de1c4136ecdc49521975c97efb1d81b589141fffe53aa5083366c53cb",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "initialVersionId": "0xd664d80b0362d2b1c8fdcd9ad2456c429c82bd3be7ffa15ad60f0b9d06d6f8e5",
-        "currentVersionId": "0xbd87823856c5bd87ac9a631a5c94549992cd89f7a6a37207c5571943b89c64ef",
-        "latestContentHash": "sha256:2cc6b0cfe4c38a8bfc4679d91ad155fa59f1c1c2c5a997798bb7a4aa86867a44",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:1b0adff481aefada181e633b5748f54ea229d37fad247bd72a47fad058dec3aa",
         "contentType": "application/vnd.paperproof.markdown-package+zip",
         "commentsTreeStatus": "locked",
-        "artifactCode": "PaperProof-blog_post-001161-c8ae467de1c4",
-        "commentsTreeId": "0x01348d22ed9380d68c9715b7bc45ef6791399fff3e7067be6ae93d62ab7d79e9",
-        "likesBookId": "0xedaaf36219d09028ee50932c65a7885500abcc1d61ae594463d97e16e43e50c4"
+        "artifactCode": "DRY-RUN-BLOG-2",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000"
       },
       {
         "id": "why-verifiable-prompts-and-agent-memory-matter",
@@ -202,15 +214,15 @@
         "language": "en",
         "source": "why-verifiable-prompts-and-agent-memory-matter.md",
         "order": 3,
-        "seriesId": "0x4ebe697d2da2969775cc0b561a0c931195276de56fe35139b514c328fc1d797f",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "initialVersionId": "0xea9e57bd362eff7269dce6d339846e3a0ab1c224b7aa8087d9ea81ba9a73e5fb",
-        "currentVersionId": "0xa902bd857d6beea967f1962d1c0cfa845dfa61af0b1dbbe6bad6ae60cdf61916",
-        "latestContentHash": "sha256:8570e1635e3e701da4ce16f79dbf1c564f94bbf61f08429df0d678fee26d0114",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:95e0ec5e804ba908f82b8f69ad86f29b8a4316219c67c6b2300245fd526ef1c7",
         "contentType": "application/vnd.paperproof.markdown-package+zip",
         "commentsTreeStatus": "locked",
-        "artifactCode": "PaperProof-blog_post-001161-4ebe697d2da2",
-        "commentsTreeId": "0xe6beed914ffb6a4e79a3b3e9fc1c6c46b36a55152f727fa0d42ef7424f2c9164",
-        "likesBookId": "0x788e4295c53c1f6a6cefeeb1612dc10318b118bd855affe86372911b2d77e554"
+        "artifactCode": "DRY-RUN-BLOG-3",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000"
       },
       {
         "id": "from-walrus-blob-to-on-chain-artifact",
@@ -229,18 +241,18 @@
         "language": "en",
         "source": "from-walrus-blob-to-on-chain-artifact.md",
         "order": 4,
-        "seriesId": "0x3c390dcacc7692371360b775a295c1692c721ded5d7560b90105894af7ff5f65",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "initialVersionId": "0x8d89b342d9c6182d066760ce385ee8c4893e016039770ef1ab437c2d9ff52315",
-        "currentVersionId": "0xc6b06fa16ce361db77944c94800bfda826f2f839d8f18f253e3d774ec64afd8c",
-        "latestContentHash": "sha256:a940d3561b2be5a0ff636013b33aa7cecb0a897d5705ccc053792e08bc4d49c6",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:66dbae1c089264689094771a64794925b4702410de1b886f3c4d092830152a37",
         "contentType": "application/vnd.paperproof.markdown-package+zip",
         "commentsTreeStatus": "locked",
-        "artifactCode": "PaperProof-blog_post-001161-3c390dcacc76",
-        "commentsTreeId": "0x5643ecfd86c191d0d242ab857fe441027467b9afc1cc9020695d53ed9b735831",
-        "likesBookId": "0xc512c7a05ced4a6fe77485fe4912e67cc3d0c557581953edf5c83a5e69026f99"
+        "artifactCode": "DRY-RUN-BLOG-4",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000"
       }
     ],
-    "publishedAt": "2026-06-17T22:17:57.053Z",
+    "publishedAt": "2026-06-20T06:09:48.118Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
     "sdkVersion": "0.2.6",
     "commentsTreePolicy": "locked",

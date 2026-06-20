@@ -21,6 +21,8 @@ lineage, official interactions, governance-aware metadata, and events live on
 Sui. The result is a publishing model that is durable enough for serious
 records and practical enough for web applications.
 
+![Walrus content becoming a PaperProof artifact](assets/walrus-to-artifact-flow.svg)
+
 This is the central application value of PaperProof: it turns decentralized
 storage from a place to put bytes into a complete artifact system. A blob can
 become a paper, a report, a dataset, a software release note, a blog post, a
@@ -53,6 +55,14 @@ This separation gives each layer a clear job:
 
 The model avoids two extremes. It does not put large files directly on chain,
 and it does not reduce publishing to an unstructured storage pointer.
+
+| Step | Output | Verification point |
+|---|---|---|
+| Prepare content | Local bytes, content type, and content hash | Hash can be calculated before publishing |
+| Store on Walrus | Blob ID and blob object ID | Content can be downloaded and rechecked |
+| Submit PaperProof transaction | Publish or add-version transaction on Sui | Hash, blob references, and typed metadata are committed |
+| Maintain series state | Series object plus immutable version records | Apps can resolve latest without losing older versions |
+| Index and render | Query views and UI pages | Readers and agents see usable, verifiable records |
 
 For Sui, this means PaperProof uses the chain for what Sui is good at:
 structured objects, ownership, shared state, events, and programmable rules.
@@ -181,6 +191,16 @@ indexers and SDKs still benefit from shared concepts:
 This is what lets PaperProof support research, software, official project
 writing, community discussion, and generic files without inventing a separate
 protocol for every content type.
+
+| Record field | Where it lives | How applications use it |
+|---|---|---|
+| Artifact code and series ID | Sui artifact series | Give the work a stable public handle |
+| Version ID and version number | Sui version record | Resolve latest or inspect historical versions |
+| Content hash | Sui version metadata | Recompute downloaded bytes for verification |
+| Blob ID and blob object ID | Walrus reference committed on Sui | Locate the payload and connect storage to protocol state |
+| Content type and typed metadata | Sui version metadata | Choose renderers, parsers, and validation rules |
+| Comments tree and likes book | Sui interaction objects | Bind discussion and feedback to the artifact |
+| Canonical events | Sui event stream | Let indexers rebuild query views and timelines |
 
 ## Official comments and likes
 

@@ -30,6 +30,8 @@ verifiable knowledge artifacts, built on Sui and Walrus, with SDKs, a reference
 indexer, official documentation, a static web application, protocol-native
 Copilot prompts, and wallet-linked agent memory.
 
+![PaperProof artifact stack](assets/knowledge-artifact-stack.svg)
+
 The immediate application is concrete: publish a work, keep its identity stable,
 add new versions, store the content on Walrus, record the artifact relationship
 on Sui, attach official discussion and feedback objects, and let humans or
@@ -132,6 +134,22 @@ Together, they allow a clean separation:
 - Walrus stores the content bytes.
 - SDKs and indexers turn those records into usable application data.
 - Interfaces decide how to render the artifacts for humans and agents.
+
+![PaperProof application architecture and flow](assets/application-architecture-flow.svg)
+
+| Component | What it contributes | Why it matters |
+|---|---|---|
+| Sui object graph | Root, type registry, artifact series, versions, interactions, registries, events | Gives knowledge objects public state and stable identity |
+| Walrus payloads | PDFs, Markdown bodies/packages, datasets, media, prompt JSON packages | Keeps large content durable without forcing it into chain state |
+| SDKs and indexers | Typed reads, validation, event replay, query views | Makes the protocol usable by apps, dashboards, and agents |
+| Human and AI interfaces | Rendering, Copilot, Skill workflows, review paths | Turns verifiable records into everyday product experiences |
+
+| Entry path | Typical user | Write boundary | Verification root |
+|---|---|---|---|
+| Official or third-party website | Human publisher, reader, reviewer | Browser wallet signs Sui transactions | Sui contract state plus Walrus content hashes |
+| PaperProof Skill | AI agent or agent-assisted user | Configured signer or wallet approval | Same public artifact series and version records |
+| SDK integration | Custom app, portal, indexer, or service | App-defined signer flow | Canonical package IDs, object IDs, events, and content references |
+| Server/API cache | Website, Skill, dashboards, agents | No custody of artifact authority | Rebuildable from Sui events and Walrus payloads |
 
 This separation is one reason PaperProof can support many artifact families:
 preprints, technical reports, datasets, software releases, blog posts, forum
