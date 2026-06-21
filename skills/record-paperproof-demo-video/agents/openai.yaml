@@ -1,0 +1,4 @@
+interface:
+  display_name: "Record PaperProof Demo"
+  short_description: "Record a 5-minute PaperProof demo"
+  default_prompt: "Use this skill to plan, record, subtitle, and quality-check a 4:40-5:00 PaperProof hackathon demo video using the slides, official website, and project materials."

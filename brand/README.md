@@ -23,3 +23,12 @@ Third parties may describe factual compatibility with PaperProof Protocol, but
 they must not use PaperProof Labs branding in a way that implies operation,
 endorsement, affiliation, official interface status, governance authority, or
 sponsorship by PaperProof Labs unless separately authorized.
+
+Substantive brand and identity references:
+
+- [../design/app/brand-identity.md](../design/app/brand-identity.md) records
+  the current app-facing brand identity and naming choices.
+- [../screenshots/paperproof-org-github.png](../screenshots/paperproof-org-github.png)
+  captures the public GitHub organization surface.
+- [PaperProofLabs on GitHub](https://github.com/PaperProofLabs) is the public
+  organization entry point for project repositories.

@@ -10,17 +10,46 @@ materials, DID drafts, and legal or rights-related records.
 
 ## Repository structure
 
-- `whitepaper/` for whitepapers, LaTeX sources, figures, and related materials
-- `brand/` for names, logos, icons, visual identity, and brand guidance
-- `design/` for interface design notes, product flows, and design rationale
-- `diagrams/` for architecture diagrams, workflow figures, and sequence figures
-- `screenshots/` for product screenshots and visual deployment records
-- `governance/` for governance notes, operator models, and related materials
-- `token/` for PPRF protocol-token-layer metadata, narratives, icons, and
-  supporting materials
-- `did/` for DID method drafts, references, and registration-oriented materials
-- `legal/` for licensing notes, rights records, and legal support materials
-- `archive/` for deprecated drafts, legacy assets, and earlier project records
+This repository is a documentation and project-record hub. Some root folders
+hold production content directly; others are lightweight routing folders that
+point to the repository, subfolder, or file where the current substantive
+material lives.
+
+| Path | Status | Substantive content |
+|---|---|---|
+| `homepages/docs/` | Active content | Source Markdown package for the official Docs surface published to [paperproof.site](https://paperproof.site/). Start with [homepages/docs/getting-started/introduction.md](./homepages/docs/getting-started/introduction.md), [homepages/docs/protocol/artifact-model.md](./homepages/docs/protocol/artifact-model.md), and [homepages/docs/developers/indexer-integration.md](./homepages/docs/developers/indexer-integration.md). |
+| `homepages/blogs/` | Active content | Official Blog Markdown package, including diagrams and image assets. See [paperproof-verifiable-knowledge-infrastructure.md](./homepages/blogs/paperproof-verifiable-knowledge-infrastructure.md), [from-walrus-blob-to-on-chain-artifact.md](./homepages/blogs/from-walrus-blob-to-on-chain-artifact.md), and [assets/application-architecture-flow.svg](./homepages/blogs/assets/application-architecture-flow.svg). |
+| `homepages/forums/` | Active content | Seed content for the official Forum surface, including developer support, governance, protocol discussion, and showcase posts. |
+| `design/app/` | Active design record | Product, content, Copilot memory, server-rendering, and UX design notes. Key files include [dynamic-site-design.md](./design/app/dynamic-site-design.md), [content-format-design.md](./design/app/content-format-design.md), [copilot-memwal-memory-design.md](./design/app/copilot-memwal-memory-design.md), and [official-content-server-rendering-plan.md](./design/app/official-content-server-rendering-plan.md). |
+| `legal/` | Active policy record | Protocol user-content, official-interface, takedown, incentive, role-separation, and operating-time policy templates. Start with [legal/protocol-user-content-and-risk.md](./legal/protocol-user-content-and-risk.md). |
+| `screenshots/` | Active evidence record | Website, GitHub, SDK publication, and Skill demo screenshots used by papers, slides, blogs, and hackathon materials. See [screenshots/README.md](./screenshots/README.md). |
+| `artifacts/` | Active release record | JSON records and checkpoints from publishing or extending Docs, Blog, Forum, flagship materials, and Walrus-backed official artifacts. |
+| `scripts/` | Active operations | Publishing scripts for Docs, Blog, Forum, and flagship-material version records: [publish-docs.mjs](./scripts/publish-docs.mjs), [publish-blogs.mjs](./scripts/publish-blogs.mjs), [publish-forums.mjs](./scripts/publish-forums.mjs), and [add-flagship-material-versions.mjs](./scripts/add-flagship-material-versions.mjs). |
+| `overflow2026/` | Active hackathon research | Sui Overflow 2026 Walrus-track intelligence, competitor notes, problem statements, and winner benchmark dataset materials. |
+| `skills/` | Active agent guidance | Local Codex skills for operating PaperProof workflows. See [operate-paperproof-website](./skills/operate-paperproof-website/SKILL.md) for website automation and [record-paperproof-demo-video](./skills/record-paperproof-demo-video/SKILL.md) for 4:40-5:00 demo-video production. |
+| `whitepaper/` | Routing folder | Current paper sources and PDFs live in [PaperProofLabs/paperproof-papers](https://github.com/PaperProofLabs/paperproof-papers). This folder preserves the documentation-repo slot for whitepaper-adjacent records. |
+| `diagrams/` | Routing folder | Current diagram source/assets live mainly under [homepages/blogs/figures/tikz](./homepages/blogs/figures/tikz) and [homepages/blogs/assets](./homepages/blogs/assets), and are also reused by the papers and slides repositories. |
+| `brand/` | Routing folder | Current brand guidance is tracked here and in [design/app/brand-identity.md](./design/app/brand-identity.md). Public organization context is at [PaperProofLabs on GitHub](https://github.com/PaperProofLabs). |
+| `governance/` | Routing folder | Current governance-facing documentation is in [homepages/docs/governance-and-economics](./homepages/docs/governance-and-economics), and protocol/governance implementation context lives in [PaperProofLabs/paperproof-contracts](https://github.com/PaperProofLabs/paperproof-contracts). |
+| `token/` | Routing folder | PPRF token-contract work lives in [PaperProofLabs/PPRF-token-contracts](https://github.com/PaperProofLabs/PPRF-token-contracts). Docs-facing token material is in [homepages/docs/governance-and-economics/pprf-utility.md](./homepages/docs/governance-and-economics/pprf-utility.md). |
+| `did/` | Routing folder | DID-related ideas are not a primary live workstream yet. Related durable-identity design currently appears in [homepages/docs/protocol/artifact-model.md](./homepages/docs/protocol/artifact-model.md) and [homepages/docs/protocol/manifests-and-canonical-state.md](./homepages/docs/protocol/manifests-and-canonical-state.md). |
+| `archive/` | Routing folder | Reserved for deprecated drafts and superseded records. Current publish checkpoints are kept in [artifacts/](./artifacts/). |
+
+## Related repositories
+
+| Repository | Role |
+|---|---|
+| [PaperProofLabs/paperproof-app](https://github.com/PaperProofLabs/paperproof-app) | Official website, publishing UI, artifact detail pages, Docs/Blog/Forum rendering, Copilot, API/server, and indexer-facing integration. |
+| [PaperProofLabs/paperproof-contracts](https://github.com/PaperProofLabs/paperproof-contracts) | Sui mainnet contract packages for artifact identities, categories, versioning, metadata, and events. |
+| [PaperProofLabs/paperproof-indexer-reference](https://github.com/PaperProofLabs/paperproof-indexer-reference) | Reference indexer for tracking PaperProof on-chain events and serving fast canonical content to app/server surfaces. |
+| [PaperProofLabs/paperproof-papers](https://github.com/PaperProofLabs/paperproof-papers) | White paper, yellow paper, and academic paper sources/PDFs. |
+| [PaperProofLabs/paperproof-slides](https://github.com/PaperProofLabs/paperproof-slides) | Hackathon and protocol presentation deck. |
+| [PaperProofLabs/paperproof-skill](https://github.com/PaperProofLabs/paperproof-skill) | Community-facing PaperProof Skill for AI/agent workflows that publish or update PaperProof artifacts. |
+| [PaperProofLabs/paperproof-sdk-py](https://github.com/PaperProofLabs/paperproof-sdk-py) | Python SDK published through PyPI. |
+| [PaperProofLabs/paperproof-sdk-ts](https://github.com/PaperProofLabs/paperproof-sdk-ts) | TypeScript SDK published through npm. |
+| [PaperProofLabs/paperproof-sdk-rs](https://github.com/PaperProofLabs/paperproof-sdk-rs) | Rust SDK published through crates.io. |
+| [PaperProofLabs/paperproof-sui-overflow-2026](https://github.com/PaperProofLabs/paperproof-sui-overflow-2026) | Public Sui Overflow 2026 submission entry repository. |
+| [MystenLabs/MemWal](https://github.com/MystenLabs/MemWal) | Upstream memory component used by the PaperProof Copilot memory design. |
 
 ## Rights and license
 
