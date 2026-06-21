@@ -44,6 +44,20 @@ const page = context.pages().find((p) => p.url().includes("paperproof.site"))
   ?? await context.newPage();
 ```
 
+## Edge Remote Debugging / CDP
+
+The launch command with `--remote-debugging-port=9222` uses Chromium/Edge
+remote debugging. It exposes the browser through the Chrome DevTools Protocol
+(CDP), which lets Playwright or Puppeteer attach to the same real Edge profile
+that the user can see and manually prepare.
+
+Use this path when the task depends on browser-local state that is difficult or
+undesirable to recreate in a headless browser: connected wallet extensions,
+logged-in sessions, extension popups, local storage, cookies, or pages the user
+has already opened. Treat the CDP browser as the shared source of truth: inspect
+all contexts and pages, reuse the existing PaperProof tab when possible, and
+avoid launching a separate browser that would not share the wallet session.
+
 ## Browser Session
 
 - If no automation-ready Edge is running, ask the user to launch Edge with
