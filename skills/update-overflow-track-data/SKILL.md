@@ -1,6 +1,6 @@
 ---
 name: update-overflow-track-data
-description: Update private Sui Overflow 2026 DeepSurge track intelligence snapshots for PaperProof, including the Special - Walrus, DeFi & Payments, Special - DeepBook, and The Agentic Web files. Use when Codex must check for new DeepSurge submissions, refresh project About text/links/package IDs/deployment networks, sync PaperProof's latest About entry, or recompute heuristic Top 5 rankings for the four track intelligence files stored in the private paperproof-app repository.
+description: Update private Sui Overflow 2026 DeepSurge track intelligence snapshots for PaperProof, including the Special - Walrus, DeFi & Payments, Special - DeepBook, and The Agentic Web files. Use when Codex must check for new DeepSurge submissions, refresh project About text/links/package IDs/deployment networks, or sync PaperProof's latest About entry for the four track intelligence files stored in the private paperproof-app repository.
 ---
 
 # Update Overflow Track Data
@@ -72,8 +72,15 @@ node .\paperproof-docs\skills\update-overflow-track-data\scripts\update-overflow
 ```
 
 This fetches current public DeepSurge list data, refreshes detail pages with
-timeouts, rewrites the four private files, and recomputes heuristic Top 5
-rankings for each track.
+timeouts, and rewrites the four private files as neutral content aggregation
+snapshots. The generated files intentionally do not include Top 5, Top 10,
+scores, or project rankings.
+
+To refresh only one track, pass the exact track name:
+
+```powershell
+node .\paperproof-docs\skills\update-overflow-track-data\scripts\update-overflow-track-data.mjs --write --track "Special - Walrus"
+```
 
 4. Validate after writing:
 
@@ -119,24 +126,13 @@ Wrong:
 The wrong parameter can return all projects across all tracks and pollute every
 file with the same project set.
 
-## Ranking Caveat
+## No Rankings
 
-The Top 5 rankings are heuristic and non-official. They are based only on
-public DeepSurge fields:
-
-- deployment network and package ID;
-- GitHub, website, YouTube, Pitch, X, and media links;
-- track keyword fit;
-- About-text technical specificity;
-- product/demo clarity;
-- submission clarity.
-
-Do not describe the ranking as an official result or as a definitive judging
-prediction.
-
-For Special - Walrus, report PaperProof's position carefully. It can be
-identified as a strong heuristic top candidate when the current data supports
-that, but avoid promotional language inside the data files themselves.
+The four intelligence files are content aggregation snapshots only. Do not add
+Top 5, Top 10, score tables, heuristic rankings, or judging predictions to these
+files. If the user asks for ranking analysis, provide it in the conversation or
+in a separate explicitly requested private analysis file, not in the four track
+aggregation files.
 
 ## Safety
 
