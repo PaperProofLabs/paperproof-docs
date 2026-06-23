@@ -37,10 +37,27 @@ reliable path on this workstation is a Node deployment helper using `ssh2`:
   `<PaperProofLabs workspace>\secrets\jdcloud-paperproof-server.json`
 - app web root:
   usually `/var/www/paperproof`
+- indexer build toolchain:
+  use `/root/.cargo/bin` on the server, not the system default Rust.
 
 If network access fails with `EACCES`, first check the current Codex execution
 profile. A previous failure was caused by a restricted sandbox/network profile,
 not by the server, not by Caddy, and not by the deployment script.
+
+Important indexer trap: the server also has an older system Rust in PATH
+(`cargo 1.75.0` / `rustc 1.75.0`). `paperproof-indexer-reference` uses Rust
+2024, so builds must run with:
+
+```bash
+export PATH=/root/.cargo/bin:/usr/local/bin:/usr/bin:/bin
+```
+
+Healthy server toolchain observed for production deployment:
+
+```text
+rustc 1.96.0
+cargo 1.96.0
+```
 
 ## Preflight
 
@@ -172,6 +189,38 @@ Local deployment scaffold:
 paperproof-indexer-reference/deploy/docker-compose.yml
 ```
 
+For production indexer deployment, use the bundled script instead of ad hoc
+remote commands:
+
+```powershell
+cd <PaperProofLabs workspace>
+cargo test --features sqlite --manifest-path .\paperproof-indexer-reference\Cargo.toml
+node .\paperproof-docs\skills\deploy-paperproof-services\scripts\deploy-paperproof-indexer.mjs
+```
+
+The script:
+
+- packages `paperproof-indexer-reference` without `target/`, `.git/`, or local
+  `artifacts/`;
+- reads `secrets/jdcloud-paperproof-server.json`;
+- uploads the source package with Node `ssh2`;
+- backs up the remote source, current binary, and SQLite database;
+- forces `PATH=/root/.cargo/bin:/usr/local/bin:/usr/bin:/bin`;
+- builds with `cargo build --features sqlite --release`;
+- installs `/usr/local/bin/paperproof-indexer-reference`;
+- restarts `paperproof-indexer.service`;
+- runs `hydrate-version-objects` unless `PAPERPROOF_SKIP_INDEXER_HYDRATE=1`;
+- verifies `http://127.0.0.1:8787/health`.
+
+Useful environment overrides:
+
+```powershell
+$env:PAPERPROOF_INDEXER_HYDRATE_LIMIT = '20'
+$env:PAPERPROOF_SKIP_INDEXER_HYDRATE = '1'
+$env:PAPERPROOF_REMOTE_INDEXER_DIR = '/opt/paperproof-indexer'
+$env:PAPERPROOF_INDEXER_SQLITE_PATH = '/var/lib/paperproof-indexer/paperproof-indexer-reference.sqlite'
+```
+
 For production server work, inspect current remote state before changing it:
 
 ```bash
@@ -184,6 +233,10 @@ journalctl -u caddy -n 100 --no-pager
 Use server-side logs plus public HTTP checks to debug website/indexer
 integration. Do not assume a browser bug until server routes and API responses
 are verified.
+
+For indexer API verification, remember that the public route is
+`https://paperproof.site/api/v1/...`. Bare `https://paperproof.site/v1/...`
+is handled by the static SPA fallback and returns HTML.
 
 ## Safety
 
