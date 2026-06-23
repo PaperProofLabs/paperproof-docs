@@ -308,8 +308,8 @@
       "initialVersionId": "0xd8321f4504fb729b1101eac99bb66776d79c11f79c433c7480d9a1e2e63ba008",
       "likesBookId": "0x04626e008c2eab9639d0dc9215d95284f0388fbb3fee458e8451aab975cde757",
       "commentsTreeStatus": "locked",
-      "currentVersionId": "0x24904aed0e9a5edcee7406db7e23783d2fc9d149e8745a24145f07fd1db498c6",
-      "latestContentHash": "sha256:fc1cdf1e525a4fb1fa078fb02e3bf2835f7c07686f5174ab966258b1634814e0",
+      "currentVersionId": "0xdd3175121e1ada9e3f6fc3191ed89eb278bb9e0923597ccdd4d6f45cf53208d3",
+      "latestContentHash": "sha256:92a1c95f8208287b35eb33f1ba1e8728210f9e09b6770ac9dc78deb0be991874",
       "contentType": "application/vnd.paperproof.markdown-package+zip"
     },
     {
@@ -467,7 +467,7 @@
       "contentType": "application/vnd.paperproof.markdown-package+zip"
     }
   ],
-  "publishedAt": "2026-06-20T08:05:24.129Z",
+  "publishedAt": "2026-06-23T09:52:58.764Z",
   "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.6"
 }

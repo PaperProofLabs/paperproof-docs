@@ -9,6 +9,9 @@ Comments Tree: locked
 PaperProof Copilot is a browser-side protocol guide. It helps users understand
 artifact state, publication forms, wallet balances, governance proposals,
 locked funds, comments, safety boundaries, and the meaning of the current page.
+PaperProof Copilot is model-provider neutral: the protocol supplies governed
+prompts, page context, artifact state, and optional MemWal memory, while users
+bring their own preferred AI provider and API key.
 
 Copilot is not an autonomous wallet:
 

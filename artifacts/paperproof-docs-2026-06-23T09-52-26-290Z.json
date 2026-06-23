@@ -1,6 +1,6 @@
 {
-  "runId": "paperproof-docs-2026-06-23T09-52-38-069Z",
-  "run": true,
+  "runId": "paperproof-docs-2026-06-23T09-52-26-290Z",
+  "run": false,
   "accountIndex": 4,
   "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.6",
@@ -51,24 +51,25 @@
       "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "2_KoinKGyPWMr3cixL3-W5q0PmctmbDwbUNuXaMjMlU",
-          "blobObjectId": "0xb2c24ecac07a01968a9ab5316c9f885507bf721137482113acb0bc63460616ec",
+          "blobId": "local-docs-v2-copilot-index-557b65c68272869225662310",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
           "byteLength": 1341
         },
         "added": {
           "seriesId": "0x529cf9197eb99b25e7d238d9ba555bc80c9f22b26e7f05f123b153613cda45cf",
-          "versionId": "0xdd3175121e1ada9e3f6fc3191ed89eb278bb9e0923597ccdd4d6f45cf53208d3",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
-          "version": "5"
+          "version": "2"
         },
-        "contentHash": "sha256:92a1c95f8208287b35eb33f1ba1e8728210f9e09b6770ac9dc78deb0be991874"
+        "contentHash": "sha256:557b65c682728692256623107db0f2352681101df3dd288b1d89ab664f04b897"
       }
     }
   ],
   "transactions": [
     {
       "label": "add mapped version copilot/index.md",
-      "digest": "3hRGLToofWK6MqfLqbtPGvgTAi4BM2nQAY3tDF8rpgkG"
+      "digest": null,
+      "dryRunBytes": 0
     }
   ],
   "manifest": {
@@ -381,8 +382,8 @@
         "initialVersionId": "0xd8321f4504fb729b1101eac99bb66776d79c11f79c433c7480d9a1e2e63ba008",
         "likesBookId": "0x04626e008c2eab9639d0dc9215d95284f0388fbb3fee458e8451aab975cde757",
         "commentsTreeStatus": "locked",
-        "currentVersionId": "0xdd3175121e1ada9e3f6fc3191ed89eb278bb9e0923597ccdd4d6f45cf53208d3",
-        "latestContentHash": "sha256:92a1c95f8208287b35eb33f1ba1e8728210f9e09b6770ac9dc78deb0be991874",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:557b65c682728692256623107db0f2352681101df3dd288b1d89ab664f04b897",
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       },
       {
@@ -540,7 +541,7 @@
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       }
     ],
-    "publishedAt": "2026-06-20T08:05:24.129Z",
+    "publishedAt": "2026-06-23T09:52:26.533Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
     "sdkVersion": "0.2.6"
   }
