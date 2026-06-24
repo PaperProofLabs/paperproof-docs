@@ -26,7 +26,6 @@ material lives.
 | `artifacts/` | Active release record | JSON records and checkpoints from publishing or extending Docs, Blog, Forum, flagship materials, and Walrus-backed official artifacts. |
 | `scripts/` | Active operations | Publishing scripts for Docs, Blog, Forum, and flagship-material version records: [publish-docs.mjs](./scripts/publish-docs.mjs), [publish-blogs.mjs](./scripts/publish-blogs.mjs), [publish-forums.mjs](./scripts/publish-forums.mjs), and [add-flagship-material-versions.mjs](./scripts/add-flagship-material-versions.mjs). |
 | `overflow2026/` | Active hackathon research | Sui Overflow 2026 Walrus-track intelligence, competitor notes, problem statements, and winner benchmark dataset materials. |
-| `skills/` | Active agent guidance | Local Codex skills for operating PaperProof workflows. See [operate-paperproof-website](./skills/operate-paperproof-website/SKILL.md) for website automation and [record-paperproof-demo-video](./skills/record-paperproof-demo-video/SKILL.md) for 4:40-5:00 demo-video production. |
 | `whitepaper/` | Routing folder | Current paper sources and PDFs live in [PaperProofLabs/paperproof-papers](https://github.com/PaperProofLabs/paperproof-papers). This folder preserves the documentation-repo slot for whitepaper-adjacent records. |
 | `diagrams/` | Routing folder | Current diagram source/assets live mainly under [homepages/blogs/figures/tikz](./homepages/blogs/figures/tikz) and [homepages/blogs/assets](./homepages/blogs/assets), and are also reused by the papers and slides repositories. |
 | `brand/` | Routing folder | Current brand guidance is tracked here and in [design/app/brand-identity.md](./design/app/brand-identity.md). Public organization context is at [PaperProofLabs on GitHub](https://github.com/PaperProofLabs). |
@@ -44,7 +43,8 @@ material lives.
 | [PaperProofLabs/paperproof-indexer-reference](https://github.com/PaperProofLabs/paperproof-indexer-reference) | Reference indexer for tracking PaperProof on-chain events and serving fast canonical content to app/server surfaces. |
 | [PaperProofLabs/paperproof-papers](https://github.com/PaperProofLabs/paperproof-papers) | White paper, yellow paper, and academic paper sources/PDFs. |
 | [PaperProofLabs/paperproof-slides](https://github.com/PaperProofLabs/paperproof-slides) | Hackathon and protocol presentation deck. |
-| [PaperProofLabs/paperproof-skill](https://github.com/PaperProofLabs/paperproof-skill) | Community-facing PaperProof Skill for AI/agent workflows that publish or update PaperProof artifacts. |
+| [PaperProofLabs/paperproof-community-skill](https://github.com/PaperProofLabs/paperproof-community-skill) | Community-facing PaperProof Skill for AI/agent workflows that publish or update PaperProof artifacts. |
+| [PaperProofLabs/paperproof-official-skill](https://github.com/PaperProofLabs/paperproof-official-skill) | Official-only operational skills for production deployment, wallet-connected website automation, demo-video production, and private competitive-intelligence maintenance. |
 | [PaperProofLabs/paperproof-sdk-py](https://github.com/PaperProofLabs/paperproof-sdk-py) | Python SDK published through PyPI. |
 | [PaperProofLabs/paperproof-sdk-ts](https://github.com/PaperProofLabs/paperproof-sdk-ts) | TypeScript SDK published through npm. |
 | [PaperProofLabs/paperproof-sdk-rs](https://github.com/PaperProofLabs/paperproof-sdk-rs) | Rust SDK published through crates.io. |
