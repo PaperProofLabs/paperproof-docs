@@ -116,6 +116,10 @@ node .\paperproof-docs\skills\deploy-paperproof-services\scripts\deploy-paperpro
 
 The script:
 
+- rebuilds `paperproof-app` for the official deployment before upload;
+- forces the official frontend defaults unless explicitly overridden:
+  - `VITE_PAPERPROOF_SITE_ANALYTICS_ENABLED=true`
+  - `VITE_PAPERPROOF_INDEXER_API_BASE=/api`
 - reads `secrets/jdcloud-paperproof-server.json`;
 - connects with Node `ssh2`;
 - uploads `paperproof-app/dist` to a fresh remote directory;
@@ -123,9 +127,6 @@ The script:
 - keeps the previous web root as a timestamped backup;
 - reloads Caddy if present;
 - verifies the remote static app responds on `127.0.0.1:8080`.
-
-Run `npm run build` before the script unless the user explicitly wants to
-deploy an already-built `dist`.
 
 ## Public Verification
 

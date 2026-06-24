@@ -8,6 +8,7 @@ import path from 'node:path';
 import os from 'node:os';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 
@@ -23,6 +24,7 @@ const root = process.env.PAPERPROOF_ROOT
 const appDir = process.env.PAPERPROOF_APP_DIR || path.join(root, 'paperproof-app');
 const distDir = process.env.PAPERPROOF_DIST_DIR || path.join(appDir, 'dist');
 const configPath = process.env.PAPERPROOF_SERVER_CONFIG || path.join(root, 'secrets/jdcloud-paperproof-server.json');
+const appBuildCommand = process.env.PAPERPROOF_APP_BUILD_COMMAND || 'npm';
 const verifyNeedles = (process.env.PAPERPROOF_VERIFY_TEXT || '')
   .split('|')
   .map((value) => value.trim())
@@ -35,6 +37,29 @@ function shellQuote(value) {
 function readConfig() {
   const raw = fs.readFileSync(configPath, 'utf8').replace(/^\uFEFF/, '');
   return JSON.parse(raw);
+}
+
+function buildOfficialApp() {
+  const env = {
+    ...process.env,
+    VITE_PAPERPROOF_SITE_ANALYTICS_ENABLED:
+      process.env.VITE_PAPERPROOF_SITE_ANALYTICS_ENABLED || 'true',
+    VITE_PAPERPROOF_INDEXER_API_BASE:
+      process.env.VITE_PAPERPROOF_INDEXER_API_BASE || '/api',
+  };
+  if (process.platform === 'win32') {
+    execFileSync(process.env.ComSpec || 'cmd.exe', ['/d', '/s', '/c', `${appBuildCommand} run build`], {
+      cwd: appDir,
+      env,
+      stdio: 'inherit',
+    });
+    return;
+  }
+  execFileSync(appBuildCommand, ['run', 'build'], {
+    cwd: appDir,
+    env,
+    stdio: 'inherit',
+  });
 }
 
 function connect(config) {
@@ -103,8 +128,10 @@ async function uploadDir(sftp, localDir, remoteDir) {
 }
 
 async function main() {
+  buildOfficialApp();
+
   if (!fs.existsSync(path.join(distDir, 'index.html'))) {
-    throw new Error(`Missing build output: ${distDir}. Run npm run build in paperproof-app first.`);
+    throw new Error(`Missing build output after official app build: ${distDir}.`);
   }
 
   const config = readConfig();
