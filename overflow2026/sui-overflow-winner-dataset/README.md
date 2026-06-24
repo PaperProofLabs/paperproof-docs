@@ -1,11 +1,11 @@
 # Sui Overflow Historical Winner Dataset, 2024-2025
 
-This dataset structures historical Sui Overflow winner information from the PaperProof benchmark document into machine-readable files for hackathon analysis, ecosystem research, and PaperProof positioning work.
+This dataset structures historical Sui Overflow winner information for 2024 and 2025 into machine-readable files for hackathon analysis, ecosystem research, and historical comparison.
 
 ## Contents
 
 - `winners.csv`: flat table of winner records.
-- `winners.json`: full structured winner records, including profile notes and PaperProof relevance.
+- `winners.json`: structured winner records with short descriptive notes.
 - `track_summary.csv`: per-year and per-track summary table.
 - `track_summary.json`: structured track summaries.
 - `dataset_overview.json`: dataset-level metadata.
@@ -20,14 +20,14 @@ This dataset structures historical Sui Overflow winner information from the Pape
 
 ## Source Basis
 
-The dataset is derived from `paperproof-docs/overflow2026/Sui Overflow Winner Benchmarks and PaperProof Positioning.md`, which cites official Sui Foundation winner announcements and local Sui Overflow 2026 track notes. The source document is a curated analytical benchmark, so this dataset should be treated as a structured research dataset rather than an official Sui Foundation export.
+The dataset is derived from publicly announced Sui Overflow winner information together with locally normalized research notes used to structure the records into CSV and JSON files. It should be treated as a community research dataset rather than an official Sui Foundation export.
 
 ## Notes
 
 - The `record_source` field indicates whether a record came from a summary table or from detailed profile order.
-- `paperproof_relevance` captures comparative lessons from the source document and is analytical rather than an official winner attribute.
-- `sui_ecosystem_primitives` is a lightweight keyword-derived classification to help compare projects by Sui, Walrus, AI, wallet, ZK, and related ecosystem signals.
+- The `profile_note` field is a short descriptive summary for the project and is not an official winner attribute.
+- `sui_ecosystem_primitives` is a lightweight keyword-derived classification to help compare projects by themes such as Sui, Walrus, AI, wallet, and ZK.
 
 ## License
 
-Prepared by PaperProof Labs for research and ecosystem analysis. Use with attribution to PaperProof Labs and the cited public Sui Foundation sources.
+Prepared for research and ecosystem analysis. Use with attribution to the cited public Sui Foundation sources.

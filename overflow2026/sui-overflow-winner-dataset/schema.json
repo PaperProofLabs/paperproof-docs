@@ -40,9 +40,6 @@
     "profile_note": {
       "type": "string"
     },
-    "paperproof_relevance": {
-      "type": "string"
-    },
     "sui_ecosystem_primitives": {
       "type": "array",
       "items": {
@@ -55,12 +52,6 @@
         "summary_table",
         "detailed_profile_order"
       ]
-    },
-    "source_document": {
-      "type": "string"
-    },
-    "source_document_path": {
-      "type": "string"
     }
   }
 }

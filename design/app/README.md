@@ -15,6 +15,7 @@ The notes currently cover:
 
 - brand, UI, and content format decisions;
 - Copilot and MemWal memory design;
+- SuiNS-aware identity display for Sui addresses;
 - legal and policy links used by the official interface;
 - publish-flow UX analysis;
 - official Docs, Blog, Forum server-assisted content delivery;
