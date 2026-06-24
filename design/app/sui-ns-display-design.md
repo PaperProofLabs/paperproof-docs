@@ -27,6 +27,14 @@ This document defines the display-only design. It does not change protocol
 state, contract behavior, artifact schemas, version objects, comments, or
 governance logic.
 
+Current scope constraint:
+
+- phase 1 must not add any server-side SuiNS resolver, cache API, indexer
+  endpoint, database table, or backend dependency;
+- phase 1 must remain a frontend-only display enhancement.
+- phase 1 queries must be issued by the browser directly, not proxied through
+  the PaperProof server.
+
 ## Product Requirement
 
 Address rendering in the PaperProof official app should follow this order:
@@ -36,6 +44,9 @@ Address rendering in the PaperProof official app should follow this order:
    the SuiNS name.
 3. If resolution returns no name, display the truncated Sui address.
 4. If resolution fails or times out, also display the truncated Sui address.
+
+The default visible state must always be the existing raw-address UI. SuiNS is
+an optional progressive enhancement applied only after a successful lookup.
 
 The underlying raw address must remain available for:
 
@@ -77,6 +88,8 @@ especially:
 - If a field shows multiple authors, resolve each address independently.
 - Non-address author strings such as `PaperProof Labs` must remain unchanged and
   must not be sent through SuiNS resolution.
+- If any uncertainty exists, prefer showing the original address rather than a
+  guessed or partially resolved name.
 
 ### Truncation Rules
 
@@ -140,8 +153,15 @@ resolveDisplayIdentity(input: string): Promise<{
 ### Preferred Query Model
 
 Use a read-only SuiNS lookup path compatible with the official app's current
-Sui read client. Avoid adding a dedicated backend dependency for the first
-version unless frontend RPC usage becomes too heavy.
+Sui read client. Do not add a backend dependency, indexer endpoint, or server
+cache interface in phase 1.
+
+Chosen direction:
+
+- browser-side direct lookup;
+- official Sui client reverse lookup;
+- no PaperProof server forwarding;
+- no third-party SuiNS relay service as the primary path.
 
 Preferred order:
 
@@ -153,6 +173,33 @@ Preferred order:
 
 If the current PaperProof SDK already exposes a suitable helper, reuse it
 instead of implementing raw RPC calls in the app.
+
+If no stable SuiNS helper already exists in the current frontend stack, the
+implementation should stop at raw-address display rather than introduce a risky
+custom resolver path under deadline pressure.
+
+### Official API Direction
+
+Use the official Sui name-service reverse lookup path for:
+
+```text
+address -> primary SuiNS name
+```
+
+Implementation preference:
+
+1. adopt the official Sui client reverse lookup capability already available to
+   the frontend stack;
+2. keep the integration isolated inside a small resolver service;
+3. over time, prefer the official gRPC/Core API direction over deprecated
+   JSON-RPC-only paths if both are available.
+
+Short-term practical rule:
+
+- if the current `paperproof-app` client stack can perform reverse lookup
+  cleanly with the existing `@mysten/sui` integration, use that path first;
+- do not add React-only hooks or dApp-kit-specific rendering dependencies just
+  for SuiNS display.
 
 ## Caching Strategy
 
@@ -189,6 +236,10 @@ Suggested TTLs:
 - negative lookup: 1 hour;
 - failed lookup: do not persist long-term, or keep for only a few minutes.
 
+If implementation simplicity is more important than persistence, phase 1 may
+use memory cache only and skip `localStorage` entirely. That is preferable to a
+fragile persistent cache implementation.
+
 This avoids spamming RPC requests on list-heavy screens such as comments,
 explore, and governance pages.
 
@@ -201,6 +252,10 @@ If resolution fails:
 - render the compact raw address immediately;
 - optionally retry in the background once;
 - do not surface a user-facing error toast for ordinary failures.
+- never leave the field blank;
+- never replace an address with placeholder text such as `Loading...`,
+  `Unknown`, or `Resolution failed`;
+- never break copy, tooltip, explorer-link, or signing-related UI behavior.
 
 Timeout target:
 
@@ -213,41 +268,8 @@ No protocol storage changes are required.
 
 No indexer schema changes are required for the first version.
 
-This feature is a frontend display enhancement only unless a later phase adds
-server-side batching or caching.
-
-## Optional Server-Assisted Phase
-
-If frontend-only RPC lookups become too noisy, add an optional server-assisted
-resolver in:
-
-```text
-paperproof-indexer-reference
-```
-
-Possible endpoint:
-
-```text
-GET /v1/identity/resolve?address=0x...
-```
-
-Response sketch:
-
-```json
-{
-  "address": "0x...",
-  "suinsName": "alice.sui",
-  "resolved": true
-}
-```
-
-That phase would make sense if:
-
-- large comment threads trigger too many browser-side lookups;
-- mobile performance needs improvement;
-- the app wants centralized short-lived caching for repeated popular addresses.
-
-For now, keep the feature low-coupling and frontend-first.
+This feature is a frontend display enhancement only. The current design
+intentionally excludes any server-side batching or caching interface.
 
 ## Coupling Assessment
 
@@ -267,6 +289,14 @@ Does not touch:
 - Walrus upload/download logic;
 - Docs, Blog, or Forum artifact formats.
 
+Must not touch in phase 1:
+
+- `paperproof-indexer-reference`;
+- production deployment topology;
+- API response schemas;
+- server-side cache storage;
+- reverse proxy configuration.
+
 ## Implementation Notes
 
 ### Likely Integration Points
@@ -283,6 +313,9 @@ Suggested pattern:
   - resolved name for visible label;
   - raw address for copy and tooltip text.
 
+The adapter should be additive and should reuse existing address display helpers
+wherever possible. Do not refactor all identity rendering paths at once.
+
 ### Batch-Friendly Rendering
 
 For list-heavy pages:
@@ -293,6 +326,9 @@ For list-heavy pages:
 
 This avoids delaying first paint and keeps the page stable under slow RPC
 conditions.
+
+If a list is especially dense, phase 1 may cap concurrent lookups to avoid UI
+thrash and excess RPC fan-out.
 
 ### Non-Address Strings
 
@@ -314,6 +350,9 @@ Phase 1 tests should cover:
 - valid address with no SuiNS name falls back to compact raw address;
 - invalid input bypasses resolution and displays unchanged;
 - lookup timeout falls back cleanly;
+- RPC/network exception falls back to the original address;
+- malformed SuiNS response falls back to the original address;
+- unresolved items never block page render or route navigation;
 - copy action still copies the canonical Sui address even when SuiNS is shown;
 - explorer links still target the canonical address;
 - negative cache prevents repeated no-result lookups during one session;
@@ -325,4 +364,3 @@ Phase 1 tests should cover:
 - No replacement of canonical addresses in signed or verified data.
 - No mandatory server-side resolver in phase 1.
 - No attempt to infer identity from ENS, SNS on other chains, or social handles.
-
