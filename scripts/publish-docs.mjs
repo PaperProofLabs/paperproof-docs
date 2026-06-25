@@ -6,6 +6,7 @@ import fs from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { preflightJsonFiles } from './lib/publish-runtime.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -555,6 +556,12 @@ async function main() {
   }
 
   const sdkPackage = JSON.parse(await fs.readFile(path.join(SDK_ROOT, 'package.json'), 'utf8'));
+  await preflightJsonFiles([
+    MANIFEST_PATH,
+    APP_MANIFEST_PATH,
+    path.join(DOCS_ROOT, 'homepages', 'blogs', 'manifest.json'),
+    path.join(DOCS_ROOT, 'homepages', 'forums', 'manifest.json'),
+  ]);
   const manifest = JSON.parse(await fs.readFile(MANIFEST_PATH, 'utf8'));
   let docs = collectDocs(manifest);
   if (args.only.length) {

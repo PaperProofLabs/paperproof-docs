@@ -18,3 +18,8 @@ Current substantive design records are in [app/](./app/):
   captures the server-side/indexer-backed content serving plan.
 - [app/publish-storage-onchain-ux-optimization.md](./app/publish-storage-onchain-ux-optimization.md)
   records publishing UX improvements around storage and on-chain submission.
+
+Current substantive system design records are in [system/](./system/):
+
+- [system/artifact-control-nft-rearchitecture.md](./system/artifact-control-nft-rearchitecture.md)
+  proposes the controller-NFT redesign for transferable artifact ownership.

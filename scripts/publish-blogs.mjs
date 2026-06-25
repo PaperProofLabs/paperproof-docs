@@ -6,6 +6,7 @@ import fs from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { preflightJsonFiles } from './lib/publish-runtime.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -369,6 +370,7 @@ async function main() {
   }
 
   const sdkPackage = JSON.parse(await fs.readFile(path.join(SDK_ROOT, 'package.json'), 'utf8'));
+  await preflightJsonFiles([MANIFEST_PATH, APP_MANIFEST_PATH]);
   const manifest = JSON.parse(await fs.readFile(MANIFEST_PATH, 'utf8'));
   const posts = collectPosts(manifest);
   assert(posts.length === 4, `Expected 4 blog posts, found ${posts.length}.`);
