@@ -71,6 +71,21 @@
           "currentVersionId": "0xd50d3d38ecc6938f3840bb43baf53f4e8b9a582916873d004bf6fd9fc949759a",
           "latestContentHash": "sha256:dc9af4673236f60f3e6fffafec04de8b09089c9fdbed0a3b0082083b30ac1de3",
           "contentType": "application/vnd.paperproof.markdown-package+zip"
+        },
+        {
+          "id": "licenses-and-reuse",
+          "title": "Licenses and Reuse",
+          "summary": "The main reuse licenses supported for PaperProof artifacts, plus the custom PaperProof License.",
+          "source": "getting-started/licenses-and-reuse.md",
+          "artifactCode": "PaperProof-generic_file-001169-e6430bc308e0",
+          "seriesId": "0xe6430bc308e089a258e31e7afe096bd8f0618fac1b3005794933700e010d5330",
+          "commentsTreeId": "0xbbae14bb32d20719122d144ebd22e11cf600911a2356968a4498eedf6c9a5f96",
+          "initialVersionId": "0x259440334d8069ef7c1ee9978c0fca8974cea3123e06fc187be2075617be598d",
+          "likesBookId": "0x30da32b524a23015963f2c660c6ae9ed6e100280684b6613b73f027048790731",
+          "commentsTreeStatus": "locked",
+          "currentVersionId": "0x387cc4dc1ba1b5b5ae2a6dc55bd16380d029bc25f1ba46874dd5d0d7515a688f",
+          "latestContentHash": "sha256:7dddca6e41b518099a19712aa401ecc2c95b051e8d0361b316120b5a1948a526",
+          "contentType": "application/vnd.paperproof.markdown-package+zip"
         }
       ],
       "commentsTreeId": "0x2c58268a4509ac0b3ff76906ff9ae0e05faa8e98de34e9409d1c7cd3d0377fdc",
@@ -375,6 +390,83 @@
       "contentType": "application/vnd.paperproof.markdown-package+zip"
     },
     {
+      "id": "positioning-and-competitive-landscape",
+      "title": "Positioning and Competitive Landscape",
+      "summary": "How to understand PaperProof, where it overlaps with other systems, and why its artifact model is distinctive.",
+      "source": "positioning-and-competitive-landscape/index.md",
+      "topics": [
+        {
+          "id": "how-to-position-paperproof",
+          "title": "How to Position PaperProof",
+          "summary": "The clearest mental model for explaining PaperProof to developers, researchers, product teams, and investors.",
+          "source": "positioning-and-competitive-landscape/how-to-position-paperproof.md",
+          "artifactCode": "PaperProof-generic_file-001169-51a7dae8183c",
+          "seriesId": "0x51a7dae8183cf9ecf4ac63a4201f5f27a0e3e5c4100b4313a693c4db6895b1cc",
+          "commentsTreeId": "0x872396ce544317257ad4e0795f54ff0d6168dbc118e14b18528ffbf42eb24f11",
+          "initialVersionId": "0x130c2777c5d826e186fb19b3107d5d0a001ec5386e10d27e77e92d042374afa6",
+          "likesBookId": "0x6f27e01a128969b1278ea9bce65f3d01ad52c9179b224f5c29e41d778fb6f7a5",
+          "commentsTreeStatus": "locked",
+          "currentVersionId": "0xb0f61c6d62256119323d10413409d689b20575f91863050f2271e5656127db49",
+          "latestContentHash": "sha256:edf0e4f8ef30b796f4e0a7892f75a3e08892ffdd957e7af4182eeb65256f376b",
+          "contentType": "application/vnd.paperproof.markdown-package+zip"
+        },
+        {
+          "id": "web3-competitive-overlap",
+          "title": "Web3 Competitive Overlap",
+          "summary": "Where Paragraph, Lens, Farcaster, DeSo, and Crossbell overlap with PaperProof and where they do not.",
+          "source": "positioning-and-competitive-landscape/web3-competitive-overlap.md",
+          "artifactCode": "PaperProof-generic_file-001169-6c3705f6b27c",
+          "seriesId": "0x6c3705f6b27c28b9062bd78ee0482c7f83742129089ce6f8f8a68c13e90c5768",
+          "commentsTreeId": "0x68ed6d4b772faa308d5e0d8afee1d3bd9885f499719f61d3301c176891392585",
+          "initialVersionId": "0x27a3d19736541670bfb01dc45a73797cb62e0a9cd50868e98fa2dfdca912a6c5",
+          "likesBookId": "0x45f5a3cdf61b6eadd4ea32ff022ba6ec0439ecf520da0ef818c185377de2d43f",
+          "commentsTreeStatus": "locked",
+          "currentVersionId": "0x9095291f9c6f2dd677b12f16f088a373d0c2ce4e00c86a4a32e46ec6bc8e8369",
+          "latestContentHash": "sha256:a7e0049fe1d2e125dad24bbe2d863bf30d3c904fac81fdf8cc16c92f8322fd39",
+          "contentType": "application/vnd.paperproof.markdown-package+zip"
+        },
+        {
+          "id": "web2-functional-counterparts",
+          "title": "Web2 Functional Counterparts",
+          "summary": "How Ghost, Substack, arXiv, Zenodo, GitHub Releases, and Discourse collectively map to PaperProof.",
+          "source": "positioning-and-competitive-landscape/web2-functional-counterparts.md",
+          "artifactCode": "PaperProof-generic_file-001169-f5379686b8c3",
+          "seriesId": "0xf5379686b8c3694be0115e30e7edc2ac13a87fac266f4946ce17e6e4aa570c88",
+          "commentsTreeId": "0x643b99ff5a7adf84fa011fe6740865bf4ece6e7ae2cd5877ff3a25b480268e22",
+          "initialVersionId": "0x22350c56c85c9c75fc3bd1415fe534d51f084f86b9b1e294a9fc748d5e486c62",
+          "likesBookId": "0xe6a5c6264fbca99f91eb121f13dfb6e155c3dfb8909960e79897c5793a616814",
+          "commentsTreeStatus": "locked",
+          "currentVersionId": "0x180f9a7c31ced8c7a8bf39a77e81b98b28b5ce3289dca3d9c4e4aca86785fd39",
+          "latestContentHash": "sha256:c4b47bbe7968395689286c66bf6996d3ec4cc0ccb74ffb7b87b37d00f73c780e",
+          "contentType": "application/vnd.paperproof.markdown-package+zip"
+        },
+        {
+          "id": "why-paperproof-has-structural-advantages",
+          "title": "Why PaperProof Has Structural Advantages",
+          "summary": "Why an artifact-centric, version-native, agent-readable protocol can open a different opportunity surface from ordinary content apps.",
+          "source": "positioning-and-competitive-landscape/why-paperproof-has-structural-advantages.md",
+          "artifactCode": "PaperProof-generic_file-001169-eb28664816c9",
+          "seriesId": "0xeb28664816c939748e0e07fd9e03aa43c624e5316e1649342c00118f8718f260",
+          "commentsTreeId": "0x653f65e2817a965b7fe63fc0f70ad2c01ef4e5fbbf0ada7e7cbac35871eccfed",
+          "initialVersionId": "0x70fabdeb712645e35c56648c8a87acba3f96ddf6da7770f48ced22c198d0d295",
+          "likesBookId": "0x9990f289b5dfbd167d145d3701a6d1c0b540221655ecd383d7946366f42d82a7",
+          "commentsTreeStatus": "locked",
+          "currentVersionId": "0xb9122df005d4446e72daa23a8dc9a6213157dfa93ef5e96f5ae471c2e8a6f176",
+          "latestContentHash": "sha256:fc9fade52823b7a82c15ef2ba6688738478a4f0c8844e9b654efcedbd3a0beb4",
+          "contentType": "application/vnd.paperproof.markdown-package+zip"
+        }
+      ],
+      "artifactCode": "PaperProof-generic_file-001169-cdde4f4bb83b",
+      "seriesId": "0xcdde4f4bb83b8166b71c6c84d1d33bbba9cd6722bcc033663597a5405e1ee9c4",
+      "commentsTreeId": "0x03eec3b2af26b97efcef00d723a76833a49d11119c4359092262c2f43e255ba3",
+      "initialVersionId": "0x1c4a88089992b2e9332105eb063cf6cf9cedbff8146c0d5c0b827b88ed0a2fd5",
+      "likesBookId": "0x213d0b37244cfd256f77aab5266b4c666e4e6541337acbb9159b8a4269a0fad5",
+      "commentsTreeStatus": "locked",
+      "currentVersionId": "0x41792250101e050f953c4b5e8a14a4c6c40c134dea5863fb5713f9cb2c9106c7",
+      "latestContentHash": "sha256:d0c14c444b65e1e489bb8c240472c865843193b834b215cfddc1965429338fb9",
+      "contentType": "application/vnd.paperproof.markdown-package+zip"
+    },
+    {
       "id": "safety-and-operations",
       "title": "Safety and Operations",
       "summary": "Wallet safety, interface policy, upgrades, and common questions.",
@@ -467,7 +559,7 @@
       "contentType": "application/vnd.paperproof.markdown-package+zip"
     }
   ],
-  "publishedAt": "2026-06-23T09:52:58.764Z",
+  "publishedAt": "2026-06-25T14:58:22.904Z",
   "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
-  "sdkVersion": "0.2.6"
+  "sdkVersion": "0.2.7"
 }

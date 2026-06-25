@@ -63,6 +63,16 @@ async function writeJsonFile(filePath, value) {
   await fs.writeFile(filePath, `${stringifyForJson(value)}\n`, 'utf8');
 }
 
+async function waitFor(predicate, { attempts = 8, delayMs = 1_500, label = 'condition' } = {}) {
+  let lastValue;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    lastValue = await predicate();
+    if (lastValue) return lastValue;
+    if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, delayMs * attempt));
+  }
+  throw new Error(`Timed out waiting for ${label}.`);
+}
+
 function usage() {
   return `
 Publish official PaperProof Docs as generic_file artifacts.
@@ -292,29 +302,59 @@ async function uploadDoc(walrusClient, signer, doc, content, run, skipWalrus, ph
     };
   }
   const label = `paperproof-docs-${phase}-${doc.sectionId}-${doc.topicId || 'index'}`.slice(0, 96);
-  const upload = await robustWalrusWriteBlob(walrusClient, signer, content.bytes, {
-    label,
-    fallback: false,
-    attempts: 4,
-  });
-  console.log(`[${phase}] uploaded ${doc.source}: ${upload.blobId}`);
-  return {
-    blobId: upload.blobId,
-    blobObjectId: upload.blobObjectId,
-    byteLength: content.bytes.length,
-  };
+  const attempts = 3;
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const upload = await robustWalrusWriteBlob(walrusClient, signer, content.bytes, {
+        label,
+        fallback: false,
+        attempts: 4,
+      });
+      console.log(`[${phase}] uploaded ${doc.source}: ${upload.blobId}`);
+      return {
+        blobId: upload.blobId,
+        blobObjectId: upload.blobObjectId,
+        byteLength: content.bytes.length,
+      };
+    } catch (error) {
+      lastError = error;
+      const message = error instanceof Error ? error.message : String(error);
+      const retriable = /walrus upload failed|fetch failed|no balance changes|provided version doesn't match|balance::split|timeout|ecconnreset|tls|503|500|429/i.test(message);
+      if (!retriable || attempt === attempts) throw error;
+      console.warn(`[${phase}] retry Walrus upload ${doc.source} (${attempt}/${attempts}): ${message}`);
+      await new Promise((resolve) => setTimeout(resolve, 1_500 * attempt));
+    }
+  }
+  throw lastError;
 }
 
 async function execute(sui, signer, tx, label, run, sender) {
   const { robustExecuteTransaction } = await loadDeps();
-  tx.setSenderIfNotSet(sender);
   if (!run) {
+    tx.setSenderIfNotSet(sender);
     return { digest: null, dryRunBytes: 0, events: [] };
   }
-  console.log(`[tx] ${label}`);
-  const result = await robustExecuteTransaction(sui, signer, tx, label);
-  console.log(`[tx] confirmed ${label}: ${result.digest}`);
-  return result;
+  const attempts = 3;
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    const currentTx = typeof tx === 'function' ? tx() : tx;
+    currentTx.setSenderIfNotSet(sender);
+    try {
+      console.log(`[tx] ${label}${attempt > 1 ? ` (retry ${attempt}/${attempts})` : ''}`);
+      const result = await robustExecuteTransaction(sui, signer, currentTx, label);
+      console.log(`[tx] confirmed ${label}: ${result.digest}`);
+      return result;
+    } catch (error) {
+      lastError = error;
+      const message = error instanceof Error ? error.message : String(error);
+      const rebuildable = /needs to be rebuilt|unavailable for consumption|current version/i.test(message);
+      if (!rebuildable || attempt === attempts) throw error;
+      console.warn(`[tx] rebuild and retry ${label}: ${message}`);
+      await new Promise((resolve) => setTimeout(resolve, 1_000 * attempt));
+    }
+  }
+  throw lastError;
 }
 
 function publishInput(doc, content, upload, phase) {
@@ -372,8 +412,14 @@ async function publishInitialDocs({ docs, args, account, sui, walrusClient, txb,
     const content = await readDoc(doc);
     assert(content.text.includes('Artifact Mapping: pending publication'), `${doc.source} is missing pending publication mapping.`);
     const upload = await uploadDoc(walrusClient, account.signer, doc, content, args.run, args.skipWalrus, 'v1');
-    const tx = txb.publishGenericFile(publishInput(doc, content, upload, 'initial'));
-    const result = await execute(sui, account.signer, tx, `publish doc ${doc.source}`, args.run, account.address);
+    const result = await execute(
+      sui,
+      account.signer,
+      () => txb.publishGenericFile(publishInput(doc, content, upload, 'initial')),
+      `publish doc ${doc.source}`,
+      args.run,
+      account.address,
+    );
     const published = args.run
       ? extractPublishResult(toSdkResponse(result), read.deployment)
       : {
@@ -416,8 +462,14 @@ async function lockCommentTrees({ docs, args, account, sui, txb, report }) {
       console.log(`[lock] reuse locked ${doc.source}`);
       continue;
     }
-    const tx = txb.comments.setTreeStatus(commentsTreeId, TREE_STATUS.locked);
-    const result = await execute(sui, account.signer, tx, `lock comments ${doc.source}`, args.run, account.address);
+    const result = await execute(
+      sui,
+      account.signer,
+      () => txb.comments.setTreeStatus(commentsTreeId, TREE_STATUS.locked),
+      `lock comments ${doc.source}`,
+      args.run,
+      account.address,
+    );
     doc.target.commentsTreeStatus = 'locked';
     report.transactions.push({ label: `lock comments ${doc.source}`, digest: result.digest, dryRunBytes: result.dryRunBytes });
     if (args.run) await writeJsonFile(CHECKPOINT_PATH, report);
@@ -446,8 +498,14 @@ async function publishMappedVersions({ docs, args, account, sui, walrusClient, t
     if (args.run) await writeDocText(doc, mappedText);
     const content = await readDoc(doc, args.run ? undefined : mappedText);
     const upload = await uploadDoc(walrusClient, account.signer, doc, content, args.run, args.skipWalrus, 'v2');
-    const tx = txb.addGenericFileVersion(addVersionInput(doc, content, upload, published, 'mapped'));
-    const result = await execute(sui, account.signer, tx, `add mapped doc version ${doc.source}`, args.run, account.address);
+    const result = await execute(
+      sui,
+      account.signer,
+      () => txb.addGenericFileVersion(addVersionInput(doc, content, upload, published, 'mapped')),
+      `add mapped doc version ${doc.source}`,
+      args.run,
+      account.address,
+    );
     const added = args.run
       ? extractAddVersionResult(toSdkResponse(result), read.deployment)
       : { seriesId: published.seriesId, versionId: ZERO, artifactType: ARTIFACT_TYPES.genericFile, version: 2n };
@@ -463,7 +521,17 @@ async function publishMappedVersions({ docs, args, account, sui, walrusClient, t
     }
     if (args.run) {
       const series = await read.waitForObject(published.seriesId, { attempts: 8, baseDelayMs: 1_000 });
-      const view = await read.getSeriesView(series.id);
+      const view = await waitFor(
+        async () => {
+          const current = await read.getSeriesView(series.id);
+          return current.currentVersionId === added.versionId ? current : null;
+        },
+        {
+          attempts: 8,
+          delayMs: 1_500,
+          label: `${doc.source} latest version ${added.versionId}`,
+        },
+      );
       assert(view.currentVersionId === added.versionId, `${doc.source} latest version did not advance.`);
     }
   }
@@ -494,7 +562,7 @@ async function main() {
     docs = docs.filter((doc) => wanted.has(doc.source.replace(/\\/g, '/')) || wanted.has(doc.id));
     assert(docs.length === wanted.size, `--only matched ${docs.length} docs, expected ${wanted.size}.`);
   } else {
-    assert(docs.length === 30, `Expected 30 docs, found ${docs.length}.`);
+    assert(docs.length > 0, 'Expected at least one doc in the Docs manifest.');
   }
 
   const account = await loadAccount(args.account);

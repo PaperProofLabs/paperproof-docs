@@ -1,6 +1,6 @@
 {
-  "runId": "paperproof-docs-2026-06-25T14-57-33-018Z",
-  "run": true,
+  "runId": "paperproof-docs-2026-06-25T13-42-43-797Z",
+  "run": false,
   "accountIndex": 4,
   "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.7",
@@ -36,50 +36,666 @@
   },
   "docs": [
     {
-      "source": "getting-started/licenses-and-reuse.md",
-      "title": "Licenses and Reuse",
+      "source": "getting-started/index.md",
+      "title": "Getting Started",
+      "kind": "section",
+      "upload": null,
+      "published": {
+        "seriesId": "0xd8fa60402ace853407db6703b6c5ecc43520ad6577bf8d804ca4e94c3d0686b8",
+        "versionId": "0xdb2386102fa8bc19ee6fee456023e0e5bdc71b7481aa5b9eab37e0b7ac2d5ce4",
+        "commentsTreeId": "0x2c58268a4509ac0b3ff76906ff9ae0e05faa8e98de34e9409d1c7cd3d0377fdc",
+        "likesBookId": "0xa20c63c75041d47620784c0632389eb66b4d5ba40c93caea531d46893ad308e5",
+        "artifactCode": "PaperProof-generic_file-001144-d8fa60402ace",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "getting-started/introduction.md",
+      "title": "Introduction",
       "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xc86c5f43d31ba62f97dac4e056c1e25d7d42fc675262357c06a9cae9c633f55a",
+        "versionId": "0xb2581dd2afd0a6232f22bb0fc6f426a049153519a16cd77c205b5573ddd0862b",
+        "commentsTreeId": "0x4024b61b2ac9a1617d16e3be42deaf3dacc9a17f5c8f9c665fc7e0b6dea1a16f",
+        "likesBookId": "0x3852d507b41d2a922d24e874f6368e9e5b5bf39b8304a2ede15b92cb177d1685",
+        "artifactCode": "PaperProof-generic_file-001144-c86c5f43d31b",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "getting-started/quick-start.md",
+      "title": "Quick Start",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x886373561299545caf6b3726f65ce690506b7bff8370b43530cd3934e7515b66",
+        "versionId": "0xc5bfdc108e28e51f5b02d3ce74b23db4fd526296ef4ce78c9e8a6e37349d9869",
+        "commentsTreeId": "0x0424f4abe191d2b4787c546b765149de82e05cb222ac216aceb4c3b1efb14bfe",
+        "likesBookId": "0x776b9cf703a37314e296964578f65aa359c4645c3749e981d6e85c731d7ea95f",
+        "artifactCode": "PaperProof-generic_file-001144-886373561299",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "getting-started/why-sui-and-walrus.md",
+      "title": "Why Sui and Walrus",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x25087190c45af2f04df9a0a67e7f8b435293d322b6e2dfafaa28d70814a76042",
+        "versionId": "0x27f8b8bdfbe74337d8c8c7e1de681a71311b8daca2fd111a961ed17bae300eb3",
+        "commentsTreeId": "0x114c7662a6f1061781010d3e21de7f06d619f9a269efe8c0f8b441d3c77a360b",
+        "likesBookId": "0x677b44ae9d130e50087fb41d02805bd6bf0d56207acb58e1b8a22242d42d646a",
+        "artifactCode": "PaperProof-generic_file-001144-25087190c45a",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "getting-started/research-and-presentation-materials.md",
+      "title": "Research and Presentation Materials",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x6b259991d78f2265d77f302168d9f801b093707234bdfaee06d9f7763ccf4c85",
+        "versionId": "0xee31889d3eb47981ccfd5546cf15bc7ee0fbaebc91dadae0f9606501b07e7f23",
+        "commentsTreeId": "0x204327b60d84d10c97d86f9a4f8cda2de6fc7c7e4043684b9f2598aeccaf8044",
+        "likesBookId": "0xa26f8514874b09010191bafb4da6e22d1bd9845687aaed5edb33ee30a8895f98",
+        "artifactCode": "PaperProof-generic_file-001144-6b259991d78f",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "protocol/index.md",
+      "title": "Protocol",
+      "kind": "section",
+      "upload": null,
+      "published": {
+        "seriesId": "0x22d38471b17fad0cdc55b563de71baffb480b7641a7a7098dab88c9dcb775b2f",
+        "versionId": "0xaf1cb9aa856f8c7bd5e8c7edcf6d4b68c388a7db6952ef95c8c9b2adb88b9924",
+        "commentsTreeId": "0xb617194809b22cc3863d8c10805653867e140acb5b7f46eac39dd28fa1ed9925",
+        "likesBookId": "0x10f858847df51637d5b18af9a8009a9ad0548a81a8e8e99eb16d086e6fccea78",
+        "artifactCode": "PaperProof-generic_file-001144-22d38471b17f",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "protocol/artifact-model.md",
+      "title": "Artifact Model",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xff3a36416d5e7a1c612ea5500ca498ba9e9cbe11f29116ae533727101cb237e1",
+        "versionId": "0x63fa5a67a1c9950a8712cabb31e495eab6de2a26f7abb87bee052ad2407c28a9",
+        "commentsTreeId": "0xde7143f96011f2ecdf508e906a8480eb47279ec2ba586ccb23cbd6480fca7887",
+        "likesBookId": "0x5414a0e73c8b0a5eb28627c8a13ab101616112418c6588c3d43f707d6c06d732",
+        "artifactCode": "PaperProof-generic_file-001144-ff3a36416d5e",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "protocol/content-and-versioning.md",
+      "title": "Content and Versioning",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x6743a9eb357e4957c125d298e37458efc17294eb5bf4ab762ae341d008caf766",
+        "versionId": "0x3e33a4e034d3eddd0528fb4aee9c603d2b38610f9feec73b0c03ebe3be015cf8",
+        "commentsTreeId": "0x60e73c20543c9b6f9ead98a30cbde7660b580bcaaed20cd441b53a7485a5d46d",
+        "likesBookId": "0x6a1c77de0bcb4a0f1badf0fc58c51836ec846ee0fdfcd4e46f6669b10bcae894",
+        "artifactCode": "PaperProof-generic_file-001144-6743a9eb357e",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "protocol/comments-and-likes.md",
+      "title": "Comments and Likes",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x3bfda36c9df3be93b8ea8e1779504d390bb5a7105532a8208fff8dc6ef4ed935",
+        "versionId": "0x12531aad75c13d9bc96ec2b28258b3fc03aff59280e850ef63ece2e8361dee3c",
+        "commentsTreeId": "0x52863a5ed439da3d4ef2878d3b7b221af9c09d9b8eeab5f959707c5538413f63",
+        "likesBookId": "0x637716c624ea9f923001a9984d621507f7238535ad8c52ffd8cb52e086d12b64",
+        "artifactCode": "PaperProof-generic_file-001144-3bfda36c9df3",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "protocol/manifests-and-canonical-state.md",
+      "title": "Manifests and Canonical State",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x76f14765e0cb77149f9ba1c60bf51236811be7f0007d6fef7bcccb7cca735302",
+        "versionId": "0x0795167aa039996c5279101b70ca655b56b02d1f3c473ae08c383a8e7379198b",
+        "commentsTreeId": "0xb90b87ec9634496a0b8d5b82290ec595e783a2e894befad782b5b0f15d8403b2",
+        "likesBookId": "0xcc827946af8d27744300ae8b97b09c70887a5c72e1a38828d561bb796f2566fc",
+        "artifactCode": "PaperProof-generic_file-001144-76f14765e0cb",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "developers/index.md",
+      "title": "Developers",
+      "kind": "section",
+      "upload": null,
+      "published": {
+        "seriesId": "0xe42b8ce6677ca8a96d8834d016e6f4cd0a2cc48047ac2522cb506c3c0fd789f0",
+        "versionId": "0xa29d2cbb21a4f16c90bde0b71389ad55bf06bfad9cb87303f8456a320f69edc7",
+        "commentsTreeId": "0xdabda01af3edfe724c6fffdae2602927e2bd30c1c250c4d9b5a065656007ef5d",
+        "likesBookId": "0x62c29befa42dacb50b9b18a9e7640ed83f6069805752b6fe06881807d81a9007",
+        "artifactCode": "PaperProof-generic_file-001144-e42b8ce6677c",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "developers/typescript-sdk.md",
+      "title": "TypeScript SDK",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xd882c0e7e316727eb62b1f642b19ac1aabbc17cfe31765f24c0e02da20038cd1",
+        "versionId": "0xb6f270f853471a9d881a2f06f9b3179008657688c2ea340b9bbc02565c667317",
+        "commentsTreeId": "0xb04e57eaefad8082f62372816923f12840b14de5f83ffb886708ddcab3ad42c7",
+        "likesBookId": "0x4aa1490037663a2353d3bfe6ef356bd137414d31baa59271e32a2a1b70b3d86f",
+        "artifactCode": "PaperProof-generic_file-001144-d882c0e7e316",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "developers/python-sdk.md",
+      "title": "Python SDK",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x6f950074c78b7019dad1d36d9a30a5a14a10841a60322a0a6dcc549952e21153",
+        "versionId": "0xf2561b4f8f45aaaac592f9fb36d5f2be5bf314f3be3b5c2c813af67bbf742f5f",
+        "commentsTreeId": "0xa778d6467345b9e2bd27b086061d67e4b8e078ef606e4bf3ad34aa58fe490aba",
+        "likesBookId": "0xcc5596b042e41195318ebecb179edf633f88f3a2e95417e8f0633f6947ad4449",
+        "artifactCode": "PaperProof-generic_file-001144-6f950074c78b",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "developers/rust-sdk.md",
+      "title": "Rust SDK",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xe74daa686e6209f2715f0a88492f6aa1f206d8406fcafca7594858e581c23b39",
+        "versionId": "0x388e6de8b93a52520c66e00720cd40d5e978fffd8589ae26f9a09445372969a1",
+        "commentsTreeId": "0x5b6870f326ba1ce75e576af816ad60268820667afcd7ba070792ab8de9b95d86",
+        "likesBookId": "0x7dbe8fd2cdc3042e8443482a2e566373120212260770b61fb85f7fc6447430d8",
+        "artifactCode": "PaperProof-generic_file-001144-e74daa686e62",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "developers/static-frontend-integration.md",
+      "title": "Static Frontend Integration",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xc3190886ae5103e7a8b0faf8290b329ac726ec23e0c6a5822cbe7cd5109810fa",
+        "versionId": "0xeb5cd4b9b0140fed7d276ad49f919d5df1441427a0ae0d05bae94b27cfb6c8f2",
+        "commentsTreeId": "0xedf3c2caf5023ba3a91b4a24cb58f8f72f1e2c2440af32ad1cbfe22ccf86a79c",
+        "likesBookId": "0x529df9fc896166bef1869ab991eb1e7844ca3b716053788448dd430b91372dad",
+        "artifactCode": "PaperProof-generic_file-001144-c3190886ae51",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "developers/indexer-integration.md",
+      "title": "Indexer Integration",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x5d42a2d17e428fa6a910e976a8da4435299d1fb4a520a9a9c36d5ba17cfc5e78",
+        "versionId": "0xbc4d90d3060deab235af6b57a309149f1e72ceaf21cc74b1a7f601d3ccab45bb",
+        "commentsTreeId": "0xe0534db2c2bdd2eb9b6e2d550d91f76a9e5248189a1b4bdd13b9037102fb1bd8",
+        "likesBookId": "0xcdd2485b3d65c1982e50ae19b1d6cc2178750758f7a702eb85c40dbf0794de1d",
+        "artifactCode": "PaperProof-generic_file-001144-5d42a2d17e42",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "copilot/index.md",
+      "title": "Copilot",
+      "kind": "section",
+      "upload": null,
+      "published": {
+        "seriesId": "0x529cf9197eb99b25e7d238d9ba555bc80c9f22b26e7f05f123b153613cda45cf",
+        "versionId": "0xd8321f4504fb729b1101eac99bb66776d79c11f79c433c7480d9a1e2e63ba008",
+        "commentsTreeId": "0x737e7794f0562b5a75d894c760324e333c3656430607869059479f91aaf1ddb4",
+        "likesBookId": "0x04626e008c2eab9639d0dc9215d95284f0388fbb3fee458e8451aab975cde757",
+        "artifactCode": "PaperProof-generic_file-001144-529cf9197eb9",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "copilot/native-prompts.md",
+      "title": "Native Prompts",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x663a7675df4fd8f282c55db142fd9b9c41a7744f0ba38e73a8828009679fc5ea",
+        "versionId": "0xa5a01e58edd9f344f048c5bb7391325ba96e40b1c42cebaf66e106ffcfa90d20",
+        "commentsTreeId": "0xdd07f9067930e4f6917b4af33e28b6b53869edbb3c88c6d209f7ec02a5d8a837",
+        "likesBookId": "0x499db7b9b65b82a49f171b9e69e29ae155f21d980279578a1ac3363a042594eb",
+        "artifactCode": "PaperProof-generic_file-001144-663a7675df4f",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "copilot/agent-memory.md",
+      "title": "Agent Memory",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x4d82d243557a13b20cb6b2fbac0aa59000694cf4b5d67e9104081ce20aabdda0",
+        "versionId": "0xa9d53648c4b8c59cfdb0fa8d226ac97c200e066e29d9d9b680b2f088903e9f5e",
+        "commentsTreeId": "0xb71a7bb2603523bb0a9168b1686c85669492d6855d6265aede71a04e6e91bcc1",
+        "likesBookId": "0xdf92a5fbbffa858d4dca3c3482a38cdd2b4bef4dff986253d754ff1f8d5d17ab",
+        "artifactCode": "PaperProof-generic_file-001144-4d82d243557a",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "copilot/memory-privacy-and-access.md",
+      "title": "Memory Privacy and Access",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x37741376f5364c9c0b9f863cdee6bad96fbafbf4994401bdaabfdd247050e4c9",
+        "versionId": "0x148b8bf30cb30525c1f6a2afdcbacd0e1971ed0b1cdc3b2876853f7d4f737dfd",
+        "commentsTreeId": "0xfcfcac8fc99eff3b26afee096d18524374b76e0aac0eab8772e313cfb9b29bbf",
+        "likesBookId": "0x2dcfeaeec954588d295b412a979a576918723a78218b9c98fb8c9e90af8aec43",
+        "artifactCode": "PaperProof-generic_file-001144-37741376f536",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "governance-and-economics/index.md",
+      "title": "Governance and Economics",
+      "kind": "section",
+      "upload": null,
+      "published": {
+        "seriesId": "0x54e0ad89966490517330805ee309b88fd9e3e73b0518e420f4eeab01b9218614",
+        "versionId": "0xbeeb6a0e591c575d9b7fec62d0852ddac3c6fd1df4582c1c9924845d9b34df96",
+        "commentsTreeId": "0x37381e3f31fe85463ecc8a3aad1ab6345fcb87aa8ecc719e2cbbfd7d06de07a2",
+        "likesBookId": "0xe4ef467bebca00d58fcfd884416caa6522c6fd36b5b747731eecedddcb5c3397",
+        "artifactCode": "PaperProof-generic_file-001144-54e0ad899664",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "governance-and-economics/governance.md",
+      "title": "Governance",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xe7b6301a68d4357651d4d65e257a4e18d92b03bfddc9ee3cc38f60066a9d24ba",
+        "versionId": "0x0c1af9c74d07e096820b38d833980464fbf2bfdac194700fca3ab8f2090e76a9",
+        "commentsTreeId": "0x3278b40d71c99331f366ec28c42ff016e2efea86611004146e8852c5aa089bef",
+        "likesBookId": "0xba3c965f6ff8cd1307ef5844861c9332efa994fcacc5a46b036343297569f0b5",
+        "artifactCode": "PaperProof-generic_file-001144-e7b6301a68d4",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "governance-and-economics/pprf-utility.md",
+      "title": "PPRF Utility",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xf59f80fd0346e155c3e2bcf7150bcf83221ffc949d2fa1d643e96705ce6746b2",
+        "versionId": "0xc6e82a3fc6136ec5bd90bd2bf7af6a7e9474d56f90eff807a5b3603b42d26e1c",
+        "commentsTreeId": "0x8ccc478affa8c6b3c6f94f58ebf0f8a197425ccbfb316f81460a87d69fd0baef",
+        "likesBookId": "0xa1c34ef8dc05cbb01406e16fc8d799941c1beb67cfff9f59989b7a76bca4b591",
+        "artifactCode": "PaperProof-generic_file-001144-f59f80fd0346",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "governance-and-economics/fees-and-sustainability.md",
+      "title": "Fees and Sustainability",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xc03facf2908192e7c8d1f9dfb65f34cca15ac423d0e05fb609f2cd045bdb617e",
+        "versionId": "0xd7b80423b8d38cd4c52a072cfd326283be232c8d9b38a2dbe2ab84541836531f",
+        "commentsTreeId": "0xcd466483c28c06ec2a0c8e50ebc06574a52b6276244a47005a7b15cf72d9c248",
+        "likesBookId": "0xc77acfd2873bd12406adc7aae4699e216027bb080c6b16df29a240ab1a28bae4",
+        "artifactCode": "PaperProof-generic_file-001144-c03facf29081",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "positioning-and-competitive-landscape/index.md",
+      "title": "Positioning and Competitive Landscape",
+      "kind": "section",
       "upload": {
-        "blobId": "PGFq_vvf1mZ3HYzvUjflr9VcXhCKk8qFWpQT_6qQ7hk",
-        "blobObjectId": "0xf18b7605db3609e85164110e9c1036879adb74075c71e9183735f62bed47e658",
-        "byteLength": 1552
+        "blobId": "local-docs-v1-positioning-and-competitive-landscape-index-5829cedb99fd30d57e8dfbcf",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1395
       },
       "published": {
-        "seriesId": "0xe6430bc308e089a258e31e7afe096bd8f0618fac1b3005794933700e010d5330",
-        "versionId": "0x259440334d8069ef7c1ee9978c0fca8974cea3123e06fc187be2075617be598d",
-        "commentsTreeId": "0xbbae14bb32d20719122d144ebd22e11cf600911a2356968a4498eedf6c9a5f96",
-        "likesBookId": "0x30da32b524a23015963f2c660c6ae9ed6e100280684b6613b73f027048790731",
-        "artifactCode": "PaperProof-generic_file-001169-e6430bc308e0",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-25",
         "artifactType": 6
       },
       "mappedVersion": {
         "upload": {
-          "blobId": "_ugERoY-8qOf_4AZgGCiWAgJy2CjofFpq06vSpj3vfE",
-          "blobObjectId": "0x771ab543bb21f6355bfc141bbba97fb07e17677683e27cb9c7d1092abd18075d",
-          "byteLength": 1650
+          "blobId": "local-docs-v2-positioning-and-competitive-landscape-index-7571afdc92b96dfedab77800",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 1429
         },
         "added": {
-          "seriesId": "0xe6430bc308e089a258e31e7afe096bd8f0618fac1b3005794933700e010d5330",
-          "versionId": "0x387cc4dc1ba1b5b5ae2a6dc55bd16380d029bc25f1ba46874dd5d0d7515a688f",
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
           "artifactType": 6,
           "version": "2"
         },
-        "contentHash": "sha256:7dddca6e41b518099a19712aa401ecc2c95b051e8d0361b316120b5a1948a526"
+        "contentHash": "sha256:7571afdc92b96dfedab778002af92725f6b624152669bf290e3bfb8e4db1fe9a"
       }
+    },
+    {
+      "source": "positioning-and-competitive-landscape/how-to-position-paperproof.md",
+      "title": "How to Position PaperProof",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-positioning-and-competitive-landscape-how-to-position-paperproof-6dd813ef1c7aaf95a703e37e",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1841
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-26",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-positioning-and-competitive-landscape-how-to-position-paperproof-78c34f497f9d1654dc0baa27",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 1884
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:78c34f497f9d1654dc0baa274c2e2069fa65d8c45d3fbb66fdb9be0b132bb896"
+      }
+    },
+    {
+      "source": "positioning-and-competitive-landscape/web3-competitive-overlap.md",
+      "title": "Web3 Competitive Overlap",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-positioning-and-competitive-landscape-web3-competitive-overlap-12cb91be32a746bcd720ecaf",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1967
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-27",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-positioning-and-competitive-landscape-web3-competitive-overlap-b7eeb081d6685ba065486722",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2002
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:b7eeb081d6685ba065486722a397bd40304dd0500a2914cfa1e0a42b0637865e"
+      }
+    },
+    {
+      "source": "positioning-and-competitive-landscape/web2-functional-counterparts.md",
+      "title": "Web2 Functional Counterparts",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-positioning-and-competitive-landscape-web2-functional-counterparts-b79d2e3f9a8bc9c6de03fdfe",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 1741
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-28",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-positioning-and-competitive-landscape-web2-functional-counterparts-e0c030e0e6b0aa8eaa1029f5",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 1779
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:e0c030e0e6b0aa8eaa1029f5c690b4cb2bc676d308c70a4735f659d7c7448871"
+      }
+    },
+    {
+      "source": "positioning-and-competitive-landscape/why-paperproof-has-structural-advantages.md",
+      "title": "Why PaperProof Has Structural Advantages",
+      "kind": "topic",
+      "upload": {
+        "blobId": "local-docs-v1-positioning-and-competitive-landscape-why-paperproof-has-structural-advantages-6454c53e2a4596c8ffcc8a75",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 2085
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-29",
+        "artifactType": 6
+      },
+      "mappedVersion": {
+        "upload": {
+          "blobId": "local-docs-v2-positioning-and-competitive-landscape-why-paperproof-has-structural-advantages-6539386f8f4890ff987adca8",
+          "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+          "byteLength": 2122
+        },
+        "added": {
+          "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "artifactType": 6,
+          "version": "2"
+        },
+        "contentHash": "sha256:6539386f8f4890ff987adca8cdabc99302430aa9abbaa5eb93d019ce954f8f19"
+      }
+    },
+    {
+      "source": "safety-and-operations/index.md",
+      "title": "Safety and Operations",
+      "kind": "section",
+      "upload": null,
+      "published": {
+        "seriesId": "0xc4ba991e6982d64075056ad4ebe6df02d3121c240116a51ba038a2747fcbf061",
+        "versionId": "0xdf0be4314fd7e5ed887de6bfdff61aaffc06ff4397a63d6b4af5d41325163b42",
+        "commentsTreeId": "0x8ae840a46ae1d3314c1d90c785ce1be8c00cefa103a2a4cbc25da90037b9aea7",
+        "likesBookId": "0xc0cdce515077e3ce2525c248f8ea424e57299e1624b5e7b399d6418acaa183e5",
+        "artifactCode": "PaperProof-generic_file-001144-c4ba991e6982",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "safety-and-operations/user-safety.md",
+      "title": "User Safety",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x667055adbb592059a84b1f2e99671c199b291ef729dbd5500fc9aad7dc290553",
+        "versionId": "0x6b9ec41c229f9badb9ef2b4974eabff519ed0d2017a7ca389b751ceb3c8ea984",
+        "commentsTreeId": "0x05f5f9dce5233b6cb15d917b5bef84d485dc8038fc59c1b9399632b0d185248f",
+        "likesBookId": "0x37a9ae6e61894e3c1683cc6383ee337d9198abf1b3659e20c3da647ddc8f7705",
+        "artifactCode": "PaperProof-generic_file-001144-667055adbb59",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "safety-and-operations/interface-policy.md",
+      "title": "Interface Policy",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x925025e2f21a32d2b7374eb2a7f7aa6b02d6709afac3dc350c9c2f2ac923fb76",
+        "versionId": "0xa80d7382cf661275f7d34d4ab5a859f2deaf284aa974c4727ce9964679029ee2",
+        "commentsTreeId": "0x38aeb493ff4f5c7bba4ea63b26c0e6a768de2cbea1d10f396e7bfa17f62b71b2",
+        "likesBookId": "0xdb51b28ad8501299116e7f6f320634b5c4fe68d1b091dac40d3b6512c9647086",
+        "artifactCode": "PaperProof-generic_file-001144-925025e2f21a",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "safety-and-operations/mainnet-and-upgrades.md",
+      "title": "Mainnet and Upgrades",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0xdec207341218c3d9ae0565d0bdf24b59e5b9d490311780100ee4789274334d11",
+        "versionId": "0x53cb518cbe94200236ff537d135f76e24875301d7d269790b3388d6c32b4e1ef",
+        "commentsTreeId": "0x59c9e9ec84c1bf31cf9470ff676519b74ca4212037ddaf087c46cf6c99e03588",
+        "likesBookId": "0x676e29663a657a0467b94c84fb4df832dfc0b6ccca49253536e549123b14b765",
+        "artifactCode": "PaperProof-generic_file-001144-dec207341218",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "safety-and-operations/formal-verification.md",
+      "title": "Formal Verification",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x5a086befae7df77e18d222ce127f03ddf3d3813da6ecc4ab018a3158eab396a9",
+        "versionId": "0x89607ae04743eacedfbbbc8cfd973c096530bb3c3d899b7601d4e8b063b2f2f3",
+        "commentsTreeId": "0x430387ab6c27b9122e56c1f8159619fed5326bc988041527800c1c69b55049ba",
+        "likesBookId": "0xa40d2c2783bbde031a3c0946debc38d8836d565b65217b92f80dd2bc759b780f",
+        "artifactCode": "PaperProof-generic_file-001144-5a086befae7d",
+        "artifactType": 6
+      },
+      "reused": true
+    },
+    {
+      "source": "safety-and-operations/faq.md",
+      "title": "FAQ",
+      "kind": "topic",
+      "upload": null,
+      "published": {
+        "seriesId": "0x1402056d261548faaff887a1bba4cc51fe45c30a5b2bc64e47c2c904a82a08fe",
+        "versionId": "0xa80372fe1bee82fb51feed7b1b1b108e829c14ffc49f84606a418577001548e6",
+        "commentsTreeId": "0xb35a923c06d9bf240cd338c6e0daac99baf2f9e74f57a45f5cb7189316957fff",
+        "likesBookId": "0xd092b2fe045bf8b9f252ee173b06f96946e2ff5eaa0b493e3c20131eea5a9e8f",
+        "artifactCode": "PaperProof-generic_file-001144-1402056d2615",
+        "artifactType": 6
+      },
+      "reused": true
     }
   ],
   "transactions": [
     {
-      "label": "publish getting-started/licenses-and-reuse.md",
-      "digest": "423BH9soJaoMgBrYmNBaGGWUkosBGDXx3FyqfziFdCj5"
+      "label": "publish positioning-and-competitive-landscape/index.md",
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
-      "label": "lock comments getting-started/licenses-and-reuse.md",
-      "digest": "EzNfKE5AjUfJ21tGDjrdYmJVKwXqBuAYSfMGKdB6dPz4"
+      "label": "publish positioning-and-competitive-landscape/how-to-position-paperproof.md",
+      "digest": null,
+      "dryRunBytes": 0
     },
     {
-      "label": "add mapped version getting-started/licenses-and-reuse.md",
-      "digest": "9rHBUSctT7tmbXerHdy84WRjACSow676uNkysfnUBZQM"
+      "label": "publish positioning-and-competitive-landscape/web3-competitive-overlap.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish positioning-and-competitive-landscape/web2-functional-counterparts.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "publish positioning-and-competitive-landscape/why-paperproof-has-structural-advantages.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version positioning-and-competitive-landscape/index.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version positioning-and-competitive-landscape/how-to-position-paperproof.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version positioning-and-competitive-landscape/web3-competitive-overlap.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version positioning-and-competitive-landscape/web2-functional-counterparts.md",
+      "digest": null,
+      "dryRunBytes": 0
+    },
+    {
+      "label": "add mapped version positioning-and-competitive-landscape/why-paperproof-has-structural-advantages.md",
+      "digest": null,
+      "dryRunBytes": 0
     }
   ],
   "manifest": {
@@ -154,21 +770,6 @@
             "commentsTreeStatus": "locked",
             "currentVersionId": "0xd50d3d38ecc6938f3840bb43baf53f4e8b9a582916873d004bf6fd9fc949759a",
             "latestContentHash": "sha256:dc9af4673236f60f3e6fffafec04de8b09089c9fdbed0a3b0082083b30ac1de3",
-            "contentType": "application/vnd.paperproof.markdown-package+zip"
-          },
-          {
-            "id": "licenses-and-reuse",
-            "title": "Licenses and Reuse",
-            "summary": "The main reuse licenses supported for PaperProof artifacts, plus the custom PaperProof License.",
-            "source": "getting-started/licenses-and-reuse.md",
-            "artifactCode": "PaperProof-generic_file-001169-e6430bc308e0",
-            "seriesId": "0xe6430bc308e089a258e31e7afe096bd8f0618fac1b3005794933700e010d5330",
-            "commentsTreeId": "0xbbae14bb32d20719122d144ebd22e11cf600911a2356968a4498eedf6c9a5f96",
-            "initialVersionId": "0x259440334d8069ef7c1ee9978c0fca8974cea3123e06fc187be2075617be598d",
-            "likesBookId": "0x30da32b524a23015963f2c660c6ae9ed6e100280684b6613b73f027048790731",
-            "commentsTreeStatus": "locked",
-            "currentVersionId": "0x387cc4dc1ba1b5b5ae2a6dc55bd16380d029bc25f1ba46874dd5d0d7515a688f",
-            "latestContentHash": "sha256:7dddca6e41b518099a19712aa401ecc2c95b051e8d0361b316120b5a1948a526",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],
@@ -484,14 +1085,14 @@
             "title": "How to Position PaperProof",
             "summary": "The clearest mental model for explaining PaperProof to developers, researchers, product teams, and investors.",
             "source": "positioning-and-competitive-landscape/how-to-position-paperproof.md",
-            "artifactCode": "PaperProof-generic_file-001169-51a7dae8183c",
-            "seriesId": "0x51a7dae8183cf9ecf4ac63a4201f5f27a0e3e5c4100b4313a693c4db6895b1cc",
-            "commentsTreeId": "0x872396ce544317257ad4e0795f54ff0d6168dbc118e14b18528ffbf42eb24f11",
-            "initialVersionId": "0x130c2777c5d826e186fb19b3107d5d0a001ec5386e10d27e77e92d042374afa6",
-            "likesBookId": "0x6f27e01a128969b1278ea9bce65f3d01ad52c9179b224f5c29e41d778fb6f7a5",
-            "commentsTreeStatus": "locked",
-            "currentVersionId": "0xb0f61c6d62256119323d10413409d689b20575f91863050f2271e5656127db49",
-            "latestContentHash": "sha256:edf0e4f8ef30b796f4e0a7892f75a3e08892ffdd957e7af4182eeb65256f376b",
+            "artifactCode": "DRY-RUN-26",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeStatus": "open",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:78c34f497f9d1654dc0baa274c2e2069fa65d8c45d3fbb66fdb9be0b132bb896",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -499,14 +1100,14 @@
             "title": "Web3 Competitive Overlap",
             "summary": "Where Paragraph, Lens, Farcaster, DeSo, and Crossbell overlap with PaperProof and where they do not.",
             "source": "positioning-and-competitive-landscape/web3-competitive-overlap.md",
-            "artifactCode": "PaperProof-generic_file-001169-6c3705f6b27c",
-            "seriesId": "0x6c3705f6b27c28b9062bd78ee0482c7f83742129089ce6f8f8a68c13e90c5768",
-            "commentsTreeId": "0x68ed6d4b772faa308d5e0d8afee1d3bd9885f499719f61d3301c176891392585",
-            "initialVersionId": "0x27a3d19736541670bfb01dc45a73797cb62e0a9cd50868e98fa2dfdca912a6c5",
-            "likesBookId": "0x45f5a3cdf61b6eadd4ea32ff022ba6ec0439ecf520da0ef818c185377de2d43f",
-            "commentsTreeStatus": "locked",
-            "currentVersionId": "0x9095291f9c6f2dd677b12f16f088a373d0c2ce4e00c86a4a32e46ec6bc8e8369",
-            "latestContentHash": "sha256:a7e0049fe1d2e125dad24bbe2d863bf30d3c904fac81fdf8cc16c92f8322fd39",
+            "artifactCode": "DRY-RUN-27",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeStatus": "open",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:b7eeb081d6685ba065486722a397bd40304dd0500a2914cfa1e0a42b0637865e",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -514,14 +1115,14 @@
             "title": "Web2 Functional Counterparts",
             "summary": "How Ghost, Substack, arXiv, Zenodo, GitHub Releases, and Discourse collectively map to PaperProof.",
             "source": "positioning-and-competitive-landscape/web2-functional-counterparts.md",
-            "artifactCode": "PaperProof-generic_file-001169-f5379686b8c3",
-            "seriesId": "0xf5379686b8c3694be0115e30e7edc2ac13a87fac266f4946ce17e6e4aa570c88",
-            "commentsTreeId": "0x643b99ff5a7adf84fa011fe6740865bf4ece6e7ae2cd5877ff3a25b480268e22",
-            "initialVersionId": "0x22350c56c85c9c75fc3bd1415fe534d51f084f86b9b1e294a9fc748d5e486c62",
-            "likesBookId": "0xe6a5c6264fbca99f91eb121f13dfb6e155c3dfb8909960e79897c5793a616814",
-            "commentsTreeStatus": "locked",
-            "currentVersionId": "0x180f9a7c31ced8c7a8bf39a77e81b98b28b5ce3289dca3d9c4e4aca86785fd39",
-            "latestContentHash": "sha256:c4b47bbe7968395689286c66bf6996d3ec4cc0ccb74ffb7b87b37d00f73c780e",
+            "artifactCode": "DRY-RUN-28",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeStatus": "open",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:e0c030e0e6b0aa8eaa1029f5c690b4cb2bc676d308c70a4735f659d7c7448871",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -529,25 +1130,25 @@
             "title": "Why PaperProof Has Structural Advantages",
             "summary": "Why an artifact-centric, version-native, agent-readable protocol can open a different opportunity surface from ordinary content apps.",
             "source": "positioning-and-competitive-landscape/why-paperproof-has-structural-advantages.md",
-            "artifactCode": "PaperProof-generic_file-001169-eb28664816c9",
-            "seriesId": "0xeb28664816c939748e0e07fd9e03aa43c624e5316e1649342c00118f8718f260",
-            "commentsTreeId": "0x653f65e2817a965b7fe63fc0f70ad2c01ef4e5fbbf0ada7e7cbac35871eccfed",
-            "initialVersionId": "0x70fabdeb712645e35c56648c8a87acba3f96ddf6da7770f48ced22c198d0d295",
-            "likesBookId": "0x9990f289b5dfbd167d145d3701a6d1c0b540221655ecd383d7946366f42d82a7",
-            "commentsTreeStatus": "locked",
-            "currentVersionId": "0xb9122df005d4446e72daa23a8dc9a6213157dfa93ef5e96f5ae471c2e8a6f176",
-            "latestContentHash": "sha256:fc9fade52823b7a82c15ef2ba6688738478a4f0c8844e9b654efcedbd3a0beb4",
+            "artifactCode": "DRY-RUN-29",
+            "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "commentsTreeStatus": "open",
+            "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "latestContentHash": "sha256:6539386f8f4890ff987adca8cdabc99302430aa9abbaa5eb93d019ce954f8f19",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],
-        "artifactCode": "PaperProof-generic_file-001169-cdde4f4bb83b",
-        "seriesId": "0xcdde4f4bb83b8166b71c6c84d1d33bbba9cd6722bcc033663597a5405e1ee9c4",
-        "commentsTreeId": "0x03eec3b2af26b97efcef00d723a76833a49d11119c4359092262c2f43e255ba3",
-        "initialVersionId": "0x1c4a88089992b2e9332105eb063cf6cf9cedbff8146c0d5c0b827b88ed0a2fd5",
-        "likesBookId": "0x213d0b37244cfd256f77aab5266b4c666e4e6541337acbb9159b8a4269a0fad5",
-        "commentsTreeStatus": "locked",
-        "currentVersionId": "0x41792250101e050f953c4b5e8a14a4c6c40c134dea5863fb5713f9cb2c9106c7",
-        "latestContentHash": "sha256:d0c14c444b65e1e489bb8c240472c865843193b834b215cfddc1965429338fb9",
+        "artifactCode": "DRY-RUN-25",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeStatus": "open",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:7571afdc92b96dfedab778002af92725f6b624152669bf290e3bfb8e4db1fe9a",
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       },
       {
@@ -643,7 +1244,7 @@
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       }
     ],
-    "publishedAt": "2026-06-25T14:13:04.173Z",
+    "publishedAt": "2026-06-25T13:42:44.180Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
     "sdkVersion": "0.2.7"
   }

@@ -1,5 +1,5 @@
 {
-  "runId": "paperproof-docs-2026-06-25T14-57-33-018Z",
+  "runId": "paperproof-docs-2026-06-25T14-12-41-276Z",
   "run": true,
   "accountIndex": 4,
   "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
@@ -36,50 +36,39 @@
   },
   "docs": [
     {
-      "source": "getting-started/licenses-and-reuse.md",
-      "title": "Licenses and Reuse",
+      "source": "positioning-and-competitive-landscape/why-paperproof-has-structural-advantages.md",
+      "title": "Why PaperProof Has Structural Advantages",
       "kind": "topic",
-      "upload": {
-        "blobId": "PGFq_vvf1mZ3HYzvUjflr9VcXhCKk8qFWpQT_6qQ7hk",
-        "blobObjectId": "0xf18b7605db3609e85164110e9c1036879adb74075c71e9183735f62bed47e658",
-        "byteLength": 1552
-      },
+      "upload": null,
       "published": {
-        "seriesId": "0xe6430bc308e089a258e31e7afe096bd8f0618fac1b3005794933700e010d5330",
-        "versionId": "0x259440334d8069ef7c1ee9978c0fca8974cea3123e06fc187be2075617be598d",
-        "commentsTreeId": "0xbbae14bb32d20719122d144ebd22e11cf600911a2356968a4498eedf6c9a5f96",
-        "likesBookId": "0x30da32b524a23015963f2c660c6ae9ed6e100280684b6613b73f027048790731",
-        "artifactCode": "PaperProof-generic_file-001169-e6430bc308e0",
+        "seriesId": "0xeb28664816c939748e0e07fd9e03aa43c624e5316e1649342c00118f8718f260",
+        "versionId": "0x70fabdeb712645e35c56648c8a87acba3f96ddf6da7770f48ced22c198d0d295",
+        "commentsTreeId": "0x653f65e2817a965b7fe63fc0f70ad2c01ef4e5fbbf0ada7e7cbac35871eccfed",
+        "likesBookId": "0x9990f289b5dfbd167d145d3701a6d1c0b540221655ecd383d7946366f42d82a7",
+        "artifactCode": "PaperProof-generic_file-001169-eb28664816c9",
         "artifactType": 6
       },
+      "reused": true,
       "mappedVersion": {
         "upload": {
-          "blobId": "_ugERoY-8qOf_4AZgGCiWAgJy2CjofFpq06vSpj3vfE",
-          "blobObjectId": "0x771ab543bb21f6355bfc141bbba97fb07e17677683e27cb9c7d1092abd18075d",
-          "byteLength": 1650
+          "blobId": "5r1bXIt6uh4BQlvCjy87lbc2z77-24gTtXF87CRdZQw",
+          "blobObjectId": "0x8fd232c139a7b0a54caadc9e01cfec02bd23a52b373f4a7f2fc43c1331a2ff67",
+          "byteLength": 2179
         },
         "added": {
-          "seriesId": "0xe6430bc308e089a258e31e7afe096bd8f0618fac1b3005794933700e010d5330",
-          "versionId": "0x387cc4dc1ba1b5b5ae2a6dc55bd16380d029bc25f1ba46874dd5d0d7515a688f",
+          "seriesId": "0xeb28664816c939748e0e07fd9e03aa43c624e5316e1649342c00118f8718f260",
+          "versionId": "0xb9122df005d4446e72daa23a8dc9a6213157dfa93ef5e96f5ae471c2e8a6f176",
           "artifactType": 6,
           "version": "2"
         },
-        "contentHash": "sha256:7dddca6e41b518099a19712aa401ecc2c95b051e8d0361b316120b5a1948a526"
+        "contentHash": "sha256:fc9fade52823b7a82c15ef2ba6688738478a4f0c8844e9b654efcedbd3a0beb4"
       }
     }
   ],
   "transactions": [
     {
-      "label": "publish getting-started/licenses-and-reuse.md",
-      "digest": "423BH9soJaoMgBrYmNBaGGWUkosBGDXx3FyqfziFdCj5"
-    },
-    {
-      "label": "lock comments getting-started/licenses-and-reuse.md",
-      "digest": "EzNfKE5AjUfJ21tGDjrdYmJVKwXqBuAYSfMGKdB6dPz4"
-    },
-    {
-      "label": "add mapped version getting-started/licenses-and-reuse.md",
-      "digest": "9rHBUSctT7tmbXerHdy84WRjACSow676uNkysfnUBZQM"
+      "label": "add mapped version positioning-and-competitive-landscape/why-paperproof-has-structural-advantages.md",
+      "digest": "GfJuk6FKdy7QyipMyeuV5MbSYR5MjvsKwV5DpeJKVTkx"
     }
   ],
   "manifest": {
@@ -154,21 +143,6 @@
             "commentsTreeStatus": "locked",
             "currentVersionId": "0xd50d3d38ecc6938f3840bb43baf53f4e8b9a582916873d004bf6fd9fc949759a",
             "latestContentHash": "sha256:dc9af4673236f60f3e6fffafec04de8b09089c9fdbed0a3b0082083b30ac1de3",
-            "contentType": "application/vnd.paperproof.markdown-package+zip"
-          },
-          {
-            "id": "licenses-and-reuse",
-            "title": "Licenses and Reuse",
-            "summary": "The main reuse licenses supported for PaperProof artifacts, plus the custom PaperProof License.",
-            "source": "getting-started/licenses-and-reuse.md",
-            "artifactCode": "PaperProof-generic_file-001169-e6430bc308e0",
-            "seriesId": "0xe6430bc308e089a258e31e7afe096bd8f0618fac1b3005794933700e010d5330",
-            "commentsTreeId": "0xbbae14bb32d20719122d144ebd22e11cf600911a2356968a4498eedf6c9a5f96",
-            "initialVersionId": "0x259440334d8069ef7c1ee9978c0fca8974cea3123e06fc187be2075617be598d",
-            "likesBookId": "0x30da32b524a23015963f2c660c6ae9ed6e100280684b6613b73f027048790731",
-            "commentsTreeStatus": "locked",
-            "currentVersionId": "0x387cc4dc1ba1b5b5ae2a6dc55bd16380d029bc25f1ba46874dd5d0d7515a688f",
-            "latestContentHash": "sha256:7dddca6e41b518099a19712aa401ecc2c95b051e8d0361b316120b5a1948a526",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           }
         ],

@@ -51,3 +51,4 @@ endorsed. The value is an inspectable evidence trail.
 - [Quick Start](./quick-start.md)
 - [Why Sui and Walrus](./why-sui-and-walrus.md)
 - [Research and Presentation Materials](./research-and-presentation-materials.md)
+- [Licenses and Reuse](./licenses-and-reuse.md)
