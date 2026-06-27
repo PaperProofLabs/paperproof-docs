@@ -1,4 +1,4 @@
-# Web2 Functional Counterparts
+# Web2 Counterparts
 
 Docs Path: `positioning-and-competitive-landscape/web2-functional-counterparts`
 
@@ -68,4 +68,3 @@ A team that today spreads important knowledge across:
 can instead treat those outputs as related artifact series with stable identity
 and auditable history, while still rendering them through different interface
 experiences.
-

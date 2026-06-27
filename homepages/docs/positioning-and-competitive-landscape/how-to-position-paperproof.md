@@ -1,4 +1,4 @@
-# How to Position PaperProof
+# Ecosystem Position
 
 Docs Path: `positioning-and-competitive-landscape/how-to-position-paperproof`
 
@@ -86,4 +86,3 @@ Different audiences may need slightly different summaries:
 | Product teams | A shared artifact backend for docs, blogs, forums, and release surfaces |
 | Investors | Infrastructure for durable knowledge objects and agent-readable content |
 | Community users | A way to publish and evolve important works without losing identity or history |
-

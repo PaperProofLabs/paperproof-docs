@@ -1,4 +1,4 @@
-# Why PaperProof Has Structural Advantages
+# Structural Advantages
 
 Docs Path: `positioning-and-competitive-landscape/why-paperproof-has-structural-advantages`
 
@@ -109,4 +109,3 @@ strong documentation, reliable SDKs, and durable ecosystem integrations.
 PaperProof has the strongest structural edge where the work matters more than
 the feed: when identity, versions, evidence, and long-term machine-readable
 continuity matter more than short-lived distribution alone.
-

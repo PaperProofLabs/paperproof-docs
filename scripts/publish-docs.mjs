@@ -332,14 +332,16 @@ async function uploadDoc(walrusClient, signer, doc, content, run, skipWalrus, ph
 
 async function execute(sui, signer, tx, label, run, sender) {
   const { robustExecuteTransaction } = await loadDeps();
+  const createTx = () => (typeof tx === 'function' ? tx() : tx);
   if (!run) {
-    tx.setSenderIfNotSet(sender);
+    const dryRunTx = createTx();
+    dryRunTx.setSenderIfNotSet(sender);
     return { digest: null, dryRunBytes: 0, events: [] };
   }
   const attempts = 3;
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    const currentTx = typeof tx === 'function' ? tx() : tx;
+    const currentTx = createTx();
     currentTx.setSenderIfNotSet(sender);
     try {
       console.log(`[tx] ${label}${attempt > 1 ? ` (retry ${attempt}/${attempts})` : ''}`);

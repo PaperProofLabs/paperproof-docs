@@ -1,4 +1,4 @@
-# Web3 Competitive Overlap
+# Web3 Counterparts
 
 Docs Path: `positioning-and-competitive-landscape/web3-competitive-overlap`
 
@@ -83,4 +83,3 @@ In that sense, PaperProof can be used by:
 In web3, PaperProof is best understood not as "another social protocol" but as
 an artifact-centric coordination layer that can coexist with publishing and
 social interfaces while solving a different underlying problem.
-

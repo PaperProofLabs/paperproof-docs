@@ -1,4 +1,4 @@
-# Positioning and Competitive Landscape
+# Competitive Analysis
 
 Docs Path: `positioning-and-competitive-landscape`
 
@@ -28,8 +28,8 @@ PaperProof sits between several familiar categories:
 - agent-readable knowledge coordination.
 
 Because it sits across categories, it is useful to explain the protocol through
-positioning, competitive overlap, and structural advantages rather than through
-a single simplistic comparison.
+ecosystem position, competitive overlap, and structural advantages rather than
+through a single simplistic comparison.
 
 ## What to keep in mind
 
@@ -50,8 +50,7 @@ for posts, follows, timelines, and recommendation loops.
 
 ## In this section
 
-- [How to Position PaperProof](./how-to-position-paperproof.md)
-- [Web3 Competitive Overlap](./web3-competitive-overlap.md)
-- [Web2 Functional Counterparts](./web2-functional-counterparts.md)
-- [Why PaperProof Has Structural Advantages](./why-paperproof-has-structural-advantages.md)
-
+- [Ecosystem Position](./how-to-position-paperproof.md)
+- [Web3 Counterparts](./web3-competitive-overlap.md)
+- [Web2 Counterparts](./web2-functional-counterparts.md)
+- [Structural Advantages](./why-paperproof-has-structural-advantages.md)

@@ -23,7 +23,7 @@ comment composer for Docs content.
 | Developers | `developers/index.md` | TypeScript SDK, Python SDK, Rust SDK, Static Frontend Integration, Indexer Integration |
 | Copilot | `copilot/index.md` | Native Prompts, Agent Memory, Memory Privacy and Access |
 | Governance and Economics | `governance-and-economics/index.md` | Governance, PPRF Utility, Fees and Sustainability |
-| Positioning and Competitive Landscape | `positioning-and-competitive-landscape/index.md` | How to Position PaperProof, Web3 Competitive Overlap, Web2 Functional Counterparts, Why PaperProof Has Structural Advantages |
+| Competitive Analysis | `positioning-and-competitive-landscape/index.md` | Ecosystem Position, Web3 Counterparts, Web2 Counterparts, Structural Advantages |
 | Safety and Operations | `safety-and-operations/index.md` | User Safety, Interface Policy, Mainnet and Upgrades, Formal Verification, FAQ |
 
 ## Artifact mapping convention

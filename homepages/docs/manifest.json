@@ -391,13 +391,13 @@
     },
     {
       "id": "positioning-and-competitive-landscape",
-      "title": "Positioning and Competitive Landscape",
+      "title": "Competitive Analysis",
       "summary": "How to understand PaperProof, where it overlaps with other systems, and why its artifact model is distinctive.",
       "source": "positioning-and-competitive-landscape/index.md",
       "topics": [
         {
           "id": "how-to-position-paperproof",
-          "title": "How to Position PaperProof",
+          "title": "Ecosystem Position",
           "summary": "The clearest mental model for explaining PaperProof to developers, researchers, product teams, and investors.",
           "source": "positioning-and-competitive-landscape/how-to-position-paperproof.md",
           "artifactCode": "PaperProof-generic_file-001169-51a7dae8183c",
@@ -406,13 +406,13 @@
           "initialVersionId": "0x130c2777c5d826e186fb19b3107d5d0a001ec5386e10d27e77e92d042374afa6",
           "likesBookId": "0x6f27e01a128969b1278ea9bce65f3d01ad52c9179b224f5c29e41d778fb6f7a5",
           "commentsTreeStatus": "locked",
-          "currentVersionId": "0xb0f61c6d62256119323d10413409d689b20575f91863050f2271e5656127db49",
-          "latestContentHash": "sha256:edf0e4f8ef30b796f4e0a7892f75a3e08892ffdd957e7af4182eeb65256f376b",
+          "currentVersionId": "0x9a1a2fd70f9012ab4678ca735bde60e8c2c30dcaa0ac6213de8f3be3f8f8cd38",
+          "latestContentHash": "sha256:75df57cc9960f216230029d72c06ac5d71127c4b46c5a946337f0f05d8b1d6d5",
           "contentType": "application/vnd.paperproof.markdown-package+zip"
         },
         {
           "id": "web3-competitive-overlap",
-          "title": "Web3 Competitive Overlap",
+          "title": "Web3 Counterparts",
           "summary": "Where Paragraph, Lens, Farcaster, DeSo, and Crossbell overlap with PaperProof and where they do not.",
           "source": "positioning-and-competitive-landscape/web3-competitive-overlap.md",
           "artifactCode": "PaperProof-generic_file-001169-6c3705f6b27c",
@@ -421,13 +421,13 @@
           "initialVersionId": "0x27a3d19736541670bfb01dc45a73797cb62e0a9cd50868e98fa2dfdca912a6c5",
           "likesBookId": "0x45f5a3cdf61b6eadd4ea32ff022ba6ec0439ecf520da0ef818c185377de2d43f",
           "commentsTreeStatus": "locked",
-          "currentVersionId": "0x9095291f9c6f2dd677b12f16f088a373d0c2ce4e00c86a4a32e46ec6bc8e8369",
-          "latestContentHash": "sha256:a7e0049fe1d2e125dad24bbe2d863bf30d3c904fac81fdf8cc16c92f8322fd39",
+          "currentVersionId": "0xd8fd06fc2d9fabe1701ea527a51ef448583022f5343cfb365ec5fe1af632ed5a",
+          "latestContentHash": "sha256:6fe3a68d92fbcc0d205eb0e2987ebbd36caf6006a5c0a24bf44ed9d4b458e9f9",
           "contentType": "application/vnd.paperproof.markdown-package+zip"
         },
         {
           "id": "web2-functional-counterparts",
-          "title": "Web2 Functional Counterparts",
+          "title": "Web2 Counterparts",
           "summary": "How Ghost, Substack, arXiv, Zenodo, GitHub Releases, and Discourse collectively map to PaperProof.",
           "source": "positioning-and-competitive-landscape/web2-functional-counterparts.md",
           "artifactCode": "PaperProof-generic_file-001169-f5379686b8c3",
@@ -436,13 +436,13 @@
           "initialVersionId": "0x22350c56c85c9c75fc3bd1415fe534d51f084f86b9b1e294a9fc748d5e486c62",
           "likesBookId": "0xe6a5c6264fbca99f91eb121f13dfb6e155c3dfb8909960e79897c5793a616814",
           "commentsTreeStatus": "locked",
-          "currentVersionId": "0x180f9a7c31ced8c7a8bf39a77e81b98b28b5ce3289dca3d9c4e4aca86785fd39",
-          "latestContentHash": "sha256:c4b47bbe7968395689286c66bf6996d3ec4cc0ccb74ffb7b87b37d00f73c780e",
+          "currentVersionId": "0x4e322729ef5aeaf0366d3668b1c3ea06880cdb0ae236c7ad628c66d035c9c915",
+          "latestContentHash": "sha256:645d71a0adaa7ef5ff9fc1025dfff8c39af13f4b0978d1c5093a69c411dc6f37",
           "contentType": "application/vnd.paperproof.markdown-package+zip"
         },
         {
           "id": "why-paperproof-has-structural-advantages",
-          "title": "Why PaperProof Has Structural Advantages",
+          "title": "Structural Advantages",
           "summary": "Why an artifact-centric, version-native, agent-readable protocol can open a different opportunity surface from ordinary content apps.",
           "source": "positioning-and-competitive-landscape/why-paperproof-has-structural-advantages.md",
           "artifactCode": "PaperProof-generic_file-001169-eb28664816c9",
@@ -451,8 +451,8 @@
           "initialVersionId": "0x70fabdeb712645e35c56648c8a87acba3f96ddf6da7770f48ced22c198d0d295",
           "likesBookId": "0x9990f289b5dfbd167d145d3701a6d1c0b540221655ecd383d7946366f42d82a7",
           "commentsTreeStatus": "locked",
-          "currentVersionId": "0xb9122df005d4446e72daa23a8dc9a6213157dfa93ef5e96f5ae471c2e8a6f176",
-          "latestContentHash": "sha256:fc9fade52823b7a82c15ef2ba6688738478a4f0c8844e9b654efcedbd3a0beb4",
+          "currentVersionId": "0x0ef2a813598cc3bfaf957820c35f2792ba0983758a07a8052949eec71226ea1f",
+          "latestContentHash": "sha256:73b53f6ada81be2d4cc487bfb398068c3bfc85da59eb7247af9e3254209ff9cb",
           "contentType": "application/vnd.paperproof.markdown-package+zip"
         }
       ],
@@ -462,8 +462,8 @@
       "initialVersionId": "0x1c4a88089992b2e9332105eb063cf6cf9cedbff8146c0d5c0b827b88ed0a2fd5",
       "likesBookId": "0x213d0b37244cfd256f77aab5266b4c666e4e6541337acbb9159b8a4269a0fad5",
       "commentsTreeStatus": "locked",
-      "currentVersionId": "0x41792250101e050f953c4b5e8a14a4c6c40c134dea5863fb5713f9cb2c9106c7",
-      "latestContentHash": "sha256:d0c14c444b65e1e489bb8c240472c865843193b834b215cfddc1965429338fb9",
+      "currentVersionId": "0x64964f2a4a721805120277588ae16167a2eedf756b31874505d5ab4f27e9c241",
+      "latestContentHash": "sha256:d8a1a113e0c37426a3b0bbe095e704e2a262ba22faf2533bda8e890d3e3e2fcc",
       "contentType": "application/vnd.paperproof.markdown-package+zip"
     },
     {
@@ -559,7 +559,7 @@
       "contentType": "application/vnd.paperproof.markdown-package+zip"
     }
   ],
-  "publishedAt": "2026-06-25T14:58:22.904Z",
+  "publishedAt": "2026-06-27T00:36:12.742Z",
   "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.7"
 }
