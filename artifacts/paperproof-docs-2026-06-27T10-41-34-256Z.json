@@ -1,6 +1,6 @@
 {
-  "runId": "paperproof-docs-2026-06-27T10-42-55-862Z",
-  "run": true,
+  "runId": "paperproof-docs-2026-06-27T10-41-34-256Z",
+  "run": false,
   "accountIndex": 4,
   "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.7",
@@ -48,21 +48,7 @@
         "artifactCode": "PaperProof-generic_file-001144-e42b8ce6677c",
         "artifactType": 6
       },
-      "reused": true,
-      "mappedVersion": {
-        "upload": {
-          "blobId": "LBJginzRGJDVO1mawzejENiLbciUlEJhgC_vqtJYxvo",
-          "blobObjectId": "0x5d5020925b101c74863f2db7da7fa058a72d0e3697e3261961d2406225a1a853",
-          "byteLength": 1548
-        },
-        "added": {
-          "seriesId": "0xe42b8ce6677ca8a96d8834d016e6f4cd0a2cc48047ac2522cb506c3c0fd789f0",
-          "versionId": "0x93ae209b5ff1596f52cf318c9f42459e3826e09e6740834b097e4e88c970725b",
-          "artifactType": 6,
-          "version": "6"
-        },
-        "contentHash": "sha256:0976296d90140210663e73e11600063587f8f90dc98c97db03968611fe38e8d5"
-      }
+      "reused": true
     },
     {
       "source": "developers/static-frontend-integration.md",
@@ -77,33 +63,10 @@
         "artifactCode": "PaperProof-generic_file-001144-c3190886ae51",
         "artifactType": 6
       },
-      "reused": true,
-      "mappedVersion": {
-        "upload": {
-          "blobId": "0rJIK6dni_LF9hhuKQz3C-4uPOVH3GsbfHzuj8TgosI",
-          "blobObjectId": "0xc143ae8eba05986ca3bb0f34c0ebb00221008eb5407f97bffa1e9cea929e0da9",
-          "byteLength": 2265
-        },
-        "added": {
-          "seriesId": "0xc3190886ae5103e7a8b0faf8290b329ac726ec23e0c6a5822cbe7cd5109810fa",
-          "versionId": "0xf22add4e35a4c0e0a54df54eefb74c6c2364178c1e9b108c79734dba74278e6f",
-          "artifactType": 6,
-          "version": "5"
-        },
-        "contentHash": "sha256:4175593bb21a2e57e614dfff1f517350fa735cae4602850bd9dfbce6344fae1d"
-      }
+      "reused": true
     }
   ],
-  "transactions": [
-    {
-      "label": "add mapped version developers/index.md",
-      "digest": "6WuvquxLeeTfMBw7UPT1aEaEg9p5ffnE8pRsrbFKtGhk"
-    },
-    {
-      "label": "add mapped version developers/static-frontend-integration.md",
-      "digest": "7Gr5NU4CcE3xPSAszaMKRBruHMboEfG9JmzosfMYrm9T"
-    }
-  ],
+  "transactions": [],
   "manifest": {
     "schemaVersion": 1,
     "title": "PaperProof Docs",
@@ -343,8 +306,8 @@
             "initialVersionId": "0xeb5cd4b9b0140fed7d276ad49f919d5df1441427a0ae0d05bae94b27cfb6c8f2",
             "likesBookId": "0x529df9fc896166bef1869ab991eb1e7844ca3b716053788448dd430b91372dad",
             "commentsTreeStatus": "locked",
-            "currentVersionId": "0xf22add4e35a4c0e0a54df54eefb74c6c2364178c1e9b108c79734dba74278e6f",
-            "latestContentHash": "sha256:4175593bb21a2e57e614dfff1f517350fa735cae4602850bd9dfbce6344fae1d",
+            "currentVersionId": "0x009a8422991db782fc393eccbb60115c7ed5326028378a68e800a181f3cdcf62",
+            "latestContentHash": "sha256:34ecaccbb9c3f4fee2fc48300820e6517893a0193d2a9f7234bb2696272cf4ca",
             "contentType": "application/vnd.paperproof.markdown-package+zip"
           },
           {
@@ -367,8 +330,8 @@
         "initialVersionId": "0xa29d2cbb21a4f16c90bde0b71389ad55bf06bfad9cb87303f8456a320f69edc7",
         "likesBookId": "0x62c29befa42dacb50b9b18a9e7640ed83f6069805752b6fe06881807d81a9007",
         "commentsTreeStatus": "locked",
-        "currentVersionId": "0x93ae209b5ff1596f52cf318c9f42459e3826e09e6740834b097e4e88c970725b",
-        "latestContentHash": "sha256:0976296d90140210663e73e11600063587f8f90dc98c97db03968611fe38e8d5",
+        "currentVersionId": "0xf2fa4958f4ecf8d475b731680c717f36d6654eefb65e12a9afebd94576d48f81",
+        "latestContentHash": "sha256:c83bc9f96ffdffe404d796401d49ad186366ad4757cdbd0401f15dd656b40897",
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       },
       {
@@ -665,7 +628,7 @@
         "contentType": "application/vnd.paperproof.markdown-package+zip"
       }
     ],
-    "publishedAt": "2026-06-27T10:42:05.456Z",
+    "publishedAt": "2026-06-27T10:41:34.268Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
     "sdkVersion": "0.2.7"
   }

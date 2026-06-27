@@ -20,7 +20,7 @@ comment composer for Docs content.
 |---|---|---|
 | Getting Started | `getting-started/index.md` | Introduction, Quick Start, Why Sui and Walrus, Research and Presentation Materials |
 | Protocol | `protocol/index.md` | Artifact Model, Content and Versioning, Comments and Likes, Manifests and Canonical State |
-| Developers | `developers/index.md` | TypeScript SDK, Python SDK, Rust SDK, Static Frontend Integration, Indexer Integration |
+| Developers | `developers/index.md` | TypeScript SDK, Python SDK, Rust SDK, PaperProof Skill, Indexer Integration |
 | Copilot | `copilot/index.md` | Native Prompts, Agent Memory, Memory Privacy and Access |
 | Governance and Economics | `governance-and-economics/index.md` | Governance, PPRF Utility, Fees and Sustainability |
 | Competitive Analysis | `positioning-and-competitive-landscape/index.md` | Ecosystem Position, Web3 Counterparts, Web2 Counterparts, Structural Advantages |

@@ -55,5 +55,5 @@ relationships as the source of truth.
 - [TypeScript SDK](./typescript-sdk.md)
 - [Python SDK](./python-sdk.md)
 - [Rust SDK](./rust-sdk.md)
-- [Static Frontend Integration](./static-frontend-integration.md)
+- [PaperProof Skill](./static-frontend-integration.md)
 - [Indexer Integration](./indexer-integration.md)
