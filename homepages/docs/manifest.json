@@ -23,8 +23,8 @@
           "initialVersionId": "0xb2581dd2afd0a6232f22bb0fc6f426a049153519a16cd77c205b5573ddd0862b",
           "likesBookId": "0x3852d507b41d2a922d24e874f6368e9e5b5bf39b8304a2ede15b92cb177d1685",
           "commentsTreeStatus": "locked",
-          "currentVersionId": "0x78f07ce7bf693dab5d47e695b4f27572125ab6e5e6f958018f12ae8975904c1c",
-          "latestContentHash": "sha256:0945219332d0dc3a6777f724f78918fa7419fed1e193f17f41f761873316f71a",
+          "currentVersionId": "0xf50a7b1ce0e365d8064b41392d04ae044108f44cbcfa664e7d270afd341219cb",
+          "latestContentHash": "sha256:6592ef6553c0cdddbc725a0f4801891474e1147da425475fe4bfb2d26f2c7b59",
           "contentType": "application/vnd.paperproof.markdown-package+zip"
         },
         {
@@ -91,8 +91,8 @@
       "commentsTreeId": "0x2c58268a4509ac0b3ff76906ff9ae0e05faa8e98de34e9409d1c7cd3d0377fdc",
       "initialVersionId": "0xdb2386102fa8bc19ee6fee456023e0e5bdc71b7481aa5b9eab37e0b7ac2d5ce4",
       "likesBookId": "0xa20c63c75041d47620784c0632389eb66b4d5ba40c93caea531d46893ad308e5",
-      "currentVersionId": "0x759cfbd1803953d21fa5e61730ff61fdc5bf588440e3b1f7ba62e8a0a29451d1",
-      "latestContentHash": "sha256:578dc277a0d51a2882a55b9b7db4df502e3bd4b6edc4cedc156323b877b7e387",
+      "currentVersionId": "0x6a19775332cb8aa3357379263da4f874d6b9ae2fafdb042266f6213f35a4520c",
+      "latestContentHash": "sha256:edb864db91d886b0fffbb93fb8b8604febe70bc249fdbb1045a9d79101357a0e",
       "contentType": "application/vnd.paperproof.markdown-package+zip",
       "commentsTreeStatus": "locked"
     },
@@ -559,7 +559,7 @@
       "contentType": "application/vnd.paperproof.markdown-package+zip"
     }
   ],
-  "publishedAt": "2026-06-27T00:36:12.742Z",
+  "publishedAt": "2026-06-27T09:57:53.650Z",
   "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.7"
 }
