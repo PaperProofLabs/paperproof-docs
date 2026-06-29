@@ -1,0 +1,77 @@
+{
+  "title": "Sui Overflow 2026 Special - DeepBook Project Intelligence Dataset",
+  "type": "object",
+  "required": [
+    "dataset_title",
+    "track",
+    "generated_at",
+    "project_rows",
+    "category_summary",
+    "deployment_summary"
+  ],
+  "properties": {
+    "dataset_title": {
+      "type": "string"
+    },
+    "track": {
+      "type": "string"
+    },
+    "source_file": {
+      "type": "string"
+    },
+    "source_path": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "snapshot": {
+      "type": "object"
+    },
+    "project_rows": {
+      "type": "integer"
+    },
+    "word_count": {
+      "type": "integer"
+    },
+    "line_count": {
+      "type": "integer"
+    },
+    "category_summary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "count"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "deployment_summary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "count"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

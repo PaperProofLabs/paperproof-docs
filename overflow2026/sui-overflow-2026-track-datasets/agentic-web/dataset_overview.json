@@ -1,0 +1,100 @@
+{
+  "dataset_title": "Sui Overflow 2026 The Agentic Web Project Intelligence Dataset",
+  "track": "The Agentic Web",
+  "source_file": "Sui Overflow 2026 The Agentic Web Project Intelligence.md",
+  "source_path": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-app\\private\\overflow2026\\Sui Overflow 2026 The Agentic Web Project Intelligence.md",
+  "generated_at": "2026-06-28T23:24:09.743Z",
+  "snapshot": {
+    "source": "DeepSurge public project API for Sui Overflow 2026, track `The Agentic Web`.",
+    "lastRefreshed": "2026-06-22T01:43:26.664Z.",
+    "rawProjectRecords": 159,
+    "deploymentMix": "Testnet 108, Mainnet 27, Unknown 17, Devnet 7.",
+    "newlyObserved": 0
+  },
+  "project_rows": 159,
+  "word_count": 54200,
+  "line_count": 9367,
+  "category_summary": [
+    {
+      "name": "DeFi / payments",
+      "count": 104
+    },
+    {
+      "name": "AI / agent workflow",
+      "count": 31
+    },
+    {
+      "name": "DeepBook / trading",
+      "count": 11
+    },
+    {
+      "name": "General application",
+      "count": 7
+    },
+    {
+      "name": "Proof / audit / provenance",
+      "count": 3
+    },
+    {
+      "name": "∵\\",
+      "count": 1
+    },
+    {
+      "name": "Social / creator / content",
+      "count": 1
+    },
+    {
+      "name": "Walrus storage tooling",
+      "count": 1
+    }
+  ],
+  "deployment_summary": [
+    {
+      "name": "Testnet",
+      "count": 107
+    },
+    {
+      "name": "Mainnet",
+      "count": 27
+    },
+    {
+      "name": "Unknown",
+      "count": 17
+    },
+    {
+      "name": "Devnet",
+      "count": 7
+    },
+    {
+      "name": "┐",
+      "count": 1
+    }
+  ],
+  "package_presence": {
+    "listed": 110,
+    "missing": 49
+  },
+  "link_coverage": {
+    "github": {
+      "yes": 158,
+      "no": 1
+    },
+    "website": {
+      "yes": 146,
+      "no": 13
+    },
+    "youtube": {
+      "yes": 158,
+      "no": 1
+    }
+  },
+  "description": "Structured research package for the Sui Overflow 2026 Agentic Web track. Useful for studying how teams frame AI agents, policy layers, wallets, execution boundaries, and human-in-the-loop trust models on Sui.",
+  "keywords": [
+    "Sui Overflow 2026",
+    "agentic web",
+    "AI agents",
+    "wallets",
+    "policy",
+    "hackathon intelligence"
+  ]
+}

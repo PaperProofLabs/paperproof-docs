@@ -1,0 +1,88 @@
+{
+  "dataset_title": "Sui Overflow 2026 Special - DeepBook Project Intelligence Dataset",
+  "track": "Special - DeepBook",
+  "source_file": "Sui Overflow 2026 Special DeepBook Project Intelligence.md",
+  "source_path": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-app\\private\\overflow2026\\Sui Overflow 2026 Special DeepBook Project Intelligence.md",
+  "generated_at": "2026-06-28T23:24:09.381Z",
+  "snapshot": {
+    "source": "DeepSurge public project API for Sui Overflow 2026, track `Special - DeepBook`.",
+    "lastRefreshed": "2026-06-22T01:43:22.853Z.",
+    "rawProjectRecords": 136,
+    "deploymentMix": "Testnet 120, Unknown 6, Mainnet 6, Devnet 4.",
+    "newlyObserved": 1
+  },
+  "project_rows": 136,
+  "word_count": 50271,
+  "line_count": 7475,
+  "category_summary": [
+    {
+      "name": "DeFi / payments",
+      "count": 103
+    },
+    {
+      "name": "DeepBook / trading",
+      "count": 25
+    },
+    {
+      "name": "General application",
+      "count": 3
+    },
+    {
+      "name": "AI / agent workflow",
+      "count": 2
+    },
+    {
+      "name": "Social / creator / content",
+      "count": 2
+    },
+    {
+      "name": "Walrus storage tooling",
+      "count": 1
+    }
+  ],
+  "deployment_summary": [
+    {
+      "name": "Testnet",
+      "count": 120
+    },
+    {
+      "name": "Mainnet",
+      "count": 6
+    },
+    {
+      "name": "Unknown",
+      "count": 6
+    },
+    {
+      "name": "Devnet",
+      "count": 4
+    }
+  ],
+  "package_presence": {
+    "listed": 100,
+    "missing": 36
+  },
+  "link_coverage": {
+    "github": {
+      "yes": 136,
+      "no": 0
+    },
+    "website": {
+      "yes": 125,
+      "no": 11
+    },
+    "youtube": {
+      "yes": 136,
+      "no": 0
+    }
+  },
+  "description": "Structured research package for the Sui Overflow 2026 DeepBook special track. Useful for comparing trading, market structure, prediction, execution, and liquidity-oriented submissions built around DeepBook and adjacent exchange primitives.",
+  "keywords": [
+    "Sui Overflow 2026",
+    "DeepBook",
+    "trading",
+    "market structure",
+    "hackathon intelligence",
+    "project dataset"
+  ]
+}

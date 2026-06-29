@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-06-28T23:24:09.895Z",
+  "outputs": [
+    {
+      "slug": "defi-payments",
+      "datasetDir": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\defi-payments",
+      "archivePath": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\defi-payments-dataset.zip",
+      "archiveName": "defi-payments-dataset.zip",
+      "archiveBytes": 207850,
+      "archiveSha256": "sha256:727043cba8ed5ee8716479f799e03a74d804eb3836e2e5d938e47e96021772a0",
+      "projectRows": 162,
+      "wordCount": 63419,
+      "trackTitle": "Sui Overflow 2026 DeFi & Payments Project Intelligence Dataset",
+      "trackDescription": "Structured research package for the Sui Overflow 2026 DeFi & Payments track. Useful for studying product categories, deployment posture, public links, repeated submission patterns, and how payment / DeFi teams present themselves across an open hackathon pipeline.",
+      "keywords": [
+        "Sui Overflow 2026",
+        "DeFi",
+        "payments",
+        "hackathon intelligence",
+        "project dataset",
+        "ecosystem research"
+      ]
+    },
+    {
+      "slug": "special-deepbook",
+      "datasetDir": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\special-deepbook",
+      "archivePath": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\special-deepbook-dataset.zip",
+      "archiveName": "special-deepbook-dataset.zip",
+      "archiveBytes": 161227,
+      "archiveSha256": "sha256:e73283f09528059ab5670e670ada629deab4bcd5172d68cf6fadc41eb70cdb83",
+      "projectRows": 136,
+      "wordCount": 50271,
+      "trackTitle": "Sui Overflow 2026 Special - DeepBook Project Intelligence Dataset",
+      "trackDescription": "Structured research package for the Sui Overflow 2026 DeepBook special track. Useful for comparing trading, market structure, prediction, execution, and liquidity-oriented submissions built around DeepBook and adjacent exchange primitives.",
+      "keywords": [
+        "Sui Overflow 2026",
+        "DeepBook",
+        "trading",
+        "market structure",
+        "hackathon intelligence",
+        "project dataset"
+      ]
+    },
+    {
+      "slug": "special-walrus",
+      "datasetDir": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\special-walrus",
+      "archivePath": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\special-walrus-dataset.zip",
+      "archiveName": "special-walrus-dataset.zip",
+      "archiveBytes": 244540,
+      "archiveSha256": "sha256:1cce11a95273a763c5ddde98463d92c65d6cae531628483f53c2217de78b5be8",
+      "projectRows": 223,
+      "wordCount": 75363,
+      "trackTitle": "Sui Overflow 2026 Special - Walrus Project Intelligence Dataset",
+      "trackDescription": "Structured research package for the Sui Overflow 2026 Walrus special track. Useful for mapping storage-native applications, memory systems, content infrastructure, AI workflows, and how teams frame Walrus as an application primitive.",
+      "keywords": [
+        "Sui Overflow 2026",
+        "Walrus",
+        "storage",
+        "AI",
+        "content infrastructure",
+        "hackathon intelligence"
+      ]
+    },
+    {
+      "slug": "agentic-web",
+      "datasetDir": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\agentic-web",
+      "archivePath": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\agentic-web-dataset.zip",
+      "archiveName": "agentic-web-dataset.zip",
+      "archiveBytes": 172372,
+      "archiveSha256": "sha256:cc280a607fd3345dddeca40498f072d7d6dbdf98e691aac2960095695dd2fdb7",
+      "projectRows": 159,
+      "wordCount": 54200,
+      "trackTitle": "Sui Overflow 2026 The Agentic Web Project Intelligence Dataset",
+      "trackDescription": "Structured research package for the Sui Overflow 2026 Agentic Web track. Useful for studying how teams frame AI agents, policy layers, wallets, execution boundaries, and human-in-the-loop trust models on Sui.",
+      "keywords": [
+        "Sui Overflow 2026",
+        "agentic web",
+        "AI agents",
+        "wallets",
+        "policy",
+        "hackathon intelligence"
+      ]
+    }
+  ]
+}

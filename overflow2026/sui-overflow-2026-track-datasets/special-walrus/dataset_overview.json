@@ -1,0 +1,104 @@
+{
+  "dataset_title": "Sui Overflow 2026 Special - Walrus Project Intelligence Dataset",
+  "track": "Special - Walrus",
+  "source_file": "Sui Overflow 2026 Special Walrus Project Intelligence.md",
+  "source_path": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-app\\private\\overflow2026\\Sui Overflow 2026 Special Walrus Project Intelligence.md",
+  "generated_at": "2026-06-28T23:24:09.543Z",
+  "snapshot": {
+    "source": "DeepSurge public project API for Sui Overflow 2026, track `Special - Walrus`.",
+    "lastRefreshed": "2026-06-23T03:29:18.604Z.",
+    "rawProjectRecords": 223,
+    "deploymentMix": "Testnet 184, Mainnet 27, Unknown 10, Devnet 2.",
+    "newlyObserved": 0
+  },
+  "project_rows": 223,
+  "word_count": 75363,
+  "line_count": 11907,
+  "category_summary": [
+    {
+      "name": "DeFi / payments",
+      "count": 110
+    },
+    {
+      "name": "AI / agent workflow",
+      "count": 80
+    },
+    {
+      "name": "Walrus storage tooling",
+      "count": 18
+    },
+    {
+      "name": "DeepBook / trading",
+      "count": 8
+    },
+    {
+      "name": "General application",
+      "count": 4
+    },
+    {
+      "name": "Agentic site deployments",
+      "count": 1
+    },
+    {
+      "name": "Social / creator / content",
+      "count": 1
+    },
+    {
+      "name": "Tusk-Memory SDK",
+      "count": 1
+    }
+  ],
+  "deployment_summary": [
+    {
+      "name": "Testnet",
+      "count": 183
+    },
+    {
+      "name": "Mainnet",
+      "count": 26
+    },
+    {
+      "name": "Unknown",
+      "count": 10
+    },
+    {
+      "name": "Devnet",
+      "count": 2
+    },
+    {
+      "name": "AI / agent workflow",
+      "count": 1
+    },
+    {
+      "name": "DeFi / payments",
+      "count": 1
+    }
+  ],
+  "package_presence": {
+    "listed": 173,
+    "missing": 50
+  },
+  "link_coverage": {
+    "github": {
+      "yes": 221,
+      "no": 2
+    },
+    "website": {
+      "yes": 191,
+      "no": 32
+    },
+    "youtube": {
+      "yes": 221,
+      "no": 2
+    }
+  },
+  "description": "Structured research package for the Sui Overflow 2026 Walrus special track. Useful for mapping storage-native applications, memory systems, content infrastructure, AI workflows, and how teams frame Walrus as an application primitive.",
+  "keywords": [
+    "Sui Overflow 2026",
+    "Walrus",
+    "storage",
+    "AI",
+    "content infrastructure",
+    "hackathon intelligence"
+  ]
+}

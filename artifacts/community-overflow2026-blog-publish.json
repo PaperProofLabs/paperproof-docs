@@ -1,0 +1,184 @@
+{
+  "publishedAt": "2026-06-29T14:13:40.740Z",
+  "operation": "add-version",
+  "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+  "sdkVersion": "0.2.7",
+  "sourceFile": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\Sui Overflow 2026 Track Intelligence on PaperProof.md",
+  "title": "Reading Sui Overflow 2026 Through PaperProof Protocol",
+  "summary": "A community analysis of four published Sui Overflow 2026 track datasets on PaperProof Protocol, focused on technical structure, submission statistics, deployment posture, and cross-track patterns rather than ranking.",
+  "tags": [
+    "sui-overflow-2026",
+    "datasets",
+    "paperproof",
+    "research",
+    "walrus",
+    "deepbook",
+    "agentic-web"
+  ],
+  "deployment": {
+    "name": "paperproof-mainnet-2026-05-13",
+    "network": "mainnet",
+    "rpcUrl": "https://fullnode.mainnet.sui.io:443",
+    "protocolVersion": "publishing-v3-governance-v2-comments-v2",
+    "packages": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da",
+      "governanceOriginal": "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+      "governance": "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e",
+      "comments": "0xaef346fc40bf20af62f4bbbc1608ba2272e80e4ba3d716634026baa589e9aeba",
+      "publishing": "0xc9a75e4514db2a37df6f95b4e2b329c065ac6089953bd2c1c0a0c389835bd3d8",
+      "promptRegistry": "0x10b9c6e90a896dc3244d047e32724d80de0dc697b5ea12c5fdd8925131ed4c59",
+      "memoryRegistry": "0x816684a152fdee1e7f15f65d18873ed7ee48540e8bd4205b3197a5ec0feda2c6"
+    },
+    "objects": {
+      "root": "0x7dc6c78b276825499a2204b060394e80b81196eb1f77d2036b503a2cca15dd78",
+      "typeRegistry": "0x966ffa24d0a96b34267b62c628f39c830afc9de25438b6502835fa8a3815d6b5",
+      "feeManager": "0x7bb8360ea1fa50f923628c929b8726b00eb8968c6a678acde71f97ae146e9249",
+      "governanceVault": "0x0df35aa53ef37f8ca8f6a6280d743effa6e0bfc613c5c6c0a78318ad4a38f875",
+      "governanceConfig": "0x7ed018db6b2cd7c32692a1c33543fb90d9c36add1226f93cbeb2a8fb10955dfa",
+      "promptRegistry": "0x14ec45eb83bb1b0eb22c7e885c7c71ea05b1e22dd05e3e1107dcef528600b0da",
+      "memoryRegistry": "0x9a5beeb6610b33c06771c4152c039314784437e802e200afd2ce80fb88bdf9e2",
+      "clock": "0x6"
+    },
+    "coinTypes": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da::pprf::PPRF",
+      "wal": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+      "sui": "0x2::sui::SUI"
+    }
+  },
+  "upload": {
+    "blobId": "_WW61fe_o3aVg1Gqs45lDNSHNgusL_eij0lux5ZdKQc",
+    "blobObjectId": "0x60cce2937051917dc59702cc378aab71ee82e7df72b2bfd33287d847a7c321a3",
+    "skipped": false
+  },
+  "transaction": {
+    "digest": "EUeQPimfLmcWaA1nJhhBkDjyYQNPmyV4uwxv2jkd3dR9"
+  },
+  "published": {
+    "seriesId": "0x586090a5231647dc9197d6d9b824eb41d3855feb8c00854cb43b2fb500e3eea3",
+    "versionId": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d",
+    "artifactType": 2,
+    "version": "2",
+    "commentsTreeId": "0xc4e0782ebcffa7ea6c060e49903087264aed8fc117b393fb6765c8a19594ea4a",
+    "likesBookId": "0x756ea7fcc965ac17ec83fd8e2ea640985094b951c798791466099bc1a1b3b725",
+    "artifactCode": "PaperProof-blog_post-001172-586090a52316"
+  },
+  "previewUrl": "https://paperproof.site/#/artifact/PaperProof-blog_post-001172-586090a52316",
+  "series": {
+    "id": "0x586090a5231647dc9197d6d9b824eb41d3855feb8c00854cb43b2fb500e3eea3",
+    "artifactType": 2,
+    "artifactCode": "PaperProof-blog_post-001172-586090a52316",
+    "owner": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+    "currentVersion": "2",
+    "currentVersionId": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d",
+    "commentsTreeId": "0xc4e0782ebcffa7ea6c060e49903087264aed8fc117b393fb6765c8a19594ea4a",
+    "likesBookId": "0x756ea7fcc965ac17ec83fd8e2ea640985094b951c798791466099bc1a1b3b725",
+    "status": 0,
+    "uiStatus": 0,
+    "metadataExtensions": [
+      {
+        "key": "app",
+        "value": "community-blog"
+      },
+      {
+        "key": "post_id",
+        "value": "community-sui-overflow-2026-track-intelligence"
+      },
+      {
+        "key": "category",
+        "value": "Community Research"
+      }
+    ],
+    "versionIds": [
+      "0xa0701a1642593a01dd827ade92cc91cd608d675f12e4c53f4a6c2c497d5a13e1",
+      "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d"
+    ]
+  },
+  "version": {
+    "id": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d",
+    "seriesId": "0x586090a5231647dc9197d6d9b824eb41d3855feb8c00854cb43b2fb500e3eea3",
+    "artifactType": 2,
+    "version": "2",
+    "contentHash": "sha256:f7ab0c0956446513f2b76eff2d1d3e5e25a0d0b3e047a09e4d044933575a8573",
+    "metadataExtensions": [
+      {
+        "key": "schema",
+        "value": "paperproof-blog-markdown-v1"
+      },
+      {
+        "key": "source",
+        "value": "Sui Overflow 2026 Track Intelligence on PaperProof.md"
+      },
+      {
+        "key": "route",
+        "value": "/artifact/community-overflow2026-blog"
+      },
+      {
+        "key": "date",
+        "value": "2026-06-29"
+      }
+    ],
+    "rawFields": {
+      "header": {
+        "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::CommonArtifactHeader",
+        "fields": {
+          "artifact_type": 2,
+          "author": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+          "content_hash": "sha256:f7ab0c0956446513f2b76eff2d1d3e5e25a0d0b3e047a09e4d044933575a8573",
+          "content_type": "application/vnd.paperproof.markdown-package+zip",
+          "created_at_ms": "1782742419660",
+          "metadata_extensions": [
+            {
+              "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+              "fields": {
+                "key": "schema",
+                "value": "paperproof-blog-markdown-v1"
+              }
+            },
+            {
+              "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+              "fields": {
+                "key": "source",
+                "value": "Sui Overflow 2026 Track Intelligence on PaperProof.md"
+              }
+            },
+            {
+              "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+              "fields": {
+                "key": "route",
+                "value": "/artifact/community-overflow2026-blog"
+              }
+            },
+            {
+              "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+              "fields": {
+                "key": "date",
+                "value": "2026-06-29"
+              }
+            }
+          ],
+          "previous_version_id": "0xa0701a1642593a01dd827ade92cc91cd608d675f12e4c53f4a6c2c497d5a13e1",
+          "series_id": "0x586090a5231647dc9197d6d9b824eb41d3855feb8c00854cb43b2fb500e3eea3",
+          "status": 0,
+          "version": "2",
+          "walrus_blob_id": "_WW61fe_o3aVg1Gqs45lDNSHNgusL_eij0lux5ZdKQc",
+          "walrus_blob_object_id": "0x60cce2937051917dc59702cc378aab71ee82e7df72b2bfd33287d847a7c321a3"
+        }
+      },
+      "id": {
+        "id": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d"
+      },
+      "language": "en",
+      "summary": "A community analysis of four published Sui Overflow 2026 track datasets on PaperProof Protocol, focused on technical structure, submission statistics, deployment posture, and cross-track patterns rather than ranking.",
+      "tags": [
+        "sui-overflow-2026",
+        "datasets",
+        "paperproof",
+        "research",
+        "walrus",
+        "deepbook",
+        "agentic-web"
+      ],
+      "title": "Reading Sui Overflow 2026 Through PaperProof Protocol"
+    }
+  }
+}

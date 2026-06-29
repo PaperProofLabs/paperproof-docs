@@ -1,0 +1,689 @@
+{
+  "publishedAt": "2026-06-28T23:25:52.758Z",
+  "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+  "sdkVersion": "0.2.7",
+  "deployment": {
+    "name": "paperproof-mainnet-2026-05-13",
+    "network": "mainnet",
+    "rpcUrl": "https://fullnode.mainnet.sui.io:443",
+    "protocolVersion": "publishing-v3-governance-v2-comments-v2",
+    "packages": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da",
+      "governanceOriginal": "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+      "governance": "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e",
+      "comments": "0xaef346fc40bf20af62f4bbbc1608ba2272e80e4ba3d716634026baa589e9aeba",
+      "publishing": "0xc9a75e4514db2a37df6f95b4e2b329c065ac6089953bd2c1c0a0c389835bd3d8",
+      "promptRegistry": "0x10b9c6e90a896dc3244d047e32724d80de0dc697b5ea12c5fdd8925131ed4c59",
+      "memoryRegistry": "0x816684a152fdee1e7f15f65d18873ed7ee48540e8bd4205b3197a5ec0feda2c6"
+    },
+    "objects": {
+      "root": "0x7dc6c78b276825499a2204b060394e80b81196eb1f77d2036b503a2cca15dd78",
+      "typeRegistry": "0x966ffa24d0a96b34267b62c628f39c830afc9de25438b6502835fa8a3815d6b5",
+      "feeManager": "0x7bb8360ea1fa50f923628c929b8726b00eb8968c6a678acde71f97ae146e9249",
+      "governanceVault": "0x0df35aa53ef37f8ca8f6a6280d743effa6e0bfc613c5c6c0a78318ad4a38f875",
+      "governanceConfig": "0x7ed018db6b2cd7c32692a1c33543fb90d9c36add1226f93cbeb2a8fb10955dfa",
+      "promptRegistry": "0x14ec45eb83bb1b0eb22c7e885c7c71ea05b1e22dd05e3e1107dcef528600b0da",
+      "memoryRegistry": "0x9a5beeb6610b33c06771c4152c039314784437e802e200afd2ce80fb88bdf9e2",
+      "clock": "0x6"
+    },
+    "coinTypes": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da::pprf::PPRF",
+      "wal": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+      "sui": "0x2::sui::SUI"
+    }
+  },
+  "outputs": [
+    {
+      "slug": "defi-payments",
+      "source": {
+        "slug": "defi-payments",
+        "datasetDir": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\defi-payments",
+        "archivePath": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\defi-payments-dataset.zip",
+        "archiveName": "defi-payments-dataset.zip",
+        "archiveBytes": 207850,
+        "archiveSha256": "sha256:727043cba8ed5ee8716479f799e03a74d804eb3836e2e5d938e47e96021772a0",
+        "projectRows": 162,
+        "wordCount": 63419,
+        "trackTitle": "Sui Overflow 2026 DeFi & Payments Project Intelligence Dataset",
+        "trackDescription": "Structured research package for the Sui Overflow 2026 DeFi & Payments track. Useful for studying product categories, deployment posture, public links, repeated submission patterns, and how payment / DeFi teams present themselves across an open hackathon pipeline.",
+        "keywords": [
+          "Sui Overflow 2026",
+          "DeFi",
+          "payments",
+          "hackathon intelligence",
+          "project dataset",
+          "ecosystem research"
+        ]
+      },
+      "walrus": {
+        "blobId": "240plGcsSm3_QrAOzWwr9Fn_s8q_4xIkOuLJEuOnXFs",
+        "blobObjectId": "0x005ec17a4fab7612b711b393faedbae4af846f93054853a58af9f1a1937f7b45",
+        "skipped": false
+      },
+      "transaction": {
+        "digest": "BMKSJS6A3Z3ZwUCASDrCnHRfMWibyvxnmppnWUMwRpnd"
+      },
+      "published": {
+        "seriesId": "0xbe47024491e49a43aa67e932e0ab60fc29158a3df1d05d27a1e7b9e01d57cd9d",
+        "versionId": "0x7ef369c7229c321eac1044ebb36119aab251c7e34bf9c1bf157374633c84e083",
+        "commentsTreeId": "0xc65c75e9a3b10df1f777f9f2d69b38d40e88ba775b965cbeb52eb8a60b06596d",
+        "likesBookId": "0xfbe99ed915077d8440beb953660098e66afa700cad2f3c4a05c005857f05baf5",
+        "artifactCode": "PaperProof-dataset-001172-be47024491e4",
+        "artifactType": 4
+      },
+      "previewUrl": "https://paperproof.site/#/artifact/PaperProof-dataset-001172-be47024491e4",
+      "series": {
+        "id": "0xbe47024491e49a43aa67e932e0ab60fc29158a3df1d05d27a1e7b9e01d57cd9d",
+        "artifactType": 4,
+        "artifactCode": "PaperProof-dataset-001172-be47024491e4",
+        "owner": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+        "currentVersion": "1",
+        "currentVersionId": "0x7ef369c7229c321eac1044ebb36119aab251c7e34bf9c1bf157374633c84e083",
+        "commentsTreeId": "0xc65c75e9a3b10df1f777f9f2d69b38d40e88ba775b965cbeb52eb8a60b06596d",
+        "likesBookId": "0xfbe99ed915077d8440beb953660098e66afa700cad2f3c4a05c005857f05baf5",
+        "status": 0,
+        "uiStatus": 0,
+        "metadataExtensions": [
+          {
+            "key": "dataset_version",
+            "value": "1.0.0"
+          },
+          {
+            "key": "project_rows",
+            "value": "162"
+          },
+          {
+            "key": "package_slug",
+            "value": "defi-payments"
+          },
+          {
+            "key": "publisher",
+            "value": "PaperProof community research"
+          }
+        ],
+        "versionIds": [
+          "0x7ef369c7229c321eac1044ebb36119aab251c7e34bf9c1bf157374633c84e083"
+        ]
+      },
+      "version": {
+        "id": "0x7ef369c7229c321eac1044ebb36119aab251c7e34bf9c1bf157374633c84e083",
+        "seriesId": "0xbe47024491e49a43aa67e932e0ab60fc29158a3df1d05d27a1e7b9e01d57cd9d",
+        "artifactType": 4,
+        "version": "1",
+        "contentHash": "sha256:727043cba8ed5ee8716479f799e03a74d804eb3836e2e5d938e47e96021772a0",
+        "metadataExtensions": [
+          {
+            "key": "package_filename",
+            "value": "defi-payments-dataset.zip"
+          },
+          {
+            "key": "package_sha256",
+            "value": "sha256:727043cba8ed5ee8716479f799e03a74d804eb3836e2e5d938e47e96021772a0"
+          },
+          {
+            "key": "sdk_version",
+            "value": "0.2.7"
+          },
+          {
+            "key": "walrus_epochs",
+            "value": "10"
+          }
+        ],
+        "rawFields": {
+          "description": "Structured research package for the Sui Overflow 2026 DeFi & Payments track. Useful for studying product categories, deployment posture, public links, repeated submission patterns, and how payment / DeFi teams present themselves across an open hackathon pipeline.",
+          "file_count": "5",
+          "format": "ZIP package containing README, overview JSON, schema JSON, source provenance, and raw markdown intelligence snapshot",
+          "header": {
+            "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::CommonArtifactHeader",
+            "fields": {
+              "artifact_type": 4,
+              "author": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+              "content_hash": "sha256:727043cba8ed5ee8716479f799e03a74d804eb3836e2e5d938e47e96021772a0",
+              "content_type": "application/zip",
+              "created_at_ms": "1782689087617",
+              "metadata_extensions": [
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "package_filename",
+                    "value": "defi-payments-dataset.zip"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "package_sha256",
+                    "value": "sha256:727043cba8ed5ee8716479f799e03a74d804eb3836e2e5d938e47e96021772a0"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "sdk_version",
+                    "value": "0.2.7"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "walrus_epochs",
+                    "value": "10"
+                  }
+                }
+              ],
+              "previous_version_id": null,
+              "series_id": "0xbe47024491e49a43aa67e932e0ab60fc29158a3df1d05d27a1e7b9e01d57cd9d",
+              "status": 0,
+              "version": "1",
+              "walrus_blob_id": "240plGcsSm3_QrAOzWwr9Fn_s8q_4xIkOuLJEuOnXFs",
+              "walrus_blob_object_id": "0x005ec17a4fab7612b711b393faedbae4af846f93054853a58af9f1a1937f7b45"
+            }
+          },
+          "id": {
+            "id": "0x7ef369c7229c321eac1044ebb36119aab251c7e34bf9c1bf157374633c84e083"
+          },
+          "keywords": [
+            "Sui Overflow 2026",
+            "DeFi",
+            "payments",
+            "hackathon intelligence",
+            "project dataset",
+            "ecosystem research"
+          ],
+          "license": "CC-BY-4.0",
+          "size_bytes": "207850",
+          "title": "Sui Overflow 2026 DeFi & Payments Project Intelligence Dataset"
+        }
+      }
+    },
+    {
+      "slug": "special-deepbook",
+      "source": {
+        "slug": "special-deepbook",
+        "datasetDir": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\special-deepbook",
+        "archivePath": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\special-deepbook-dataset.zip",
+        "archiveName": "special-deepbook-dataset.zip",
+        "archiveBytes": 161227,
+        "archiveSha256": "sha256:e73283f09528059ab5670e670ada629deab4bcd5172d68cf6fadc41eb70cdb83",
+        "projectRows": 136,
+        "wordCount": 50271,
+        "trackTitle": "Sui Overflow 2026 Special - DeepBook Project Intelligence Dataset",
+        "trackDescription": "Structured research package for the Sui Overflow 2026 DeepBook special track. Useful for comparing trading, market structure, prediction, execution, and liquidity-oriented submissions built around DeepBook and adjacent exchange primitives.",
+        "keywords": [
+          "Sui Overflow 2026",
+          "DeepBook",
+          "trading",
+          "market structure",
+          "hackathon intelligence",
+          "project dataset"
+        ]
+      },
+      "walrus": {
+        "blobId": "Wxx3FHWQ3pJT_Kla0464H9-xDScA8MkV7guY76nQvRk",
+        "blobObjectId": "0x4dfa79da3f36712438a567d11c5a556407f6e4bf37b37e8271b95831c5f8f09a",
+        "skipped": false
+      },
+      "transaction": {
+        "digest": "CKWTpuhAUnbVnUww2A52in1CrTGZLmgyEq8baLihkjnY"
+      },
+      "published": {
+        "seriesId": "0x8e4d9dd3a5ff52c052ec8c5d0da8cf0ec7c36e50f4b9c373162dd8870e44236c",
+        "versionId": "0xb9d8a59003899a2835aabc702185ccba35b944bb45e902c1f9bee8b341e7d08b",
+        "commentsTreeId": "0x17ce18e905717563fcbc7f215eafc898fe0cee75ad43d50914275c6e27bca450",
+        "likesBookId": "0xbd5675690b47d98f1272ac35f9fee668fdc02866a17f6b44a0c35f69f733724a",
+        "artifactCode": "PaperProof-dataset-001172-8e4d9dd3a5ff",
+        "artifactType": 4
+      },
+      "previewUrl": "https://paperproof.site/#/artifact/PaperProof-dataset-001172-8e4d9dd3a5ff",
+      "series": {
+        "id": "0x8e4d9dd3a5ff52c052ec8c5d0da8cf0ec7c36e50f4b9c373162dd8870e44236c",
+        "artifactType": 4,
+        "artifactCode": "PaperProof-dataset-001172-8e4d9dd3a5ff",
+        "owner": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+        "currentVersion": "1",
+        "currentVersionId": "0xb9d8a59003899a2835aabc702185ccba35b944bb45e902c1f9bee8b341e7d08b",
+        "commentsTreeId": "0x17ce18e905717563fcbc7f215eafc898fe0cee75ad43d50914275c6e27bca450",
+        "likesBookId": "0xbd5675690b47d98f1272ac35f9fee668fdc02866a17f6b44a0c35f69f733724a",
+        "status": 0,
+        "uiStatus": 0,
+        "metadataExtensions": [
+          {
+            "key": "dataset_version",
+            "value": "1.0.0"
+          },
+          {
+            "key": "project_rows",
+            "value": "136"
+          },
+          {
+            "key": "package_slug",
+            "value": "special-deepbook"
+          },
+          {
+            "key": "publisher",
+            "value": "PaperProof community research"
+          }
+        ],
+        "versionIds": [
+          "0xb9d8a59003899a2835aabc702185ccba35b944bb45e902c1f9bee8b341e7d08b"
+        ]
+      },
+      "version": {
+        "id": "0xb9d8a59003899a2835aabc702185ccba35b944bb45e902c1f9bee8b341e7d08b",
+        "seriesId": "0x8e4d9dd3a5ff52c052ec8c5d0da8cf0ec7c36e50f4b9c373162dd8870e44236c",
+        "artifactType": 4,
+        "version": "1",
+        "contentHash": "sha256:e73283f09528059ab5670e670ada629deab4bcd5172d68cf6fadc41eb70cdb83",
+        "metadataExtensions": [
+          {
+            "key": "package_filename",
+            "value": "special-deepbook-dataset.zip"
+          },
+          {
+            "key": "package_sha256",
+            "value": "sha256:e73283f09528059ab5670e670ada629deab4bcd5172d68cf6fadc41eb70cdb83"
+          },
+          {
+            "key": "sdk_version",
+            "value": "0.2.7"
+          },
+          {
+            "key": "walrus_epochs",
+            "value": "10"
+          }
+        ],
+        "rawFields": {
+          "description": "Structured research package for the Sui Overflow 2026 DeepBook special track. Useful for comparing trading, market structure, prediction, execution, and liquidity-oriented submissions built around DeepBook and adjacent exchange primitives.",
+          "file_count": "5",
+          "format": "ZIP package containing README, overview JSON, schema JSON, source provenance, and raw markdown intelligence snapshot",
+          "header": {
+            "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::CommonArtifactHeader",
+            "fields": {
+              "artifact_type": 4,
+              "author": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+              "content_hash": "sha256:e73283f09528059ab5670e670ada629deab4bcd5172d68cf6fadc41eb70cdb83",
+              "content_type": "application/zip",
+              "created_at_ms": "1782689108037",
+              "metadata_extensions": [
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "package_filename",
+                    "value": "special-deepbook-dataset.zip"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "package_sha256",
+                    "value": "sha256:e73283f09528059ab5670e670ada629deab4bcd5172d68cf6fadc41eb70cdb83"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "sdk_version",
+                    "value": "0.2.7"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "walrus_epochs",
+                    "value": "10"
+                  }
+                }
+              ],
+              "previous_version_id": null,
+              "series_id": "0x8e4d9dd3a5ff52c052ec8c5d0da8cf0ec7c36e50f4b9c373162dd8870e44236c",
+              "status": 0,
+              "version": "1",
+              "walrus_blob_id": "Wxx3FHWQ3pJT_Kla0464H9-xDScA8MkV7guY76nQvRk",
+              "walrus_blob_object_id": "0x4dfa79da3f36712438a567d11c5a556407f6e4bf37b37e8271b95831c5f8f09a"
+            }
+          },
+          "id": {
+            "id": "0xb9d8a59003899a2835aabc702185ccba35b944bb45e902c1f9bee8b341e7d08b"
+          },
+          "keywords": [
+            "Sui Overflow 2026",
+            "DeepBook",
+            "trading",
+            "market structure",
+            "hackathon intelligence",
+            "project dataset"
+          ],
+          "license": "CC-BY-4.0",
+          "size_bytes": "161227",
+          "title": "Sui Overflow 2026 Special - DeepBook Project Intelligence Dataset"
+        }
+      }
+    },
+    {
+      "slug": "special-walrus",
+      "source": {
+        "slug": "special-walrus",
+        "datasetDir": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\special-walrus",
+        "archivePath": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\special-walrus-dataset.zip",
+        "archiveName": "special-walrus-dataset.zip",
+        "archiveBytes": 244540,
+        "archiveSha256": "sha256:1cce11a95273a763c5ddde98463d92c65d6cae531628483f53c2217de78b5be8",
+        "projectRows": 223,
+        "wordCount": 75363,
+        "trackTitle": "Sui Overflow 2026 Special - Walrus Project Intelligence Dataset",
+        "trackDescription": "Structured research package for the Sui Overflow 2026 Walrus special track. Useful for mapping storage-native applications, memory systems, content infrastructure, AI workflows, and how teams frame Walrus as an application primitive.",
+        "keywords": [
+          "Sui Overflow 2026",
+          "Walrus",
+          "storage",
+          "AI",
+          "content infrastructure",
+          "hackathon intelligence"
+        ]
+      },
+      "walrus": {
+        "blobId": "f0COXwy48R7FG2QExqpcHJQySC_qUiKvuXGI7AlUSB0",
+        "blobObjectId": "0xbe1711e19fa51a30bdf0b56d75308040a09e4872fec6e9792c77d174532cf1c3",
+        "skipped": false
+      },
+      "transaction": {
+        "digest": "2k2QwsSvam5UG56QBKuDJ3HxPhT6qDjVNQNyUFjaUrsT"
+      },
+      "published": {
+        "seriesId": "0xdf605da089ff49d3c0070d0e83c13ed0b6336810c10803327f4993fa0a9a84fd",
+        "versionId": "0x461992a00489a8cd9212f4c42fb601caba5e25059de3376414aaafefe123bb5f",
+        "commentsTreeId": "0x37bac1c9f9898c35748039fbb1dbc7251fd15bef272487eacf2ee7b1494d7e45",
+        "likesBookId": "0x5a40528e263c0fdbe1deeed5b9bbbeb4ffba0e2a988de3c8bdf7421d9ef12e72",
+        "artifactCode": "PaperProof-dataset-001172-df605da089ff",
+        "artifactType": 4
+      },
+      "previewUrl": "https://paperproof.site/#/artifact/PaperProof-dataset-001172-df605da089ff",
+      "series": {
+        "id": "0xdf605da089ff49d3c0070d0e83c13ed0b6336810c10803327f4993fa0a9a84fd",
+        "artifactType": 4,
+        "artifactCode": "PaperProof-dataset-001172-df605da089ff",
+        "owner": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+        "currentVersion": "1",
+        "currentVersionId": "0x461992a00489a8cd9212f4c42fb601caba5e25059de3376414aaafefe123bb5f",
+        "commentsTreeId": "0x37bac1c9f9898c35748039fbb1dbc7251fd15bef272487eacf2ee7b1494d7e45",
+        "likesBookId": "0x5a40528e263c0fdbe1deeed5b9bbbeb4ffba0e2a988de3c8bdf7421d9ef12e72",
+        "status": 0,
+        "uiStatus": 0,
+        "metadataExtensions": [
+          {
+            "key": "dataset_version",
+            "value": "1.0.0"
+          },
+          {
+            "key": "project_rows",
+            "value": "223"
+          },
+          {
+            "key": "package_slug",
+            "value": "special-walrus"
+          },
+          {
+            "key": "publisher",
+            "value": "PaperProof community research"
+          }
+        ],
+        "versionIds": [
+          "0x461992a00489a8cd9212f4c42fb601caba5e25059de3376414aaafefe123bb5f"
+        ]
+      },
+      "version": {
+        "id": "0x461992a00489a8cd9212f4c42fb601caba5e25059de3376414aaafefe123bb5f",
+        "seriesId": "0xdf605da089ff49d3c0070d0e83c13ed0b6336810c10803327f4993fa0a9a84fd",
+        "artifactType": 4,
+        "version": "1",
+        "contentHash": "sha256:1cce11a95273a763c5ddde98463d92c65d6cae531628483f53c2217de78b5be8",
+        "metadataExtensions": [
+          {
+            "key": "package_filename",
+            "value": "special-walrus-dataset.zip"
+          },
+          {
+            "key": "package_sha256",
+            "value": "sha256:1cce11a95273a763c5ddde98463d92c65d6cae531628483f53c2217de78b5be8"
+          },
+          {
+            "key": "sdk_version",
+            "value": "0.2.7"
+          },
+          {
+            "key": "walrus_epochs",
+            "value": "10"
+          }
+        ],
+        "rawFields": {
+          "description": "Structured research package for the Sui Overflow 2026 Walrus special track. Useful for mapping storage-native applications, memory systems, content infrastructure, AI workflows, and how teams frame Walrus as an application primitive.",
+          "file_count": "5",
+          "format": "ZIP package containing README, overview JSON, schema JSON, source provenance, and raw markdown intelligence snapshot",
+          "header": {
+            "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::CommonArtifactHeader",
+            "fields": {
+              "artifact_type": 4,
+              "author": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+              "content_hash": "sha256:1cce11a95273a763c5ddde98463d92c65d6cae531628483f53c2217de78b5be8",
+              "content_type": "application/zip",
+              "created_at_ms": "1782689131665",
+              "metadata_extensions": [
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "package_filename",
+                    "value": "special-walrus-dataset.zip"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "package_sha256",
+                    "value": "sha256:1cce11a95273a763c5ddde98463d92c65d6cae531628483f53c2217de78b5be8"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "sdk_version",
+                    "value": "0.2.7"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "walrus_epochs",
+                    "value": "10"
+                  }
+                }
+              ],
+              "previous_version_id": null,
+              "series_id": "0xdf605da089ff49d3c0070d0e83c13ed0b6336810c10803327f4993fa0a9a84fd",
+              "status": 0,
+              "version": "1",
+              "walrus_blob_id": "f0COXwy48R7FG2QExqpcHJQySC_qUiKvuXGI7AlUSB0",
+              "walrus_blob_object_id": "0xbe1711e19fa51a30bdf0b56d75308040a09e4872fec6e9792c77d174532cf1c3"
+            }
+          },
+          "id": {
+            "id": "0x461992a00489a8cd9212f4c42fb601caba5e25059de3376414aaafefe123bb5f"
+          },
+          "keywords": [
+            "Sui Overflow 2026",
+            "Walrus",
+            "storage",
+            "AI",
+            "content infrastructure",
+            "hackathon intelligence"
+          ],
+          "license": "CC-BY-4.0",
+          "size_bytes": "244540",
+          "title": "Sui Overflow 2026 Special - Walrus Project Intelligence Dataset"
+        }
+      }
+    },
+    {
+      "slug": "agentic-web",
+      "source": {
+        "slug": "agentic-web",
+        "datasetDir": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\agentic-web",
+        "archivePath": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-docs\\overflow2026\\sui-overflow-2026-track-datasets\\agentic-web-dataset.zip",
+        "archiveName": "agentic-web-dataset.zip",
+        "archiveBytes": 172372,
+        "archiveSha256": "sha256:cc280a607fd3345dddeca40498f072d7d6dbdf98e691aac2960095695dd2fdb7",
+        "projectRows": 159,
+        "wordCount": 54200,
+        "trackTitle": "Sui Overflow 2026 The Agentic Web Project Intelligence Dataset",
+        "trackDescription": "Structured research package for the Sui Overflow 2026 Agentic Web track. Useful for studying how teams frame AI agents, policy layers, wallets, execution boundaries, and human-in-the-loop trust models on Sui.",
+        "keywords": [
+          "Sui Overflow 2026",
+          "agentic web",
+          "AI agents",
+          "wallets",
+          "policy",
+          "hackathon intelligence"
+        ]
+      },
+      "walrus": {
+        "blobId": "-5AWT4GnKg4D9V0bY1wYqlwj3ZYPCdpQCkAY-MVFLl0",
+        "blobObjectId": "0x7a937ba944a522fdb1e4ba304d35f8c4ffd754b0c52bb807cb18182538eb440c",
+        "skipped": false
+      },
+      "transaction": {
+        "digest": "4hQXMwBVRiJrTJmA2xhHkm4TT8pmXxFVLnhzS8sy4f8m"
+      },
+      "published": {
+        "seriesId": "0xffa42b9c40a1037e93de6ca7d3d83f0b5b3058f9f6c9a5e8d34c8001b5f265bd",
+        "versionId": "0xe55a5c8dc9c3259ce49bd1e62565bbc31c5b14e542f331910ab3bd23fd16727f",
+        "commentsTreeId": "0x2f338068d6956e82f902a77d3bdc9176ad6ec2d852ae40aa61db4dd502531384",
+        "likesBookId": "0x524ab3a9d7f9c4bc95b9c09df2d2054a6fab4c68477b2734fd18ac173bc4cc3f",
+        "artifactCode": "PaperProof-dataset-001172-ffa42b9c40a1",
+        "artifactType": 4
+      },
+      "previewUrl": "https://paperproof.site/#/artifact/PaperProof-dataset-001172-ffa42b9c40a1",
+      "series": {
+        "id": "0xffa42b9c40a1037e93de6ca7d3d83f0b5b3058f9f6c9a5e8d34c8001b5f265bd",
+        "artifactType": 4,
+        "artifactCode": "PaperProof-dataset-001172-ffa42b9c40a1",
+        "owner": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+        "currentVersion": "1",
+        "currentVersionId": "0xe55a5c8dc9c3259ce49bd1e62565bbc31c5b14e542f331910ab3bd23fd16727f",
+        "commentsTreeId": "0x2f338068d6956e82f902a77d3bdc9176ad6ec2d852ae40aa61db4dd502531384",
+        "likesBookId": "0x524ab3a9d7f9c4bc95b9c09df2d2054a6fab4c68477b2734fd18ac173bc4cc3f",
+        "status": 0,
+        "uiStatus": 0,
+        "metadataExtensions": [
+          {
+            "key": "dataset_version",
+            "value": "1.0.0"
+          },
+          {
+            "key": "project_rows",
+            "value": "159"
+          },
+          {
+            "key": "package_slug",
+            "value": "agentic-web"
+          },
+          {
+            "key": "publisher",
+            "value": "PaperProof community research"
+          }
+        ],
+        "versionIds": [
+          "0xe55a5c8dc9c3259ce49bd1e62565bbc31c5b14e542f331910ab3bd23fd16727f"
+        ]
+      },
+      "version": {
+        "id": "0xe55a5c8dc9c3259ce49bd1e62565bbc31c5b14e542f331910ab3bd23fd16727f",
+        "seriesId": "0xffa42b9c40a1037e93de6ca7d3d83f0b5b3058f9f6c9a5e8d34c8001b5f265bd",
+        "artifactType": 4,
+        "version": "1",
+        "contentHash": "sha256:cc280a607fd3345dddeca40498f072d7d6dbdf98e691aac2960095695dd2fdb7",
+        "metadataExtensions": [
+          {
+            "key": "package_filename",
+            "value": "agentic-web-dataset.zip"
+          },
+          {
+            "key": "package_sha256",
+            "value": "sha256:cc280a607fd3345dddeca40498f072d7d6dbdf98e691aac2960095695dd2fdb7"
+          },
+          {
+            "key": "sdk_version",
+            "value": "0.2.7"
+          },
+          {
+            "key": "walrus_epochs",
+            "value": "10"
+          }
+        ],
+        "rawFields": {
+          "description": "Structured research package for the Sui Overflow 2026 Agentic Web track. Useful for studying how teams frame AI agents, policy layers, wallets, execution boundaries, and human-in-the-loop trust models on Sui.",
+          "file_count": "5",
+          "format": "ZIP package containing README, overview JSON, schema JSON, source provenance, and raw markdown intelligence snapshot",
+          "header": {
+            "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::CommonArtifactHeader",
+            "fields": {
+              "artifact_type": 4,
+              "author": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+              "content_hash": "sha256:cc280a607fd3345dddeca40498f072d7d6dbdf98e691aac2960095695dd2fdb7",
+              "content_type": "application/zip",
+              "created_at_ms": "1782689151131",
+              "metadata_extensions": [
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "package_filename",
+                    "value": "agentic-web-dataset.zip"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "package_sha256",
+                    "value": "sha256:cc280a607fd3345dddeca40498f072d7d6dbdf98e691aac2960095695dd2fdb7"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "sdk_version",
+                    "value": "0.2.7"
+                  }
+                },
+                {
+                  "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
+                  "fields": {
+                    "key": "walrus_epochs",
+                    "value": "10"
+                  }
+                }
+              ],
+              "previous_version_id": null,
+              "series_id": "0xffa42b9c40a1037e93de6ca7d3d83f0b5b3058f9f6c9a5e8d34c8001b5f265bd",
+              "status": 0,
+              "version": "1",
+              "walrus_blob_id": "-5AWT4GnKg4D9V0bY1wYqlwj3ZYPCdpQCkAY-MVFLl0",
+              "walrus_blob_object_id": "0x7a937ba944a522fdb1e4ba304d35f8c4ffd754b0c52bb807cb18182538eb440c"
+            }
+          },
+          "id": {
+            "id": "0xe55a5c8dc9c3259ce49bd1e62565bbc31c5b14e542f331910ab3bd23fd16727f"
+          },
+          "keywords": [
+            "Sui Overflow 2026",
+            "agentic web",
+            "AI agents",
+            "wallets",
+            "policy",
+            "hackathon intelligence"
+          ],
+          "license": "CC-BY-4.0",
+          "size_bytes": "172372",
+          "title": "Sui Overflow 2026 The Agentic Web Project Intelligence Dataset"
+        }
+      }
+    }
+  ]
+}

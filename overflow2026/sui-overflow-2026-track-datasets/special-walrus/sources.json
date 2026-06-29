@@ -1,0 +1,13 @@
+{
+  "description": "Source provenance for the community-packaged Sui Overflow 2026 track dataset.",
+  "public_source_basis": "DeepSurge public project API for Sui Overflow 2026, track `Special - Walrus`.",
+  "original_markdown_file": {
+    "path": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-app\\private\\overflow2026\\Sui Overflow 2026 Special Walrus Project Intelligence.md",
+    "name": "Sui Overflow 2026 Special Walrus Project Intelligence.md"
+  },
+  "package_generated_from": "paperproof-docs/overflow2026/sui-overflow-2026-track-datasets/build-track-datasets.mjs",
+  "notes": [
+    "This package preserves the original markdown snapshot as its core research artifact.",
+    "Summary JSON is generated locally from the markdown snapshot for easier indexing and downstream analysis."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "dataset_title": "Sui Overflow 2026 DeFi & Payments Project Intelligence Dataset",
+  "track": "DeFi & Payments",
+  "source_file": "Sui Overflow 2026 DeFi Payments Project Intelligence.md",
+  "source_path": "D:\\WorkFiles\\VscodeProject\\PaperProof\\paperproof-app\\private\\overflow2026\\Sui Overflow 2026 DeFi Payments Project Intelligence.md",
+  "generated_at": "2026-06-28T23:24:09.020Z",
+  "snapshot": {
+    "source": "DeepSurge public project API for Sui Overflow 2026, track `DeFi & Payments`.",
+    "lastRefreshed": "2026-06-22T01:43:19.173Z.",
+    "rawProjectRecords": 162,
+    "deploymentMix": "Testnet 109, Mainnet 42, Unknown 8, Devnet 3.",
+    "newlyObserved": 2
+  },
+  "project_rows": 162,
+  "word_count": 63419,
+  "line_count": 9752,
+  "category_summary": [
+    {
+      "name": "DeFi / payments",
+      "count": 143
+    },
+    {
+      "name": "General application",
+      "count": 8
+    },
+    {
+      "name": "AI / agent workflow",
+      "count": 4
+    },
+    {
+      "name": "Proof / audit / provenance",
+      "count": 4
+    },
+    {
+      "name": "Account Network for Cross Border Money",
+      "count": 1
+    },
+    {
+      "name": "DeepBook / trading",
+      "count": 1
+    },
+    {
+      "name": "Tokenizate",
+      "count": 1
+    }
+  ],
+  "deployment_summary": [
+    {
+      "name": "Testnet",
+      "count": 107
+    },
+    {
+      "name": "Mainnet",
+      "count": 42
+    },
+    {
+      "name": "Unknown",
+      "count": 8
+    },
+    {
+      "name": "Devnet",
+      "count": 3
+    },
+    {
+      "name": "DeFi / payments",
+      "count": 2
+    }
+  ],
+  "package_presence": {
+    "listed": 126,
+    "missing": 36
+  },
+  "link_coverage": {
+    "github": {
+      "yes": 160,
+      "no": 2
+    },
+    "website": {
+      "yes": 140,
+      "no": 22
+    },
+    "youtube": {
+      "yes": 160,
+      "no": 2
+    }
+  },
+  "description": "Structured research package for the Sui Overflow 2026 DeFi & Payments track. Useful for studying product categories, deployment posture, public links, repeated submission patterns, and how payment / DeFi teams present themselves across an open hackathon pipeline.",
+  "keywords": [
+    "Sui Overflow 2026",
+    "DeFi",
+    "payments",
+    "hackathon intelligence",
+    "project dataset",
+    "ecosystem research"
+  ]
+}
