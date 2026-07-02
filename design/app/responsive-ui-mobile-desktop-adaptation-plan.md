@@ -301,6 +301,170 @@ Architecture rule:
   structure must remain the authoritative presentation above the mobile
   breakpoint.
 
+## 5.1 Mobile Information Disclosure Strategy
+
+For PaperProof, mobile adaptation should not only mean "make the layout fit."
+It should also mean "make the information load manageable."
+
+The mobile site should be optimized first for:
+
+- reading;
+- scanning;
+- understanding what an artifact, document, blog post, forum topic, or
+  proposal is;
+- selectively drilling into more detail;
+- only then performing heavier actions.
+
+This is especially important because many PaperProof surfaces contain a mix of:
+
+- user-facing reading content;
+- protocol metadata;
+- verification-oriented technical identifiers;
+- low-frequency management actions;
+- high-friction wallet-gated actions.
+
+On desktop, these can often coexist in parallel columns or dense blocks. On
+mobile, showing all of them expanded at once makes pages feel crowded,
+technical, and harder to read.
+
+Therefore, the mobile design should follow a progressive disclosure model.
+
+### 5.1.1 Core principle
+
+Mobile PaperProof pages should be:
+
+- reading-first;
+- metadata-second;
+- operations-third.
+
+This does not mean complex actions are removed. It means they should appear
+after the user has enough context to understand what they are acting on.
+
+### 5.1.2 Default visibility hierarchy
+
+On narrow screens, information should be grouped by importance.
+
+Default-open content should usually include:
+
+- page title and type identity;
+- short summary, abstract, or body introduction;
+- current version identity;
+- primary preview or reading surface;
+- obvious navigation context such as `Back`, breadcrumbs, or section title;
+- essential status information such as `Active`, `Hidden`, `Passed`, or current
+  version number.
+
+Secondary content may remain visible if compact, but should be visually
+de-emphasized:
+
+- dates;
+- authors;
+- counts such as likes, comments, or vote totals;
+- one-line category or field labels;
+- short supporting metadata.
+
+Expandable or collapsible content should usually include:
+
+- long protocol identifiers;
+- Series ID / Comments Tree / Likes Book / object IDs;
+- long metadata groups;
+- advanced verification data;
+- long version-detail blocks;
+- low-frequency owner/admin controls;
+- wallet-gated management actions;
+- long sidebars converted into section blocks.
+
+### 5.1.3 Reading-first rule by page family
+
+Artifact detail pages:
+
+- default mobile flow should show title, summary, current version, and preview
+  before large technical metadata blocks;
+- side-column metadata should become stacked sections, with low-priority
+  sections eligible for collapse;
+- version history should remain discoverable, but individual version detail
+  payloads may be progressively disclosed.
+
+Docs / Blog / Forum pages:
+
+- the reading body is the primary payload;
+- navigation and metadata should support reading, not dominate it;
+- docs navigation should collapse into a `Contents` pattern;
+- artifact-linked metadata should remain available but not compete with the
+  article body for attention.
+
+Governance pages:
+
+- proposal title, status, summary, and current vote state should remain visible
+  early;
+- dense verification or payload details may be collapsed if needed;
+- vote controls must remain clear, but should not visually overpower the
+  proposal text before the user understands the proposal.
+
+Publish / Add Version / settings-like forms:
+
+- these are naturally more operational, but should still use staged disclosure;
+- advanced fields should remain behind explicit expandable sections where
+  appropriate;
+- required path to completion should remain visible without forcing the user to
+  parse every optional setting first.
+
+### 5.1.4 Preferred disclosure patterns
+
+Preferred mobile disclosure patterns include:
+
+- `details` / accordion sections;
+- top-of-section `Show more` / `Hide` toggles;
+- inline expandable metadata blocks;
+- drawer or sheet navigation for large secondary navigation groups;
+- compact summary rows that expand into full detail;
+- explicit "advanced" groupings for technical or operator-oriented controls.
+
+These patterns should be used selectively and consistently.
+
+Avoid:
+
+- collapsing too many unrelated blocks independently, creating a page full of
+  toggles;
+- hiding critical actions without a clear and stable place to find them;
+- placing important state inside collapsed sections by default if the user
+  needs that state to interpret the page;
+- forcing repeated expand/collapse interactions for information that users
+  routinely need during one session.
+
+### 5.1.5 Functional guardrail
+
+Progressive disclosure must simplify mobile cognition without damaging feature
+clarity.
+
+So for every collapsed mobile section, the implementation should verify:
+
+- does the user still understand what this page is for without opening it;
+- can the user still identify the primary action without hunting;
+- can the user still find protocol-critical information when needed;
+- is the collapsed title explicit enough that users know what is inside;
+- would a first-time PaperProof visitor still understand the artifact or
+  document well enough from the default-open view.
+
+If the answer is no, the section is being collapsed too aggressively.
+
+### 5.1.6 Product positioning implication
+
+PaperProof mobile UX should not optimize for "maximum simultaneous control
+density."
+
+It should optimize for:
+
+- comprehension of artifact identity;
+- confidence in what is being viewed;
+- trustworthy reading of official and community content;
+- smooth access to version, comments, and governance context;
+- optional escalation into more complex operations.
+
+This is the right fit for PaperProof because the product is not primarily a
+high-frequency consumer social feed. It is a protocol-oriented artifact system
+with many long-lived reading surfaces. Mobile UI should reflect that.
+
 ## 6. Main Refactor Areas
 
 Before changing any layout group below, the implementation should identify the

@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-29T14:13:40.740Z",
+  "publishedAt": "2026-06-30T11:38:58.624Z",
   "operation": "add-version",
   "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.7",
@@ -46,18 +46,18 @@
     }
   },
   "upload": {
-    "blobId": "_WW61fe_o3aVg1Gqs45lDNSHNgusL_eij0lux5ZdKQc",
-    "blobObjectId": "0x60cce2937051917dc59702cc378aab71ee82e7df72b2bfd33287d847a7c321a3",
+    "blobId": "N-kcaHR_BjlnRdCAk9OBzWALpUvU1wQnCyh7Y1eQ4zE",
+    "blobObjectId": "0x67c038e33cb44e791e7697bfad645a132de2f784ba157a7924b3e980bc5a07ef",
     "skipped": false
   },
   "transaction": {
-    "digest": "EUeQPimfLmcWaA1nJhhBkDjyYQNPmyV4uwxv2jkd3dR9"
+    "digest": "FM9fNxmdWFP1DMNaYz7p7DCf6ykSxm8pRpX6fPfLn3tC"
   },
   "published": {
     "seriesId": "0x586090a5231647dc9197d6d9b824eb41d3855feb8c00854cb43b2fb500e3eea3",
-    "versionId": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d",
+    "versionId": "0x842adfa3b4567f3ca693caecd805b25890be47a51e12b14690b81e66a80b751b",
     "artifactType": 2,
-    "version": "2",
+    "version": "3",
     "commentsTreeId": "0xc4e0782ebcffa7ea6c060e49903087264aed8fc117b393fb6765c8a19594ea4a",
     "likesBookId": "0x756ea7fcc965ac17ec83fd8e2ea640985094b951c798791466099bc1a1b3b725",
     "artifactCode": "PaperProof-blog_post-001172-586090a52316"
@@ -68,8 +68,8 @@
     "artifactType": 2,
     "artifactCode": "PaperProof-blog_post-001172-586090a52316",
     "owner": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
-    "currentVersion": "2",
-    "currentVersionId": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d",
+    "currentVersion": "3",
+    "currentVersionId": "0x842adfa3b4567f3ca693caecd805b25890be47a51e12b14690b81e66a80b751b",
     "commentsTreeId": "0xc4e0782ebcffa7ea6c060e49903087264aed8fc117b393fb6765c8a19594ea4a",
     "likesBookId": "0x756ea7fcc965ac17ec83fd8e2ea640985094b951c798791466099bc1a1b3b725",
     "status": 0,
@@ -90,15 +90,16 @@
     ],
     "versionIds": [
       "0xa0701a1642593a01dd827ade92cc91cd608d675f12e4c53f4a6c2c497d5a13e1",
-      "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d"
+      "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d",
+      "0x842adfa3b4567f3ca693caecd805b25890be47a51e12b14690b81e66a80b751b"
     ]
   },
   "version": {
-    "id": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d",
+    "id": "0x842adfa3b4567f3ca693caecd805b25890be47a51e12b14690b81e66a80b751b",
     "seriesId": "0x586090a5231647dc9197d6d9b824eb41d3855feb8c00854cb43b2fb500e3eea3",
     "artifactType": 2,
-    "version": "2",
-    "contentHash": "sha256:f7ab0c0956446513f2b76eff2d1d3e5e25a0d0b3e047a09e4d044933575a8573",
+    "version": "3",
+    "contentHash": "sha256:5aec33450d578a5de201ae637bf40f9ec0b80e0695cf3a4c2d94b91abd8d09e5",
     "metadataExtensions": [
       {
         "key": "schema",
@@ -114,7 +115,7 @@
       },
       {
         "key": "date",
-        "value": "2026-06-29"
+        "value": "2026-06-30"
       }
     ],
     "rawFields": {
@@ -123,9 +124,9 @@
         "fields": {
           "artifact_type": 2,
           "author": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
-          "content_hash": "sha256:f7ab0c0956446513f2b76eff2d1d3e5e25a0d0b3e047a09e4d044933575a8573",
+          "content_hash": "sha256:5aec33450d578a5de201ae637bf40f9ec0b80e0695cf3a4c2d94b91abd8d09e5",
           "content_type": "application/vnd.paperproof.markdown-package+zip",
-          "created_at_ms": "1782742419660",
+          "created_at_ms": "1782819536597",
           "metadata_extensions": [
             {
               "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
@@ -152,20 +153,20 @@
               "type": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782::publishing::MetadataAttribute",
               "fields": {
                 "key": "date",
-                "value": "2026-06-29"
+                "value": "2026-06-30"
               }
             }
           ],
-          "previous_version_id": "0xa0701a1642593a01dd827ade92cc91cd608d675f12e4c53f4a6c2c497d5a13e1",
+          "previous_version_id": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d",
           "series_id": "0x586090a5231647dc9197d6d9b824eb41d3855feb8c00854cb43b2fb500e3eea3",
           "status": 0,
-          "version": "2",
-          "walrus_blob_id": "_WW61fe_o3aVg1Gqs45lDNSHNgusL_eij0lux5ZdKQc",
-          "walrus_blob_object_id": "0x60cce2937051917dc59702cc378aab71ee82e7df72b2bfd33287d847a7c321a3"
+          "version": "3",
+          "walrus_blob_id": "N-kcaHR_BjlnRdCAk9OBzWALpUvU1wQnCyh7Y1eQ4zE",
+          "walrus_blob_object_id": "0x67c038e33cb44e791e7697bfad645a132de2f784ba157a7924b3e980bc5a07ef"
         }
       },
       "id": {
-        "id": "0x457f29bd67eb63610f6e48e66d8d41157603c501c20a7250cc43f9740a684e5d"
+        "id": "0x842adfa3b4567f3ca693caecd805b25890be47a51e12b14690b81e66a80b751b"
       },
       "language": "en",
       "summary": "A community analysis of four published Sui Overflow 2026 track datasets on PaperProof Protocol, focused on technical structure, submission statistics, deployment posture, and cross-track patterns rather than ranking.",

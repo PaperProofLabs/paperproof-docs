@@ -213,7 +213,7 @@ async function main() {
       schema: 'paperproof-blog-markdown-v1',
       source: path.basename(SOURCE_FILE),
       route: '/artifact/community-overflow2026-blog',
-      date: '2026-06-29',
+      date: new Date().toISOString().slice(0, 10),
     }),
   };
 

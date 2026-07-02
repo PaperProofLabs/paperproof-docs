@@ -437,6 +437,94 @@ Another important takeaway is that the four tracks are not only content buckets.
 
 Taken together, these four snapshots help explain why PaperProof's artifact model is more than cosmetic packaging. The ecosystem is producing code, datasets, docs, demos, release archives, research notes, agent skills, and long-lived public evidence across many surfaces. Without an artifact layer, that knowledge remains fragmented across repos, websites, videos, and storage links. PaperProof matters because it is explicitly designed to reduce that kind of fragmentation.
 
+## Governance, DAO Design, and Protocol-Level Evolution
+
+Another dimension worth making explicit is governance. A meaningful share of web3 projects talk about community, but far fewer expose a concrete governance surface that can evolve protocol rules over time. In the Overflow materials, governance is sometimes present as token-holder voting, sometimes as multi-sig or operator control, and sometimes not described at all in the public-facing submission materials.
+
+For analytical purposes, it is useful to distinguish three cases:
+
+1. no visible governance path beyond operator control;
+2. community language is present, but the concrete contract or policy mechanism is unclear;
+3. explicit on-chain governance or DAO machinery is part of the architecture.
+
+This matters because governance changes what counts as a durable protocol. A product that can adjust fees, permissions, supported object classes, or operating parameters through a governed process is structurally different from a product that depends entirely on ad hoc operator updates.
+
+PaperProof is relevant here not as an abstract comparison, but as a concrete example. PaperProof already uses protocol governance as part of its system model. Its governance layer is not only decorative signaling. It is designed to support real protocol decisions such as fee adjustment, enabling or disabling supported artifact types, authority transfers, and future protocol evolution through a DAO-oriented contract architecture on Sui mainnet.
+
+That is an important distinction when comparing infrastructure-style projects. If a system wants to become a durable public artifact layer rather than a single operator-managed application, governance is not optional forever. It becomes part of the infrastructure story itself.
+
+## Native Tokens, Economic Coordination, and Governance Rights
+
+Token design should not be reduced to "does this project have a token." The more important question is what role the token plays inside the system.
+
+Across the Overflow materials, token language appears in several recurring forms:
+
+- speculative or launch-centered token narratives;
+- reward or incentive coordination;
+- protocol fee alignment;
+- governance rights;
+- vault, share, or position representation.
+
+Many projects still do not make their token model explicit in public materials. That does not automatically mean no token exists, but it does mean the public-facing economic story is often incomplete.
+
+PaperProof is again a useful counterexample because its native token has a concrete protocol role. PaperProof has `PPRF`, a native token already deployed on mainnet, and its primary role today is DAO governance. That makes the token legible as part of protocol coordination rather than only as an accessory to an application narrative.
+
+This matters for interpretation. A token tied to governance can help explain how protocol rules evolve, how participation is coordinated, and how the community can influence long-term artifact infrastructure. It is a different kind of signal from a token that exists mainly to support launch attention or speculative circulation.
+
+## Formal Verification, Contract Surface, and Trust Depth
+
+Earlier in this article I treated contract depth and security signaling as a cross-track observation. It is worth extending that point because the difference between "has contracts" and "has serious contract discipline" is large.
+
+Across the Overflow materials, most projects can at best be evaluated through a mix of package IDs, repos, architecture notes, and public claims. Only a smaller subset exposes strong assurance language such as:
+
+- formal verification;
+- explicit invariant design;
+- proved capability boundaries;
+- third-party audits;
+- or detailed trust-surface analysis.
+
+That gap is not unique to Overflow. It is common across emerging web3 ecosystems. But it matters when deciding which projects are trying to become durable infrastructure rather than only fast-moving apps.
+
+PaperProof belongs in this discussion directly, not peripherally. PaperProof spans multiple mainnet packages and more than 10,000 lines of contract and test code across its protocol surface, and it has an explicit formal-verification workstream using Sui Prover. That makes it relevant whenever formal methods, assurance discipline, or deep contract surface is being used as an example of stronger trust signaling.
+
+In other words, if we use examples of projects that expose stronger proof-oriented or assurance-oriented design discipline, PaperProof should be named alongside them where it fits. Omitting it from that category would create the false impression that it sits outside the same trust-depth conversation.
+
+## PaperProof as a Comparative Example, Not an Outside Observer
+
+One of your requested corrections is important at the methodological level: whenever a category or example set includes projects whose traits are also present in PaperProof, PaperProof should appear there too rather than being discussed only in a separate concluding paragraph.
+
+That principle matters because otherwise the reader can incorrectly infer that PaperProof is merely the publication venue for this analysis rather than one of the projects whose protocol shape meaningfully intersects with several of the evaluation dimensions used in the article.
+
+PaperProof belongs inside the comparative frame in several places:
+
+- as a protocol-first or hybrid delivery project rather than a pure app;
+- as a project with a native governance token;
+- as a project with explicit DAO-oriented governance logic;
+- as a project with formal-verification work using Sui Prover;
+- as a project with multiple public access surfaces beyond one official website;
+- as a project where typed datasets, reports, software releases, and long-form notes are first-class protocol objects.
+
+That does not mean every section should become a PaperProof section. It means that when named examples are used, PaperProof should be included wherever it genuinely matches the structural category under discussion.
+
+## NFT-Controlled Artifacts and a Future Artifact Market
+
+Another strategic dimension worth surfacing is artifact ownership and transferability.
+
+Many web3 projects think about NFTs primarily as collectibles, badges, access passes, or financial wrappers. But for artifact systems, NFTs can also serve a more infrastructural role: a transferable control object tied to a durable series of content.
+
+This is highly relevant to PaperProof's trajectory. PaperProof's artifact model already makes a distinction between the content bytes, the artifact series identity, and the application layer that renders the artifact. Extending that model so that artifact control is represented through an NFT-compatible ownership surface creates a much larger design space.
+
+Why this matters:
+
+- artifact control can become legible as an asset rather than only as an app-local permission;
+- existing Sui NFT wallet and marketplace infrastructure can be reused rather than reinvented;
+- transferability can support secondary markets around high-value digital works, datasets, research archives, branded series, software-release lines, or culturally important artifacts;
+- the resulting market is not merely a market for files, but a market for control over versioned, protocol-native artifact series.
+
+That point is strategically important because it expands the economic story around artifact infrastructure. If an artifact can be governed, versioned, cited, and also transferred through NFT-compatible control primitives, the artifact layer starts to look more like a genuine digital asset substrate than a publishing convenience layer.
+
+This is one reason PaperProof stands out in comparative analysis. It is not only trying to make files verifiable. It is moving toward a world in which knowledge objects, release histories, and long-lived digital works can become durable, governable, and market-compatible assets.
+
 ## What Gets Lost Without an Artifact Layer
 
 It is worth being explicit about what usually breaks when ecosystem intelligence is left in ordinary web form only.
