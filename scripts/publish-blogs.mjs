@@ -63,13 +63,31 @@ function usage() {
 Publish official PaperProof Blog posts as blog_post artifacts.
 
 Usage:
-  node scripts/publish-blogs.mjs
-  node scripts/publish-blogs.mjs --run --account=4
-  node scripts/publish-blogs.mjs --run --account=4 --skip-walrus
+  node scripts/publish-blogs.mjs --post=<id>
+  node scripts/publish-blogs.mjs --run --account=4 --post=<id>
+  node scripts/publish-blogs.mjs --run --account=4 --source=<file>
+  node scripts/publish-blogs.mjs --run --account=4 --all
 
-Default mode validates sources only. --run writes Sui mainnet transactions.
+Default mode validates the selected targets only. --run writes Sui mainnet transactions.
+You must explicitly select target posts with --post, --source, or --artifact-code.
+Use --all only when you intentionally want to process every manifest entry.
 Existing manifest entries with seriesId, commentsTreeId, and artifactCode are reused.
 `.trim();
+}
+
+function collectArgValues(raw, name) {
+  const prefix = `${name}=`;
+  const values = [];
+  for (const item of raw) {
+    if (!item.startsWith(prefix)) continue;
+    const value = item.slice(prefix.length).trim();
+    if (!value) continue;
+    for (const part of value.split(',')) {
+      const normalized = part.trim();
+      if (normalized) values.push(normalized);
+    }
+  }
+  return values;
 }
 
 function parseArgs(argv) {
@@ -81,6 +99,10 @@ function parseArgs(argv) {
     help: set.has('--help') || set.has('-h'),
     skipWalrus: set.has('--skip-walrus'),
     account: Number(argValue('--account', '4')),
+    all: set.has('--all'),
+    posts: collectArgValues(raw, '--post'),
+    sources: collectArgValues(raw, '--source'),
+    artifactCodes: collectArgValues(raw, '--artifact-code'),
   };
 }
 
@@ -148,6 +170,30 @@ function collectPosts(manifest) {
     ...post,
     order: index + 1,
   }));
+}
+
+function selectPosts(posts, args) {
+  if (args.all) return posts;
+  const requestedIds = new Set(args.posts.map((value) => value.trim()).filter(Boolean));
+  const requestedSources = new Set(args.sources.map((value) => value.trim()).filter(Boolean));
+  const requestedArtifactCodes = new Set(args.artifactCodes.map((value) => value.trim()).filter(Boolean));
+  assert(
+    requestedIds.size > 0 || requestedSources.size > 0 || requestedArtifactCodes.size > 0,
+    'Explicit target selection is required. Use --post, --source, --artifact-code, or --all.',
+  );
+  const selected = posts.filter((post) =>
+    requestedIds.has(post.id)
+    || requestedSources.has(post.source)
+    || requestedArtifactCodes.has(post.artifactCode),
+  );
+  assert(selected.length > 0, 'No manifest posts matched the explicit selection.');
+  const matchedIds = new Set(selected.map((post) => post.id));
+  const matchedSources = new Set(selected.map((post) => post.source));
+  const matchedArtifactCodes = new Set(selected.map((post) => post.artifactCode).filter(Boolean));
+  for (const id of requestedIds) assert(matchedIds.has(id), `Unknown --post target: ${id}`);
+  for (const source of requestedSources) assert(matchedSources.has(source), `Unknown --source target: ${source}`);
+  for (const artifactCode of requestedArtifactCodes) assert(matchedArtifactCodes.has(artifactCode), `Unknown --artifact-code target: ${artifactCode}`);
+  return selected;
 }
 
 function isRemoteOrFragmentUrl(value) {
@@ -243,27 +289,62 @@ async function uploadPost(walrusClient, signer, post, content, run, skipWalrus) 
       byteLength: content.bytes.length,
     };
   }
-  const upload = await robustWalrusWriteBlob(walrusClient, signer, content.bytes, {
-    label: `paperproof-blog-${post.id}`.slice(0, 96),
-    fallback: false,
-    attempts: 4,
-  });
-  console.log(`[upload] done ${post.source}: ${upload.blobId}`);
-  return {
-    blobId: upload.blobId,
-    blobObjectId: upload.blobObjectId,
-    byteLength: content.bytes.length,
-  };
+  const label = `paperproof-blog-${post.id}`.slice(0, 96);
+  const attempts = 3;
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const upload = await robustWalrusWriteBlob(walrusClient, signer, content.bytes, {
+        label,
+        fallback: false,
+        attempts: 4,
+      });
+      console.log(`[upload] done ${post.source}: ${upload.blobId}`);
+      return {
+        blobId: upload.blobId,
+        blobObjectId: upload.blobObjectId,
+        byteLength: content.bytes.length,
+      };
+    } catch (error) {
+      lastError = error;
+      const message = error instanceof Error ? error.message : String(error);
+      const retriable = /walrus upload failed|fetch failed|timeout|ecconnreset|tls|503|500|429/i.test(message);
+      if (!retriable || attempt === attempts) throw error;
+      console.warn(`[upload] retry ${post.source} (${attempt}/${attempts}): ${message}`);
+      await new Promise((resolve) => setTimeout(resolve, 1_500 * attempt));
+    }
+  }
+  throw lastError;
 }
 
 async function execute(sui, signer, tx, label, run, sender) {
   const { robustExecuteTransaction } = await loadDeps();
-  tx.setSenderIfNotSet(sender);
-  if (!run) return { digest: null, dryRunBytes: 0, events: [] };
-  console.log(`[tx] ${label}`);
-  const result = await robustExecuteTransaction(sui, signer, tx, label);
-  console.log(`[tx] confirmed ${label}: ${result.digest}`);
-  return result;
+  const createTx = () => (typeof tx === 'function' ? tx() : tx);
+  if (!run) {
+    const dryRunTx = createTx();
+    dryRunTx.setSenderIfNotSet(sender);
+    return { digest: null, dryRunBytes: 0, events: [] };
+  }
+  const attempts = 3;
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    const currentTx = createTx();
+    currentTx.setSenderIfNotSet(sender);
+    try {
+      console.log(`[tx] ${label}${attempt > 1 ? ` (retry ${attempt}/${attempts})` : ''}`);
+      const result = await robustExecuteTransaction(sui, signer, currentTx, label);
+      console.log(`[tx] confirmed ${label}: ${result.digest}`);
+      return result;
+    } catch (error) {
+      lastError = error;
+      const message = error instanceof Error ? error.message : String(error);
+      const rebuildable = /needs to be rebuilt|unavailable for consumption|current version/i.test(message);
+      if (!rebuildable || attempt === attempts) throw error;
+      console.warn(`[tx] rebuild and retry ${label}: ${message}`);
+      await new Promise((resolve) => setTimeout(resolve, 1_000 * attempt));
+    }
+  }
+  throw lastError;
 }
 
 function publishInput(post, content, upload) {
@@ -301,11 +382,58 @@ async function publishBlogs({ posts, args, account, sui, walrusClient, txb, read
   for (const [index, post] of posts.entries()) {
     console.log(`[publish] ${index + 1}/${posts.length} ${post.source}`);
     const content = await readPost(post);
+    const existingHints = [post.seriesId, post.commentsTreeId, post.artifactCode, post.currentVersionId, post.likesBookId].filter(Boolean);
+    const existing = Boolean(post.seriesId && post.commentsTreeId && post.artifactCode);
+    assert(
+      existingHints.length === 0 || existing,
+      `${post.source} has partial published metadata. Expected artifactCode + seriesId + commentsTreeId together before reusing an existing series.`,
+    );
+    const requestedAction = existing ? String(post.publishAction ?? '').trim().toLowerCase() : '';
+    assert(
+      !requestedAction || requestedAction === 'add-version',
+      `${post.source} publishAction must be omitted or "add-version".`,
+    );
+    if (existing && requestedAction !== 'add-version') {
+      console.log(`[publish] skip existing ${post.source}`);
+      report.posts.push({
+        id: post.id,
+        source: post.source,
+        title: post.title,
+        contentHash: content.contentHash,
+        operation: 'skip-existing',
+        published: {
+          artifactCode: post.artifactCode,
+          seriesId: post.seriesId,
+          versionId: post.currentVersionId ?? null,
+          commentsTreeId: post.commentsTreeId ?? null,
+          likesBookId: post.likesBookId ?? null,
+        },
+      });
+      continue;
+    }
+    const unchanged = existing && requestedAction === 'add-version' && post.latestContentHash === content.contentHash;
+    if (unchanged) {
+      console.log(`[publish] skip unchanged ${post.source}`);
+      report.posts.push({
+        id: post.id,
+        source: post.source,
+        title: post.title,
+        contentHash: content.contentHash,
+        operation: 'skip-unchanged',
+        published: {
+          artifactCode: post.artifactCode,
+          seriesId: post.seriesId,
+          versionId: post.currentVersionId ?? null,
+          commentsTreeId: post.commentsTreeId ?? null,
+          likesBookId: post.likesBookId ?? null,
+        },
+      });
+      continue;
+    }
     const upload = await uploadPost(walrusClient, account.signer, post, content, args.run, args.skipWalrus);
     const input = publishInput(post, content, upload);
-    const existing = post.seriesId && post.commentsTreeId && post.artifactCode;
     const tx = existing
-      ? txb.addBlogPostVersion({
+      ? () => txb.addBlogPostVersion({
           ...input,
           seriesId: post.seriesId,
           versionMetadata: metadataAttributes({
@@ -315,7 +443,7 @@ async function publishBlogs({ posts, args, account, sui, walrusClient, txb, read
             date: post.date,
           }),
         })
-      : txb.publishBlogPost(input);
+      : () => txb.publishBlogPost(input);
     const result = await execute(sui, account.signer, tx, `${existing ? 'add blog version' : 'publish blog'} ${post.source}`, args.run, account.address);
     const published = args.run
       ? existing
@@ -341,6 +469,7 @@ async function publishBlogs({ posts, args, account, sui, walrusClient, txb, read
       contentType: CONTENT_TYPE,
       commentsTreeStatus: post.commentsTreeStatus ?? 'open',
     });
+    delete post.publishAction;
     report.transactions.push({ label: `${existing ? 'add version' : 'publish'} ${post.source}`, digest: result.digest, dryRunBytes: result.dryRunBytes });
     report.posts.push({ id: post.id, source: post.source, title: post.title, upload, published, contentHash: content.contentHash, operation: existing ? 'add-version' : 'publish' });
     if (args.run) {
@@ -372,8 +501,11 @@ async function main() {
   const sdkPackage = JSON.parse(await fs.readFile(path.join(SDK_ROOT, 'package.json'), 'utf8'));
   await preflightJsonFiles([MANIFEST_PATH, APP_MANIFEST_PATH]);
   const manifest = JSON.parse(await fs.readFile(MANIFEST_PATH, 'utf8'));
-  const posts = collectPosts(manifest);
-  assert(posts.length === 4, `Expected 4 blog posts, found ${posts.length}.`);
+  const allPosts = collectPosts(manifest);
+  assert(allPosts.length > 0, 'Expected at least one blog post in the manifest.');
+  assert(new Set(allPosts.map((post) => post.id)).size === allPosts.length, 'Blog manifest contains duplicate post ids.');
+  assert(new Set(allPosts.map((post) => post.source)).size === allPosts.length, 'Blog manifest contains duplicate source files.');
+  const posts = selectPosts(allPosts, args);
 
   const account = await loadAccount(args.account);
   const deployment = createDeployment(MAINNET_DEPLOYMENT);
@@ -394,6 +526,12 @@ async function main() {
     runId,
     run: args.run,
     accountIndex: args.account,
+    selection: {
+      all: args.all,
+      posts: args.posts,
+      sources: args.sources,
+      artifactCodes: args.artifactCodes,
+    },
     sender: account.address,
     sdkVersion: sdkPackage.version,
     deployment,
@@ -405,12 +543,15 @@ async function main() {
   await fs.mkdir(ARTIFACTS_DIR, { recursive: true });
   await fs.mkdir(path.dirname(APP_MANIFEST_PATH), { recursive: true });
 
+  console.log(`[selection] processing ${posts.length} post(s): ${posts.map((post) => post.id).join(', ')}`);
   await publishBlogs({ posts, args, account, sui, walrusClient, txb, read, report });
 
-  manifest.posts = posts;
+  const byId = new Map(posts.map((post) => [post.id, post]));
+  manifest.posts = allPosts.map((post) => byId.get(post.id) ?? post);
   manifest.publishedAt = new Date().toISOString();
   manifest.publisher = account.address;
   manifest.sdkVersion = sdkPackage.version;
+  report.manifest = manifest;
   if (args.run) {
     await writeJsonFile(MANIFEST_PATH, manifest);
     await writeJsonFile(APP_MANIFEST_PATH, manifest);
