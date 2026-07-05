@@ -218,9 +218,36 @@
       "latestContentHash": "sha256:8abb77aa9b63e5c17444160435c5575cb53777b57a7189e031285bc2395241f9",
       "contentType": "application/vnd.paperproof.markdown-package+zip",
       "commentsTreeStatus": "open"
+    },
+    {
+      "id": "publishing-paperproof-across-zenodo-osf-and-speaker-deck",
+      "title": "Publishing PaperProof Across Zenodo, OSF, and Speaker Deck",
+      "summary": "Why publishing PaperProof papers and slides across Zenodo, OSF MetaArXiv, and Speaker Deck strengthens public discoverability and reinforces the case for artifact infrastructure.",
+      "author": "PaperProof Labs",
+      "category": "Ecosystem and Discoverability",
+      "date": "2026-07-05",
+      "tags": [
+        "paperproof",
+        "discoverability",
+        "zenodo",
+        "osf",
+        "speaker-deck"
+      ],
+      "language": "en",
+      "source": "publishing-paperproof-across-zenodo-osf-and-speaker-deck.md",
+      "order": 9,
+      "artifactCode": "PaperProof-blog_post-001179-ce4acb0164eb",
+      "seriesId": "0xce4acb0164eb6661978f4f2a516cc12ff307a9dffffeb692b76412454e20cdbe",
+      "commentsTreeId": "0x0880367331237603c279b2a82a5066d3a3d1bb37775bcb1230a78ca489692222",
+      "initialVersionId": "0x39138b533ac6f64e5ad963c422d91506d45c4f80d011c5e5656ea461a2e02067",
+      "currentVersionId": "0x39138b533ac6f64e5ad963c422d91506d45c4f80d011c5e5656ea461a2e02067",
+      "likesBookId": "0x6ce854fb7de0f41bee4e93af239449275e045c8cc5623c3ea28dd5cf1bf48730",
+      "latestContentHash": "sha256:856f02c6c18fb43622f1114888ef5852132c725a1d9252dffbc091b1acf43c00",
+      "contentType": "application/vnd.paperproof.markdown-package+zip",
+      "commentsTreeStatus": "open"
     }
   ],
-  "publishedAt": "2026-07-04T05:31:17.415Z",
+  "publishedAt": "2026-07-05T08:53:34.904Z",
   "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.7",
   "commentsTreePolicy": "locked",

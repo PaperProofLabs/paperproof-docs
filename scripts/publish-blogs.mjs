@@ -308,7 +308,7 @@ async function uploadPost(walrusClient, signer, post, content, run, skipWalrus) 
     } catch (error) {
       lastError = error;
       const message = error instanceof Error ? error.message : String(error);
-      const retriable = /walrus upload failed|fetch failed|timeout|ecconnreset|tls|503|500|429/i.test(message);
+      const retriable = /walrus upload failed|fetch failed|provided version doesn't match|no balance changes|balance::split|timeout|ecconnreset|tls|503|500|429/i.test(message);
       if (!retriable || attempt === attempts) throw error;
       console.warn(`[upload] retry ${post.source} (${attempt}/${attempts}): ${message}`);
       await new Promise((resolve) => setTimeout(resolve, 1_500 * attempt));

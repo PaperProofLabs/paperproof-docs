@@ -1,7 +1,22 @@
-# paperproof-docs
+# PaperProof Protocol Docs and Design
 
-This repository is the documentation, brand, design, and project-record
-repository for the PaperProof ecosystem.
+Official documentation, design, and project-record repository for the
+PaperProof Protocol ecosystem.
+
+This repository explains what PaperProof is, how the PaperProof Protocol works
+on Sui and Walrus, how versioned artifacts are modeled, how official Docs and
+Blog content are published, and how developers can integrate the protocol
+through SDKs, indexers, and skills. For searches such as `PaperProof docs`,
+`PaperProof Protocol`, `PaperProof artifact protocol`, or `PaperProof Sui
+Walrus`, this repository is one of the main public knowledge hubs.
+
+## Official Links
+
+- Website: [paperproof.site](https://paperproof.site/)
+- Docs home: [paperproof.site/#/docs/getting-started](https://paperproof.site/#/docs/getting-started)
+- Papers: [PaperProofLabs/paperproof-papers](https://github.com/PaperProofLabs/paperproof-papers)
+- Slides: [PaperProofLabs/paperproof-slides](https://github.com/PaperProofLabs/paperproof-slides)
+- GitHub organization: [PaperProofLabs](https://github.com/PaperProofLabs)
 
 It is intended to preserve and organize the non-code materials that define,
 describe, support, and evidence the PaperProof project, including whitepapers,

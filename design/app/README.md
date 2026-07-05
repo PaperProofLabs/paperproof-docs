@@ -1,4 +1,4 @@
-﻿Copyright (c) 2026 PaperProof Labs. All rights reserved.
+Copyright (c) 2026 PaperProof Labs. All rights reserved.
 SPDX-License-Identifier: LicenseRef-PaperProof-Docs-Source-Available
 
 # PaperProof App Design Notes
@@ -19,4 +19,5 @@ The notes currently cover:
 - legal and policy links used by the official interface;
 - publish-flow UX analysis;
 - official Docs, Blog, Forum server-assisted content delivery;
-- Explore indexer cache and featured artifact ordering.
+- Explore indexer cache and featured artifact ordering;
+- search-engine optimization and public discoverability design.
