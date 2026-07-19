@@ -11,18 +11,56 @@ privileged operations can move with a standard on-chain asset.
 This document now serves two roles:
 
 - it remains the protocol-level design reference for the controller-NFT model;
-- it also records the current local implementation status of the
-  `paperproof-contracts-NFT` `nft` branch so downstream repos can adapt against
-  the actual contract surface instead of an outdated proposal.
+- it also records the implemented contract surface and the post-upgrade
+  downstream adaptation target so other repos do not keep working from an
+  outdated proposal.
 
-Unless noted otherwise, "implemented locally" means implemented and tested in
-`paperproof-contracts-NFT` but not yet treated as fully rolled out across
-`paperproof-sdk-ts`, `paperproof-sdk-py`, `paperproof-sdk-rs`,
-`paperproof-indexer-reference`, and `paperproof-app`.
+Unless noted otherwise, the contract-layer controller-NFT rollout described in
+this document refers to the mainnet upgrade completed on 2026-07-18 for:
 
-## 0. Current Local Implementation Snapshot
+- `shared/controller`
+- `comments`
+- `publishing`
 
-Current local status on the `paperproof-contracts-NFT` `nft` branch:
+Downstream SDK, indexer, and app sections in this document should still be read
+as the architectural reference and verification target for the rest of the
+stack, even though the contract package upgrade itself is no longer pending.
+
+## 0. Current Implementation and Mainnet Rollout Snapshot
+
+### 0.1 Mainnet-upgraded package set
+
+Controller-NFT support is now live in the canonical PaperProof mainnet package
+family:
+
+- `paperproof_shared_controller`:
+  `0xe68fef47337eb2ee970431fae9519c4b2bb9f4505a3d14b6b91fdfc6aae3b75c`
+- `paperproof_comments` latest package:
+  `0x4962dda7d3033a6dd23724721ee38ca16720e8949b94d39826d24eb09f39e0a6`
+- `paperproof_publishing` latest package:
+  `0xfd9ea70eef5220dbba93ae2bf7cd077d4ddebe03d585ebc7ad536ed3ba500660`
+
+Upgrade transaction digests:
+
+- shared/controller publish:
+  `HuBa1wZGEcYJdJFonwycVQH7FdXvcAzu5LcmNCmv8keV`
+- comments upgrade:
+  `3bCSTrXW8vS7rB5uXKeEe4nt8W8PwNmPunu2K2ehuCmZ`
+- publishing upgrade:
+  `HPTSjkGuM2JsfCXrLaao9srpAN3V65NZuMkQUagttTbQ`
+
+Operator record:
+
+- rollout date: `2026-07-18`
+- deployer address:
+  `0x4ee4f1d5fda8efc8f29f7051dff8807c8c9e4fdeadbe519fdf831aa3647235e9`
+- canonical deployment record:
+  `paperproof-contracts-NFT/docs/Mainnet-Deployment-Record-2026-05-06.md`
+
+### 0.2 Contract-layer status
+
+Current contract-layer status on the `paperproof-contracts-NFT` `nft` branch
+and the matching mainnet-upgraded package line:
 
 - additive package changes are already in place in:
   - `shared/controller`
@@ -102,9 +140,10 @@ Current local status on the `paperproof-contracts-NFT` `nft` branch:
 
 Important boundary:
 
-- the contract layer is now materially ahead of the other repos;
-- downstream SDK, indexer, and app work is still required before the whole
-  PaperProof stack behaves as a controller-NFT-native product.
+- the contract-layer package upgrade is complete on mainnet;
+- downstream SDK, indexer, and app work still determines how completely the
+  rest of the PaperProof stack exposes controller-NFT behavior to users and
+  operators.
 
 ## 1. Problem Statement
 
@@ -1376,6 +1415,253 @@ Reason:
 - the app should be the last layer to flip from legacy-owner assumptions to a
   controller-aware product experience.
 
+### 10.9 Post-Upgrade Downstream Integration Checklist
+
+The mainnet contract upgrade completed on 2026-07-18. Downstream validation
+should still be run as one coordinated pass rather than as isolated repo-level
+smoke tests, and this section remains the reference checklist for that work.
+
+The checklist below is intended to verify the combined behavior of:
+
+- upgraded on-chain packages
+- `paperproof-sdk-py`
+- `paperproof-sdk-rs`
+- `paperproof-sdk-ts`
+- `paperproof-indexer-reference`
+- `paperproof-app`
+
+Principle:
+
+- treat the contract package upgrade as necessary but not sufficient
+- only mark the rollout healthy when SDK reads, SDK writes, indexer
+  normalization, and app rendering all agree on the same authority story
+
+#### 10.9.1 Upgrade prerequisites
+
+Before validating downstream repos, confirm:
+
+- the upgraded package family is the intended mainnet deployment family
+- any active governance proposal that would interfere with the package upgrade
+  has been resolved or deliberately handled
+- deployment records are updated with the new package IDs and object IDs
+- controller-aware publish and comments entrypoints are reachable on mainnet
+- a known legacy artifact series is available for migration rehearsal
+- a known new-series publish path is available for fresh controller-enabled
+  publish rehearsal
+
+#### 10.9.2 Test fixture set
+
+Use a small but explicit fixture set instead of ad hoc spot checks:
+
+1. one unmigrated legacy series
+2. one legacy series promoted only to `dual_mode`
+3. one legacy or fresh series promoted to `controller_primary`
+4. one controller-managed series whose controller NFT has been transferred to a
+   different wallet
+5. one series with multiple historical versions published before the metadata
+   split
+6. one series with at least one new post-upgrade version carrying an explicit
+   `version_change_note`
+
+Recommended artifact mix:
+
+- one long-form content artifact such as `preprint` or `technical_report`
+- one blog-like Markdown artifact
+- one file-centric artifact such as `dataset`, `software_release`, or
+  `generic_file`
+
+#### 10.9.3 Contract-to-SDK read parity
+
+For each fixture series, verify all SDKs agree on:
+
+- `series_id`
+- `artifact_code`
+- latest `current_version_id`
+- `comments_tree_id`
+- `likes_book_id`
+- artifact status / UI status
+- `series_description`
+- `series_control_enabled`
+- `series_authority_mode`
+- `series_authority_mode_name`
+- `series_control_record_id`
+- `series_controller_nft_id`
+
+Also verify:
+
+- `getSeriesView` / equivalent returns legacy-compatible data for unmigrated
+  series
+- controller-aware reads do not incorrectly mark an unmigrated series as
+  controller-managed
+- a transferred controller NFT is reflected as live control authority even if
+  any mirror address has not yet been resynchronized
+- per-version reads expose `version_change_note` separately from
+  type-specific version content fields
+
+#### 10.9.4 SDK write-path verification
+
+For `paperproof-sdk-ts`, `paperproof-sdk-py`, and `paperproof-sdk-rs`, verify:
+
+- legacy add-version still succeeds for an unmigrated series
+- controller-aware add-version succeeds for a controller-managed series when the
+  correct controller NFT is supplied
+- controller-aware add-version fails cleanly, with an explicit error, when:
+  - the controller NFT is missing
+  - the wrong wallet controls the target series
+  - the wrong controller NFT is supplied
+  - `version_change_note` is omitted
+- legacy compatibility owner transfer still works for unmigrated series
+- controller-aware owner transfer compatibility call works for migrated series
+- controller-aware comments-tree moderation calls succeed for migrated series
+- comment-author self-service flows still work where the protocol already
+  allows them
+
+Verification rule:
+
+- no SDK should need to guess authority from legacy owner mirrors alone once a
+  series is controller-managed
+- no SDK should panic or silently fall back to legacy mode when the controller
+  path is required
+
+#### 10.9.5 Metadata split verification
+
+Verify end-to-end distinction between:
+
+- stable artifact-series description
+- per-version change note
+
+Required checks:
+
+- updating or preserving `series_description` does not overwrite
+  `version_change_note`
+- publishing a new version with a new `version_change_note` does not overwrite
+  the stable series description
+- legacy versions remain readable even if they have no first-class
+  `version_change_note`
+- new versions after the upgrade always surface a version-specific note in SDK,
+  indexer, and app outputs
+
+#### 10.9.6 Indexer normalization verification
+
+After processing upgraded events and refreshed object reads, verify
+`paperproof-indexer-reference` can:
+
+- ingest controller-aware additive events without rejecting canonical publish
+  and version events
+- normalize `series_description`
+- normalize `version_change_note`
+- normalize `series_control_enabled`
+- normalize `series_authority_mode`
+- normalize `series_authority_mode_name`
+- normalize `series_control_record_id`
+- normalize `series_controller_nft_id`
+- keep `owner` understandable as a compatibility mirror during the migration
+  window
+
+Also verify:
+
+- a transferred controller NFT eventually appears as the effective controller
+  state in indexer-backed responses
+- old series remain discoverable by existing artifact code and series ID routes
+- hidden filtering, artifact status, published date, updated date, and latest
+  version resolution remain correct
+- no indexer projection regresses official Docs / Blog / Forum manifest-backed
+  content lookup
+
+#### 10.9.7 App functional verification
+
+Validate `paperproof-app` against both direct chain reads and indexer-assisted
+surfaces.
+
+Artifact detail:
+
+- page still loads for unmigrated legacy series
+- page still loads for controller-managed series
+- current controller, original publisher, historical authors, and legacy owner
+  mirror are not visually conflated
+- series description remains stable when the newest version note changes
+- version history shows version-specific notes for post-upgrade versions
+
+Add Version:
+
+- unmigrated series continues to use legacy flow
+- controller-managed series automatically routes to the controller-aware write
+  path
+- missing controller authority is explained before signing
+- missing `version_change_note` is blocked before signing when controller mode
+  requires it
+
+Comments and moderation:
+
+- normal readers can still reply and like under current tree rules
+- comment authors can still perform their existing self-service actions
+- controller-aware moderation actions are shown only when appropriate
+- migrated series does not lose comments-tree control after controller transfer
+
+Discovery and list pages:
+
+- Explore and type pages still show the correct latest title, dates, and
+  version counts
+- hidden artifacts stay hidden from public listing
+- owner-scoped or wallet-scoped views remain understandable during the
+  migration window
+
+Official content:
+
+- official Docs, Blog, and Forum routes still resolve the correct current
+  artifact versions
+- official content rendering does not require controller-only fields in order
+  to render legacy official artifacts
+
+#### 10.9.8 Migration-safe behavior checks
+
+For at least one promoted legacy series, explicitly verify:
+
+- `current_version_id` is unchanged unless a real new version was published
+- `version_ids` history is preserved
+- `comments_tree_id` is preserved
+- `likes_book_id` is preserved
+- artifact code is preserved
+- artifact status and UI status are preserved
+- original version-1 publish provenance is preserved
+- historical `header.author` values are preserved
+- no new comments tree or likes book was created by migration or transfer alone
+
+#### 10.9.9 Operational rollout gates
+
+Do not treat the downstream rollout as complete until all of the following are
+true:
+
+- SDK reads and writes have passed against real upgraded mainnet objects
+- indexer has fully refreshed fixture-series state after the upgrade
+- app has been validated on:
+  - one unmigrated series
+  - one dual-mode series
+  - one controller-primary series
+  - one transferred-controller series
+- no known surface still assumes `owner` is always the canonical current
+  controller
+- no official content route has regressed
+- deployment records and operator docs have been updated to the post-upgrade
+  package line
+
+#### 10.9.10 Failure triage order
+
+If a post-upgrade issue appears, debug in this order:
+
+1. contract entrypoint or control-state bug
+2. SDK read-model or builder mismatch
+3. indexer normalization or stale hydration bug
+4. app routing or UI-state bug
+
+Reason:
+
+- the app should not be forced to paper over incorrect contract or SDK
+  semantics
+- the indexer should not become the hidden source of truth for authority logic
+- authority must be correct at the protocol and SDK layers before the UI is
+  trusted
+
 ## 11. Migration Plan
 
 ### Phase 1
@@ -1386,11 +1672,25 @@ Reason:
 - introduce the series-description / version-change-note split for
   controller-enabled flows.
 
+Status note:
+
+- the contract-layer work in this phase is complete on mainnet;
+- downstream read/write adoption across SDKs, indexer, and app should still be
+  verified against the checklist in section 10.9.
+
 ### Phase 2
 
 - mint controller NFTs for existing series;
 - backfill indexer history;
 - show controller NFT in app detail pages.
+
+Status note:
+
+- this phase is no longer purely hypothetical because the contract layer now
+  supports existing-series promotion and controller-aware reads on mainnet;
+- series-by-series migration, indexer refresh, and app presentation still need
+  to be treated as operational rollout work rather than assumed complete by the
+  contract upgrade alone.
 
 Existing-series migration rule:
 
@@ -1416,6 +1716,13 @@ Existing-series migration rule:
 
 - make NFT authority the primary write gate;
 - keep legacy owner checks as fallback only.
+
+Status note:
+
+- the contract layer now provides the controller-aware write path needed for
+  this phase;
+- final cutover decisions should still be made conservatively, based on
+  downstream verification and migration health.
 
 ### Phase 4
 

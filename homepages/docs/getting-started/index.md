@@ -75,6 +75,7 @@ endorsed. The value is an inspectable, verifiable evidence trail.
 
 ## In this section
 
+- [PaperProof Forwarding Brief](./paperproof-forwarding-brief.md)
 - [Introduction](./introduction.md)
 - [Quick Start](./quick-start.md)
 - [Why Sui and Walrus](./why-sui-and-walrus.md)

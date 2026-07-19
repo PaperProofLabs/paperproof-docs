@@ -13,6 +13,21 @@
       "seriesId": "0xd8fa60402ace853407db6703b6c5ecc43520ad6577bf8d804ca4e94c3d0686b8",
       "topics": [
         {
+          "id": "paperproof-forwarding-brief",
+          "title": "PaperProof Forwarding Brief",
+          "summary": "A short external-facing explanation of what PaperProof Protocol is, how mature it already is, and why its structure is differentiated.",
+          "source": "getting-started/paperproof-forwarding-brief.md",
+          "artifactCode": "PaperProof-generic_file-001181-d73a80da55ff",
+          "seriesId": "0xd73a80da55ff68e0bda4ee9d32ee723ab302ce024612ab87a3f6d94acd93a5ce",
+          "commentsTreeId": "0xff98872ef56a926c5f45e278e223faeaf2407365c8050b463943a56bda4fee07",
+          "initialVersionId": "0xe1d382b0d4bcd0f319042d3706d9decba295461231564d53f0617599a7db6f84",
+          "likesBookId": "0xcd907e562f31652d4e94c3abce9ee05dd8b4ae6992acde5b3feb3138a36e2fd7",
+          "commentsTreeStatus": "locked",
+          "currentVersionId": "0x35ba37886c35a885e46e8c3e40e26e6a36577209d377b07660f8da3b0e5087e0",
+          "latestContentHash": "sha256:ca1246a5397bd015ff2aafe39b719aaf704c88615583693dc7eb8be73b1d5521",
+          "contentType": "application/vnd.paperproof.markdown-package+zip"
+        },
+        {
           "id": "introduction",
           "title": "Introduction",
           "summary": "What PaperProof is, what it adds, and what it does not claim.",
@@ -91,8 +106,8 @@
       "commentsTreeId": "0x2c58268a4509ac0b3ff76906ff9ae0e05faa8e98de34e9409d1c7cd3d0377fdc",
       "initialVersionId": "0xdb2386102fa8bc19ee6fee456023e0e5bdc71b7481aa5b9eab37e0b7ac2d5ce4",
       "likesBookId": "0xa20c63c75041d47620784c0632389eb66b4d5ba40c93caea531d46893ad308e5",
-      "currentVersionId": "0x6a19775332cb8aa3357379263da4f874d6b9ae2fafdb042266f6213f35a4520c",
-      "latestContentHash": "sha256:edb864db91d886b0fffbb93fb8b8604febe70bc249fdbb1045a9d79101357a0e",
+      "currentVersionId": "0x69843bef524eb0da75b551f5d00c94578473043dc10af7644b106c58942284e5",
+      "latestContentHash": "sha256:4ec2438e9f1609a9f4b4b2152492dfeaf4e1c09a86cb7a69991116f14f9060b0",
       "contentType": "application/vnd.paperproof.markdown-package+zip",
       "commentsTreeStatus": "locked"
     },
@@ -559,7 +574,7 @@
       "contentType": "application/vnd.paperproof.markdown-package+zip"
     }
   ],
-  "publishedAt": "2026-06-27T10:43:36.932Z",
+  "publishedAt": "2026-07-07T13:25:04.096Z",
   "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.7"
 }

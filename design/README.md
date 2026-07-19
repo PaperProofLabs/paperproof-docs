@@ -22,4 +22,5 @@ Current substantive design records are in [app/](./app/):
 Current substantive system design records are in [system/](./system/):
 
 - [system/artifact-control-nft-rearchitecture.md](./system/artifact-control-nft-rearchitecture.md)
-  proposes the controller-NFT redesign for transferable artifact ownership.
+  is the canonical controller-NFT architecture note and now also records the
+  post-upgrade mainnet package line for transferable artifact control.

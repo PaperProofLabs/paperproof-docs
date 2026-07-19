@@ -1,6 +1,6 @@
 {
-  "runId": "paperproof-blogs-2026-07-07T01-37-56-301Z",
-  "run": true,
+  "runId": "paperproof-blogs-2026-07-07T01-37-27-696Z",
+  "run": false,
   "accountIndex": 4,
   "selection": {
     "all": false,
@@ -48,26 +48,27 @@
       "source": "nft-backed-artifact-control-and-the-next-stage-of-paperproof.md",
       "title": "NFT-Backed Artifact Control and the Next Stage of PaperProof",
       "upload": {
-        "blobId": "eR1Q1vaiM6uPRveju9eHktgFCGIZ3i0H750_LqXcpho",
-        "blobObjectId": "0x005a3bb852f1f50210951af3dbe229eb9aa8c441c73e88a2e9879aafa80d978e",
+        "blobId": "local-blog-nft-backed-artifact-control-and-the-next-stage-of-paperproof-c433a5c6065daa55d81d1c31",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
         "byteLength": 5171
       },
       "published": {
-        "seriesId": "0x16380ab9848d56355a2497dd4cde47cb22e32e0b386b451f41bed687fa39c025",
-        "versionId": "0xb9cd14bde5e88ad93300b0fc8bc9d2b34d1dc2977f6e8a308e845130c69860a8",
-        "commentsTreeId": "0xdbcefcaa7d8100eccac23f95212d1b5444b23b912849763563261ee63921cc00",
-        "likesBookId": "0xf8a26f42c84999fa99cf35f78db7d26eafb1970232b0e7a4b90c345dcb59eed4",
-        "artifactCode": "PaperProof-blog_post-001181-16380ab9848d",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-BLOG-1",
         "artifactType": 2
       },
-      "contentHash": "sha256:59f34f764eb9d0151b8cc13b6d9df0fdfe6e78cde0cc2237eb4ebbbc167232fe",
+      "contentHash": "sha256:c433a5c6065daa55d81d1c31f2d1623d2f940d30e0b3885e544a08489a71e812",
       "operation": "publish"
     }
   ],
   "transactions": [
     {
       "label": "publish nft-backed-artifact-control-and-the-next-stage-of-paperproof.md",
-      "digest": "8Ph3j3XUiRiquxi7kgKS9VMmapGS4vWNW3a2yyzfG9VD"
+      "digest": null,
+      "dryRunBytes": 0
     }
   ],
   "manifest": {
@@ -334,10 +335,19 @@
         ],
         "language": "en",
         "source": "nft-backed-artifact-control-and-the-next-stage-of-paperproof.md",
-        "order": 10
+        "order": 10,
+        "artifactCode": "DRY-RUN-BLOG-1",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:c433a5c6065daa55d81d1c31f2d1623d2f940d30e0b3885e544a08489a71e812",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
       }
     ],
-    "publishedAt": "2026-07-05T08:53:34.904Z",
+    "publishedAt": "2026-07-07T01:37:28.081Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
     "sdkVersion": "0.2.7",
     "commentsTreePolicy": "locked",

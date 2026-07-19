@@ -59,6 +59,19 @@ async function loadDeps() {
   return deps;
 }
 
+async function createWalrusClient(rpcUrl) {
+  const { SuiGrpcClient, walrus } = await loadDeps();
+  return new SuiGrpcClient({ baseUrl: rpcUrl, network: 'mainnet' }).$extend(
+    walrus({
+      network: 'mainnet',
+      uploadRelay: {
+        host: 'https://upload-relay.mainnet.walrus.space',
+        sendTip: { max: 5_000_000 },
+      },
+    }),
+  );
+}
+
 async function writeJsonFile(filePath, value) {
   const { stringifyForJson } = await loadDeps();
   await fs.writeFile(filePath, `${stringifyForJson(value)}\n`, 'utf8');
@@ -158,6 +171,109 @@ function toSdkResponse(execution) {
 
 function sha256Hex(bytes) {
   return crypto.createHash('sha256').update(bytes).digest('hex');
+}
+
+function errorMessage(error) {
+  const parts = [];
+  let current = error;
+  let guard = 0;
+  while (current && guard < 5) {
+    if (current instanceof Error) {
+      if (current.message) parts.push(current.message);
+      current = current.cause;
+    } else {
+      parts.push(String(current));
+      break;
+    }
+    guard += 1;
+  }
+  return parts.filter(Boolean).join(' | ') || 'Unknown error';
+}
+
+function shouldFallbackToManualWalrus(error) {
+  const text = errorMessage(error).toLowerCase();
+  return text.includes('fetch failed')
+    || text.includes('rpcerror')
+    || text.includes('getbalance')
+    || text.includes('batchgetobjects')
+    || text.includes('multigetobjects')
+    || text.includes('terminated')
+    || text.includes('aborterror')
+    || text.includes('connection timeout')
+    || text.includes('econnreset')
+    || text.includes('tls')
+    || text.includes('provided version doesn\'t match')
+    || text.includes('provided version does not match')
+    || text.includes('rejected as invalid by more than 1/3 of validators by stake')
+    || text.includes('unavailable for consumption')
+    || text.includes('needs to be rebuilt');
+}
+
+function registeredBlobObjectId(execution, fallbackBlobId) {
+  const event = (execution.events ?? []).find((item) => item.type?.endsWith('::BlobRegistered'));
+  const fromEvent = event?.parsedJson?.object_id ?? event?.parsedJson?.objectId;
+  if (typeof fromEvent === 'string' && fromEvent.startsWith('0x')) return fromEvent;
+
+  const createdBlob = (execution.objectChanges ?? []).find(
+    (item) => item?.type === 'created' && String(item.objectType ?? '').endsWith('::blob::Blob'),
+  );
+  if (typeof createdBlob?.objectId === 'string') return createdBlob.objectId;
+
+  throw new Error(`Could not find Walrus blob object id for blob ${fallbackBlobId}.`);
+}
+
+async function manualWalrusUpload(getWalrusClient, sui, signer, bytes, label) {
+  const attempts = 4;
+  let lastError;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const walrusClient = await getWalrusClient(true);
+      const flow = walrusClient.walrus.writeBlobFlow({ blob: bytes });
+      const encoded = await flow.encode();
+      const registered = await flow.executeRegister({
+        signer,
+        client: sui,
+        executeClient: sui,
+        epochs: 10,
+        owner: signer.toSuiAddress(),
+        deletable: true,
+      });
+      const registerDigest = registered.txDigest ?? registered.digest;
+      if (!registerDigest) throw new Error('Walrus executeRegister did not return a tx digest.');
+      await flow.upload({ digest: registerDigest });
+      const certified = await flow.executeCertify({
+        signer,
+        client: sui,
+        executeClient: sui,
+      });
+      const blobObjectId =
+        certified?.blobObjectId
+        || certified?.blobObject?.id
+        || registered?.blobObjectId
+        || registered?.blobObject?.id;
+      if (!blobObjectId) throw new Error('Walrus fallback certify/register path did not return a blob object id.');
+
+      return {
+        blobId: certified?.blobId || registered?.blobId || encoded.blobId,
+        blobObjectId,
+      };
+    } catch (error) {
+      lastError = error;
+      const message = errorMessage(error).toLowerCase();
+      const retryable = message.includes('provided version doesn\'t match')
+        || message.includes('provided version does not match')
+        || message.includes('could not find the referenced object')
+        || message.includes('unavailable for consumption')
+        || message.includes('needs to be rebuilt')
+        || message.includes('current version')
+        || message.includes('object not found');
+      if (!retryable || attempt === attempts) throw error;
+      await new Promise((resolve) => setTimeout(resolve, 1_200 * attempt));
+    }
+  }
+
+  throw lastError;
 }
 
 function metadataAttributes(entries) {
@@ -291,7 +407,7 @@ async function writeDocText(doc, text) {
   await fs.writeFile(path.join(DOCS_HOME, doc.source), text.endsWith('\n') ? text : `${text}\n`, 'utf8');
 }
 
-async function uploadDoc(walrusClient, signer, doc, content, run, skipWalrus, phase) {
+async function uploadDoc(getWalrusClient, sui, signer, doc, content, run, skipWalrus, phase) {
   const { robustWalrusWriteBlob } = await loadDeps();
   console.log(`[${phase}] upload ${doc.source} (${content.bytes.length} bytes)`);
   if (!run || skipWalrus) {
@@ -307,6 +423,7 @@ async function uploadDoc(walrusClient, signer, doc, content, run, skipWalrus, ph
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
+      const walrusClient = await getWalrusClient();
       const upload = await robustWalrusWriteBlob(walrusClient, signer, content.bytes, {
         label,
         fallback: false,
@@ -322,6 +439,10 @@ async function uploadDoc(walrusClient, signer, doc, content, run, skipWalrus, ph
       lastError = error;
       const message = error instanceof Error ? error.message : String(error);
       const retriable = /walrus upload failed|fetch failed|no balance changes|provided version doesn't match|balance::split|timeout|ecconnreset|tls|503|500|429/i.test(message);
+      if (shouldFallbackToManualWalrus(error)) {
+        console.warn(`[${phase}] switching to manual Walrus fallback for ${doc.source}: ${message}`);
+        return manualWalrusUpload(getWalrusClient, sui, signer, content.bytes, label);
+      }
       if (!retriable || attempt === attempts) throw error;
       console.warn(`[${phase}] retry Walrus upload ${doc.source} (${attempt}/${attempts}): ${message}`);
       await new Promise((resolve) => setTimeout(resolve, 1_500 * attempt));
@@ -395,7 +516,7 @@ function addVersionInput(doc, content, upload, published, phase) {
   };
 }
 
-async function publishInitialDocs({ docs, args, account, sui, walrusClient, txb, read, report }) {
+async function publishInitialDocs({ docs, args, account, sui, getWalrusClient, txb, read, report }) {
   const { ARTIFACT_TYPES, extractPublishResult } = await loadDeps();
   for (const [index, doc] of docs.entries()) {
     console.log(`[publish] ${index + 1}/${docs.length} ${doc.source}`);
@@ -414,7 +535,7 @@ async function publishInitialDocs({ docs, args, account, sui, walrusClient, txb,
     }
     const content = await readDoc(doc);
     assert(content.text.includes('Artifact Mapping: pending publication'), `${doc.source} is missing pending publication mapping.`);
-    const upload = await uploadDoc(walrusClient, account.signer, doc, content, args.run, args.skipWalrus, 'v1');
+    const upload = await uploadDoc(getWalrusClient, sui, account.signer, doc, content, args.run, args.skipWalrus, 'v1');
     const result = await execute(
       sui,
       account.signer,
@@ -479,7 +600,7 @@ async function lockCommentTrees({ docs, args, account, sui, txb, report }) {
   }
 }
 
-async function publishMappedVersions({ docs, args, account, sui, walrusClient, txb, read, report }) {
+async function publishMappedVersions({ docs, args, account, sui, getWalrusClient, txb, read, report }) {
   const { ARTIFACT_TYPES, extractAddVersionResult } = await loadDeps();
   for (const doc of docs) {
     console.log(`[version] ${doc.source}`);
@@ -500,7 +621,7 @@ async function publishMappedVersions({ docs, args, account, sui, walrusClient, t
     const mappedText = applyMappingToMarkdown(before.text, doc, published);
     if (args.run) await writeDocText(doc, mappedText);
     const content = await readDoc(doc, args.run ? undefined : mappedText);
-    const upload = await uploadDoc(walrusClient, account.signer, doc, content, args.run, args.skipWalrus, 'v2');
+    const upload = await uploadDoc(getWalrusClient, sui, account.signer, doc, content, args.run, args.skipWalrus, 'v2');
     const result = await execute(
       sui,
       account.signer,
@@ -577,15 +698,11 @@ async function main() {
   const account = await loadAccount(args.account);
   const deployment = createDeployment(MAINNET_DEPLOYMENT);
   const sui = new SuiJsonRpcClient({ url: deployment.rpcUrl ?? 'https://fullnode.mainnet.sui.io:443' });
-  const walrusClient = new SuiGrpcClient({ baseUrl: deployment.rpcUrl, network: 'mainnet' }).$extend(
-    walrus({
-      network: 'mainnet',
-      uploadRelay: {
-        host: 'https://upload-relay.mainnet.walrus.space',
-        sendTip: { max: 5_000_000 },
-      },
-    }),
-  );
+  let walrusClientPromise = null;
+  const getWalrusClient = async (fresh = false) => {
+    if (fresh || !walrusClientPromise) walrusClientPromise = createWalrusClient(deployment.rpcUrl ?? 'https://fullnode.mainnet.sui.io:443');
+    return walrusClientPromise;
+  };
   const txb = new PaperProofTxBuilder(deployment);
   const read = new PaperProofReadClient({ client: new JsonRpcPaperProofProvider(sui), deployment });
   const runId = `paperproof-docs-${new Date().toISOString().replace(/[:.]/g, '-')}`;
@@ -604,9 +721,9 @@ async function main() {
   await fs.mkdir(ARTIFACTS_DIR, { recursive: true });
   await fs.mkdir(path.dirname(APP_MANIFEST_PATH), { recursive: true });
 
-  await publishInitialDocs({ docs, args, account, sui, walrusClient, txb, read, report });
+  await publishInitialDocs({ docs, args, account, sui, getWalrusClient, txb, read, report });
   await lockCommentTrees({ docs, args, account, sui, txb, report });
-  await publishMappedVersions({ docs, args, account, sui, walrusClient, txb, read, report });
+  await publishMappedVersions({ docs, args, account, sui, getWalrusClient, txb, read, report });
 
   manifest.publishedAt = new Date().toISOString();
   manifest.publisher = account.address;

@@ -2624,6 +2624,74 @@ Possible changes:
   - `artifactDetailView(...)`
   - CSS-first, markup changes only if necessary
 
+#### Controller-aware artifact management
+
+This surface is part of artifact management, not a separate visual product.
+Its responsive treatment must therefore inherit the same reading-first rules as
+artifact detail pages.
+
+Scope to account for:
+
+- controller state display
+- authority mode display
+- wrong-wallet / missing-controller guidance
+- controller-aware comments moderation controls
+- controller-aware owner-transfer compatibility controls
+- controller-aware mirror-sync or repair controls
+
+Desktop rule:
+
+- keep controller management subordinate to the existing artifact-detail
+  hierarchy
+- prefer inline secondary panels or power-user sections over a new desktop
+  dashboard shell
+- avoid displacing summary, preview, current version, or version history from
+  their existing reading order
+
+Mobile rule:
+
+- reading stays first
+- controller-management UI should be collapsed or visually secondary by default
+- high-signal warnings such as wrong wallet, missing control, stale mirror, or
+  comments authority mismatch must remain visible without expanding deep admin
+  UI
+
+`styles.css`
+
+- `.artifact-layout`
+- `.artifact-side`
+- `.detail-grid`
+- `.detail-chip`
+- `.content-section`
+- any future `.controller-*`, `.authority-*`, `.mirror-*`, `.moderation-*`,
+  `.admin-*`, or `.power-user-*` selectors
+
+`main.ts`
+
+- `artifactDetailView(...)`
+- `commentsView(...)`
+- `commentView(...)`
+- `versionDetailBlock(...)`
+- any future helpers such as:
+  - `controllerPanelView(...)`
+  - `authorityStatusView(...)`
+  - `commentsModerationPanelView(...)`
+  - `controllerTransferPanelView(...)`
+  - `mirrorRepairPanelView(...)`
+
+Required responsive checks:
+
+- current controller, original publisher, historical version authors, and
+  legacy owner mirror must remain visually distinct
+- moderation controls must stay attached to the comments or tree-status context
+  they govern
+- transfer, sync, and repair actions must not visually compete with ordinary
+  reading actions such as download, preview, likes, or comments
+- if admin controls are collapsed on mobile, disclosure labels must be specific
+  such as `Controller actions` or `Comments moderation`, not generic `More`
+- warning banners must wrap cleanly on narrow screens and must not trigger
+  one-character-per-line overflow for long identifiers
+
 #### Add-version
 
 - `styles.css`
@@ -2646,6 +2714,50 @@ Possible changes:
 - `main.ts`
   - `publishView()`
   - `typeSpecificFields(...)`
+
+#### Controller-aware transfer and migration flows
+
+These surfaces may remain power-user oriented, but they still need an explicit
+responsive design contract before implementation.
+
+Future route or inline surface families to account for:
+
+- controller-aware artifact-owner transfer compatibility
+- comments-tree owner mirror transfer or sync
+- existing-series promotion:
+  - legacy to dual mode
+  - dual mode to controller-primary
+  - controller-primary to controller-only
+- stale-mirror repair
+
+Recommended desktop presentation:
+
+- keep the flow attached to the target artifact
+- prefer inline structured cards, drawers, or scoped admin sections over a new
+  multi-page wizard unless a later product decision explicitly requires one
+- preserve visible linkage between current authority state and the action being
+  offered
+
+Recommended mobile presentation:
+
+- use progressive disclosure for advanced operations
+- show current authority state and risk summary above any destructive or
+  high-consequence action
+- keep the primary confirm action within the same viewport block as the warning
+  text and target artifact summary
+
+Required responsive checks:
+
+- users must always be able to see which artifact or comments tree is being
+  affected
+- authority-mode transitions must read as an ordered lifecycle rather than an
+  unrelated button list
+- mirror-sync and repair actions must be clearly labeled as compatibility or
+  repair actions rather than ordinary transfer actions
+- mobile layout must not separate confirmation buttons from the warnings that
+  justify them
+- desktop layout must not overpower the normal artifact reading experience
+  unless the user intentionally opened a management surface
 
 #### Governance index
 
@@ -2766,6 +2878,13 @@ Artifact detail pages:
 - can a user reach preview/body, version history, and comments without getting
   lost
 - are metadata and action controls still easy to locate
+- if controller state is shown, can a user distinguish:
+  - current controller
+  - original publisher
+  - historical version authors
+  - legacy owner mirror
+- if controller management is available, are wrong-wallet and stale-mirror
+  states understandable before the user clicks a privileged action
 
 Docs / Blog / Forum:
 
@@ -2784,6 +2903,20 @@ Publish / forms:
 - can a user understand the step order
 - can a user distinguish required input from optional input
 - can a user submit confidently without missing hidden controls
+- if a series is controller-managed, is the required version change note still
+  clearly attached to the add-version flow
+- if the wallet lacks controller authority, does the page explain the block
+  clearly instead of failing only at signing time
+
+Controller-aware management surfaces:
+
+- can a user understand which artifact is being controlled or migrated
+- can a user see the current authority mode before acting
+- can a user distinguish ordinary transfer from compatibility sync or repair
+- do comments moderation controls remain attached to the relevant comment or
+  tree-status context
+- on mobile, are advanced actions collapsed without hiding the warning context
+  that makes them safe to use
 
 Copilot / overlays:
 
@@ -2836,6 +2969,16 @@ layout confusion or hidden critical controls:
 10. Open Add Version and understand which artifact is being updated.
 11. Open My Space and understand wallet, balances, votes, and artifacts sections.
 12. Open Copilot, read messages, access settings, and close it safely.
+13. Open an artifact that exposes controller-aware management and:
+   - identify the current controller state
+   - understand whether the connected wallet can act
+   - find moderation or transfer controls without confusing them with ordinary
+     reader actions
+14. On a phone-sized viewport, trigger any advanced controller action and:
+   - keep the target artifact context visible
+   - keep the warning text and confirm action in the same disclosure block
+   - return safely to ordinary artifact reading after closing the management
+     surface
 
 If any of these tasks is visually possible but interaction-heavy, confusing, or
 dependent on accidental scrolling discovery, the responsive design should be

@@ -245,9 +245,36 @@
       "latestContentHash": "sha256:856f02c6c18fb43622f1114888ef5852132c725a1d9252dffbc091b1acf43c00",
       "contentType": "application/vnd.paperproof.markdown-package+zip",
       "commentsTreeStatus": "open"
+    },
+    {
+      "id": "nft-backed-artifact-control-and-the-next-stage-of-paperproof",
+      "title": "NFT-Backed Artifact Control and the Next Stage of PaperProof",
+      "summary": "Why NFT-backed artifact control matters for PaperProof, for the Sui and Walrus ecosystem, and for a more serious Web3 model of digital ownership.",
+      "author": "PaperProof Labs",
+      "category": "Protocol Vision",
+      "date": "2026-07-07",
+      "tags": [
+        "paperproof",
+        "nft",
+        "artifact-control",
+        "sui",
+        "walrus"
+      ],
+      "language": "en",
+      "source": "nft-backed-artifact-control-and-the-next-stage-of-paperproof.md",
+      "order": 10,
+      "artifactCode": "PaperProof-blog_post-001181-16380ab9848d",
+      "seriesId": "0x16380ab9848d56355a2497dd4cde47cb22e32e0b386b451f41bed687fa39c025",
+      "commentsTreeId": "0xdbcefcaa7d8100eccac23f95212d1b5444b23b912849763563261ee63921cc00",
+      "initialVersionId": "0xb9cd14bde5e88ad93300b0fc8bc9d2b34d1dc2977f6e8a308e845130c69860a8",
+      "currentVersionId": "0xb9cd14bde5e88ad93300b0fc8bc9d2b34d1dc2977f6e8a308e845130c69860a8",
+      "likesBookId": "0xf8a26f42c84999fa99cf35f78db7d26eafb1970232b0e7a4b90c345dcb59eed4",
+      "latestContentHash": "sha256:59f34f764eb9d0151b8cc13b6d9df0fdfe6e78cde0cc2237eb4ebbbc167232fe",
+      "contentType": "application/vnd.paperproof.markdown-package+zip",
+      "commentsTreeStatus": "open"
     }
   ],
-  "publishedAt": "2026-07-05T08:53:34.904Z",
+  "publishedAt": "2026-07-07T01:38:22.379Z",
   "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
   "sdkVersion": "0.2.7",
   "commentsTreePolicy": "locked",
