@@ -1,0 +1,414 @@
+{
+  "runId": "paperproof-forums-2026-07-19T09-47-12-602Z",
+  "run": false,
+  "accountIndex": 4,
+  "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+  "sdkVersion": "0.2.8",
+  "deployment": {
+    "name": "paperproof-mainnet-2026-05-13",
+    "network": "mainnet",
+    "rpcUrl": "https://fullnode.mainnet.sui.io:443",
+    "protocolVersion": "publishing-v4-comments-v3-controller-v1-governance-v2",
+    "packages": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da",
+      "governanceOriginal": "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+      "governance": "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e",
+      "comments": "0x4962dda7d3033a6dd23724721ee38ca16720e8949b94d39826d24eb09f39e0a6",
+      "publishingOriginal": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782",
+      "publishing": "0xfd9ea70eef5220dbba93ae2bf7cd077d4ddebe03d585ebc7ad536ed3ba500660",
+      "controller": "0xe68fef47337eb2ee970431fae9519c4b2bb9f4505a3d14b6b91fdfc6aae3b75c",
+      "promptRegistry": "0x10b9c6e90a896dc3244d047e32724d80de0dc697b5ea12c5fdd8925131ed4c59",
+      "memoryRegistry": "0x816684a152fdee1e7f15f65d18873ed7ee48540e8bd4205b3197a5ec0feda2c6"
+    },
+    "packageHistory": {
+      "pprf": [
+        "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da"
+      ],
+      "governance": [
+        "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+        "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e"
+      ],
+      "comments": [
+        "0xaef346fc40bf20af62f4bbbc1608ba2272e80e4ba3d716634026baa589e9aeba",
+        "0x4962dda7d3033a6dd23724721ee38ca16720e8949b94d39826d24eb09f39e0a6"
+      ],
+      "publishing": [
+        "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782",
+        "0xc9a75e4514db2a37df6f95b4e2b329c065ac6089953bd2c1c0a0c389835bd3d8",
+        "0xfd9ea70eef5220dbba93ae2bf7cd077d4ddebe03d585ebc7ad536ed3ba500660"
+      ],
+      "controller": [
+        "0xe68fef47337eb2ee970431fae9519c4b2bb9f4505a3d14b6b91fdfc6aae3b75c"
+      ]
+    },
+    "objects": {
+      "root": "0x7dc6c78b276825499a2204b060394e80b81196eb1f77d2036b503a2cca15dd78",
+      "typeRegistry": "0x966ffa24d0a96b34267b62c628f39c830afc9de25438b6502835fa8a3815d6b5",
+      "feeManager": "0x7bb8360ea1fa50f923628c929b8726b00eb8968c6a678acde71f97ae146e9249",
+      "governanceVault": "0x0df35aa53ef37f8ca8f6a6280d743effa6e0bfc613c5c6c0a78318ad4a38f875",
+      "governanceConfig": "0x7ed018db6b2cd7c32692a1c33543fb90d9c36add1226f93cbeb2a8fb10955dfa",
+      "promptRegistry": "0x14ec45eb83bb1b0eb22c7e885c7c71ea05b1e22dd05e3e1107dcef528600b0da",
+      "memoryRegistry": "0x9a5beeb6610b33c06771c4152c039314784437e802e200afd2ce80fb88bdf9e2",
+      "clock": "0x6"
+    },
+    "coinTypes": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da::pprf::PPRF",
+      "wal": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+      "sui": "0x2::sui::SUI"
+    }
+  },
+  "topics": [
+    {
+      "id": "artifact-identity-and-official-bindings",
+      "sectionId": "protocol-discussion",
+      "source": "protocol-discussion/artifact-identity-and-official-bindings.md",
+      "title": "Artifact Identity and Official Bindings in PaperProof",
+      "upload": null,
+      "reused": true,
+      "published": {
+        "seriesId": "0x5dacf197efa1dde2ff7f1210350433ef62543a9ac547632449a8e4c77f560725",
+        "versionId": "0x288c25d476b15c18ed356e63427bc0d4715e9344edab58a5f8fea22657a7999e",
+        "commentsTreeId": "0xc2336d071e060a00b3206a8485c622ab57e0869a042c49c9b3598ec0f57d65cf",
+        "likesBookId": "0xcbf7ccbaec8c3c329a8770e4742c041082fb9fbb33a1918c31fab92b8b34ce05",
+        "artifactCode": "PaperProof-blog_post-001161-5dacf197efa1",
+        "artifactType": 2
+      }
+    },
+    {
+      "id": "sdk-indexer-and-static-app-integration",
+      "sectionId": "developer-support",
+      "source": "developer-support/sdk-indexer-and-static-app-integration.md",
+      "title": "SDK, Indexer, and Static App Integration",
+      "upload": null,
+      "reused": true,
+      "published": {
+        "seriesId": "0x3d618d92d8acbe9cc0752c6aa4c0c478754f21fd8937cfb25c411eae84677f4b",
+        "versionId": "0xbe20f21c9d8ff12ee5ea18666c0f3b3a4a4d79783c490b34bb587c624a66e965",
+        "commentsTreeId": "0xaf8aa9c122dce5647e868725b3e5c8dfff5046869b5919a91da55dc73d0879fb",
+        "likesBookId": "0xb55c4d60cf061dbae913f4941d373063a2b831fa7d25118bd3664fea65453f51",
+        "artifactCode": "PaperProof-blog_post-001161-3d618d92d8ac",
+        "artifactType": 2
+      }
+    },
+    {
+      "id": "lightweight-governance-and-official-operations",
+      "sectionId": "governance",
+      "source": "governance/lightweight-governance-and-official-operations.md",
+      "title": "Lightweight Governance and Official Operations",
+      "upload": null,
+      "reused": true,
+      "published": {
+        "seriesId": "0xc1314fa77bd2caccc352f600488780b948fda0aed45f69c2006b635a084dce4d",
+        "versionId": "0x5eba4e5f1a1addfc449c77d8d52674acd8239dbf9a0e5773a5afee5a979be48a",
+        "commentsTreeId": "0xe7e86ce92ecd2409b47e884470fe21f58c758e54938b53d0c829930faf755614",
+        "likesBookId": "0xb6a841367766efd63bb93ab280d0588b863930f465cf5fd50d88e3fc668dd84c",
+        "artifactCode": "PaperProof-blog_post-001161-c1314fa77bd2",
+        "artifactType": 2
+      }
+    },
+    {
+      "id": "what-should-paperproof-build-next",
+      "sectionId": "ideas-proposals",
+      "source": "ideas-proposals/what-should-paperproof-build-next.md",
+      "title": "What Should PaperProof Build Next?",
+      "upload": null,
+      "reused": true,
+      "published": {
+        "seriesId": "0x3b16dd0400a40967b9df9133fdef1e7654746f24b8cd1ce0c80d6e8d1ef97d5e",
+        "versionId": "0xa2c25194969342078b67640779501142672eef0ba2e2d57b8946df840c88b832",
+        "commentsTreeId": "0x550faffb2d8165cd01875fde8b698a5310d4de92d97c10d2d7e473b199ee3b6e",
+        "likesBookId": "0x98c71ca63d6ff600eae8404bde5963f14defd19b89d4bd5b1f170ea4d80d1742",
+        "artifactCode": "PaperProof-blog_post-001161-3b16dd0400a4",
+        "artifactType": 2
+      }
+    },
+    {
+      "id": "share-paperproof-artifacts-and-demos",
+      "sectionId": "showcase",
+      "source": "showcase/share-paperproof-artifacts-and-demos.md",
+      "title": "Share PaperProof Artifacts and Demos",
+      "upload": null,
+      "reused": true,
+      "published": {
+        "seriesId": "0xc677c29860a7caa1980527febbab11bd1711e393461a9e6a9117daf28f52ef4c",
+        "versionId": "0x05bea552490a07a71cfb367cdfca62c53755b2ee7f233464cdfaedb74e80004e",
+        "commentsTreeId": "0x5172b23690311e2af32b52264411c44d93f34cd7cb97e8b29f6b9fe8465663e2",
+        "likesBookId": "0xcd39e8b83244a2fbdae4f9d02b14e367e1a96374e46ad804f032a39542bfb704",
+        "artifactCode": "PaperProof-blog_post-001161-c677c29860a7",
+        "artifactType": 2
+      }
+    },
+    {
+      "id": "welcome-to-the-paperproof-community-forum",
+      "sectionId": "general",
+      "source": "general/welcome-to-the-paperproof-community-forum.md",
+      "title": "Welcome to the PaperProof Community Forum",
+      "upload": null,
+      "reused": true,
+      "published": {
+        "seriesId": "0xb3f30b3b096b14c00c0189d1a53ddb731114be965bfa09a270d5da1e61f36b91",
+        "versionId": "0xab20c69a1ccc4fd9569b42330d62c1deb871575a1a2be770047ce1038d80f17b",
+        "commentsTreeId": "0x9ac1789a98f1503896b634cc8e32ada47e81ed1ac3474437a4953fa79c3e0814",
+        "likesBookId": "0x6fe3155797077f2360964e25b90894f0b290453412e5c902d157e4ae029e825a",
+        "artifactCode": "PaperProof-blog_post-001161-b3f30b3b096b",
+        "artifactType": 2
+      }
+    }
+  ],
+  "transactions": [],
+  "manifest": {
+    "schemaVersion": 1,
+    "title": "PaperProof Forum",
+    "description": "Official starter forum topics published as PaperProof blog_post artifacts with open comment trees.",
+    "sections": [
+      {
+        "id": "protocol-discussion",
+        "title": "Protocol Discussion",
+        "description": "Artifact identity, versions, comments, likes, and protocol boundaries.",
+        "accent": "green",
+        "topics": [
+          {
+            "id": "artifact-identity-and-official-bindings",
+            "title": "Artifact Identity and Official Bindings in PaperProof",
+            "summary": "Discuss durable artifact identity, versioning, official interaction bindings, and canonical state validation.",
+            "author": "PaperProof Labs",
+            "category": "Protocol Discussion",
+            "date": "2026-06-17",
+            "tags": [
+              "protocol",
+              "artifacts",
+              "versions",
+              "comments",
+              "indexer"
+            ],
+            "language": "en",
+            "source": "protocol-discussion/artifact-identity-and-official-bindings.md",
+            "sectionId": "protocol-discussion",
+            "sectionTitle": "Protocol Discussion",
+            "sectionOrder": 1,
+            "order": 1,
+            "artifactCode": "PaperProof-blog_post-001161-5dacf197efa1",
+            "seriesId": "0x5dacf197efa1dde2ff7f1210350433ef62543a9ac547632449a8e4c77f560725",
+            "commentsTreeId": "0xc2336d071e060a00b3206a8485c622ab57e0869a042c49c9b3598ec0f57d65cf",
+            "initialVersionId": "0x288c25d476b15c18ed356e63427bc0d4715e9344edab58a5f8fea22657a7999e",
+            "currentVersionId": "0x288c25d476b15c18ed356e63427bc0d4715e9344edab58a5f8fea22657a7999e",
+            "likesBookId": "0xcbf7ccbaec8c3c329a8770e4742c041082fb9fbb33a1918c31fab92b8b34ce05",
+            "latestContentHash": "sha256:b117914e78c3ac9c51c99657624b099eb339fe0fdbd8b7695e4c0bd8b49b8fc9",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "developer-support",
+        "title": "Developer Support",
+        "description": "SDK integration, indexer work, static sites, and wallet signing questions.",
+        "accent": "blue",
+        "topics": [
+          {
+            "id": "sdk-indexer-and-static-app-integration",
+            "title": "SDK, Indexer, and Static App Integration",
+            "summary": "Ask integration questions about SDKs, indexers, static frontends, wallet signing, Sui reads, and Walrus content.",
+            "author": "PaperProof Labs",
+            "category": "Developer Support",
+            "date": "2026-06-17",
+            "tags": [
+              "sdk",
+              "indexer",
+              "frontend",
+              "wallet",
+              "walrus"
+            ],
+            "language": "en",
+            "source": "developer-support/sdk-indexer-and-static-app-integration.md",
+            "sectionId": "developer-support",
+            "sectionTitle": "Developer Support",
+            "sectionOrder": 1,
+            "order": 2,
+            "artifactCode": "PaperProof-blog_post-001161-3d618d92d8ac",
+            "seriesId": "0x3d618d92d8acbe9cc0752c6aa4c0c478754f21fd8937cfb25c411eae84677f4b",
+            "commentsTreeId": "0xaf8aa9c122dce5647e868725b3e5c8dfff5046869b5919a91da55dc73d0879fb",
+            "initialVersionId": "0xbe20f21c9d8ff12ee5ea18666c0f3b3a4a4d79783c490b34bb587c624a66e965",
+            "currentVersionId": "0xbe20f21c9d8ff12ee5ea18666c0f3b3a4a4d79783c490b34bb587c624a66e965",
+            "likesBookId": "0xb55c4d60cf061dbae913f4941d373063a2b831fa7d25118bd3664fea65453f51",
+            "latestContentHash": "sha256:034990a2e9b61b923c49affc37c0f7329ad76ef59fa61ef9ec4a2066ed920a9e",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "Governance",
+        "description": "Proposal discussion before formal votes are created.",
+        "accent": "gold",
+        "topics": [
+          {
+            "id": "lightweight-governance-and-official-operations",
+            "title": "Lightweight Governance and Official Operations",
+            "summary": "Discuss which protocol and official-interface changes need formal votes, operator actions, or documented policy updates.",
+            "author": "PaperProof Labs",
+            "category": "Governance",
+            "date": "2026-06-17",
+            "tags": [
+              "governance",
+              "operations",
+              "prompts",
+              "memory",
+              "fees"
+            ],
+            "language": "en",
+            "source": "governance/lightweight-governance-and-official-operations.md",
+            "sectionId": "governance",
+            "sectionTitle": "Governance",
+            "sectionOrder": 1,
+            "order": 3,
+            "artifactCode": "PaperProof-blog_post-001161-c1314fa77bd2",
+            "seriesId": "0xc1314fa77bd2caccc352f600488780b948fda0aed45f69c2006b635a084dce4d",
+            "commentsTreeId": "0xe7e86ce92ecd2409b47e884470fe21f58c758e54938b53d0c829930faf755614",
+            "initialVersionId": "0x5eba4e5f1a1addfc449c77d8d52674acd8239dbf9a0e5773a5afee5a979be48a",
+            "currentVersionId": "0x5eba4e5f1a1addfc449c77d8d52674acd8239dbf9a0e5773a5afee5a979be48a",
+            "likesBookId": "0xb6a841367766efd63bb93ab280d0588b863930f465cf5fd50d88e3fc668dd84c",
+            "latestContentHash": "sha256:f6b96de18223742c69b4ebc15e84b8e4be02b606c16b1ad7050b3ac789d2f7ef",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "ideas-proposals",
+        "title": "Ideas & Proposals",
+        "description": "Feature ideas, product directions, incentives, and ecosystem experiments.",
+        "accent": "red",
+        "topics": [
+          {
+            "id": "what-should-paperproof-build-next",
+            "title": "What Should PaperProof Build Next?",
+            "summary": "Collect product ideas, protocol extensions, demo apps, ecosystem experiments, and next-step proposals.",
+            "author": "PaperProof Labs",
+            "category": "Ideas & Proposals",
+            "date": "2026-06-17",
+            "tags": [
+              "roadmap",
+              "ideas",
+              "ecosystem",
+              "agents",
+              "applications"
+            ],
+            "language": "en",
+            "source": "ideas-proposals/what-should-paperproof-build-next.md",
+            "sectionId": "ideas-proposals",
+            "sectionTitle": "Ideas & Proposals",
+            "sectionOrder": 1,
+            "order": 4,
+            "artifactCode": "PaperProof-blog_post-001161-3b16dd0400a4",
+            "seriesId": "0x3b16dd0400a40967b9df9133fdef1e7654746f24b8cd1ce0c80d6e8d1ef97d5e",
+            "commentsTreeId": "0x550faffb2d8165cd01875fde8b698a5310d4de92d97c10d2d7e473b199ee3b6e",
+            "initialVersionId": "0xa2c25194969342078b67640779501142672eef0ba2e2d57b8946df840c88b832",
+            "currentVersionId": "0xa2c25194969342078b67640779501142672eef0ba2e2d57b8946df840c88b832",
+            "likesBookId": "0x98c71ca63d6ff600eae8404bde5963f14defd19b89d4bd5b1f170ea4d80d1742",
+            "latestContentHash": "sha256:dcfe3c449f3c11afa791b86591f0092c74933adbe6274f23ccf5183399db0348",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "showcase",
+        "title": "Showcase",
+        "description": "Artifacts, demos, papers, datasets, software releases, and public builds.",
+        "accent": "blue",
+        "topics": [
+          {
+            "id": "share-paperproof-artifacts-and-demos",
+            "title": "Share PaperProof Artifacts and Demos",
+            "summary": "A place to share artifacts, demos, papers, datasets, software releases, public builds, and experimental integrations.",
+            "author": "PaperProof Labs",
+            "category": "Showcase",
+            "date": "2026-06-17",
+            "tags": [
+              "showcase",
+              "demos",
+              "artifacts",
+              "software",
+              "research"
+            ],
+            "language": "en",
+            "source": "showcase/share-paperproof-artifacts-and-demos.md",
+            "sectionId": "showcase",
+            "sectionTitle": "Showcase",
+            "sectionOrder": 1,
+            "order": 5,
+            "artifactCode": "PaperProof-blog_post-001161-c677c29860a7",
+            "seriesId": "0xc677c29860a7caa1980527febbab11bd1711e393461a9e6a9117daf28f52ef4c",
+            "commentsTreeId": "0x5172b23690311e2af32b52264411c44d93f34cd7cb97e8b29f6b9fe8465663e2",
+            "initialVersionId": "0x05bea552490a07a71cfb367cdfca62c53755b2ee7f233464cdfaedb74e80004e",
+            "currentVersionId": "0x05bea552490a07a71cfb367cdfca62c53755b2ee7f233464cdfaedb74e80004e",
+            "likesBookId": "0xcd39e8b83244a2fbdae4f9d02b14e367e1a96374e46ad804f032a39542bfb704",
+            "latestContentHash": "sha256:838db4f78f005833f440310960a18b00831f7488d994fafd5ba604e940a958ca",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      },
+      {
+        "id": "general",
+        "title": "General",
+        "description": "Open community conversation around PaperProof and durable public records.",
+        "accent": "green",
+        "topics": [
+          {
+            "id": "welcome-to-the-paperproof-community-forum",
+            "title": "Welcome to the PaperProof Community Forum",
+            "summary": "General discussion guidelines for the PaperProof community forum and early protocol-backed topics.",
+            "author": "PaperProof Labs",
+            "category": "General",
+            "date": "2026-06-17",
+            "tags": [
+              "community",
+              "forum",
+              "welcome",
+              "paperproof"
+            ],
+            "language": "en",
+            "source": "general/welcome-to-the-paperproof-community-forum.md",
+            "sectionId": "general",
+            "sectionTitle": "General",
+            "sectionOrder": 1,
+            "order": 6,
+            "artifactCode": "PaperProof-blog_post-001161-b3f30b3b096b",
+            "seriesId": "0xb3f30b3b096b14c00c0189d1a53ddb731114be965bfa09a270d5da1e61f36b91",
+            "commentsTreeId": "0x9ac1789a98f1503896b634cc8e32ada47e81ed1ac3474437a4953fa79c3e0814",
+            "initialVersionId": "0xab20c69a1ccc4fd9569b42330d62c1deb871575a1a2be770047ce1038d80f17b",
+            "currentVersionId": "0xab20c69a1ccc4fd9569b42330d62c1deb871575a1a2be770047ce1038d80f17b",
+            "likesBookId": "0x6fe3155797077f2360964e25b90894f0b290453412e5c902d157e4ae029e825a",
+            "latestContentHash": "sha256:e3bb7bb9dcc212b136ba19d66eac8cd7804ef65ff326552fa057ad1836cb95da",
+            "contentType": "text/markdown; charset=utf-8",
+            "commentsTreeStatus": "open",
+            "comments": 0,
+            "likes": 0,
+            "dislikes": 0
+          }
+        ]
+      }
+    ],
+    "publishedAt": "2026-07-19T09:47:12.621Z",
+    "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+    "sdkVersion": "0.2.8"
+  }
+}

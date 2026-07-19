@@ -79,6 +79,24 @@ function sha256Hex(bytes) {
   return crypto.createHash('sha256').update(bytes).digest('hex');
 }
 
+function isControllerOnlySeries(series) {
+  const authorityMode = series?.seriesAuthorityMode;
+  if (authorityMode != null) return Number(authorityMode) === 3;
+  return series?.seriesAuthorityModeName === 'controller_only';
+}
+
+function assertControllerOnlySeries(series, label) {
+  if (!isControllerOnlySeries(series)) {
+    throw new Error(`${label} must be controller_only. Current mode: ${series?.seriesAuthorityModeName ?? 'unknown'}.`);
+  }
+  if (!series?.seriesControlRecordId) {
+    throw new Error(`${label} is missing seriesControlRecordId.`);
+  }
+  if (!series?.seriesControllerNftId) {
+    throw new Error(`${label} is missing seriesControllerNftId.`);
+  }
+}
+
 async function main() {
   const deps = await loadDeps();
   const sdkPackage = JSON.parse(await fs.readFile(path.join(SDK_ROOT, 'package.json'), 'utf8'));
@@ -109,8 +127,13 @@ async function main() {
   });
   console.log(`[upload] ${upload.blobId}`);
 
+  const series = await read.getSeriesView(SERIES_ID);
+  assertControllerOnlySeries(series, 'sui-overflow-winner-dataset series');
+
   const input = {
     seriesId: SERIES_ID,
+    controlRecordId: series.seriesControlRecordId,
+    controllerNftId: series.seriesControllerNftId,
     title: 'Sui Overflow Historical Winner Dataset, 2024-2025',
     description: 'Structured dataset of historical Sui Overflow winner records for 2024 and 2025. Includes winners, tracks, placements, categories, short descriptive notes, and lightweight ecosystem-primitives classification fields for independent analysis and historical comparison.',
     format: 'ZIP package containing CSV, JSON, schema, README, and source metadata',
@@ -128,11 +151,11 @@ async function main() {
       dataset_version: '2.0.0',
       sdk_version: sdkPackage.version,
     }),
+    versionChangeNote: 'Refresh historical winner dataset package with normalized schema and metadata for controller-only series.',
   };
 
   console.log('[tx] add dataset version sui-overflow-winner-dataset-v2');
   const execution = await client.addDatasetVersion(input, { description: 'add dataset version' });
-  const series = await read.getSeriesView(SERIES_ID);
   const version = await read.getVersionView(execution.result.versionId);
 
   const report = {

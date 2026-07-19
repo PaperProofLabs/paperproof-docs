@@ -99,6 +99,21 @@ function metadataAttributes(entries) {
     .map(([key, value]) => ({ key, value: String(value).slice(0, 511) }));
 }
 
+function isControllerOnlySeries(series) {
+  const authorityMode = series?.seriesAuthorityMode;
+  if (authorityMode != null) return Number(authorityMode) === 3;
+  return series?.seriesAuthorityModeName === 'controller_only';
+}
+
+function assertControllerOnlySeries(series, label) {
+  assert(
+    isControllerOnlySeries(series),
+    `${label} must be controller_only. Current mode: ${series?.seriesAuthorityModeName ?? 'unknown'}.`,
+  );
+  assert(series?.seriesControlRecordId, `${label} is missing seriesControlRecordId.`);
+  assert(series?.seriesControllerNftId, `${label} is missing seriesControllerNftId.`);
+}
+
 function toSdkResponse(execution) {
   return {
     events: (execution.events ?? []).map((event) => ({
@@ -222,10 +237,20 @@ async function main() {
     existing?.published?.artifactCode &&
     existing?.published?.commentsTreeId;
 
+  const existingSeries = isAddVersion
+    ? await read.getSeriesView(existing.published.seriesId)
+    : null;
+  if (existingSeries) {
+    assertControllerOnlySeries(existingSeries, 'community overflow2026 blog series');
+  }
+
   const tx = isAddVersion
     ? txb.addBlogPostVersion({
         ...input,
         seriesId: existing.published.seriesId,
+        controlRecordId: existingSeries.seriesControlRecordId,
+        controllerNftId: existingSeries.seriesControllerNftId,
+        versionChangeNote: 'Expanded community research analysis for the Sui Overflow 2026 track datasets.',
       })
     : txb.publishBlogPost(input);
   console.log(`[tx] ${isAddVersion ? 'add version community blog' : 'publish community blog'}`);
@@ -246,6 +271,7 @@ async function main() {
   const likesBookId = isAddVersion ? existing.published.likesBookId : published.likesBookId;
 
   const series = await read.getSeriesView(seriesId);
+  assertControllerOnlySeries(series, 'community overflow2026 blog series');
   const version = await read.getVersionView(published.versionId);
 
   const report = {

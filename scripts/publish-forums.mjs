@@ -134,6 +134,19 @@ function metadataAttributes(entries) {
     .map(([key, value]) => ({ key, value: String(value).slice(0, 511) }));
 }
 
+function isControllerOnlySeries(details) {
+  const authorityMode = details?.series?.seriesAuthorityMode;
+  if (authorityMode != null) return Number(authorityMode) === 3;
+  return details?.series?.seriesAuthorityModeName === 'controller_only';
+}
+
+function assertControllerOnlySeries(details, label) {
+  assert(
+    isControllerOnlySeries(details),
+    `${label} must be controller_only. Current mode: ${details?.series?.seriesAuthorityModeName ?? 'unknown'}.`,
+  );
+}
+
 function collectTopics(manifest) {
   const topics = [];
   for (const section of manifest.sections ?? []) {
@@ -288,6 +301,8 @@ async function publishForums({ topics, args, account, sui, walrusClient, txb, re
       await writeJsonFile(MANIFEST_PATH, report.manifest);
       const series = await read.waitForObject(published.seriesId, { attempts: 8, baseDelayMs: 1_000 });
       assert(series.id === published.seriesId, `Series not readable after publishing ${topic.source}.`);
+      const view = await read.getSeriesView(published.seriesId);
+      assertControllerOnlySeries({ series: view }, `${topic.source} published forum series`);
     }
   }
 }

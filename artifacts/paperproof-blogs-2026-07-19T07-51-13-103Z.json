@@ -1,0 +1,407 @@
+{
+  "runId": "paperproof-blogs-2026-07-19T07-51-13-103Z",
+  "run": false,
+  "accountIndex": 4,
+  "selection": {
+    "all": false,
+    "posts": [],
+    "sources": [
+      "the-controller-nft-upgrade-is-now-live-on-paperproof.md"
+    ],
+    "artifactCodes": []
+  },
+  "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+  "sdkVersion": "0.2.8",
+  "deployment": {
+    "name": "paperproof-mainnet-2026-05-13",
+    "network": "mainnet",
+    "rpcUrl": "https://fullnode.mainnet.sui.io:443",
+    "protocolVersion": "publishing-v4-comments-v3-controller-v1-governance-v2",
+    "packages": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da",
+      "governanceOriginal": "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+      "governance": "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e",
+      "comments": "0x4962dda7d3033a6dd23724721ee38ca16720e8949b94d39826d24eb09f39e0a6",
+      "publishingOriginal": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782",
+      "publishing": "0xfd9ea70eef5220dbba93ae2bf7cd077d4ddebe03d585ebc7ad536ed3ba500660",
+      "controller": "0xe68fef47337eb2ee970431fae9519c4b2bb9f4505a3d14b6b91fdfc6aae3b75c",
+      "promptRegistry": "0x10b9c6e90a896dc3244d047e32724d80de0dc697b5ea12c5fdd8925131ed4c59",
+      "memoryRegistry": "0x816684a152fdee1e7f15f65d18873ed7ee48540e8bd4205b3197a5ec0feda2c6"
+    },
+    "packageHistory": {
+      "pprf": [
+        "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da"
+      ],
+      "governance": [
+        "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+        "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e"
+      ],
+      "comments": [
+        "0xaef346fc40bf20af62f4bbbc1608ba2272e80e4ba3d716634026baa589e9aeba",
+        "0x4962dda7d3033a6dd23724721ee38ca16720e8949b94d39826d24eb09f39e0a6"
+      ],
+      "publishing": [
+        "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782",
+        "0xc9a75e4514db2a37df6f95b4e2b329c065ac6089953bd2c1c0a0c389835bd3d8",
+        "0xfd9ea70eef5220dbba93ae2bf7cd077d4ddebe03d585ebc7ad536ed3ba500660"
+      ],
+      "controller": [
+        "0xe68fef47337eb2ee970431fae9519c4b2bb9f4505a3d14b6b91fdfc6aae3b75c"
+      ]
+    },
+    "objects": {
+      "root": "0x7dc6c78b276825499a2204b060394e80b81196eb1f77d2036b503a2cca15dd78",
+      "typeRegistry": "0x966ffa24d0a96b34267b62c628f39c830afc9de25438b6502835fa8a3815d6b5",
+      "feeManager": "0x7bb8360ea1fa50f923628c929b8726b00eb8968c6a678acde71f97ae146e9249",
+      "governanceVault": "0x0df35aa53ef37f8ca8f6a6280d743effa6e0bfc613c5c6c0a78318ad4a38f875",
+      "governanceConfig": "0x7ed018db6b2cd7c32692a1c33543fb90d9c36add1226f93cbeb2a8fb10955dfa",
+      "promptRegistry": "0x14ec45eb83bb1b0eb22c7e885c7c71ea05b1e22dd05e3e1107dcef528600b0da",
+      "memoryRegistry": "0x9a5beeb6610b33c06771c4152c039314784437e802e200afd2ce80fb88bdf9e2",
+      "clock": "0x6"
+    },
+    "coinTypes": {
+      "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da::pprf::PPRF",
+      "wal": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL",
+      "sui": "0x2::sui::SUI"
+    }
+  },
+  "posts": [
+    {
+      "id": "the-controller-nft-upgrade-is-now-live-on-paperproof",
+      "source": "the-controller-nft-upgrade-is-now-live-on-paperproof.md",
+      "title": "The Controller-NFT Upgrade Is Now Live on PaperProof",
+      "upload": {
+        "blobId": "local-blog-the-controller-nft-upgrade-is-now-live-on-paperproof-fabf6b1bc5297a090333d888",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
+        "byteLength": 3752
+      },
+      "published": {
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-BLOG-1",
+        "artifactType": 2
+      },
+      "contentHash": "sha256:fabf6b1bc5297a090333d888cb17e9da92ac392b97d2d0898999c50291969f1d",
+      "operation": "publish"
+    }
+  ],
+  "transactions": [
+    {
+      "label": "publish the-controller-nft-upgrade-is-now-live-on-paperproof.md",
+      "digest": null,
+      "dryRunBytes": 0
+    }
+  ],
+  "manifest": {
+    "schemaVersion": 1,
+    "title": "PaperProof Blog",
+    "description": "Official PaperProof Labs essays and release notes published as versioned PaperProof blog_post artifacts.",
+    "posts": [
+      {
+        "id": "paperproof-verifiable-knowledge-infrastructure-for-the-agentic-web",
+        "title": "PaperProof: Verifiable Knowledge Infrastructure for the Agentic Web",
+        "summary": "A protocol-level introduction to PaperProof as verifiable knowledge infrastructure for artifacts, Sui, Walrus, and the agentic web.",
+        "author": "PaperProof Labs",
+        "category": "Protocol Vision",
+        "date": "2026-06-17",
+        "tags": [
+          "paperproof",
+          "agentic-web",
+          "sui",
+          "walrus",
+          "knowledge-infrastructure"
+        ],
+        "language": "en",
+        "source": "paperproof-verifiable-knowledge-infrastructure-for-the-agentic-web.md",
+        "order": 1,
+        "artifactCode": "PaperProof-blog_post-001161-b956e2c2e7a1",
+        "seriesId": "0xb956e2c2e7a110e1303c04b8590f8465d2073866c9ef20e53b35a3dc67400cb8",
+        "commentsTreeId": "0x47b61d9c17b77b7f595410b1df4cd021beda00603d9235dd4621a5f695537ede",
+        "initialVersionId": "0x6853edc4e60f086a7c12061d9378edecaf1d6e5c6fba1276d82696ec77d9fdfd",
+        "currentVersionId": "0xee4a6e7ead8a61800a747b2163ec8c51ae219e7d696bfb79b2fafe5be81c8e19",
+        "likesBookId": "0x4a065967e967a7aca56f8afd789ae290945768f0120f3a9382a46ede5af3246c",
+        "latestContentHash": "sha256:a83f31602abc0c193a6dc8206f38a885d22caa8a181828d14b9b4396571e0fb3",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "locked"
+      },
+      {
+        "id": "building-paperproof-with-paperproof",
+        "title": "Building PaperProof with PaperProof: How Our Docs, Prompts, Blog, and Forum Become Protocol Artifacts",
+        "summary": "How the official PaperProof website uses PaperProof artifacts for Docs, prompts, Blog, Forum, and Agent Memory.",
+        "author": "PaperProof Labs",
+        "category": "Product and Protocol",
+        "date": "2026-06-17",
+        "tags": [
+          "paperproof",
+          "docs",
+          "blog",
+          "forum",
+          "protocol-artifacts"
+        ],
+        "language": "en",
+        "source": "building-paperproof-with-paperproof.md",
+        "order": 2,
+        "artifactCode": "PaperProof-blog_post-001161-c8ae467de1c4",
+        "seriesId": "0xc8ae467de1c4136ecdc49521975c97efb1d81b589141fffe53aa5083366c53cb",
+        "commentsTreeId": "0x01348d22ed9380d68c9715b7bc45ef6791399fff3e7067be6ae93d62ab7d79e9",
+        "initialVersionId": "0xd664d80b0362d2b1c8fdcd9ad2456c429c82bd3be7ffa15ad60f0b9d06d6f8e5",
+        "currentVersionId": "0x4b7bc9dc8e5c33297673af67dd32c02c074cb65dc96e8cffb6d6b8ae63145b2b",
+        "likesBookId": "0xedaaf36219d09028ee50932c65a7885500abcc1d61ae594463d97e16e43e50c4",
+        "latestContentHash": "sha256:d27f87edb8d930fc21829dcb5937ebb96d74e364e9f5a539930067c54c17e7b7",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "locked"
+      },
+      {
+        "id": "why-verifiable-prompts-and-agent-memory-matter",
+        "title": "Why Verifiable Prompts and Agent Memory Matter",
+        "summary": "Why prompts and wallet-linked Agent Memory should become traceable, versioned, governed, and privacy-aware capabilities.",
+        "author": "PaperProof Labs",
+        "category": "Agentic Web",
+        "date": "2026-06-17",
+        "tags": [
+          "agent-memory",
+          "prompts",
+          "copilot",
+          "memwal",
+          "agentic-web"
+        ],
+        "language": "en",
+        "source": "why-verifiable-prompts-and-agent-memory-matter.md",
+        "order": 3,
+        "artifactCode": "PaperProof-blog_post-001161-4ebe697d2da2",
+        "seriesId": "0x4ebe697d2da2969775cc0b561a0c931195276de56fe35139b514c328fc1d797f",
+        "commentsTreeId": "0xe6beed914ffb6a4e79a3b3e9fc1c6c46b36a55152f727fa0d42ef7424f2c9164",
+        "initialVersionId": "0xea9e57bd362eff7269dce6d339846e3a0ab1c224b7aa8087d9ea81ba9a73e5fb",
+        "currentVersionId": "0xaffc3066d89d94489ecafe87e095a75c344b47ffe0f4798537a2c6ecf026c7dc",
+        "likesBookId": "0x788e4295c53c1f6a6cefeeb1612dc10318b118bd855affe86372911b2d77e554",
+        "latestContentHash": "sha256:18fdfe35e6fcf56191c641e6a53bcb4bbaf3a548e9922e9266a616249ce43a3a",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "locked"
+      },
+      {
+        "id": "from-walrus-blob-to-on-chain-artifact",
+        "title": "From Walrus Blob to On-chain Artifact: The PaperProof Publishing Model",
+        "summary": "A technical explanation of how PaperProof turns Walrus blobs into versioned, typed, Sui-backed knowledge artifacts.",
+        "author": "PaperProof Labs",
+        "category": "Technical Explanation",
+        "date": "2026-06-17",
+        "tags": [
+          "walrus",
+          "sui",
+          "publishing",
+          "artifacts",
+          "indexer"
+        ],
+        "language": "en",
+        "source": "from-walrus-blob-to-on-chain-artifact.md",
+        "order": 4,
+        "artifactCode": "PaperProof-blog_post-001161-3c390dcacc76",
+        "seriesId": "0x3c390dcacc7692371360b775a295c1692c721ded5d7560b90105894af7ff5f65",
+        "commentsTreeId": "0x5643ecfd86c191d0d242ab857fe441027467b9afc1cc9020695d53ed9b735831",
+        "initialVersionId": "0x8d89b342d9c6182d066760ce385ee8c4893e016039770ef1ab437c2d9ff52315",
+        "currentVersionId": "0x6f460537b8ba9642cc4efc36634b824f2a80ab005797381e1f1852c34ac27834",
+        "likesBookId": "0xc512c7a05ced4a6fe77485fe4912e67cc3d0c557581953edf5c83a5e69026f99",
+        "latestContentHash": "sha256:0967a8cbdc5a2777e0d8a9aee2a1f090d4e9eb9c74c593694c0661f39b382005",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "locked"
+      },
+      {
+        "id": "paperproof-as-artifact-infrastructure-not-just-a-content-app",
+        "title": "PaperProof as Artifact Infrastructure, Not Just a Content App",
+        "summary": "Why PaperProof should be understood as artifact infrastructure for verifiable digital work, not merely as a content application.",
+        "author": "PaperProof Labs",
+        "category": "Positioning",
+        "date": "2026-07-04",
+        "tags": [
+          "paperproof",
+          "artifacts",
+          "infrastructure",
+          "sui",
+          "walrus"
+        ],
+        "language": "en",
+        "source": "paperproof-as-artifact-infrastructure-not-just-a-content-app.md",
+        "order": 5,
+        "artifactCode": "PaperProof-blog_post-001178-db05f7454c38",
+        "seriesId": "0xdb05f7454c38fb093cf142926ffc0b8f6abfe662f6e436927872bf455f88b088",
+        "commentsTreeId": "0x5e525baccc1311f438baed8541317603f92ddeb943d3f6c8f39e6e3b48010555",
+        "initialVersionId": "0x0fd9ba276d0da3a691c34c5928ee0bfce941229cfb613b9cbaeda9b12163b209",
+        "currentVersionId": "0x06ad4c0409f0ef8fb4792d93b5da6161454246ebaaa59050c5bf88e9fdcc9561",
+        "likesBookId": "0xa32b798bc44ade6b97bfee3c9e3789a1bae7be99010677a19e8a8e74a0664307",
+        "latestContentHash": "sha256:a2a35db1705a2ac77e366e01ca256761b06f17ef1dd5ed1a11516b5ed849746e",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
+      },
+      {
+        "id": "why-artifact-versioning-should-be-a-first-class-protocol-primitive",
+        "title": "Why Artifact Versioning Should Be a First-Class Protocol Primitive",
+        "summary": "Why serious digital work needs protocol-native version lineage rather than app-local edit history or mutable latest-state publishing.",
+        "author": "PaperProof Labs",
+        "category": "Protocol Design",
+        "date": "2026-07-04",
+        "tags": [
+          "paperproof",
+          "versioning",
+          "artifacts",
+          "protocol-design",
+          "agentic-web"
+        ],
+        "language": "en",
+        "source": "why-artifact-versioning-should-be-a-first-class-protocol-primitive.md",
+        "order": 6,
+        "artifactCode": "PaperProof-blog_post-001178-9d8076c44b66",
+        "seriesId": "0x9d8076c44b661e0c2f83d134d8c710b49e4d7aad03e625f133bf06b310f451b7",
+        "commentsTreeId": "0xf9291f4e5fd27ffb8f50d28d7c88888dfbf7ceb3a70aa29bc8d03895e8b8b308",
+        "initialVersionId": "0x00cf08cef8b4374308315095f856db8f3f8aa9299fb8984122b5331f2f2390c5",
+        "currentVersionId": "0x00cf08cef8b4374308315095f856db8f3f8aa9299fb8984122b5331f2f2390c5",
+        "likesBookId": "0x119b9215e32f71b7afe76c0f9082e0d0e11386036e8aaf1c07827d5c79e7560b",
+        "latestContentHash": "sha256:43374684c1fe5a2f60bc11866a2e7aadcf4423de263f8da9704b9a9b05f2ce40",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
+      },
+      {
+        "id": "what-the-sui-and-walrus-stack-still-needs-for-durable-knowledge",
+        "title": "What the Sui and Walrus Stack Still Needs for Durable Knowledge",
+        "summary": "An ecosystem-level analysis of the missing artifact layer required to turn Sui and Walrus into durable public knowledge infrastructure.",
+        "author": "PaperProof Labs",
+        "category": "Ecosystem Analysis",
+        "date": "2026-07-04",
+        "tags": [
+          "paperproof",
+          "sui",
+          "walrus",
+          "durable-knowledge",
+          "infrastructure"
+        ],
+        "language": "en",
+        "source": "what-the-sui-and-walrus-stack-still-needs-for-durable-knowledge.md",
+        "order": 7,
+        "artifactCode": "PaperProof-blog_post-001178-fb052af2714b",
+        "seriesId": "0xfb052af2714b1b2bb285e4bbedd606f43ea44bcf41348493578c12064e309182",
+        "commentsTreeId": "0x0c97ed763bef6d2cc6ac1e892d9f1064e4d94e72a32393afa10047452d2fc951",
+        "initialVersionId": "0xf6a0a59c1390b71c5b427441bff275c98cc808b35625dbef4e22786b7d854193",
+        "currentVersionId": "0xf6a0a59c1390b71c5b427441bff275c98cc808b35625dbef4e22786b7d854193",
+        "likesBookId": "0xee93fbb3d304c2ea4e46769607600737e317a142f691e18297023b622377b3cd",
+        "latestContentHash": "sha256:9e706b419f5d528523e5699834d0a0a1542eaf16381de09ce94e34e44b73551d",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
+      },
+      {
+        "id": "how-developers-can-build-on-paperproof-without-using-the-official-website",
+        "title": "How Developers Can Build on PaperProof Without Using the Official Website",
+        "summary": "How developers can publish, read, verify, and build artifact-native applications on PaperProof without depending on the official front end.",
+        "author": "PaperProof Labs",
+        "category": "Developer Ecosystem",
+        "date": "2026-07-04",
+        "tags": [
+          "paperproof",
+          "developers",
+          "sdk",
+          "skills",
+          "infrastructure"
+        ],
+        "language": "en",
+        "source": "how-developers-can-build-on-paperproof-without-using-the-official-website.md",
+        "order": 8,
+        "artifactCode": "PaperProof-blog_post-001178-d06ce4d38393",
+        "seriesId": "0xd06ce4d38393bb7504909999063bdfa9cce5344cdcda7f146c0f0f8a5cd4ccc2",
+        "commentsTreeId": "0x7b543d8c24973ec7cf76c255e926cd5bb04e2f6cd76fb9243b4c44bee9b42d55",
+        "initialVersionId": "0x85207f43b32dddf1032c43dc55170920576a2d53c230440a6ee8762d8b809e7f",
+        "currentVersionId": "0x85207f43b32dddf1032c43dc55170920576a2d53c230440a6ee8762d8b809e7f",
+        "likesBookId": "0x36a85462e0cc6a56527e9eb4d8a45564c7e401d1c9b7ca7c86398f0abfb3a881",
+        "latestContentHash": "sha256:8abb77aa9b63e5c17444160435c5575cb53777b57a7189e031285bc2395241f9",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
+      },
+      {
+        "id": "publishing-paperproof-across-zenodo-osf-and-speaker-deck",
+        "title": "Publishing PaperProof Across Zenodo, OSF, and Speaker Deck",
+        "summary": "Why publishing PaperProof papers and slides across Zenodo, OSF MetaArXiv, and Speaker Deck strengthens public discoverability and reinforces the case for artifact infrastructure.",
+        "author": "PaperProof Labs",
+        "category": "Ecosystem and Discoverability",
+        "date": "2026-07-05",
+        "tags": [
+          "paperproof",
+          "discoverability",
+          "zenodo",
+          "osf",
+          "speaker-deck"
+        ],
+        "language": "en",
+        "source": "publishing-paperproof-across-zenodo-osf-and-speaker-deck.md",
+        "order": 9,
+        "artifactCode": "PaperProof-blog_post-001179-ce4acb0164eb",
+        "seriesId": "0xce4acb0164eb6661978f4f2a516cc12ff307a9dffffeb692b76412454e20cdbe",
+        "commentsTreeId": "0x0880367331237603c279b2a82a5066d3a3d1bb37775bcb1230a78ca489692222",
+        "initialVersionId": "0x39138b533ac6f64e5ad963c422d91506d45c4f80d011c5e5656ea461a2e02067",
+        "currentVersionId": "0x39138b533ac6f64e5ad963c422d91506d45c4f80d011c5e5656ea461a2e02067",
+        "likesBookId": "0x6ce854fb7de0f41bee4e93af239449275e045c8cc5623c3ea28dd5cf1bf48730",
+        "latestContentHash": "sha256:856f02c6c18fb43622f1114888ef5852132c725a1d9252dffbc091b1acf43c00",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
+      },
+      {
+        "id": "nft-backed-artifact-control-and-the-next-stage-of-paperproof",
+        "title": "NFT-Backed Artifact Control and the Next Stage of PaperProof",
+        "summary": "Why NFT-backed artifact control matters for PaperProof, for the Sui and Walrus ecosystem, and for a more serious Web3 model of digital ownership.",
+        "author": "PaperProof Labs",
+        "category": "Protocol Vision",
+        "date": "2026-07-07",
+        "tags": [
+          "paperproof",
+          "nft",
+          "artifact-control",
+          "sui",
+          "walrus"
+        ],
+        "language": "en",
+        "source": "nft-backed-artifact-control-and-the-next-stage-of-paperproof.md",
+        "order": 10,
+        "artifactCode": "PaperProof-blog_post-001181-16380ab9848d",
+        "seriesId": "0x16380ab9848d56355a2497dd4cde47cb22e32e0b386b451f41bed687fa39c025",
+        "commentsTreeId": "0xdbcefcaa7d8100eccac23f95212d1b5444b23b912849763563261ee63921cc00",
+        "initialVersionId": "0xb9cd14bde5e88ad93300b0fc8bc9d2b34d1dc2977f6e8a308e845130c69860a8",
+        "currentVersionId": "0xb9cd14bde5e88ad93300b0fc8bc9d2b34d1dc2977f6e8a308e845130c69860a8",
+        "likesBookId": "0xf8a26f42c84999fa99cf35f78db7d26eafb1970232b0e7a4b90c345dcb59eed4",
+        "latestContentHash": "sha256:59f34f764eb9d0151b8cc13b6d9df0fdfe6e78cde0cc2237eb4ebbbc167232fe",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
+      },
+      {
+        "id": "the-controller-nft-upgrade-is-now-live-on-paperproof",
+        "title": "The Controller-NFT Upgrade Is Now Live on PaperProof",
+        "summary": "PaperProof's controller-NFT upgrade is now live on mainnet, bringing transferable artifact control, preserved authorship, and a stronger asset layer without breaking the familiar publishing experience.",
+        "author": "PaperProof Labs",
+        "category": "Protocol Upgrade",
+        "date": "2026-07-19",
+        "tags": [
+          "paperproof",
+          "controller-nft",
+          "artifact-control",
+          "protocol-upgrade",
+          "sui",
+          "walrus"
+        ],
+        "language": "en",
+        "source": "the-controller-nft-upgrade-is-now-live-on-paperproof.md",
+        "order": 11,
+        "artifactCode": "DRY-RUN-BLOG-1",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:fabf6b1bc5297a090333d888cb17e9da92ac392b97d2d0898999c50291969f1d",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
+      }
+    ],
+    "publishedAt": "2026-07-19T07:51:14.148Z",
+    "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
+    "sdkVersion": "0.2.8",
+    "commentsTreePolicy": "locked",
+    "updatedAt": "2026-06-17T13:37:54.051Z"
+  }
+}

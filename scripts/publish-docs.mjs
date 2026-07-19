@@ -282,6 +282,21 @@ function metadataAttributes(entries) {
     .map(([key, value]) => ({ key, value: String(value).slice(0, 511) }));
 }
 
+function isControllerOnlySeries(details) {
+  const authorityMode = details?.series?.seriesAuthorityMode;
+  if (authorityMode != null) return Number(authorityMode) === 3;
+  return details?.series?.seriesAuthorityModeName === 'controller_only';
+}
+
+function assertControllerOnlySeries(details, label) {
+  assert(
+    isControllerOnlySeries(details),
+    `${label} must be controller_only. Current mode: ${details?.series?.seriesAuthorityModeName ?? 'unknown'}.`,
+  );
+  assert(details?.series?.seriesControlRecordId, `${label} is missing seriesControlRecordId.`);
+  assert(details?.series?.seriesControllerNftId, `${label} is missing seriesControllerNftId.`);
+}
+
 function collectDocs(manifest) {
   const docs = [];
   for (const section of manifest.sections ?? []) {
@@ -516,6 +531,15 @@ function addVersionInput(doc, content, upload, published, phase) {
   };
 }
 
+async function readControllerBinding(read, seriesId, label) {
+  const series = await read.getSeriesView(seriesId);
+  assertControllerOnlySeries({ series }, label);
+  return {
+    controlRecordId: series.seriesControlRecordId,
+    controllerNftId: series.seriesControllerNftId,
+  };
+}
+
 async function publishInitialDocs({ docs, args, account, sui, getWalrusClient, txb, read, report }) {
   const { ARTIFACT_TYPES, extractPublishResult } = await loadDeps();
   for (const [index, doc] of docs.entries()) {
@@ -572,11 +596,13 @@ async function publishInitialDocs({ docs, args, account, sui, getWalrusClient, t
     if (args.run) {
       const series = await read.waitForObject(published.seriesId, { attempts: 8, baseDelayMs: 1_000 });
       assert(series.id === published.seriesId, `Series not readable after publishing ${doc.source}.`);
+      const view = await read.getSeriesView(published.seriesId);
+      assertControllerOnlySeries({ series: view }, `${doc.source} published doc series`);
     }
   }
 }
 
-async function lockCommentTrees({ docs, args, account, sui, txb, report }) {
+async function lockCommentTrees({ docs, args, account, sui, txb, read, report }) {
   const { TREE_STATUS } = await loadDeps();
   for (const doc of docs) {
     console.log(`[lock] ${doc.source}`);
@@ -586,10 +612,15 @@ async function lockCommentTrees({ docs, args, account, sui, txb, report }) {
       console.log(`[lock] reuse locked ${doc.source}`);
       continue;
     }
+    const controller = await readControllerBinding(read, doc.target.seriesId, `${doc.source} doc series`);
     const result = await execute(
       sui,
       account.signer,
-      () => txb.comments.setTreeStatus(commentsTreeId, TREE_STATUS.locked),
+      () => txb.comments.setTreeStatus({
+        treeId: commentsTreeId,
+        ...controller,
+        status: TREE_STATUS.locked,
+      }),
       `lock comments ${doc.source}`,
       args.run,
       account.address,
@@ -622,10 +653,15 @@ async function publishMappedVersions({ docs, args, account, sui, getWalrusClient
     if (args.run) await writeDocText(doc, mappedText);
     const content = await readDoc(doc, args.run ? undefined : mappedText);
     const upload = await uploadDoc(getWalrusClient, sui, account.signer, doc, content, args.run, args.skipWalrus, 'v2');
+    const controller = await readControllerBinding(read, published.seriesId, `${doc.source} doc series`);
     const result = await execute(
       sui,
       account.signer,
-      () => txb.addGenericFileVersion(addVersionInput(doc, content, upload, published, 'mapped')),
+      () => txb.addGenericFileVersion({
+        ...addVersionInput(doc, content, upload, published, 'mapped'),
+        ...controller,
+        versionChangeNote: `Docs mapping update on ${new Date().toISOString()}`,
+      }),
       `add mapped doc version ${doc.source}`,
       args.run,
       account.address,
@@ -657,6 +693,7 @@ async function publishMappedVersions({ docs, args, account, sui, getWalrusClient
         },
       );
       assert(view.currentVersionId === added.versionId, `${doc.source} latest version did not advance.`);
+      assertControllerOnlySeries({ series: view }, `${doc.source} mapped doc series`);
     }
   }
 }
@@ -722,7 +759,7 @@ async function main() {
   await fs.mkdir(path.dirname(APP_MANIFEST_PATH), { recursive: true });
 
   await publishInitialDocs({ docs, args, account, sui, getWalrusClient, txb, read, report });
-  await lockCommentTrees({ docs, args, account, sui, txb, report });
+  await lockCommentTrees({ docs, args, account, sui, txb, read, report });
   await publishMappedVersions({ docs, args, account, sui, getWalrusClient, txb, read, report });
 
   manifest.publishedAt = new Date().toISOString();

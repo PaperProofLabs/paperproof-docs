@@ -165,6 +165,21 @@ function metadataAttributes(entries) {
     .map(([key, value]) => ({ key, value: String(value).slice(0, 511) }));
 }
 
+function isControllerOnlySeries(details) {
+  const authorityMode = details?.series?.seriesAuthorityMode;
+  if (authorityMode != null) return Number(authorityMode) === 3;
+  return details?.series?.seriesAuthorityModeName === 'controller_only';
+}
+
+function assertControllerOnlySeries(details, label) {
+  assert(
+    isControllerOnlySeries(details),
+    `${label} must be controller_only. Current mode: ${details?.series?.seriesAuthorityModeName ?? 'unknown'}.`,
+  );
+  assert(details?.series?.seriesControlRecordId, `${label} is missing seriesControlRecordId.`);
+  assert(details?.series?.seriesControllerNftId, `${label} is missing seriesControllerNftId.`);
+}
+
 function collectPosts(manifest) {
   return (manifest.posts ?? []).map((post, index) => ({
     ...post,
@@ -432,10 +447,18 @@ async function publishBlogs({ posts, args, account, sui, walrusClient, txb, read
     }
     const upload = await uploadPost(walrusClient, account.signer, post, content, args.run, args.skipWalrus);
     const input = publishInput(post, content, upload);
+    let existingDetails = null;
+    if (existing) {
+      existingDetails = await read.getSeriesView(post.seriesId);
+      assertControllerOnlySeries({ series: existingDetails }, `${post.source} existing blog series`);
+    }
     const tx = existing
       ? () => txb.addBlogPostVersion({
           ...input,
           seriesId: post.seriesId,
+          controlRecordId: existingDetails.seriesControlRecordId,
+          controllerNftId: existingDetails.seriesControllerNftId,
+          versionChangeNote: `Official blog update on ${new Date().toISOString()}`,
           versionMetadata: metadataAttributes({
             schema: 'paperproof-blog-markdown-package-v1',
             source: post.source,
@@ -477,6 +500,8 @@ async function publishBlogs({ posts, args, account, sui, walrusClient, txb, read
       await writeJsonFile(MANIFEST_PATH, report.manifest);
       const series = await read.waitForObject(published.seriesId, { attempts: 8, baseDelayMs: 1_000 });
       assert(series.id === published.seriesId, `Series not readable after publishing ${post.source}.`);
+      const details = await read.getSeriesView(published.seriesId);
+      assertControllerOnlySeries({ series: details }, `${post.source} published blog series`);
     }
   }
 }
