@@ -409,6 +409,6 @@ The stack should continue to satisfy all of the following:
 - Historical rollout and migration record:
   `artifact-control-nft-rollout-history.md`
 - Contract implementation roadmap:
-  `paperproof-contracts-NFT/docs/Artifact-Control-NFT-Contract-Roadmap.md`
+  `paperproof-contracts/docs/Artifact-Control-NFT-Contract-Roadmap.md`
 - Local upgrade preparation and rehearsal:
-  `paperproof-contracts-NFT/docs/Artifact-Control-NFT-Local-Upgrade-Prep.md`
+  `paperproof-contracts/docs/Artifact-Control-NFT-Local-Upgrade-Prep.md`

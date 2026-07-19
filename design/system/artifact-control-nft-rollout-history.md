@@ -123,9 +123,9 @@ assumptions toward controller-NFT authority.
 Mainnet legacy-series promotion and controller-only convergence were recorded in
 the contracts worktree artifacts and deployment docs, including:
 
-- `paperproof-contracts-NFT/artifacts/mainnet-legacy-series-controller-promotion-full-2026-07-19.json`
-- `paperproof-contracts-NFT/docs/Mainnet-Deployment-Record-2026-05-06.md`
-- `paperproof-contracts-NFT/docs/Deployment-and-Upgrade-Runbook.md`
+- `paperproof-contracts/artifacts/mainnet-legacy-series-controller-promotion-full-2026-07-19.json`
+- `paperproof-contracts/docs/Mainnet-Deployment-Record-2026-05-06.md`
+- `paperproof-contracts/docs/Deployment-and-Upgrade-Runbook.md`
 
 Those files should be treated as the canonical audit trail for how the upgrade
 was actually executed.
