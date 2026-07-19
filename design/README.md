@@ -1,26 +1,70 @@
 # design
 
-This directory is reserved for PaperProof design materials.
+This directory holds PaperProof design, architecture, rollout, and product
+notes that are broader than any single source-code repository.
 
-Typical contents may include product-flow notes, interface rationale, component
-ideas, interaction sketches, page layouts, user-experience considerations, and
-other design records related to PaperProof applications and interfaces.
+The goal of this directory is not to mirror implementation file-by-file. It is
+to preserve the current intended design, the key rollout decisions, and the
+important constraints that later engineering work should continue to respect.
 
-Current substantive design records are in [app/](./app/):
+## Current structure
 
-- [app/dynamic-site-design.md](./app/dynamic-site-design.md) describes the
-  dynamic website model.
-- [app/content-format-design.md](./app/content-format-design.md) describes the
-  Markdown package and content-format approach.
-- [app/copilot-memwal-memory-design.md](./app/copilot-memwal-memory-design.md)
-  records the Copilot memory design based on MemWal.
+Two top-level areas are maintained here:
+
+- [app/](./app/) for official website, indexer-assisted rendering, UX,
+  discoverability, and public-interface behavior.
+- [system/](./system/) for protocol-level and cross-repo design, especially the
+  controller-NFT authority model.
+
+## Recommended reading order
+
+If the goal is to understand the live public website and its direction:
+
+- [app/README.md](./app/README.md)
+- [app/dynamic-site-design.md](./app/dynamic-site-design.md)
 - [app/official-content-server-rendering-plan.md](./app/official-content-server-rendering-plan.md)
-  captures the server-side/indexer-backed content serving plan.
-- [app/publish-storage-onchain-ux-optimization.md](./app/publish-storage-onchain-ux-optimization.md)
-  records publishing UX improvements around storage and on-chain submission.
+- [app/path-route-rewrite-rollout-plan.md](./app/path-route-rewrite-rollout-plan.md)
+- [app/search-engine-optimization-design.md](./app/search-engine-optimization-design.md)
+- [app/responsive-ui-mobile-desktop-adaptation-plan.md](./app/responsive-ui-mobile-desktop-adaptation-plan.md)
+- [app/site-analytics-design.md](./app/site-analytics-design.md)
 
-Current substantive system design records are in [system/](./system/):
+If the goal is to understand protocol authority and the NFT control upgrade:
 
 - [system/artifact-control-nft-rearchitecture.md](./system/artifact-control-nft-rearchitecture.md)
-  is the canonical controller-NFT architecture note and now also records the
-  post-upgrade mainnet package line for transferable artifact control.
+- [system/artifact-control-nft-rollout-history.md](./system/artifact-control-nft-rollout-history.md)
+
+## Current high-signal documents
+
+Important current app-facing design records include:
+
+- [app/content-format-design.md](./app/content-format-design.md) for Markdown
+  package and content-format conventions.
+- [app/copilot-memwal-memory-design.md](./app/copilot-memwal-memory-design.md)
+  for Copilot memory and MemWal integration boundaries.
+- [app/explore-indexer-cache-refactor-plan.md](./app/explore-indexer-cache-refactor-plan.md)
+  for Explore, type-list, and artifact-discovery data paths.
+- [app/official-content-server-rendering-plan.md](./app/official-content-server-rendering-plan.md)
+  for indexer-backed official Docs, Blog, and Forum serving.
+- [app/path-route-rewrite-rollout-plan.md](./app/path-route-rewrite-rollout-plan.md)
+  for canonical path URLs and server rewrite behavior.
+- [app/search-engine-optimization-design.md](./app/search-engine-optimization-design.md)
+  for robots, sitemap, metadata, canonical, crawlability, and share-preview
+  strategy.
+- [app/publish-storage-onchain-ux-optimization.md](./app/publish-storage-onchain-ux-optimization.md)
+  for publish-flow latency and pending-state UX.
+- [app/responsive-ui-mobile-desktop-adaptation-plan.md](./app/responsive-ui-mobile-desktop-adaptation-plan.md)
+  for mobile adaptation that preserves desktop UI parity.
+
+Important current system-facing design records include:
+
+- [system/artifact-control-nft-rearchitecture.md](./system/artifact-control-nft-rearchitecture.md)
+  as the canonical steady-state controller-NFT design.
+- [system/artifact-control-nft-rollout-history.md](./system/artifact-control-nft-rollout-history.md)
+  as the historical mainnet rollout and migration record.
+
+## Maintenance rule
+
+When implementation lands and materially changes the steady-state behavior, the
+relevant design note here should be updated from a future-looking plan into a
+current-state record, while rollout-only details should move into explicit
+history or ops documents instead of remaining mixed into normative design.

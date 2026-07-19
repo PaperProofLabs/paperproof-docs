@@ -39,6 +39,35 @@ Public-product direction is now:
 - historical migration helpers may remain in contracts and official ops
   tooling, but not in ordinary user-facing flows.
 
+## 1.1 Downstream steady-state snapshot
+
+As of the current post-upgrade line, the intended cross-repo steady state is:
+
+- the published SDK line is `0.3.0` for TypeScript, Python, and Rust;
+- downstream app, indexer, and skill integrations are expected to consume the
+  published controller-aware SDK line rather than local pre-release wiring;
+- existing mainnet legacy series have already been promoted onto the
+  controller-NFT authority line and should now be treated as historical rollout
+  completions, not ongoing normal-user migration cases;
+- public product behavior should hide legacy and dual-mode concepts from normal
+  publishing and moderation flows;
+- official deployment, verification, and recovery scripts may still retain
+  rollout-era helpers, but those belong to ops surfaces only.
+
+## 1.2 Design interpretation rule
+
+When there is tension between:
+
+- old rollout notes;
+- compatibility internals left in contracts;
+- current SDK/app/indexer/community-skill behavior;
+
+the intended interpretation is:
+
+- historical notes explain how the upgrade happened;
+- compatibility internals explain why recovery remains possible;
+- the steady-state user and developer mental model is controller-only.
+
 ## 2. Problem the Design Solves
 
 PaperProof artifacts need transferable operational control without rewriting
