@@ -1,30 +1,53 @@
 {
-  "runId": "paperproof-blogs-2026-07-07T01-37-56-301Z",
+  "runId": "paperproof-blogs-2026-07-19T07-53-47-859Z",
   "run": true,
   "accountIndex": 4,
   "selection": {
     "all": false,
     "posts": [],
     "sources": [
-      "nft-backed-artifact-control-and-the-next-stage-of-paperproof.md"
+      "the-controller-nft-upgrade-is-now-live-on-paperproof.md"
     ],
     "artifactCodes": []
   },
   "sender": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
-  "sdkVersion": "0.2.7",
+  "sdkVersion": "0.2.8",
   "deployment": {
     "name": "paperproof-mainnet-2026-05-13",
     "network": "mainnet",
     "rpcUrl": "https://fullnode.mainnet.sui.io:443",
-    "protocolVersion": "publishing-v3-governance-v2-comments-v2",
+    "protocolVersion": "publishing-v4-comments-v3-controller-v1-governance-v2",
     "packages": {
       "pprf": "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da",
       "governanceOriginal": "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
       "governance": "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e",
-      "comments": "0xaef346fc40bf20af62f4bbbc1608ba2272e80e4ba3d716634026baa589e9aeba",
-      "publishing": "0xc9a75e4514db2a37df6f95b4e2b329c065ac6089953bd2c1c0a0c389835bd3d8",
+      "comments": "0x4962dda7d3033a6dd23724721ee38ca16720e8949b94d39826d24eb09f39e0a6",
+      "publishingOriginal": "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782",
+      "publishing": "0xfd9ea70eef5220dbba93ae2bf7cd077d4ddebe03d585ebc7ad536ed3ba500660",
+      "controller": "0xe68fef47337eb2ee970431fae9519c4b2bb9f4505a3d14b6b91fdfc6aae3b75c",
       "promptRegistry": "0x10b9c6e90a896dc3244d047e32724d80de0dc697b5ea12c5fdd8925131ed4c59",
       "memoryRegistry": "0x816684a152fdee1e7f15f65d18873ed7ee48540e8bd4205b3197a5ec0feda2c6"
+    },
+    "packageHistory": {
+      "pprf": [
+        "0x5d2ec9829a9e116de7c2008281a90b96690beb2252af120ad05a25fe13fae0da"
+      ],
+      "governance": [
+        "0x75923624e354789e995537e88afaab698bd405a61f91926e3f8837fb7cc6b5cf",
+        "0xc1ced3b8ae5281eeeb8cdb5527978e294c54f14a7fd8d65e7e9502d4ffffb87e"
+      ],
+      "comments": [
+        "0xaef346fc40bf20af62f4bbbc1608ba2272e80e4ba3d716634026baa589e9aeba",
+        "0x4962dda7d3033a6dd23724721ee38ca16720e8949b94d39826d24eb09f39e0a6"
+      ],
+      "publishing": [
+        "0xe67a6956f37c3182354189d9b77ca14058694aad82522da0c6cb91cfddee4782",
+        "0xc9a75e4514db2a37df6f95b4e2b329c065ac6089953bd2c1c0a0c389835bd3d8",
+        "0xfd9ea70eef5220dbba93ae2bf7cd077d4ddebe03d585ebc7ad536ed3ba500660"
+      ],
+      "controller": [
+        "0xe68fef47337eb2ee970431fae9519c4b2bb9f4505a3d14b6b91fdfc6aae3b75c"
+      ]
     },
     "objects": {
       "root": "0x7dc6c78b276825499a2204b060394e80b81196eb1f77d2036b503a2cca15dd78",
@@ -44,30 +67,30 @@
   },
   "posts": [
     {
-      "id": "nft-backed-artifact-control-and-the-next-stage-of-paperproof",
-      "source": "nft-backed-artifact-control-and-the-next-stage-of-paperproof.md",
-      "title": "NFT-Backed Artifact Control and the Next Stage of PaperProof",
+      "id": "the-controller-nft-upgrade-is-now-live-on-paperproof",
+      "source": "the-controller-nft-upgrade-is-now-live-on-paperproof.md",
+      "title": "The Controller-NFT Upgrade Is Now Live on PaperProof",
       "upload": {
-        "blobId": "eR1Q1vaiM6uPRveju9eHktgFCGIZ3i0H750_LqXcpho",
-        "blobObjectId": "0x005a3bb852f1f50210951af3dbe229eb9aa8c441c73e88a2e9879aafa80d978e",
-        "byteLength": 5171
+        "blobId": "EUq-WWJtS3komNs6EKmJSIG6990UAtmiDnCCNYHm93M",
+        "blobObjectId": "0x67f43c7804ba4085bc477ee8e77de428c4e4e8dc0198f9aff60bef1b7d0bee6d",
+        "byteLength": 3752
       },
       "published": {
-        "seriesId": "0x16380ab9848d56355a2497dd4cde47cb22e32e0b386b451f41bed687fa39c025",
-        "versionId": "0xb9cd14bde5e88ad93300b0fc8bc9d2b34d1dc2977f6e8a308e845130c69860a8",
-        "commentsTreeId": "0xdbcefcaa7d8100eccac23f95212d1b5444b23b912849763563261ee63921cc00",
-        "likesBookId": "0xf8a26f42c84999fa99cf35f78db7d26eafb1970232b0e7a4b90c345dcb59eed4",
-        "artifactCode": "PaperProof-blog_post-001181-16380ab9848d",
+        "seriesId": "0x7cf2aa178f61b415f69168b6208f0593123b8e5745858889240b2ccc5da313bf",
+        "versionId": "0x54775b9e25b0167bd09ecc4fe3f8a3bbd153c0b5100395b7fde96bb7f4362bd7",
+        "commentsTreeId": "0x892b4be84998ffa1b2a0f8efabe4bb39e12b686702a03d38e4db0d5b3b759fc2",
+        "likesBookId": "0xe1cf378a9d636110c4dad0c186da1fdc4d8b8d14d4e69bdcbdb6a97e7733422f",
+        "artifactCode": "PaperProof-blog_post-001193-7cf2aa178f61",
         "artifactType": 2
       },
-      "contentHash": "sha256:59f34f764eb9d0151b8cc13b6d9df0fdfe6e78cde0cc2237eb4ebbbc167232fe",
+      "contentHash": "sha256:50c36f316e883d5342c31974c54463b7415edd488f3b4ff671dd2572e0d9e6b5",
       "operation": "publish"
     }
   ],
   "transactions": [
     {
-      "label": "publish nft-backed-artifact-control-and-the-next-stage-of-paperproof.md",
-      "digest": "8Ph3j3XUiRiquxi7kgKS9VMmapGS4vWNW3a2yyzfG9VD"
+      "label": "publish the-controller-nft-upgrade-is-now-live-on-paperproof.md",
+      "digest": "6rvCR3sbssPtCcMbiUf2fRfNhsmbJUJctTPAqJ1iqJNa"
     }
   ],
   "manifest": {
@@ -334,10 +357,38 @@
         ],
         "language": "en",
         "source": "nft-backed-artifact-control-and-the-next-stage-of-paperproof.md",
-        "order": 10
+        "order": 10,
+        "artifactCode": "PaperProof-blog_post-001181-16380ab9848d",
+        "seriesId": "0x16380ab9848d56355a2497dd4cde47cb22e32e0b386b451f41bed687fa39c025",
+        "commentsTreeId": "0xdbcefcaa7d8100eccac23f95212d1b5444b23b912849763563261ee63921cc00",
+        "initialVersionId": "0xb9cd14bde5e88ad93300b0fc8bc9d2b34d1dc2977f6e8a308e845130c69860a8",
+        "currentVersionId": "0xb9cd14bde5e88ad93300b0fc8bc9d2b34d1dc2977f6e8a308e845130c69860a8",
+        "likesBookId": "0xf8a26f42c84999fa99cf35f78db7d26eafb1970232b0e7a4b90c345dcb59eed4",
+        "latestContentHash": "sha256:59f34f764eb9d0151b8cc13b6d9df0fdfe6e78cde0cc2237eb4ebbbc167232fe",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
+      },
+      {
+        "id": "the-controller-nft-upgrade-is-now-live-on-paperproof",
+        "title": "The Controller-NFT Upgrade Is Now Live on PaperProof",
+        "summary": "PaperProof's controller-NFT upgrade is now live on mainnet, bringing transferable artifact control, preserved authorship, and a stronger asset layer without breaking the familiar publishing experience.",
+        "author": "PaperProof Labs",
+        "category": "Protocol Upgrade",
+        "date": "2026-07-19",
+        "tags": [
+          "paperproof",
+          "controller-nft",
+          "artifact-control",
+          "protocol-upgrade",
+          "sui",
+          "walrus"
+        ],
+        "language": "en",
+        "source": "the-controller-nft-upgrade-is-now-live-on-paperproof.md",
+        "order": 11
       }
     ],
-    "publishedAt": "2026-07-05T08:53:34.904Z",
+    "publishedAt": "2026-07-07T01:38:22.379Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
     "sdkVersion": "0.2.7",
     "commentsTreePolicy": "locked",

@@ -272,11 +272,39 @@
       "latestContentHash": "sha256:59f34f764eb9d0151b8cc13b6d9df0fdfe6e78cde0cc2237eb4ebbbc167232fe",
       "contentType": "application/vnd.paperproof.markdown-package+zip",
       "commentsTreeStatus": "open"
+    },
+    {
+      "id": "the-controller-nft-upgrade-is-now-live-on-paperproof",
+      "title": "The Controller-NFT Upgrade Is Now Live on PaperProof",
+      "summary": "PaperProof's controller-NFT upgrade is now live on mainnet, bringing transferable artifact control, preserved authorship, and a stronger asset layer without breaking the familiar publishing experience.",
+      "author": "PaperProof Labs",
+      "category": "Protocol Upgrade",
+      "date": "2026-07-19",
+      "tags": [
+        "paperproof",
+        "controller-nft",
+        "artifact-control",
+        "protocol-upgrade",
+        "sui",
+        "walrus"
+      ],
+      "language": "en",
+      "source": "the-controller-nft-upgrade-is-now-live-on-paperproof.md",
+      "order": 11,
+      "artifactCode": "PaperProof-blog_post-001193-7cf2aa178f61",
+      "seriesId": "0x7cf2aa178f61b415f69168b6208f0593123b8e5745858889240b2ccc5da313bf",
+      "commentsTreeId": "0x892b4be84998ffa1b2a0f8efabe4bb39e12b686702a03d38e4db0d5b3b759fc2",
+      "initialVersionId": "0x54775b9e25b0167bd09ecc4fe3f8a3bbd153c0b5100395b7fde96bb7f4362bd7",
+      "currentVersionId": "0x54775b9e25b0167bd09ecc4fe3f8a3bbd153c0b5100395b7fde96bb7f4362bd7",
+      "likesBookId": "0xe1cf378a9d636110c4dad0c186da1fdc4d8b8d14d4e69bdcbdb6a97e7733422f",
+      "latestContentHash": "sha256:50c36f316e883d5342c31974c54463b7415edd488f3b4ff671dd2572e0d9e6b5",
+      "contentType": "application/vnd.paperproof.markdown-package+zip",
+      "commentsTreeStatus": "open"
     }
   ],
-  "publishedAt": "2026-07-07T01:38:22.379Z",
+  "publishedAt": "2026-07-19T07:54:21.279Z",
   "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
-  "sdkVersion": "0.2.7",
+  "sdkVersion": "0.2.8",
   "commentsTreePolicy": "locked",
   "updatedAt": "2026-06-17T13:37:54.051Z"
 }
