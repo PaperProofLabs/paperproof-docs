@@ -48,8 +48,8 @@ Important current app-facing design records include:
 - [app/path-route-rewrite-rollout-plan.md](./app/path-route-rewrite-rollout-plan.md)
   for canonical path URLs and server rewrite behavior.
 - [app/search-engine-optimization-design.md](./app/search-engine-optimization-design.md)
-  for robots, sitemap, metadata, canonical, crawlability, and share-preview
-  strategy.
+  for robots, grouped sitemaps, static public SEO shells, metadata, canonical,
+  crawlability, and share-preview strategy.
 - [app/publish-storage-onchain-ux-optimization.md](./app/publish-storage-onchain-ux-optimization.md)
   for publish-flow latency and pending-state UX.
 - [app/responsive-ui-mobile-desktop-adaptation-plan.md](./app/responsive-ui-mobile-desktop-adaptation-plan.md)

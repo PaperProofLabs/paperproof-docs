@@ -79,7 +79,27 @@ paperproof.site {
 This means the target architecture is close. The remaining work is to make the
 rewrite policy explicit, safe, and deployment-verified.
 
-### 2.2 Why static route shells are not the long-term answer
+### 2.2 Current implemented hybrid public-route state
+
+The live public website should now be understood as a hybrid of:
+
+- direct path-entry support for canonical public routes;
+- browser-side pathname-aware route handling;
+- build-generated public HTML shells for a broad set of public canonical paths.
+
+That means the current production line no longer relies on hash-only entry or
+on a bare SPA shell for search-facing public routes. Instead:
+
+- canonical public path URLs are first-class;
+- the first HTML response for major public routes already carries route-aware
+  metadata and readable preview content;
+- the fully interactive page still hydrates through the same browser app bundle.
+
+This hybrid state is acceptable as the current steady-state implementation. The
+rewrite layer remains important because direct path access must still be real,
+not merely implied by generated shell files.
+
+### 2.3 Why static route shells are not the long-term answer
 
 Static route shells are acceptable for a small controlled set of pages such as:
 
@@ -352,6 +372,10 @@ script. The goal is to prove:
 - Caddy did not misroute it;
 - API proxy routes still return JSON rather than HTML.
 
+The deploy verifier should also inspect enough of the returned HTML head to
+confirm both the expected JS asset and CSS asset references. A too-short HTML
+snippet can create false negatives even when the deploy itself succeeded.
+
 The deploy verifier should not mutate UI or simulate wallet actions as part of
 this rewrite check. It only needs to prove serving correctness and route
 parity.
@@ -375,6 +399,9 @@ It should also verify at least one query-preserving route such as:
 And when convenient:
 
 9. `/artifact/<known-code>?commentsPage=2` still reaches the app shell.
+
+And for asset-parity checks, it should read enough of the document head to
+avoid missing later `<link rel="stylesheet">` lines in otherwise valid HTML.
 
 This check belongs in official ops skill territory, not community skill
 territory.
@@ -531,8 +558,9 @@ If a rollback is required, it should also preserve:
 For PaperProof’s current production architecture, the long-term correct path is:
 
 - keep path-based canonical URLs;
-- rely on Caddy rewrite, not static route-shell expansion, for growing dynamic
-  public routes such as artifacts and proposals;
+- keep Caddy rewrite as the serving truth for public path accessibility;
+- treat build-generated public route shells as the SEO/readability layer rather
+  than as a substitute for correct path serving;
 - harden rewrite into an allowlisted route-family configuration;
 - preserve `/api/*` and `/memwal-relayer/*` precedence;
 - add path-route verification to the official deployment skill so this does not
@@ -542,7 +570,9 @@ That gives PaperProof:
 
 - stable public URLs for SEO and sharing,
 - direct access to dynamic content pages,
+- better first-response readability for crawlers and previews,
 - no UI redesign,
 - no desktop/mobile layout change,
 - no protocol logic change,
 - and a deployment model that fits the current official server shape.
+

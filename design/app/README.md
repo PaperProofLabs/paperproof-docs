@@ -34,7 +34,8 @@ The most important current app-facing design files are:
 - [path-route-rewrite-rollout-plan.md](./path-route-rewrite-rollout-plan.md)
   for direct pathname access, canonical URLs, and deploy-time serving checks.
 - [search-engine-optimization-design.md](./search-engine-optimization-design.md)
-  for crawlability, metadata, sitemap, robots, and share-card behavior.
+  for crawlability, metadata, grouped sitemaps, static SEO route shells,
+  robots, and share-card behavior.
 - [explore-indexer-cache-refactor-plan.md](./explore-indexer-cache-refactor-plan.md)
   for Explore and type-list data paths.
 - [responsive-ui-mobile-desktop-adaptation-plan.md](./responsive-ui-mobile-desktop-adaptation-plan.md)
@@ -49,10 +50,12 @@ As of the current PaperProof mainnet/app line:
 - the official site remains a browser-rendered app, not a full SSR rewrite;
 - path-based public URLs and server rewrite support are part of the intended
   live architecture;
-- robots, sitemap, and page-level metadata are part of the public
-  discoverability baseline;
+- robots, grouped sitemap output, static public SEO route shells, and
+  page-level metadata are part of the public discoverability baseline;
 - official Docs, Blog, and Forum content use indexer-assisted verified-content
   APIs where appropriate;
+- runtime metadata replacement keeps canonical, social, and article-specific
+  tags aligned with client-side route changes;
 - mobile adaptation work should preserve desktop UI parity rather than create a
   separate desktop visual language.
 

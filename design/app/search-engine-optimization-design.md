@@ -29,14 +29,43 @@ that did not exist earlier:
 - server rewrite supports direct path access instead of relying only on `#/...`;
 - `robots.txt` is present;
 - `sitemap.xml` is present;
+- grouped sitemap files are generated from real public route families;
 - page-level `title`, `description`, and `canonical` handling exist for major
   public route families;
+- route-family Open Graph, Twitter, and JSON-LD handling exist for major public
+  route families;
+- build-time public SEO route shells exist for high-value public path routes;
+- interactive-only routes and duplicate official Blog artifact mirrors have
+  explicit `noindex` treatment;
 - official Docs and Blog public routes can be opened through stable path URLs;
 - the official indexer-backed public content API exists and is used as a
   verified content source for official Docs, Blog, and Forum bodies.
 
 This means PaperProof is no longer in a pure hash-only, crawler-hostile state.
 However, it is also not yet a fully server-rendered content site.
+
+### 2.1 Current implementation shape
+
+The live SEO stack is now a hybrid public-route model rather than a single
+mechanism.
+
+At build time, `paperproof-app` now generates:
+
+- route-aware public metadata;
+- static public HTML shells for canonical public paths;
+- grouped sitemap files plus a sitemap index;
+- a refreshed `robots.txt` aligned with the current route policy.
+
+At runtime, the browser app still matters because it:
+
+- hydrates the interactive PaperProof UI;
+- updates metadata after client-side navigation;
+- removes stale article-specific metadata when the route family changes;
+- preserves canonical path semantics inside the SPA.
+
+This hybrid model is the current steady state: the first response for public
+routes is materially better for crawlers and link previews, while the full
+interactive product remains browser-rendered.
 
 ## 3. What is already solved
 
@@ -61,6 +90,8 @@ The production site includes:
 
 - `robots.txt`
 - `sitemap.xml`
+- grouped sitemap files for route families such as artifacts, blog, docs,
+  forum, proposals, type pages, and core routes.
 
 These are part of the minimum discoverability contract and should remain in
 every official deploy.
@@ -72,11 +103,29 @@ The public site now supports route-aware metadata for major public pages:
 - page title
 - description
 - canonical URL
+- route-family `robots`
+- author metadata where appropriate
+- keyword metadata where appropriate
+- article published/modified time where appropriate
+- Open Graph and Twitter metadata
+- route-family JSON-LD where appropriate
 
 This is the minimum requirement for meaningful search-result snippets and
 duplicate-URL control.
 
-### 3.4 Official public-content serving
+### 3.4 Build-time public route shells
+
+The public site now generates readable first-response HTML shells for major
+public path routes. These shells are not a second UI. They are an SEO and
+public-accessibility layer that:
+
+- carries truthful metadata in the initial HTML response;
+- includes a short readable public preview;
+- adds internal links back to related public PaperProof route families;
+- yields a materially better non-JS or weak-JS first response than the old
+  pure app shell.
+
+### 3.5 Official public-content serving
 
 Official Docs, Blog, and Forum bodies now have an indexer-assisted verified
 content path. This improves reliability and speed for public content loading
@@ -109,12 +158,23 @@ The current official-content serving path improves body loading, but it is not
 the same thing as a full static or server-rendered HTML page for every public
 route. It is a server-assisted content model inside a browser-rendered site.
 
-### 4.3 Structured data is still incomplete
+### 4.3 Public preview shells are intentionally compact
+
+The build-time preview shells improve crawlability and shareability, but they
+are intentionally not full mirrors of every interactive page body. In
+particular:
+
+- long markdown bodies are still represented by concise excerpts;
+- some route families still expose summary-level content in the first response;
+- the fully interactive page remains the authoritative user experience after
+  hydration.
+
+### 4.4 Structured data is still incomplete
 
 The long-term target should include richer route-family JSON-LD, but that
 should be done carefully and truthfully rather than rushed.
 
-### 4.4 Search previews and social previews should keep improving
+### 4.5 Search previews and social previews should keep improving
 
 Even with page-level metadata in place, PaperProof still benefits from better:
 
@@ -354,10 +414,15 @@ High-priority entries include:
 
 - Docs pages
 - official Blog pages
+- official Forum topic pages
 - public artifact detail pages
 - type-list pages
 - proposal detail pages
 - primary discovery pages
+
+The current production line uses grouped sitemap files plus a sitemap index.
+That grouped output should remain the standard production shape because it is
+more maintainable than a single ever-growing sitemap file.
 
 ### 11.2 Robots requirements
 
@@ -366,6 +431,16 @@ avoiding confusion around non-public or machine-only paths where appropriate.
 
 The precise allow/disallow policy should stay aligned with the deployed route
 shape and should be rechecked whenever new public route families are added.
+
+At the current production line, the effective route policy includes:
+
+- allowing public reading routes;
+- disallowing `/api/*`;
+- disallowing `/memwal-relayer/*`;
+- disallowing `/publish`;
+- disallowing `/space`;
+- disallowing `/governance/create`;
+- disallowing `/artifact/*/add-version`.
 
 ## 12. Rendering strategy by page class
 
@@ -409,6 +484,14 @@ The next important layer is:
 - structured data rollout for key page families;
 - more crawl-friendly first-response body content on high-value public pages.
 
+It should not reopen already-resolved baseline work such as:
+
+- path-based canonical URLs;
+- grouped sitemap generation;
+- `robots.txt` generation;
+- `noindex` treatment for interactive routes;
+- duplicate official Blog artifact mirror suppression.
+
 ### 13.3 Highest-value long-term target
 
 The highest-value long-term target is:
@@ -427,6 +510,7 @@ Every official deploy should continue verifying at least:
 - key path routes work;
 - `robots.txt` is reachable;
 - `sitemap.xml` is reachable;
+- grouped sitemap files are reachable;
 - public API health works;
 - canonical path URLs do not regress into broken or placeholder routes;
 - representative official Docs and Blog pages still resolve correctly.
@@ -436,7 +520,15 @@ For major SEO changes, validation should also include:
 - title checks;
 - description checks;
 - canonical checks;
+- `robots` checks;
+- Open Graph / Twitter checks;
+- JSON-LD checks;
 - a small set of route-family response checks using public URLs;
+- first-response shell checks on Docs, Blog, artifact, and proposal examples;
+- verification that duplicate official Blog artifact mirrors remain
+  `noindex,follow` and canonicalize to `/blog/...`;
+- verification that runtime metadata updates do not leave stale article-level
+  tags after in-app navigation;
 - share-preview spot checks when metadata or image handling changes.
 
 ## 15. Final recommendation
@@ -455,3 +547,150 @@ The correct steady-state direction is:
   content;
 - no regression in wallet, governance, publishing, or other protocol-app
   interaction flows.
+
+## 16. Local execution checklist for direct SEO work
+
+The following items are reasonable and directly actionable, but not all of them
+are solved by frontend code alone. They should be tracked as part of the local
+SEO workflow.
+
+### 16.1 Implemented in the app codebase
+
+These items should be handled in the website build and route metadata layer:
+
+- path-route canonical handling for public pages;
+- official Blog route preference over duplicate blog artifact mirrors;
+- `noindex,follow` on interactive routes and duplicate blog artifact mirrors;
+- sitemap generation from real public routes;
+- sitemap `lastmod`, `changefreq`, and `priority` fields;
+- route-family metadata enrichment:
+  - author
+  - keywords
+  - article published time
+  - article modified time
+  - article section
+- structured data for:
+  - collection pages
+  - Docs topics and sections
+  - official Blog posts
+  - forum topics
+  - artifact detail pages
+  - governance proposal pages
+- crawl-friendly first-response preview shells for public reading routes;
+- internal-link enrichment inside preview shells:
+  - Docs section/topic links
+  - Blog index links
+  - related-post links
+  - artifact type links
+  - governance index links;
+- `robots.txt` disallow rules for interactive-only routes;
+- build-time bundle splitting for protocol, content, and heavy reader code.
+
+### 16.2 Must be executed outside frontend code
+
+These items are direct SEO actions, but they require operator-side follow-up:
+
+- submit the current sitemap index to Google Search Console;
+- submit the current sitemap index to Bing Webmaster Tools;
+- monitor coverage errors for:
+  - `/blog/...`
+  - `/docs/...`
+  - `/artifact/...`
+  - `/proposal/...`;
+- verify that official Blog artifact mirrors are no longer treated as preferred
+  index targets;
+- keep GitHub README and public ecosystem profiles linking back to:
+  - the PaperProof home page
+  - Docs
+  - official Blog
+  - selected artifact detail pages;
+- continue placing canonical backlinks from:
+  - Zenodo
+  - OSF MetaArXiv
+  - Speaker Deck
+  - GitHub repositories
+  - ecosystem directory pages;
+- continue publishing external references that point to canonical PaperProof
+  public paths rather than hash URLs.
+
+### 16.3 Ongoing local validation before deploy
+
+Before any official deployment, local validation should confirm:
+
+- generated `robots.txt` matches the intended route policy;
+- generated sitemap files include:
+  - home
+  - Docs
+  - official Blog
+  - forum
+  - type pages
+  - proposal pages
+  - public artifact detail pages except duplicate official Blog artifact mirrors;
+- page HTML shells include:
+  - title
+  - description
+  - canonical
+  - robots
+  - author
+  - keywords when applicable
+  - Open Graph tags
+  - Twitter tags
+  - JSON-LD;
+- official Blog post shells contain:
+  - readable summary paragraphs
+  - route-level metadata
+  - internal links to blog index or related posts;
+- Docs shells contain:
+  - readable summary paragraphs
+  - section/topic linkage
+  - stable canonical paths;
+- route metadata still updates correctly after client-side navigation.
+
+### 16.4 Current implementation status as of 2026-07-20
+
+For the current production-oriented implementation, the following are fully
+covered in code:
+
+- public path-route canonical handling for public pages;
+- official Blog canonical preference over duplicate blog artifact mirrors;
+- `noindex,follow` on interactive routes and duplicate official Blog artifact mirrors;
+- generated `robots.txt` and grouped sitemap output from real public routes;
+- route-family metadata enrichment for author, keywords, article times, and article sections;
+- JSON-LD for collection pages, Docs, Blog, Forum, artifact detail, and governance proposal routes;
+- crawl-friendly preview shells for public reading routes;
+- internal-link enrichment inside preview shells;
+- route-aware first-response metadata for public path routes;
+- build-time chunk splitting aimed at keeping crawl-critical code lighter.
+
+The current implementation also includes these production-relevant details:
+
+- official Docs shells strip display-only metadata labels such as `Docs Path`
+  and `Artifact Code` from the excerpted body preview;
+- default site-level metadata now describes PaperProof as an artifact protocol
+  on Sui and Walrus rather than as a generic static interface;
+- generated descriptions truncate more carefully to avoid abrupt mid-phrase
+  clipping;
+- proposal SEO metadata now uses stronger date fallback behavior when proposal
+  objects do not expose a perfectly complete timestamp shape;
+- runtime metadata replacement is expected to clear article-specific tags when
+  moving between article-like and non-article routes.
+
+The following are now explicitly checked as part of local review quality, even
+though they are still code-level details rather than separate features:
+
+- default site description should describe PaperProof as a protocol, not merely
+  as a static interface;
+- generated page descriptions should truncate on clean sentence or word
+  boundaries where possible, instead of clipping awkwardly mid-phrase;
+- runtime metadata updates must remove stale article-specific tags when moving
+  from article-like routes to non-article routes.
+
+The following remain operator-side tasks rather than frontend-only work:
+
+- sitemap submission and coverage monitoring in search-console products;
+- external backlink maintenance across GitHub, Zenodo, OSF, Speaker Deck, and
+  ecosystem directories;
+- monitoring whether search engines choose the intended canonical public paths.
+
+The official deployment harness should also continue validating representative
+public URLs after each deploy rather than trusting local build success alone.
