@@ -1,5 +1,5 @@
 {
-  "runId": "paperproof-blogs-2026-07-25T01-19-53-503Z",
+  "runId": "paperproof-blogs-2026-07-25T02-03-37-908Z",
   "run": true,
   "accountIndex": 4,
   "selection": {
@@ -71,29 +71,18 @@
       "id": "paperproof-protocol-the-artifact-layer-for-the-next-internet",
       "source": "paperproof-protocol-the-artifact-layer-for-the-next-internet.md",
       "title": "PaperProof Protocol: The Artifact Layer for the Next Internet",
-      "upload": {
-        "blobId": "aGSkKKPkjBLfDViyiA_DYj_c4v_gQsxQ1Oj8cYGlQFI",
-        "blobObjectId": "0xc697cec803cc93df236b06ea33a26efdff2a1023c1659513d83f13f239ed9f7d",
-        "byteLength": 8005
-      },
+      "contentHash": "sha256:6abb59a874157060d63639032f18e9742278f05a473989783fca90ea2bc125d0",
+      "operation": "skip-existing",
       "published": {
+        "artifactCode": "PaperProof-blog_post-001199-fef45812f706",
         "seriesId": "0xfef45812f706034fc440244c8c2007ac6fc606cf53cee62ea12f31bef4e1a410",
         "versionId": "0xb10668fc234a927962661a7319c1ff920eeb20727302c489bf9d4a64e3d241ba",
         "commentsTreeId": "0x143ca98112159fa0c9e5de1ddc6fc441f5ef5db588713127b8fb0549205c96fd",
-        "likesBookId": "0x3c144de252c4e5a0f88376f63706deea86deb2fae29ba969486d1bcacfa60c9a",
-        "artifactCode": "PaperProof-blog_post-001199-fef45812f706",
-        "artifactType": 2
-      },
-      "contentHash": "sha256:9d29e9ed67a12ac98e412ce9fafac5ff87c56c13abb5193d975479038947b364",
-      "operation": "publish"
+        "likesBookId": "0x3c144de252c4e5a0f88376f63706deea86deb2fae29ba969486d1bcacfa60c9a"
+      }
     }
   ],
-  "transactions": [
-    {
-      "label": "publish paperproof-protocol-the-artifact-layer-for-the-next-internet.md",
-      "digest": "8V2MymvdqJrQ4tTyHFEADkNzf7MuKeZwNbu2GLgZWwm2"
-    }
-  ],
+  "transactions": [],
   "manifest": {
     "schemaVersion": 1,
     "title": "PaperProof Blog",
@@ -413,6 +402,16 @@
         ],
         "language": "en",
         "source": "paperproof-protocol-the-artifact-layer-for-the-next-internet.md",
+        "order": 12,
+        "artifactCode": "PaperProof-blog_post-001199-fef45812f706",
+        "seriesId": "0xfef45812f706034fc440244c8c2007ac6fc606cf53cee62ea12f31bef4e1a410",
+        "commentsTreeId": "0x143ca98112159fa0c9e5de1ddc6fc441f5ef5db588713127b8fb0549205c96fd",
+        "initialVersionId": "0xb10668fc234a927962661a7319c1ff920eeb20727302c489bf9d4a64e3d241ba",
+        "currentVersionId": "0xb10668fc234a927962661a7319c1ff920eeb20727302c489bf9d4a64e3d241ba",
+        "likesBookId": "0x3c144de252c4e5a0f88376f63706deea86deb2fae29ba969486d1bcacfa60c9a",
+        "latestContentHash": "sha256:9d29e9ed67a12ac98e412ce9fafac5ff87c56c13abb5193d975479038947b364",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open",
         "seo": {
           "description": "Official PaperProof Labs flagship introduction to PaperProof Protocol as the artifact layer for the next internet, covering durable artifact identity, versioned publishing, controller-NFT-based control, agent-ready infrastructure, and real mainnet implementation on Sui and Walrus.",
           "keywords": [
@@ -432,9 +431,9 @@
         }
       }
     ],
-    "publishedAt": "2026-07-19T07:54:21.279Z",
+    "publishedAt": "2026-07-25T02:03:38.187Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
-    "sdkVersion": "0.2.8",
+    "sdkVersion": "0.3.0",
     "commentsTreePolicy": "locked",
     "updatedAt": "2026-06-17T13:37:54.051Z"
   }

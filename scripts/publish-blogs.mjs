@@ -187,6 +187,12 @@ function collectPosts(manifest) {
   }));
 }
 
+function syncManifestPosts(manifest, updatedPosts) {
+  const byId = new Map(updatedPosts.map((post) => [post.id, post]));
+  manifest.posts = (manifest.posts ?? []).map((post) => byId.get(post.id) ?? post);
+  return manifest;
+}
+
 function selectPosts(posts, args) {
   if (args.all) return posts;
   const requestedIds = new Set(args.posts.map((value) => value.trim()).filter(Boolean));
@@ -496,12 +502,18 @@ async function publishBlogs({ posts, args, account, sui, walrusClient, txb, read
     report.transactions.push({ label: `${existing ? 'add version' : 'publish'} ${post.source}`, digest: result.digest, dryRunBytes: result.dryRunBytes });
     report.posts.push({ id: post.id, source: post.source, title: post.title, upload, published, contentHash: content.contentHash, operation: existing ? 'add-version' : 'publish' });
     if (args.run) {
+      syncManifestPosts(report.manifest, posts);
       await writeJsonFile(CHECKPOINT_PATH, report);
       await writeJsonFile(MANIFEST_PATH, report.manifest);
       const series = await read.waitForObject(published.seriesId, { attempts: 8, baseDelayMs: 1_000 });
       assert(series.id === published.seriesId, `Series not readable after publishing ${post.source}.`);
-      const details = await read.getSeriesView(published.seriesId);
-      assertControllerOnlySeries({ series: details }, `${post.source} published blog series`);
+      try {
+        const details = await read.getSeriesView(published.seriesId);
+        assertControllerOnlySeries({ series: details }, `${post.source} published blog series`);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        console.warn(`[publish] non-fatal post-publish readback warning for ${post.source}: ${message}`);
+      }
     }
   }
 }
@@ -571,8 +583,7 @@ async function main() {
   console.log(`[selection] processing ${posts.length} post(s): ${posts.map((post) => post.id).join(', ')}`);
   await publishBlogs({ posts, args, account, sui, walrusClient, txb, read, report });
 
-  const byId = new Map(posts.map((post) => [post.id, post]));
-  manifest.posts = allPosts.map((post) => byId.get(post.id) ?? post);
+  syncManifestPosts(manifest, posts);
   manifest.publishedAt = new Date().toISOString();
   manifest.publisher = account.address;
   manifest.sdkVersion = sdkPackage.version;

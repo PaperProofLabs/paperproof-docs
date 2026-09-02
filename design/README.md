@@ -61,6 +61,9 @@ Important current system-facing design records include:
   as the canonical steady-state controller-NFT design.
 - [system/artifact-control-nft-rollout-history.md](./system/artifact-control-nft-rollout-history.md)
   as the historical mainnet rollout and migration record.
+- [system/sui-public-event-query-remediation-plan.md](./system/sui-public-event-query-remediation-plan.md)
+  for the cross-repo hardening plan that removes critical dependence on public
+  historical Sui event-query behavior.
 
 ## Maintenance rule
 

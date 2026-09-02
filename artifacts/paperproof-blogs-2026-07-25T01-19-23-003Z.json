@@ -1,6 +1,6 @@
 {
-  "runId": "paperproof-blogs-2026-07-25T01-19-53-503Z",
-  "run": true,
+  "runId": "paperproof-blogs-2026-07-25T01-19-23-003Z",
+  "run": false,
   "accountIndex": 4,
   "selection": {
     "all": false,
@@ -72,26 +72,27 @@
       "source": "paperproof-protocol-the-artifact-layer-for-the-next-internet.md",
       "title": "PaperProof Protocol: The Artifact Layer for the Next Internet",
       "upload": {
-        "blobId": "aGSkKKPkjBLfDViyiA_DYj_c4v_gQsxQ1Oj8cYGlQFI",
-        "blobObjectId": "0xc697cec803cc93df236b06ea33a26efdff2a1023c1659513d83f13f239ed9f7d",
+        "blobId": "local-blog-paperproof-protocol-the-artifact-layer-for-the-next-internet-a524bea02cf3b75b920e47ab",
+        "blobObjectId": "0x6666666666666666666666666666666666666666666666666666666666666666",
         "byteLength": 8005
       },
       "published": {
-        "seriesId": "0xfef45812f706034fc440244c8c2007ac6fc606cf53cee62ea12f31bef4e1a410",
-        "versionId": "0xb10668fc234a927962661a7319c1ff920eeb20727302c489bf9d4a64e3d241ba",
-        "commentsTreeId": "0x143ca98112159fa0c9e5de1ddc6fc441f5ef5db588713127b8fb0549205c96fd",
-        "likesBookId": "0x3c144de252c4e5a0f88376f63706deea86deb2fae29ba969486d1bcacfa60c9a",
-        "artifactCode": "PaperProof-blog_post-001199-fef45812f706",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "versionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "artifactCode": "DRY-RUN-BLOG-1",
         "artifactType": 2
       },
-      "contentHash": "sha256:9d29e9ed67a12ac98e412ce9fafac5ff87c56c13abb5193d975479038947b364",
+      "contentHash": "sha256:a524bea02cf3b75b920e47ab9afd1eb72f00bffef2548859797fe60eca803fb1",
       "operation": "publish"
     }
   ],
   "transactions": [
     {
       "label": "publish paperproof-protocol-the-artifact-layer-for-the-next-internet.md",
-      "digest": "8V2MymvdqJrQ4tTyHFEADkNzf7MuKeZwNbu2GLgZWwm2"
+      "digest": null,
+      "dryRunBytes": 0
     }
   ],
   "manifest": {
@@ -429,12 +430,22 @@
             "This article introduces PaperProof as protocol infrastructure for durable, versioned, verifiable digital artifacts rather than as a single publishing website.",
             "It explains why artifact identity, version lineage, controller-NFT-based control, and multi-interface usability matter for the next generation of research, software, governance, and agent-facing public knowledge systems."
           ]
-        }
+        },
+        "order": 12,
+        "artifactCode": "DRY-RUN-BLOG-1",
+        "seriesId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "commentsTreeId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "initialVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "currentVersionId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "likesBookId": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "latestContentHash": "sha256:a524bea02cf3b75b920e47ab9afd1eb72f00bffef2548859797fe60eca803fb1",
+        "contentType": "application/vnd.paperproof.markdown-package+zip",
+        "commentsTreeStatus": "open"
       }
     ],
-    "publishedAt": "2026-07-19T07:54:21.279Z",
+    "publishedAt": "2026-07-25T01:19:23.371Z",
     "publisher": "0x8fdd4a2185cc81bc0fef20e56cabe29803ea4afc63d20550ad88cbcafb85dbb6",
-    "sdkVersion": "0.2.8",
+    "sdkVersion": "0.3.0",
     "commentsTreePolicy": "locked",
     "updatedAt": "2026-06-17T13:37:54.051Z"
   }
